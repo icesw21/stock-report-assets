@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>큐라클(365270) T3</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<h1>큐라클(365270) Valuation Report</h1>
+<p><strong>2026-04-02 | T3 Valuation — 파이프라인 기반 바이오텍 밸류에이션</strong></p>
+<hr />
+<h2>1. 현재 밸류에이션 현황</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>값</th>
+<th>산출 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재가</td>
+<td>13,880원</td>
+<td>KIS API (2026-04-02)</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>3,043억원</td>
+<td>13,880원 × 21,924,566주</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>8.2x</td>
+<td>13,880원 ÷ BPS 1,692원 (자본 371억 ÷ 발행주식)</td>
+</tr>
+<tr>
+<td>PER (TTM)</td>
+<td>N/A (적자)</td>
+<td>TTM EPS -826원 (순손실 -181억)</td>
+</tr>
+<tr>
+<td>EPS (TTM)</td>
+<td>-826원</td>
+<td>TTM 순손실 181억 ÷ 21.9M주</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>-48.8%</td>
+<td>2025년 기준</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td>143.5%</td>
+<td>2025년 기준</td>
+</tr>
+<tr>
+<td>유동비율</td>
+<td>192.3%</td>
+<td>유동자산 245억 ÷ 유동부채 128억</td>
+</tr>
+<tr>
+<td>52주 고가</td>
+<td>19,710원</td>
+<td>현재가 대비 -29.6%</td>
+</tr>
+<tr>
+<td>52주 저가</td>
+<td>3,650원</td>
+<td>현재가 대비 +280.3%</td>
+</tr>
+</tbody>
+</table>
+<p>※ KIS API + DART CFS 기준 (2026-04-02)</p>
+<p><strong>핵심</strong>: 큐라클은 매출 거의 부재(2025년 매출 710만원), 연간 160~180억원 규모의 적자를 지속하는 <strong>전형적인 임상단계 바이오텍</strong>. 전통적 멀티플(PER, EV/EBITDA)은 적용 불가. PBR 8.2x는 자본 잠식이 진행되며 산출 왜곡. <strong>파이프라인 rNPV(Risk-adjusted NPV)가 유일하게 유효한 밸류에이션 방법론</strong>.</p>
+<hr />
+<h2>2. 바이오텍 밸류에이션 방법론: rNPV 접근</h2>
+<h3>왜 rNPV인가?</h3>
+<p>임상단계 바이오텍은 매출·이익이 없어 PER/EV/EBITDA 적용이 불가능하다. 업계 표준은 <strong>Risk-adjusted Net Present Value(rNPV)</strong>로, 각 파이프라인의 성공 시 기대 현금흐름에 임상 단계별 성공확률(PoS)을 적용하여 현재가치를 산출한다.</p>
+<h3>rNPV 산출 공식</h3>
+<pre><code>rNPV = Σ (기대 현금흐름t × 누적 성공확률) / (1 + r)^t
+</code></pre>
+<h3>임상 단계별 성공확률 (업계 평균)</h3>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>성공확률</th>
+<th>누적 승인 확률</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1 → Phase 2</td>
+<td>65%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Phase 2 → Phase 3</td>
+<td>33%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Phase 3 → NDA</td>
+<td>60%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>NDA → 승인</td>
+<td>85%</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Phase 1 → 승인</strong></td>
+<td>—</td>
+<td><strong>~11%</strong></td>
+</tr>
+<tr>
+<td><strong>Phase 2b 완료 → 승인</strong></td>
+<td>—</td>
+<td><strong>~30%</strong></td>
+</tr>
+<tr>
+<td><strong>Phase 2a 완료 → 승인</strong></td>
+<td>—</td>
+<td><strong>~20%</strong></td>
+</tr>
+<tr>
+<td><strong>전임상 → 승인</strong></td>
+<td>—</td>
+<td><strong>~5%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ FDA 통계 기반 업계 평균. 치료 영역별로 편차 존재.</p>
+<h3>적용 할인율</h3>
+<ul>
+<li>임상 초기 단계: 15~20%</li>
+<li>임상 후기 단계: 12~15%</li>
+<li>본 분석 적용: <strong>15%</strong> (임상 2상 단계 중심 포트폴리오)</li>
+</ul>
+<hr />
+<h2>3. 국내 Peer 비교</h2>
+<h3>선정 기준</h3>
+<p>큐라클과 유사한 <strong>코스닥 상장 임상단계 신약개발 바이오텍</strong> 중 시총 1,000~5,000억원 규모의 기업을 비교한다. 이들은 매출이 거의 없고 파이프라인 가치로 시총이 형성되는 구조적 유사성을 공유한다.</p>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>시총 (억원)</th>
+<th>핵심 파이프라인</th>
+<th>임상 단계</th>
+<th>PBR</th>
+<th>특이사항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>큐라클</strong></td>
+<td><strong>3,043</strong></td>
+<td><strong>CU01(신장), CU06(안과)</strong></td>
+<td><strong>Phase 2b</strong></td>
+<td><strong>8.2x</strong></td>
+<td><strong>경구용 First-in-Class</strong></td>
+</tr>
+<tr>
+<td>에이비온</td>
+<td>~2,500</td>
+<td>ABN401(항암)</td>
+<td>Phase 2</td>
+<td>~5x</td>
+<td>MET 저해제</td>
+</tr>
+<tr>
+<td>올릭스</td>
+<td>~1,850</td>
+<td>siRNA 플랫폼</td>
+<td>Phase 1-2</td>
+<td>~4x</td>
+<td>릴리 기술이전 실적</td>
+</tr>
+<tr>
+<td>인벤티지랩</td>
+<td>~2,000</td>
+<td>지속형 제형</td>
+<td>Phase 1</td>
+<td>~6x</td>
+<td>플랫폼 기술</td>
+</tr>
+<tr>
+<td>압타머사이언스</td>
+<td>~1,500</td>
+<td>압타머 기반</td>
+<td>전임상-Phase 1</td>
+<td>~3x</td>
+<td>플랫폼 초기</td>
+</tr>
+</tbody>
+</table>
+<p>※ 2026년 3~4월 기준 추정치. 바이오텍 특성상 시총 변동 극심</p>
+<p><strong>큐라클 포지셔닝</strong>:<br />
+- 시총 3,043억원은 국내 임상 2상 완료 바이오텍 중 <strong>중상위</strong> 수준<br />
+- Phase 2b 완료(CU01) + Phase 2a 완료(CU06) <strong>이중 파이프라인 보유</strong>는 차별화 요인<br />
+- PBR 8.2x는 Peer 대비 높지만, 자본 규모가 작아(371억) PBR 비교 의미 제한적<br />
+- <strong>핵심 비교 기준은 파이프라인 가치(rNPV)</strong>이며, 단순 멀티플 비교는 부적절</p>
+<hr />
+<h2>4. 글로벌 Peer 비교: 신장질환 특화 개발사</h2>
+<h3>Chinook Therapeutics 인수 사례 (핵심 벤치마크)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>인수자</td>
+<td>Novartis</td>
+</tr>
+<tr>
+<td>인수 완료일</td>
+<td>2023.08.11</td>
+</tr>
+<tr>
+<td><strong>인수 금액</strong></td>
+<td><strong>$32억 (upfront) + $3억 (CVR)</strong></td>
+</tr>
+<tr>
+<td>인수 당시 시총</td>
+<td>~$19억 (인수 전 60일 VWAP 대비 83% 프리미엄)</td>
+</tr>
+<tr>
+<td>핵심 파이프라인</td>
+<td>Atrasentan (IgAN, Phase 3), Zigakibart (IgAN, Phase 3)</td>
+</tr>
+<tr>
+<td>적응증</td>
+<td>IgA 신증 (희귀 만성 신장질환)</td>
+</tr>
+<tr>
+<td><strong>시사점</strong></td>
+<td><strong>신장질환 임상 후기 자산 2개 = $35억 가치 평가</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>글로벌 신장질환 개발사 비교</h3>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>적응증</th>
+<th>임상 단계</th>
+<th>인수/제휴 가치</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chinook (→Novartis)</td>
+<td>IgAN</td>
+<td>Phase 3</td>
+<td>$35억</td>
+<td>2023년 인수</td>
+</tr>
+<tr>
+<td>Travere Therapeutics</td>
+<td>희귀 신장질환</td>
+<td>출시/Phase 3</td>
+<td>시총 ~$20억</td>
+<td>Filspari 출시</td>
+</tr>
+<tr>
+<td><strong>큐라클</strong></td>
+<td><strong>당뇨병성 신증</strong></td>
+<td><strong>Phase 2b</strong></td>
+<td><strong>시총 $2.2억</strong></td>
+<td><strong>상대적 초기 단계</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 시사점</strong>:<br />
+- Chinook은 Phase 3 진입 자산 2개로 $35억 가치 → <strong>Phase 3 신장질환 자산 1개 ≈ $10-15억 가치 추정</strong><br />
+- 큐라클 CU01은 Phase 2b 완료 → Phase 3 진입 시 가치 급등 가능<br />
+- 다만 Chinook은 희귀질환(IgAN)으로 환자 수 대비 약가가 높은 반면, 큐라클 CU01은 당뇨병성 신증(대규모 시장, 낮은 약가) → <strong>시장 접근법이 상이</strong></p>
+<hr />
+<h2>5. 파이프라인 rNPV 분석</h2>
+<h3>5-1. CU01 — 경구용 당뇨병성 신증 치료제</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>가정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>적응증</td>
+<td>당뇨병성 신증 (DN)</td>
+</tr>
+<tr>
+<td>기전</td>
+<td>Nrf2 활성화 + TGF-β 억제 (이중 기전)</td>
+</tr>
+<tr>
+<td>임상 단계</td>
+<td>Phase 2b 완료 (2026.01 탑라인 발표)</td>
+</tr>
+<tr>
+<td>시장 규모</td>
+<td>글로벌 DN 시장 2030년 $46억 (CAGR 6.2%)</td>
+</tr>
+<tr>
+<td>피크 매출 추정</td>
+<td>$3~5억/년 (시장점유율 7~10%, 경구용 프리미엄)</td>
+</tr>
+<tr>
+<td>기술이전 시나리오</td>
+<td>선급금 $3,000~5,000만 + 마일스톤 $2~4억 + 로열티 10~15%</td>
+</tr>
+<tr>
+<td><strong>성공확률 (PoS)</strong></td>
+<td><strong>Phase 2b → 승인: 30%</strong></td>
+</tr>
+<tr>
+<td>임상 결과</td>
+<td>uACR 21.5~22.2% 감소 (p=0.031), eGFR 유지 경향</td>
+</tr>
+<tr>
+<td>차별성</td>
+<td>기존 RAAS/SGLT-2/MRA와 병용 가능한 새 기전</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CU01 rNPV 시나리오</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>피크매출</th>
+<th>PoS</th>
+<th>NPV (100%)</th>
+<th>rNPV</th>
+<th>주당 가치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>$3억</td>
+<td>20%</td>
+<td>3,600억원</td>
+<td>720억원</td>
+<td>3,284원</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>$4억</td>
+<td>30%</td>
+<td>4,800억원</td>
+<td>1,440억원</td>
+<td>6,568원</td>
+</tr>
+<tr>
+<td>낙관적</td>
+<td>$5억</td>
+<td>40%</td>
+<td>6,000억원</td>
+<td>2,400억원</td>
+<td>10,947원</td>
+</tr>
+</tbody>
+</table>
+<p>※ 할인율 15%, 피크매출 달성까지 10년, 특허 만료 후 2033~2043년 매출 가정</p>
+<h3>5-2. Rivasterat (CU06) — 경구용 당뇨병성 황반부종 치료제</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>가정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>적응증</td>
+<td>당뇨병성 황반부종 (DME)</td>
+</tr>
+<tr>
+<td>기전</td>
+<td>혈관내피 기능장애 차단제 (BRB 통과 불필요)</td>
+</tr>
+<tr>
+<td>임상 단계</td>
+<td>Phase 2a 완료 / Phase 2b IND 준비 중 (2026년 신청 예정)</td>
+</tr>
+<tr>
+<td>시장 규모</td>
+<td>글로벌 DME 시장 2030년 ~$44억</td>
+</tr>
+<tr>
+<td>피크 매출 추정</td>
+<td>$5~10억/년 (경구용이라는 혁신적 차별성, 주사 대체 수요)</td>
+</tr>
+<tr>
+<td>기술이전 이력</td>
+<td>Thea에 1,900억 규모 L/O (2021) → 2024년 반환</td>
+</tr>
+<tr>
+<td><strong>성공확률 (PoS)</strong></td>
+<td><strong>Phase 2a → 승인: 15~20%</strong></td>
+</tr>
+<tr>
+<td>임상 결과</td>
+<td>BCVA 시력 개선 + CST 감소 확인</td>
+</tr>
+<tr>
+<td>차별성</td>
+<td>세계 유일 경구용 DME 치료제 (경쟁사: 베링거인겔하임 Phase 2만)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rivasterat rNPV 시나리오</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>피크매출</th>
+<th>PoS</th>
+<th>NPV (100%)</th>
+<th>rNPV</th>
+<th>주당 가치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>$5억</td>
+<td>10%</td>
+<td>4,500억원</td>
+<td>450억원</td>
+<td>2,053원</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>$7억</td>
+<td>15%</td>
+<td>6,300억원</td>
+<td>945억원</td>
+<td>4,310원</td>
+</tr>
+<tr>
+<td>낙관적</td>
+<td>$10억</td>
+<td>25%</td>
+<td>9,000억원</td>
+<td>2,250억원</td>
+<td>10,263원</td>
+</tr>
+</tbody>
+</table>
+<p>※ 경구용 DME 치료제는 <strong>First-in-Class 프리미엄</strong> 존재. 단, Thea 반환으로 PoS 보수적 적용.</p>
+<h3>5-3. 항체 파이프라인 (MT-101, MT-103 등)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>가정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>핵심 자산</td>
+<td>MT-101 (Tie2 활성화 항체), MT-103 (VEGF/Ang-2 이중항체)</td>
+</tr>
+<tr>
+<td>임상 단계</td>
+<td>전임상 (국가신약개발사업 과제 선정)</td>
+</tr>
+<tr>
+<td>MT-101 적응증</td>
+<td>급성 신손상, 만성 신부전</td>
+</tr>
+<tr>
+<td>MT-103 적응증</td>
+<td>습성 황반변성, DME (바비스모 경쟁)</td>
+</tr>
+<tr>
+<td><strong>성공확률 (PoS)</strong></td>
+<td><strong>전임상 → 승인: 5%</strong></td>
+</tr>
+<tr>
+<td>차별성</td>
+<td>Tie2 직접 활성화 + Ang-2 억제 동시 구현</td>
+</tr>
+<tr>
+<td>보유 파이프라인</td>
+<td>MT-101, MT-103, MT-201, MT-202, CU71, CU72 등 8개</td>
+</tr>
+<tr>
+<td>잠재 시장</td>
+<td>항체 안과치료제 시장 $200억+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>항체 파이프라인 rNPV (포트폴리오 합산)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>포트폴리오 NPV</th>
+<th>평균 PoS</th>
+<th>rNPV</th>
+<th>주당 가치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>5,000억원</td>
+<td>3%</td>
+<td>150억원</td>
+<td>684원</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>8,000억원</td>
+<td>5%</td>
+<td>400억원</td>
+<td>1,824원</td>
+</tr>
+<tr>
+<td>낙관적</td>
+<td>12,000억원</td>
+<td>8%</td>
+<td>960억원</td>
+<td>4,378원</td>
+</tr>
+</tbody>
+</table>
+<p>※ 전임상 단계로 불확실성 높으나, MT-103의 바비스모 후속 포지셔닝과 다수 MTA 체결은 긍정적</p>
+<h3>5-4. 파이프라인 rNPV 합산</h3>
+<table>
+<thead>
+<tr>
+<th>파이프라인</th>
+<th>보수적</th>
+<th>기본</th>
+<th>낙관적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CU01 (신장)</td>
+<td>720억원</td>
+<td>1,440억원</td>
+<td>2,400억원</td>
+</tr>
+<tr>
+<td>Rivasterat (안과)</td>
+<td>450억원</td>
+<td>945억원</td>
+<td>2,250억원</td>
+</tr>
+<tr>
+<td>항체 포트폴리오</td>
+<td>150억원</td>
+<td>400억원</td>
+<td>960억원</td>
+</tr>
+<tr>
+<td>현금 및 기타자산</td>
+<td>245억원</td>
+<td>245억원</td>
+<td>245억원</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td><strong>1,565억원</strong></td>
+<td><strong>3,030억원</strong></td>
+<td><strong>5,855억원</strong></td>
+</tr>
+<tr>
+<td><strong>주당 가치</strong></td>
+<td><strong>7,138원</strong></td>
+<td><strong>13,818원</strong></td>
+<td><strong>26,703원</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. 적정주가 시나리오</h2>
+<h3>시나리오별 적정주가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>rNPV 합산</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+<th>전제</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔻 보수적</td>
+<td>1,565억원</td>
+<td><strong>7,138원</strong></td>
+<td><strong>-48.6%</strong></td>
+<td>CU01 L/O 부진, Rivasterat 2b 실패, 항체 전임상 정체</td>
+</tr>
+<tr>
+<td>⚖️ 기본</td>
+<td>3,030억원</td>
+<td><strong>13,818원</strong></td>
+<td><strong>-0.4%</strong></td>
+<td>CU01 국내 L/O 성공, Rivasterat 2b 개시, 항체 IND 준비</td>
+</tr>
+<tr>
+<td>🔺 낙관적</td>
+<td>5,855억원</td>
+<td><strong>26,703원</strong></td>
+<td><strong>+92.4%</strong></td>
+<td>CU01 글로벌 대형 L/O, Rivasterat 2b 긍정적, 항체 기술이전</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 확률 가중 적정주가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적정주가</th>
+<th>확률</th>
+<th>가중치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>7,138원</td>
+<td>30%</td>
+<td>2,141원</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>13,818원</td>
+<td>50%</td>
+<td>6,909원</td>
+</tr>
+<tr>
+<td>낙관적</td>
+<td>26,703원</td>
+<td>20%</td>
+<td>5,341원</td>
+</tr>
+<tr>
+<td><strong>확률 가중 적정주가</strong></td>
+<td></td>
+<td></td>
+<td><strong>14,391원</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>현재가 13,880원 대비 +3.7% 업사이드</strong> → 현재 주가는 기본 시나리오를 거의 정확히 반영 중</p>
+<hr />
+<h2>7. 증권사 컨센서스</h2>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th>애널리스트</th>
+<th>발간일</th>
+<th>투자의견</th>
+<th>목표주가</th>
+<th>핵심 논리</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>리딩투자증권</td>
+<td>유성만</td>
+<td>2026.03.24</td>
+<td>N/R</td>
+<td>—</td>
+<td>CU01 2b 성공 + Rivasterat 2b 준비 + 항체 가치</td>
+</tr>
+<tr>
+<td>키움증권</td>
+<td>신민수</td>
+<td>2026.04.02</td>
+<td>Not Rated</td>
+<td>—</td>
+<td>멀티 파이프라인 + 대성팜텍 합병</td>
+</tr>
+<tr>
+<td>ARIS (독립)</td>
+<td>이재모</td>
+<td>2026.03.12</td>
+<td>N/R</td>
+<td>—</td>
+<td>26년 기술이전 모멘텀 풍부</td>
+</tr>
+<tr>
+<td>KB증권</td>
+<td>임상국</td>
+<td>2026.01.12</td>
+<td>Not Rated</td>
+<td>—</td>
+<td>핵심 파이프라인 성과 기대감</td>
+</tr>
+<tr>
+<td>한국IR협의회</td>
+<td>김승준</td>
+<td>2026.02.03</td>
+<td>—</td>
+<td>—</td>
+<td>PBR 3.8x 역사 평균, 임상 옵션 가치 구간</td>
+</tr>
+</tbody>
+</table>
+<p><strong>컨센서스 요약</strong>:<br />
+- 커버리지 5건 중 <strong>목표주가 제시 0건</strong> — 모두 Not Rated/N/R<br />
+- 전체적으로 <strong>파이프라인 가치 재평가 가능성</strong>에 대한 긍정적 톤<br />
+- 정량적 TP 부재는 임상 불확실성과 적자 지속 반영<br />
+- 한국IR협의회: PBR 밴드 분석 → 2025년 PBR 3.8x (역사 평균 3.5x), 2026E PBR 9.6x (상단 초과)</p>
+<hr />
+<h2>8. 밸류에이션 논평</h2>
+<h3>교차검증</h3>
+<table>
+<thead>
+<tr>
+<th>방법</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rNPV 보수적</td>
+<td>7,138원</td>
+<td>-48.6%</td>
+</tr>
+<tr>
+<td>rNPV 기본</td>
+<td>13,818원</td>
+<td>-0.4%</td>
+</tr>
+<tr>
+<td>rNPV 낙관적</td>
+<td>26,703원</td>
+<td>+92.4%</td>
+</tr>
+<tr>
+<td>확률 가중</td>
+<td>14,391원</td>
+<td>+3.7%</td>
+</tr>
+<tr>
+<td>PBR 역사 평균(3.5x) 적용</td>
+<td>5,922원</td>
+<td>-57.3%</td>
+</tr>
+</tbody>
+</table>
+<h3>핵심 결론</h3>
+<ul>
+<li><strong>현재가는 기본 시나리오 rNPV에 거의 정확히 부합</strong>: 13,880원 ≈ rNPV 기본 13,818원. 시장은 CU01 L/O 가시화와 Rivasterat 2b 개시를 적정하게 프라이싱하고 있음</li>
+<li><strong>업사이드 트리거</strong>: CU01 글로벌 대형 L/O 체결 시 rNPV 대폭 상향 가능. 선급금 규모에 따라 적정주가 20,000~27,000원까지 재평가 여지</li>
+<li><strong>다운사이드 리스크</strong>: CU01 L/O 협상 지연/무산, Rivasterat 2b IND 지연, 추가 유상증자에 의한 희석 → 보수적 시나리오 7,138원까지 하락 가능</li>
+<li><strong>PBR 기반 밸류에이션은 부적절</strong>: 적자 바이오텍의 자본(371억)은 급속 감소 중. PBR로는 과대평가로 보이나, 파이프라인 옵션 가치가 반영되지 않는 한계</li>
+<li><strong>현금 소진 리스크 모니터링 필수</strong>: 2025년 현금 245억, 연간 약 160억 소진 → 약 1.5년 운영 가능. 다만 전환사채 148억 재매각 + 대성팜텍 매출(연 30억+) 고려 시 약 3년 운영 가능</li>
+</ul>
+<h3>프리미엄/디스카운트 요인</h3>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>방향</th>
+<th>조정폭</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CU01 Phase 2b 성공</td>
+<td>⬆</td>
+<td>+20~30%</td>
+<td>uACR 유의미한 감소 확인, 글로벌 규제 대리평가변수 충족</td>
+</tr>
+<tr>
+<td>경구용 First-in-Class</td>
+<td>⬆</td>
+<td>+15~25%</td>
+<td>주사제 중심 치료 패러다임 전환 잠재력 (CU01 + CU06)</td>
+</tr>
+<tr>
+<td>다중 기술이전 모멘텀</td>
+<td>⬆</td>
+<td>+10~15%</td>
+<td>CU01, CU06, MT-101, MT-103 동시 L/O 협상 진행</td>
+</tr>
+<tr>
+<td>임상 실패 리스크</td>
+<td>⬇</td>
+<td>-25~35%</td>
+<td>Phase 2b → 3상 전환율 33%, Thea 반환 선례</td>
+</tr>
+<tr>
+<td>현금 소진 + 희석 리스크</td>
+<td>⬇</td>
+<td>-10~15%</td>
+<td>연간 160억 소진, 추가 증자 가능성</td>
+</tr>
+<tr>
+<td>코스닥 소형주 디스카운트</td>
+<td>⬇</td>
+<td>-15~20%</td>
+<td>시총 3,000억, 외국인 지분 2.7%, 유동성 제한</td>
+</tr>
+</tbody>
+</table>
+<h3>재평가 트리거 (시간순)</h3>
+<ul>
+<li>✅ <strong>CU01 국내 L/O 체결</strong> (2026년 상반기 목표) — 가장 임박한 촉매</li>
+<li>✅ <strong>Rivasterat Phase 2b IND 제출</strong> (2026년 중) — FDA 승인 시 글로벌 관심 집중</li>
+<li>✅ <strong>MT-101/MT-103 MTA → 본계약 전환</strong> — 항체 가치 현실화</li>
+<li>⚠️ <strong>CU01 글로벌 L/O</strong> (국내 이후) — 대형 딜 시 시총 5,000억+ 가능</li>
+<li>⚠️ <strong>Rivasterat Phase 2b 탑라인 결과</strong> (2027~2028년) — 중장기 최대 이벤트</li>
+<li>🔴 <strong>추가 유상증자</strong> — 희석 리스크, 단 임상 자금 확보로도 해석 가능</li>
+</ul>
+<hr />
+<p><em>본 보고서는 공개 데이터, 증권사 리포트, 웹 리서치를 기반으로 작성되었으며 투자 권유가 아닙니다. 바이오텍 투자는 높은 불확실성을 수반하며, 모든 투자 판단은 투자자 본인의 책임하에 이루어져야 합니다.</em></p>
+</body>
+</html>
