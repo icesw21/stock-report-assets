@@ -1123,12 +1123,12 @@
     });
     
     var candleSeries = chart.addCandlestickSeries({
-      upColor: '#EF5350',
-      downColor: '#26A69A',
-      borderUpColor: '#EF5350',
-      borderDownColor: '#26A69A',
-      wickUpColor: '#EF5350',
-      wickDownColor: '#26A69A',
+      upColor: '#26A69A',
+      downColor: '#EF5350',
+      borderUpColor: '#26A69A',
+      borderDownColor: '#EF5350',
+      wickUpColor: '#26A69A',
+      wickDownColor: '#EF5350',
     });
     
     candleSeries.setData(data.map(function(d) {
@@ -1145,7 +1145,7 @@
     });
     
     volumeSeries.setData(data.map(function(d) {
-      var color = d.close >= d.open ? 'rgba(239,83,80,0.3)' : 'rgba(38,166,154,0.3)';
+      var color = d.close >= d.open ? 'rgba(38,166,154,0.3)' : 'rgba(239,83,80,0.3)';
       return { time: d.time, value: d.volume, color: color };
     }));
     
