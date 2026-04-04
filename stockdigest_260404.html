@@ -157,10 +157,9 @@
     position: relative;
     overflow: hidden;
   }
-  .tv-chart iframe {
+  .tv-chart .tradingview-widget-container {
     width: 100%;
     height: 100%;
-    border: none;
   }
   @media (max-width: 430px) {
     .tv-chart { height: 180px; }
@@ -347,9 +346,7 @@
         <div class="rate-badge up">+30.00%</div>
       </div>
       <div class="tv-chart" data-ticker="062970">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A062970%22%2C%22frameElementId%22%3A%22tv-062970%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-062970"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -387,9 +384,7 @@
         <div class="rate-badge up">+10.89%</div>
       </div>
       <div class="tv-chart" data-ticker="327260">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A327260%22%2C%22frameElementId%22%3A%22tv-327260%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-327260"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -427,9 +422,7 @@
         <div class="rate-badge up">+18.49%</div>
       </div>
       <div class="tv-chart" data-ticker="112610">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A112610%22%2C%22frameElementId%22%3A%22tv-112610%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-112610"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -467,9 +460,7 @@
         <div class="rate-badge up">+25.89%</div>
       </div>
       <div class="tv-chart" data-ticker="010170">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A010170%22%2C%22frameElementId%22%3A%22tv-010170%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-010170"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -508,9 +499,7 @@
         <div class="rate-badge up">+24.00%</div>
       </div>
       <div class="tv-chart" data-ticker="475150">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A475150%22%2C%22frameElementId%22%3A%22tv-475150%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-475150"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -547,9 +536,7 @@
         <div class="rate-badge up">+20.63%</div>
       </div>
       <div class="tv-chart" data-ticker="117670">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A117670%22%2C%22frameElementId%22%3A%22tv-117670%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-117670"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -587,9 +574,7 @@
         <div class="rate-badge up">+30.00%</div>
       </div>
       <div class="tv-chart" data-ticker="322000">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A322000%22%2C%22frameElementId%22%3A%22tv-322000%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-322000"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -626,9 +611,7 @@
         <div class="rate-badge up">+21.40%</div>
       </div>
       <div class="tv-chart" data-ticker="412350">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A412350%22%2C%22frameElementId%22%3A%22tv-412350%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-412350"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -666,9 +649,7 @@
         <div class="rate-badge up">+23.26%</div>
       </div>
       <div class="tv-chart" data-ticker="179530">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A179530%22%2C%22frameElementId%22%3A%22tv-179530%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-179530"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -705,9 +686,7 @@
         <div class="rate-badge up">+21.40%</div>
       </div>
       <div class="tv-chart" data-ticker="092790">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A092790%22%2C%22frameElementId%22%3A%22tv-092790%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-092790"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -744,9 +723,7 @@
         <div class="rate-badge up">+11.09%</div>
       </div>
       <div class="tv-chart" data-ticker="100840">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A100840%22%2C%22frameElementId%22%3A%22tv-100840%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-100840"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -785,9 +762,7 @@
         <div class="rate-badge up">+28.53%</div>
       </div>
       <div class="tv-chart" data-ticker="093370">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A093370%22%2C%22frameElementId%22%3A%22tv-093370%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-093370"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -826,9 +801,7 @@
         <div class="rate-badge up">+10.13%</div>
       </div>
       <div class="tv-chart" data-ticker="375500">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A375500%22%2C%22frameElementId%22%3A%22tv-375500%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-375500"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -866,9 +839,7 @@
         <div class="rate-badge up">+29.95%</div>
       </div>
       <div class="tv-chart" data-ticker="095910">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A095910%22%2C%22frameElementId%22%3A%22tv-095910%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-095910"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -905,9 +876,7 @@
         <div class="rate-badge up">+17.76%</div>
       </div>
       <div class="tv-chart" data-ticker="100590">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A100590%22%2C%22frameElementId%22%3A%22tv-100590%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-100590"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -944,9 +913,7 @@
         <div class="rate-badge up">+14.48%</div>
       </div>
       <div class="tv-chart" data-ticker="065660">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A065660%22%2C%22frameElementId%22%3A%22tv-065660%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-065660"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -983,9 +950,7 @@
         <div class="rate-badge up">+10.62%</div>
       </div>
       <div class="tv-chart" data-ticker="355150">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A355150%22%2C%22frameElementId%22%3A%22tv-355150%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-355150"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -1022,9 +987,7 @@
         <div class="rate-badge up">+29.88%</div>
       </div>
       <div class="tv-chart" data-ticker="017900">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A017900%22%2C%22frameElementId%22%3A%22tv-017900%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-017900"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -1061,9 +1024,7 @@
         <div class="rate-badge up">+12.13%</div>
       </div>
       <div class="tv-chart" data-ticker="046120">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A046120%22%2C%22frameElementId%22%3A%22tv-046120%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-046120"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -1100,9 +1061,7 @@
         <div class="rate-badge up">+15.53%</div>
       </div>
       <div class="tv-chart" data-ticker="028050">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A028050%22%2C%22frameElementId%22%3A%22tv-028050%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-028050"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -1139,9 +1098,7 @@
         <div class="rate-badge up">+11.45%</div>
       </div>
       <div class="tv-chart" data-ticker="003030">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <iframe src="https://s.tradingview.com/widgetembed/?hideideas=1&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr#%7B%22symbol%22%3A%22KRX%3A003030%22%2C%22frameElementId%22%3A%22tv-003030%22%2C%22interval%22%3A%22D%22%2C%22hide_top_toolbar%22%3A%221%22%2C%22hide_legend%22%3A%221%22%2C%22save_image%22%3A%220%22%2C%22hide_volume%22%3A%221%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%223%22%2C%22timezone%22%3A%22Asia%2FSeoul%22%2C%22studies%22%3A%5B%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%7D" style="width:100%;height:100%;border:none"></iframe>
-      </div>
+      <div class="tradingview-widget-container" id="tv-container-003030"></div>
     </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
@@ -1178,5 +1135,30 @@
   과거 수익률이 미래 수익률을 보장하지 않습니다.
 </footer>
 
+
+<script src="https://s3.tradingview.com/tv.js"></script>
+<script>
+document.querySelectorAll('.tv-chart').forEach(function(el) {
+  var ticker = el.getAttribute('data-ticker');
+  var containerId = 'tv-container-' + ticker;
+  new TradingView.widget({
+    "container_id": containerId,
+    "autosize": true,
+    "symbol": "KRX:" + ticker,
+    "interval": "D",
+    "timezone": "Asia/Seoul",
+    "theme": "dark",
+    "style": "3",
+    "locale": "kr",
+    "hide_top_toolbar": true,
+    "hide_legend": true,
+    "hide_volume": true,
+    "save_image": false,
+    "backgroundColor": "#131722",
+    "gridColor": "rgba(255,255,255,0.04)",
+    "allow_symbol_change": false
+  });
+});
+</script>
 </body>
 </html>
