@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Macro Dashboard | Apr 6–10, 2026</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F8F7F4;
+  --card: #FFFFFF;
+  --border: #E8E6E1;
+  --text: #1A1A1A;
+  --text2: #555555;
+  --text3: #888888;
+  --accent: #D4380D;
+  --accent2: #0958D9;
+  --accent3: #389E0D;
+  --accent4: #D48806;
+  --tag-hawk: #FFF1F0;
+  --tag-hawk-text: #CF1322;
+  --tag-dove: #F6FFED;
+  --tag-dove-text: #389E0D;
+  --tag-neutral: #F0F0F0;
+  --tag-neutral-text: #595959;
+  --tag-geo: #FFF7E6;
+  --tag-geo-text: #D48806;
+  --tag-data: #E6F4FF;
+  --tag-data-text: #0958D9;
+  --risk-high: #FF4D4F;
+  --risk-mid: #FAAD14;
+  --risk-low: #52C41A;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow2: 0 4px 12px rgba(0,0,0,0.08);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 14px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #1A1A2E 0%, #16213E 50%, #0F3460 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 28px 32px 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.header h1 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.header .subtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 4px;
+}
+.header .date-badge {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+
+/* KEY METRICS STRIP */
+.metrics-strip {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.metric-pill {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+.metric-pill .label { color: rgba(255,255,255,0.5); font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+.metric-pill .value { font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700; color: #fff; margin-top: 2px; }
+.metric-pill .change { font-size: 10px; margin-top: 1px; }
+.up { color: #FF6B6B; }
+.down { color: #69DB7C; }
+.flat { color: rgba(255,255,255,0.4); }
+
+/* CARDS */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-title .icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* GRID */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+/* TAGS */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.tag-hawk { background: var(--tag-hawk); color: var(--tag-hawk-text); }
+.tag-dove { background: var(--tag-dove); color: var(--tag-dove-text); }
+.tag-neutral { background: var(--tag-neutral); color: var(--tag-neutral-text); }
+.tag-geo { background: var(--tag-geo); color: var(--tag-geo-text); }
+.tag-data { background: var(--tag-data); color: var(--tag-data-text); }
+.tag-new {
+  background: linear-gradient(135deg, #FF6B35, #FF4500);
+  color: white;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.75; }
+}
+
+/* TIMELINE */
+.timeline { position: relative; }
+.tl-item {
+  display: grid;
+  grid-template-columns: 80px 24px 1fr;
+  gap: 12px;
+  align-items: start;
+  margin-bottom: 14px;
+  position: relative;
+}
+.tl-day {
+  text-align: right;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text3);
+  padding-top: 2px;
+}
+.tl-dot-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.tl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--card);
+  box-shadow: 0 0 0 2px var(--border);
+  z-index: 1;
+  margin-top: 5px;
+}
+.tl-dot.high { background: var(--risk-high); box-shadow: 0 0 0 2px #FFCCC7; }
+.tl-dot.mid { background: var(--risk-mid); box-shadow: 0 0 0 2px #FFF1B8; }
+.tl-dot.low { background: var(--accent2); box-shadow: 0 0 0 2px #BAE0FF; }
+.tl-line {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(100% + 14px);
+  background: var(--border);
+}
+.tl-content {
+  background: #FAFAF8;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+.tl-content .event-name { font-weight: 700; margin-bottom: 4px; }
+.tl-content .event-detail { color: var(--text2); font-size: 12px; line-height: 1.6; }
+
+/* SCENARIO BAR */
+.scenario-bar {
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 28px;
+  margin: 8px 0;
+  font-size: 11px;
+  font-weight: 700;
+}
+.scenario-bar > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: width 0.5s ease;
+}
+
+/* IMPACT TABLE */
+.impact-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.impact-table th {
+  text-align: left;
+  padding: 8px 12px;
+  background: #F5F5F2;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text3);
+  border-bottom: 2px solid var(--border);
+}
+.impact-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.impact-table tr:last-child td { border-bottom: none; }
+.score-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: #F0F0F0;
+  position: relative;
+  overflow: hidden;
+}
+.score-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+
+/* CB TABLE */
+.cb-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.cb-row:last-child { border-bottom: none; }
+.cb-name { width: 100px; font-weight: 600; }
+.cb-rate { font-family: 'JetBrains Mono', monospace; font-weight: 700; width: 70px; }
+.cb-expect { flex: 1; color: var(--text2); }
+
+/* CHART */
+.chart-wrap {
+  position: relative;
+  height: 280px;
+  margin: 12px 0;
+}
+.chart-wrap-sm {
+  position: relative;
+  height: 200px;
+  margin: 10px 0;
+}
+
+/* ECON DATA TABLE */
+.econ-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.econ-table th {
+  text-align: left;
+  padding: 8px 10px;
+  background: #F5F5F2;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: var(--text3);
+}
+.econ-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #F0EDE8;
+}
+.econ-table .beat { color: var(--accent3); font-weight: 600; }
+.econ-table .miss { color: var(--accent); font-weight: 600; }
+.econ-table .inline { color: var(--text2); }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  color: var(--text3);
+  font-size: 11px;
+  padding: 20px 0 10px;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  body { padding: 12px; font-size: 13px; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .header { padding: 20px; }
+  .header h1 { font-size: 18px; }
+  .metrics-strip { gap: 6px; }
+  .metric-pill { min-width: 100px; padding: 6px 10px; }
+  .tl-item { grid-template-columns: 60px 20px 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-top">
+    <div>
+      <h1>📊 주간 매크로 브리핑</h1>
+      <div class="subtitle">Week In Focus · Newsquawk 기반 정리</div>
+    </div>
+    <div class="date-badge">Apr 6–10, 2026</div>
+  </div>
+  <div class="metrics-strip">
+    <div class="metric-pill">
+      <span class="label">Brent</span>
+      <span class="value">~$120</span>
+      <span class="change up">▲ 3월 +60%</span>
+    </div>
+    <div class="metric-pill">
+      <span class="label">SPR 잔여</span>
+      <span class="value">~426M bbl</span>
+      <span class="change up">4월 중순 소진 예상</span>
+    </div>
+    <div class="metric-pill">
+      <span class="label">Fed Rate</span>
+      <span class="value">3.50-3.75%</span>
+      <span class="change flat">동결 유지</span>
+    </div>
+    <div class="metric-pill">
+      <span class="label">US CPI (2월)</span>
+      <span class="value">2.4%</span>
+      <span class="change up">3월 ~3.25% 예상</span>
+    </div>
+    <div class="metric-pill">
+      <span class="label">공급 차질</span>
+      <span class="value">~8M BPD</span>
+      <span class="change up">호르무즈 사실상 폐쇄</span>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 1: 핵심 이벤트 타임라인 -->
+<div class="card">
+  <div class="card-title">
+    <div class="icon" style="background:#FFF1F0;">🗓</div>
+    주간 핵심 이벤트 타임라인
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-day">SUN 4/5</div>
+      <div class="tl-dot-wrap"><div class="tl-dot high"></div><div class="tl-line"></div></div>
+      <div class="tl-content">
+        <div class="event-name">OPEC+ JMMC · "Voluntary Eight" 회의 <span class="tag tag-new">⚡ NEW</span></div>
+        <div class="event-detail">호르무즈 봉쇄 상황 하 206K BPD 증산 진행 여부 결정. SPR 4월 중순 소진 전망 속 긴급 조치·여유생산용량 활용 논의 가능. 로이터: 수출 제약 완화 대비 추가 쿼터 인상 검토 가능성.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-day">MON 4/6</div>
+      <div class="tl-dot-wrap"><div class="tl-dot high"></div><div class="tl-line"></div></div>
+      <div class="tl-content">
+        <div class="event-name">🚨 트럼프 이란 데드라인 (20:00 EDT) <span class="tag tag-new">⚡ NEW</span></div>
+        <div class="event-detail">호르무즈 전면 개방 최후통첩 만료. 불이행 시 이란 전력망·에너지 인프라 타격 가능. 4/1 연설에서 "수주 내 강경 타격 지속" 경고. 시장 바이너리 이벤트: 협상 타결 → 리스크 프리미엄 급락 / 실패 → 에스컬레이션.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-day">MON 4/6</div>
+      <div class="tl-dot-wrap"><div class="tl-dot mid"></div><div class="tl-line"></div></div>
+      <div class="tl-content">
+        <div class="event-name">US ISM 서비스업 PMI (3월) <span class="tag tag-data">DATA</span></div>
+        <div class="event-detail">S&P 서비스업 51.1 (11M low)→ ISM도 둔화 예상. 비용 압력 2022.8월 이후 최고. 서비스 고용 감소 전환 주목.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-day">WED 4/8</div>
+      <div class="tl-dot-wrap"><div class="tl-dot mid"></div><div class="tl-line"></div></div>
+      <div class="tl-content">
+        <div class="event-name">FOMC 의사록 (3월 회의) <span class="tag tag-hawk">매파</span></div>
+        <div class="event-detail">동결 결정 배경·인상 논의 상세. 파월: "지속적 인플레가 핵심 우려, 금리 인하엔 인플레 재진전 필요." 중동 양방향 충격 인식 여부 주목.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-day">WED 4/8</div>
+      <div class="tl-dot-wrap"><div class="tl-dot low"></div><div class="tl-line"></div></div>
+      <div class="tl-content">
+        <div class="event-name">RBNZ 금리결정 (2.25% 동결 예상) <span class="tag tag-hawk">매파적 동결</span></div>
+        <div class="event-detail">시장 97% 동결 확률. 에너지 2차 파급효과 인정 여부가 핵심. ASB/Westpac: 연내 2.50~3.00% 인상 전망.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-day">THU 4/9</div>
+      <div class="tl-dot-wrap"><div class="tl-dot mid"></div><div class="tl-line"></div></div>
+      <div class="tl-content">
+        <div class="event-name">US PCE (2월) <span class="tag tag-data">DATA</span></div>
+        <div class="event-detail">Core PCE +0.4% MoM 예상 (3연속), YoY ~3.0%. 서비스 인플레 고착화. 2월 데이터지만 "higher for longer" 강화 재료.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-day">FRI 4/10</div>
+      <div class="tl-dot-wrap"><div class="tl-dot high"></div><div class="tl-line"></div></div>
+      <div class="tl-content">
+        <div class="event-name">US CPI (3월) <span class="tag tag-new">⚡ KEY</span></div>
+        <div class="event-detail">Cleveland Fed Nowcast: 헤드라인 ~3.25% YoY (전월 2.4%). 에너지 충격 본격 반영. Core ~2.5%로 안정적이나 파이프라인 압력 지속.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-day">FRI 4/10</div>
+      <div class="tl-dot-wrap"><div class="tl-dot low"></div><div class="tl-line"></div></div>
+      <div class="tl-content">
+        <div class="event-name">한국은행 금리결정 (2.50% 동결 예상) <span class="tag tag-neutral">중립</span></div>
+        <div class="event-detail">7회 연속 동결 전망. 이창용 총재 마지막 결정 (임기 4/20 종료). 중동 불확실성 하 정책 변경 가능성 낮음.</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-day">FRI 4/10</div>
+      <div class="tl-dot-wrap"><div class="tl-dot low"></div></div>
+      <div class="tl-content">
+        <div class="event-name">중국 CPI (3월) · 캐나다 고용 (3월) <span class="tag tag-data">DATA</span></div>
+        <div class="event-detail">중국 CPI ~1.2% YoY, PPI 0.6%로 2022년 이후 첫 양전 전망. 캐나다 2월 -83.9K 충격 후 회복 여부.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: 이란 데드라인 시나리오 -->
+<div class="card">
+  <div class="card-title">
+    <div class="icon" style="background:#FFF7E6;">⚔️</div>
+    이란 데드라인 시나리오 분석 (4/6 20:00 EDT)
+  </div>
+  <div class="grid-2">
+    <div>
+      <div style="font-weight:700; margin-bottom:8px; color:var(--accent3);">🕊️ 시나리오 A: 협상/연장</div>
+      <div style="font-size:13px; color:var(--text2); line-height:1.8;">
+        • 호르무즈 부분 재개방 합의 또는 추가 기한 연장<br>
+        • 원유: 지정학 프리미엄 급격 해소 (Brent $90-100?)<br>
+        • 채권: 인플레 기대 하락→금리 인하 기대 재부상<br>
+        • 주식: 에너지 외 섹터 강한 반등, 소비재 수혜<br>
+        • 트럼프: "협상 잘 되고 있다" 발언 이력
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:700; margin-bottom:8px; color:var(--accent);">💥 시나리오 B: 에스컬레이션</div>
+      <div style="font-size:13px; color:var(--text2); line-height:1.8;">
+        • 이란 전력망·에너지 인프라 타격 개시<br>
+        • 원유: $130+ 급등, 공급 차질 심화<br>
+        • 채권: 스태그플레 공포→장단기 금리 혼조<br>
+        • 주식: 글로벌 리스크 오프, VIX 급등<br>
+        • 4/1 연설: "수주 내 강경 타격 지속" 경고
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:14px;">
+    <div style="font-size:12px; font-weight:600; color:var(--text3); margin-bottom:6px;">시나리오 확률 평가 (시장 내재)</div>
+    <div class="scenario-bar">
+      <div style="width:25%; background:#52C41A;">협상 25%</div>
+      <div style="width:35%; background:#FAAD14;">연장 35%</div>
+      <div style="width:25%; background:#FA8C16;">제한적 타격 25%</div>
+      <div style="width:15%; background:#FF4D4F;">전면 에스컬 15%</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3: Charts Row -->
+<div class="grid-2">
+  <!-- US CPI Trajectory -->
+  <div class="card">
+    <div class="card-title">
+      <div class="icon" style="background:#E6F4FF;">📈</div>
+      US CPI 추이 & 3월 전망
+    </div>
+    <div class="chart-wrap">
+      <canvas id="cpiChart"></canvas>
+    </div>
+  </div>
+  <!-- Core PCE -->
+  <div class="card">
+    <div class="card-title">
+      <div class="icon" style="background:#FFF7E6;">📉</div>
+      Core PCE MoM 추이
+    </div>
+    <div class="chart-wrap">
+      <canvas id="pceChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="grid-2">
+  <!-- Brent Oil -->
+  <div class="card">
+    <div class="card-title">
+      <div class="icon" style="background:#FFF1F0;">🛢️</div>
+      Brent 원유 급등 경로
+    </div>
+    <div class="chart-wrap">
+      <canvas id="brentChart"></canvas>
+    </div>
+  </div>
+  <!-- Central Bank Radar -->
+  <div class="card">
+    <div class="card-title">
+      <div class="icon" style="background:#F6FFED;">🏦</div>
+      주간 중앙은행 결정 맵
+    </div>
+    <div class="chart-wrap">
+      <canvas id="cbChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4: FOMC 의사록 포인트 -->
+<div class="card">
+  <div class="card-title">
+    <div class="icon" style="background:#FFF1F0;">🦅</div>
+    FOMC 의사록 핵심 포인트 (3월 회의)
+  </div>
+  <div class="grid-3">
+    <div style="background:#FAFAF8; border-radius:8px; padding:14px; border:1px solid var(--border);">
+      <div style="font-size:11px; color:var(--tag-hawk-text); font-weight:700; margin-bottom:6px;">📌 인플레이션</div>
+      <div style="font-size:12px; color:var(--text2); line-height:1.7;">
+        파월: 지속적 인플레가 핵심 우려. 비주거 서비스 고착, 상품 디스인플레 추가 필요. 관세·원유·중동이 상방 리스크.
+      </div>
+    </div>
+    <div style="background:#FAFAF8; border-radius:8px; padding:14px; border:1px solid var(--border);">
+      <div style="font-size:11px; color:var(--accent2); font-weight:700; margin-bottom:6px;">📌 금리 경로</div>
+      <div style="font-size:12px; color:var(--text2); line-height:1.7;">
+        인하→인플레 재진전 필요. 인상 논의됐으나 기본 시나리오는 아님. Miran만 25bp 인하 소수의견. 장기 중립금리 3.1%로 상향.
+      </div>
+    </div>
+    <div style="background:#FAFAF8; border-radius:8px; padding:14px; border:1px solid var(--border);">
+      <div style="font-size:11px; color:var(--tag-geo-text); font-weight:700; margin-bottom:6px;">📌 중동 리스크</div>
+      <div style="font-size:12px; color:var(--text2); line-height:1.7;">
+        양방향 충격: 에너지·공급망→인플레 ↑, 성장·심리·고용→ ↓. 단기 충격은 look-through 가능, 장기화 시 인하 지연·매파 대응.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 5: 시장 영향도 매트릭스 -->
+<div class="card">
+  <div class="card-title">
+    <div class="icon" style="background:#E6F4FF;">🎯</div>
+    이벤트별 시장 영향도 평가
+  </div>
+  <table class="impact-table">
+    <thead>
+      <tr>
+        <th style="width:30%;">이벤트</th>
+        <th style="width:12%;">영향도</th>
+        <th style="width:28%;">영향도 바</th>
+        <th style="width:30%;">핵심 전달 경로</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>이란 데드라인</strong> <span class="tag tag-geo">지정학</span></td>
+        <td class="mono" style="font-weight:700; color:var(--risk-high);">10/10</td>
+        <td><div class="score-bar"><div class="score-fill" style="width:100%; background:linear-gradient(90deg,#FF4D4F,#CF1322);"></div></div></td>
+        <td style="font-size:12px;">원유 · 인플레 기대 · VIX · 안전자산</td>
+      </tr>
+      <tr>
+        <td><strong>US CPI (3월)</strong> <span class="tag tag-data">DATA</span></td>
+        <td class="mono" style="font-weight:700; color:var(--risk-high);">9/10</td>
+        <td><div class="score-bar"><div class="score-fill" style="width:90%; background:linear-gradient(90deg,#FF7A45,#D4380D);"></div></div></td>
+        <td style="font-size:12px;">Fed 기대 · 국채금리 · USD · 성장주</td>
+      </tr>
+      <tr>
+        <td><strong>OPEC+ 회의</strong> <span class="tag tag-geo">지정학</span></td>
+        <td class="mono" style="font-weight:700; color:var(--risk-high);">9/10</td>
+        <td><div class="score-bar"><div class="score-fill" style="width:90%; background:linear-gradient(90deg,#FFA940,#D48806);"></div></div></td>
+        <td style="font-size:12px;">원유 공급 · 에너지주 · 인플레 경로</td>
+      </tr>
+      <tr>
+        <td><strong>US PCE (2월)</strong> <span class="tag tag-data">DATA</span></td>
+        <td class="mono" style="font-weight:700; color:var(--risk-mid);">7/10</td>
+        <td><div class="score-bar"><div class="score-fill" style="width:70%; background:linear-gradient(90deg,#FFC53D,#FAAD14);"></div></div></td>
+        <td style="font-size:12px;">Fed 정책 경로 · 서비스 인플레 고착</td>
+      </tr>
+      <tr>
+        <td><strong>FOMC 의사록</strong> <span class="tag tag-hawk">매파</span></td>
+        <td class="mono" style="font-weight:700; color:var(--risk-mid);">7/10</td>
+        <td><div class="score-bar"><div class="score-fill" style="width:70%; background:linear-gradient(90deg,#FFC53D,#FAAD14);"></div></div></td>
+        <td style="font-size:12px;">인상 논의 상세 · 금리선물 · USD</td>
+      </tr>
+      <tr>
+        <td><strong>ISM 서비스 PMI</strong> <span class="tag tag-data">DATA</span></td>
+        <td class="mono" style="font-weight:700; color:var(--risk-mid);">6/10</td>
+        <td><div class="score-bar"><div class="score-fill" style="width:60%; background:linear-gradient(90deg,#95DE64,#52C41A);"></div></div></td>
+        <td style="font-size:12px;">서비스 경기 · 고용 · 가격 압력</td>
+      </tr>
+      <tr>
+        <td><strong>BoK 금리결정</strong> <span class="tag tag-neutral">중립</span></td>
+        <td class="mono" style="font-weight:700; color:var(--risk-low);">5/10</td>
+        <td><div class="score-bar"><div class="score-fill" style="width:50%; background:linear-gradient(90deg,#95DE64,#389E0D);"></div></div></td>
+        <td style="font-size:12px;">KRW · KOSPI · 내수주</td>
+      </tr>
+      <tr>
+        <td><strong>중국 CPI/PPI</strong> <span class="tag tag-data">DATA</span></td>
+        <td class="mono" style="font-weight:700; color:var(--risk-low);">5/10</td>
+        <td><div class="score-bar"><div class="score-fill" style="width:50%; background:linear-gradient(90deg,#95DE64,#389E0D);"></div></div></td>
+        <td style="font-size:12px;">PBoC 완화 기대 · 원자재 수요</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 6: 지난주 데이터 리뷰 -->
+<div class="card">
+  <div class="card-title">
+    <div class="icon" style="background:#F6FFED;">📋</div>
+    지난주 주요 경제지표 리뷰
+  </div>
+  <table class="econ-table">
+    <thead>
+      <tr>
+        <th>지표</th>
+        <th>실제</th>
+        <th>예상</th>
+        <th>이전</th>
+        <th>판정</th>
+        <th>시사점</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>US ISM 제조업</strong></td>
+        <td class="mono beat">52.7</td>
+        <td class="mono">52.3</td>
+        <td class="mono">52.4</td>
+        <td><span class="tag tag-dove" style="font-size:10px;">BEAT</span></td>
+        <td style="font-size:12px;">가격지수 78.3 (exp 72.5) 급등—이란 첫 반영</td>
+      </tr>
+      <tr>
+        <td><strong>US 소매판매</strong></td>
+        <td class="mono beat">+0.6%</td>
+        <td class="mono">+0.4%</td>
+        <td class="mono">-0.2%</td>
+        <td><span class="tag tag-dove" style="font-size:10px;">BEAT</span></td>
+        <td style="font-size:12px;">백화점 +3%, 컨트롤그룹 +0.5%. 세금환급 버퍼</td>
+      </tr>
+      <tr>
+        <td><strong>EZ CPI Flash</strong></td>
+        <td class="mono miss">2.5%</td>
+        <td class="mono">—</td>
+        <td class="mono">1.9%</td>
+        <td><span class="tag tag-hawk" style="font-size:10px;">↑ ECB 2% 초과</span></td>
+        <td style="font-size:12px;">에너지 +4.9% 주도, 코어는 전월 대비 하락—패스스루 시차</td>
+      </tr>
+      <tr>
+        <td><strong>중국 PMI</strong></td>
+        <td class="mono beat">50.4</td>
+        <td class="mono">50.1</td>
+        <td class="mono">49.0</td>
+        <td><span class="tag tag-dove" style="font-size:10px;">BEAT</span></td>
+        <td style="font-size:12px;">수개월 만에 확장 복귀. 정부 지출 + 춘절 정상화</td>
+      </tr>
+      <tr>
+        <td><strong>BoJ 단칸 (대형제조)</strong></td>
+        <td class="mono beat">+17</td>
+        <td class="mono">+16</td>
+        <td class="mono">+16</td>
+        <td><span class="tag tag-dove" style="font-size:10px;">BEAT</span></td>
+        <td style="font-size:12px;">2021년 말 이후 최고. 인플레 기대 사상 최고→4월 인상?</td>
+      </tr>
+      <tr>
+        <td><strong>RBA 의사록</strong></td>
+        <td class="mono" style="color:var(--accent);">5:4 인상</td>
+        <td class="mono">—</td>
+        <td class="mono">—</td>
+        <td><span class="tag tag-hawk" style="font-size:10px;">매파</span></td>
+        <td style="font-size:12px;">$100 유가→CPI 5% 위험. 추가 긴축 바이어스 유지</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SECTION 7: ISM Prices -->
+<div class="card">
+  <div class="card-title">
+    <div class="icon" style="background:#FFF1F0;">🔥</div>
+    ISM 제조업 가격지수 급등 — 이란 충격 첫 반영
+  </div>
+  <div class="chart-wrap-sm">
+    <canvas id="ismChart"></canvas>
+  </div>
+  <div style="font-size:12px; color:var(--text2); margin-top:6px; line-height:1.7;">
+    ISM 응답자들이 처음으로 이란전쟁을 비즈니스 영향 요인으로 직접 언급. 에너지 비용 상승, 리드타임 연장, 컨테이너 지연, 올레핀/폴리올레핀 글로벌 혼란 등 구체적 피해 보고.
+  </div>
+</div>
+
+<!-- SECTION 8: 체크리스트 -->
+<div class="card">
+  <div class="card-title">
+    <div class="icon" style="background:#E6F4FF;">✅</div>
+    이번 주 체크리스트
+  </div>
+  <div class="grid-2">
+    <div>
+      <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:8px;">🔴 최우선 모니터링</div>
+      <div style="font-size:13px; line-height:2;">
+        ☐ 4/6 이란 데드라인 결과 (연장/타격/협상)<br>
+        ☐ OPEC+ 증산 결정 및 긴급 조치 여부<br>
+        ☐ 4/10 US CPI 3월 — 헤드라인 3%대 진입 확인<br>
+        ☐ 호르무즈 해협 탱커 통행 실시간 추적
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px; font-weight:700; color:var(--accent2); margin-bottom:8px;">🔵 주요 확인 사항</div>
+      <div style="font-size:13px; line-height:2;">
+        ☐ FOMC 의사록 — 금리 인상 논의 상세도<br>
+        ☐ PCE Core 0.4% MoM 3연속 여부<br>
+        ☐ BoK 동결 + 이창용 총재 마지막 코멘트<br>
+        ☐ 중국 PPI 양전 확인 (2022 이후 최초)
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  본 콘텐츠는 단순 정보 전달 목적이며 투자 권유가 아닙니다. 투자 판단과 그에 따른 결과는 투자자 본인에게 있습니다.<br>
+  Source: Newsquawk "Week In Focus" (Apr 6–10, 2026) · Dashboard generated Apr 2026
+</div>
+
+<script>
+// ─── CHART CONFIG ───
+Chart.defaults.font.family = "'Noto Sans KR', 'JetBrains Mono', sans-serif";
+Chart.defaults.font.size = 11;
+Chart.defaults.color = '#888';
+
+// 1) US CPI Chart
+const cpiCtx = document.getElementById('cpiChart').getContext('2d');
+new Chart(cpiCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Sep','Oct','Nov','Dec','Jan','Feb','Mar(E)'],
+    datasets: [
+      {
+        label: 'Headline CPI YoY%',
+        data: [2.4, 2.6, 2.7, 2.9, 3.0, 2.4, 3.25],
+        backgroundColor: [
+          '#BAE0FF','#BAE0FF','#BAE0FF','#BAE0FF','#BAE0FF','#BAE0FF',
+          'rgba(212,56,13,0.2)'
+        ],
+        borderColor: [
+          '#0958D9','#0958D9','#0958D9','#0958D9','#0958D9','#0958D9',
+          '#D4380D'
+        ],
+        borderWidth: 2,
+        borderRadius: 4,
+        borderDash: [0,0,0,0,0,0,4],
+      },
+      {
+        label: 'Core CPI YoY%',
+        data: [3.3, 3.3, 3.3, 3.2, 3.0, 3.1, 2.5],
+        type: 'line',
+        borderColor: '#722ED1',
+        backgroundColor: 'rgba(114,46,209,0.08)',
+        borderWidth: 2,
+        pointRadius: 4,
+        pointBackgroundColor: '#722ED1',
+        fill: true,
+        tension: 0.3,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'top', labels: { boxWidth: 12, padding: 12 } },
+      tooltip: { mode: 'index', intersect: false },
+    },
+    scales: {
+      y: {
+        beginAtZero: false,
+        min: 1.5,
+        max: 4,
+        grid: { color: '#F0F0F0' },
+        ticks: { callback: v => v + '%' }
+      },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// 2) Core PCE MoM
+const pceCtx = document.getElementById('pceChart').getContext('2d');
+new Chart(pceCtx, {
+  type: 'line',
+  data: {
+    labels: ['Sep','Oct','Nov','Dec','Jan','Feb(E)'],
+    datasets: [{
+      label: 'Core PCE MoM%',
+      data: [0.3, 0.3, 0.1, 0.2, 0.4, 0.4],
+      borderColor: '#D4380D',
+      backgroundColor: 'rgba(212,56,13,0.06)',
+      fill: true,
+      borderWidth: 2.5,
+      pointRadius: 5,
+      pointBackgroundColor: '#fff',
+      pointBorderColor: '#D4380D',
+      pointBorderWidth: 2,
+      tension: 0.3,
+    },
+    {
+      label: '2% 목표 페이스 (~0.17%)',
+      data: [0.17,0.17,0.17,0.17,0.17,0.17],
+      borderColor: '#52C41A',
+      borderWidth: 1.5,
+      borderDash: [6,4],
+      pointRadius: 0,
+      fill: false,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'top', labels: { boxWidth: 12, padding: 12 } },
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 0.6,
+        grid: { color: '#F0F0F0' },
+        ticks: { callback: v => v.toFixed(1) + '%' }
+      },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// 3) Brent Oil
+const brentCtx = document.getElementById('brentChart').getContext('2d');
+new Chart(brentCtx, {
+  type: 'line',
+  data: {
+    labels: ['1월','2월 초','2/28\n개전','3월 초','3월 중','3월 말','4월 초'],
+    datasets: [{
+      label: 'Brent ($/bbl)',
+      data: [76, 74, 78, 92, 108, 118, 120],
+      borderColor: '#1A1A2E',
+      backgroundColor: 'rgba(26,26,46,0.06)',
+      fill: true,
+      borderWidth: 2.5,
+      pointRadius: [3,3,6,4,4,4,5],
+      pointBackgroundColor: ['#1A1A2E','#1A1A2E','#FF4D4F','#1A1A2E','#1A1A2E','#1A1A2E','#D4380D'],
+      pointBorderColor: ['#1A1A2E','#1A1A2E','#FF4D4F','#1A1A2E','#1A1A2E','#1A1A2E','#D4380D'],
+      pointBorderWidth: 2,
+      tension: 0.35,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: { label: ctx => '$' + ctx.parsed.y + '/bbl' }
+      }
+    },
+    scales: {
+      y: {
+        min: 60,
+        max: 140,
+        grid: { color: '#F0F0F0' },
+        ticks: { callback: v => '$' + v }
+      },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// 4) Central Bank Comparison (Radar)
+const cbCtx = document.getElementById('cbChart').getContext('2d');
+new Chart(cbCtx, {
+  type: 'bar',
+  data: {
+    labels: ['RBNZ\n2.25%', 'RBI\n5.25%', 'BoK\n2.50%', 'Fed\n3.50-3.75%'],
+    datasets: [
+      {
+        label: '현재 금리 (%)',
+        data: [2.25, 5.25, 2.50, 3.625],
+        backgroundColor: ['#BAE0FF', '#D9F7BE', '#FFE7BA', '#FFCCC7'],
+        borderColor: ['#0958D9', '#389E0D', '#D48806', '#D4380D'],
+        borderWidth: 2,
+        borderRadius: 6,
+      }
+    ]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          afterLabel: function(ctx) {
+            const notes = [
+              '동결 예상 (97%) · 매파적 동결',
+              '동결 예상 · 인플레 반등+중동 불확실성',
+              '7회 연속 동결 · 이창용 마지막 결정',
+              '동결 유지 · 인상 논의 진행 중'
+            ];
+            return notes[ctx.dataIndex];
+          }
+        }
+      }
+    },
+    scales: {
+      x: {
+        min: 0,
+        max: 7,
+        grid: { color: '#F0F0F0' },
+        ticks: { callback: v => v + '%' }
+      },
+      y: {
+        grid: { display: false },
+        ticks: { font: { weight: 600, size: 12 } }
+      }
+    }
+  }
+});
+
+// 5) ISM Prices
+const ismCtx = document.getElementById('ismChart').getContext('2d');
+new Chart(ismCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Oct','Nov','Dec','Jan','Feb','Mar'],
+    datasets: [
+      {
+        label: 'ISM Prices Paid',
+        data: [54.8, 56.7, 64.4, 69.0, 70.5, 78.3],
+        backgroundColor: function(ctx) {
+          const v = ctx.raw;
+          if(v >= 75) return 'rgba(212,56,13,0.3)';
+          if(v >= 65) return 'rgba(250,173,20,0.25)';
+          return 'rgba(9,88,217,0.15)';
+        },
+        borderColor: function(ctx) {
+          const v = ctx.raw;
+          if(v >= 75) return '#D4380D';
+          if(v >= 65) return '#D48806';
+          return '#0958D9';
+        },
+        borderWidth: 2,
+        borderRadius: 4,
+      },
+      {
+        label: 'New Orders',
+        data: [55.2, 54.4, 55.1, 55.4, 55.8, 53.5],
+        type: 'line',
+        borderColor: '#722ED1',
+        borderWidth: 2,
+        pointRadius: 4,
+        pointBackgroundColor: '#722ED1',
+        tension: 0.3,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'top', labels: { boxWidth: 12, padding: 12 } },
+    },
+    scales: {
+      y: {
+        min: 45,
+        max: 85,
+        grid: { color: '#F0F0F0' },
+      },
+      x: { grid: { display: false } }
+    }
+  }
+});
+</script>
+</body>
+</html>
