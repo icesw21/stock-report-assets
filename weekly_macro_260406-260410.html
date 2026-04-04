@@ -707,8 +707,28 @@
   @media (max-width: 600px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .grid-3 { grid-template-columns: 1fr; }
-    .header-title { font-size: 22px; }
-    .war-status-bar { gap: 12px; }
+    .header-title { font-size: 20px; }
+    .war-status-bar { gap: 8px; flex-wrap: wrap; }
+  }
+  /* 아이폰 15 Pro (393px) 최적화 */
+  @media (max-width: 430px) {
+    body { font-size: 13px; }
+    .header { padding: 16px; }
+    .header-title { font-size: 18px; }
+    .header-chips { gap: 4px; }
+    .header-chips span { font-size: 10px; padding: 3px 8px; }
+    .container { padding: 12px; gap: 12px; }
+    .kpi-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .kpi-card { padding: 10px; }
+    .kpi-card .kpi-value { font-size: 18px; }
+    .card { border-radius: 10px; }
+    .card-title { font-size: 14px; }
+    .charts-section { grid-template-columns: 1fr; gap: 12px; }
+    .scenario-grid { grid-template-columns: 1fr; }
+    .war-status-bar { font-size: 11px; }
+    .tl-event { font-size: 12px; }
+    .impact-table { font-size: 12px; }
+    .impact-table th, .impact-table td { padding: 6px 8px; }
   }
 
   /* CHART SECTION WRAPPER */
