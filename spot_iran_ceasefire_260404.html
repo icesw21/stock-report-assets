@@ -716,14 +716,37 @@
   }
 
   @media (max-width: 720px) {
-    .container { padding: 16px 16px 40px; }
-    .header-inner { flex-direction: column; }
+    .container { padding: 12px 12px 40px; }
+    .header-inner { flex-direction: column; gap: 12px; }
     .header-right { align-items: flex-start; }
-    .kpi-row { flex-wrap: wrap; }
+    /* KPI: 한 줄 가로 스크롤 (아이폰 15 Pro 최적화) */
+    .kpi-row {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      gap: 8px;
+      padding-bottom: 4px;
+    }
+    .kpi-row::-webkit-scrollbar { display: none; }
+    .kpi-pill {
+      min-width: 80px;
+      flex-shrink: 0;
+      padding: 6px 10px;
+    }
+    .kpi-pill .val { font-size: 15px; }
+    .kpi-pill .lbl { font-size: 9px; }
     .scenario-grid { grid-template-columns: 1fr; }
-    .intel-strip { grid-template-columns: 1fr 1fr; }
+    .intel-strip { grid-template-columns: 1fr; }
+    .checklist-grid { grid-template-columns: 1fr; }
+    .overview-grid { grid-template-columns: 1fr; }
     .check-title-row { flex-direction: column; gap: 4px; }
     .footer { flex-direction: column; gap: 6px; align-items: flex-start; }
+    /* 카드 패딩 축소 */
+    .card { padding: 14px; }
+    .card-head { padding: 12px 14px; }
+    /* 그리드 2열 → 1열 */
+    .progress-grid { grid-template-columns: 1fr; }
   }
 
   /* scrollbar */
