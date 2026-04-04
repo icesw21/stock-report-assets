@@ -148,21 +148,19 @@
   .rate-badge.up   { background: rgba(239,83,80,0.15); color: var(--up); }
   .rate-badge.down { background: rgba(38,166,154,0.15); color: var(--down); }
 
-  /* ── TRADINGVIEW CHART ── */
-  .tv-chart {
-    height: 220px;
+  /* ── STOCK CHART ── */
+  .stock-chart {
     background: var(--bg);
     border-top: 1px solid var(--card-border);
     border-bottom: 1px solid var(--card-border);
-    position: relative;
-    overflow: hidden;
+    padding: 4px 0;
+    text-align: center;
   }
-  .tv-chart .tradingview-widget-container {
+  .stock-chart img {
     width: 100%;
-    height: 100%;
-  }
-  @media (max-width: 430px) {
-    .tv-chart { height: 180px; }
+    height: auto;
+    display: block;
+    filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(1.1);
   }
 
   /* ── METRICS TABLE ── */
@@ -345,24 +343,10 @@
         </div>
         <div class="rate-badge up">+30.00%</div>
       </div>
-      <div class="tv-chart" data-ticker="062970">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:062970",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/062970.png" 
+             alt="062970 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+30.00%</td></tr>
@@ -398,24 +382,10 @@
         </div>
         <div class="rate-badge up">+10.89%</div>
       </div>
-      <div class="tv-chart" data-ticker="327260">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:327260",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/327260.png" 
+             alt="327260 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+10.89%</td></tr>
@@ -451,24 +421,10 @@
         </div>
         <div class="rate-badge up">+18.49%</div>
       </div>
-      <div class="tv-chart" data-ticker="112610">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:112610",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/112610.png" 
+             alt="112610 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+18.49%</td></tr>
@@ -504,24 +460,10 @@
         </div>
         <div class="rate-badge up">+25.89%</div>
       </div>
-      <div class="tv-chart" data-ticker="010170">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:010170",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/010170.png" 
+             alt="010170 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+25.89%</td></tr>
@@ -558,24 +500,10 @@
         </div>
         <div class="rate-badge up">+24.00%</div>
       </div>
-      <div class="tv-chart" data-ticker="475150">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:475150",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/475150.png" 
+             alt="475150 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+24.00%</td></tr>
@@ -610,24 +538,10 @@
         </div>
         <div class="rate-badge up">+20.63%</div>
       </div>
-      <div class="tv-chart" data-ticker="117670">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:117670",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/117670.png" 
+             alt="117670 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+20.63%</td></tr>
@@ -663,24 +577,10 @@
         </div>
         <div class="rate-badge up">+30.00%</div>
       </div>
-      <div class="tv-chart" data-ticker="322000">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:322000",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/322000.png" 
+             alt="322000 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+30.00%</td></tr>
@@ -715,24 +615,10 @@
         </div>
         <div class="rate-badge up">+21.40%</div>
       </div>
-      <div class="tv-chart" data-ticker="412350">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:412350",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/412350.png" 
+             alt="412350 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+21.40%</td></tr>
@@ -768,24 +654,10 @@
         </div>
         <div class="rate-badge up">+23.26%</div>
       </div>
-      <div class="tv-chart" data-ticker="179530">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:179530",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/179530.png" 
+             alt="179530 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+23.26%</td></tr>
@@ -820,24 +692,10 @@
         </div>
         <div class="rate-badge up">+21.40%</div>
       </div>
-      <div class="tv-chart" data-ticker="092790">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:092790",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/092790.png" 
+             alt="092790 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+21.40%</td></tr>
@@ -872,24 +730,10 @@
         </div>
         <div class="rate-badge up">+11.09%</div>
       </div>
-      <div class="tv-chart" data-ticker="100840">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:100840",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/100840.png" 
+             alt="100840 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+11.09%</td></tr>
@@ -926,24 +770,10 @@
         </div>
         <div class="rate-badge up">+28.53%</div>
       </div>
-      <div class="tv-chart" data-ticker="093370">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:093370",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/093370.png" 
+             alt="093370 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+28.53%</td></tr>
@@ -980,24 +810,10 @@
         </div>
         <div class="rate-badge up">+10.13%</div>
       </div>
-      <div class="tv-chart" data-ticker="375500">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:375500",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/375500.png" 
+             alt="375500 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+10.13%</td></tr>
@@ -1033,24 +849,10 @@
         </div>
         <div class="rate-badge up">+29.95%</div>
       </div>
-      <div class="tv-chart" data-ticker="095910">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:095910",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/095910.png" 
+             alt="095910 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+29.95%</td></tr>
@@ -1085,24 +887,10 @@
         </div>
         <div class="rate-badge up">+17.76%</div>
       </div>
-      <div class="tv-chart" data-ticker="100590">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:100590",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/100590.png" 
+             alt="100590 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+17.76%</td></tr>
@@ -1137,24 +925,10 @@
         </div>
         <div class="rate-badge up">+14.48%</div>
       </div>
-      <div class="tv-chart" data-ticker="065660">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:065660",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/065660.png" 
+             alt="065660 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+14.48%</td></tr>
@@ -1189,24 +963,10 @@
         </div>
         <div class="rate-badge up">+10.62%</div>
       </div>
-      <div class="tv-chart" data-ticker="355150">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:355150",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/355150.png" 
+             alt="355150 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+10.62%</td></tr>
@@ -1241,24 +1001,10 @@
         </div>
         <div class="rate-badge up">+29.88%</div>
       </div>
-      <div class="tv-chart" data-ticker="017900">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:017900",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/017900.png" 
+             alt="017900 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+29.88%</td></tr>
@@ -1293,24 +1039,10 @@
         </div>
         <div class="rate-badge up">+12.13%</div>
       </div>
-      <div class="tv-chart" data-ticker="046120">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:046120",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/046120.png" 
+             alt="046120 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+12.13%</td></tr>
@@ -1345,24 +1077,10 @@
         </div>
         <div class="rate-badge up">+15.53%</div>
       </div>
-      <div class="tv-chart" data-ticker="028050">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:028050",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/028050.png" 
+             alt="028050 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+15.53%</td></tr>
@@ -1397,24 +1115,10 @@
         </div>
         <div class="rate-badge up">+11.45%</div>
       </div>
-      <div class="tv-chart" data-ticker="003030">
-      <div class="tradingview-widget-container" style="width:100%;height:100%">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-        {
-          "symbol": "KRX:003030",
-          "width": "100%",
-          "height": "100%",
-          "locale": "kr",
-          "dateRange": "3M",
-          "colorTheme": "dark",
-          "isTransparent": true,
-          "autosize": true,
-          "noTimeScale": false
-        }
-        </script>
+      <div class="stock-chart">
+        <img src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/003030.png" 
+             alt="003030 차트" loading="lazy">
       </div>
-    </div>
       <div class="metrics-wrap">
         <table class="metrics-table">
           <tr><th>일간</th><td class="up">+11.45%</td></tr>
