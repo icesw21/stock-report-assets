@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>나노신소재(121600) 기초보고서</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-16<br />
+updated: 2026-04-16<br />
+tags:<br />
+  - 이차전지소재<br />
+  - CNT도전재<br />
+  - 나노소재<br />
+links:</p>
+<hr />
+<h1>나노신소재(121600) 기초 리서치 보고서</h1>
+<hr />
+<h2>1. 기업 개요</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>종목코드</td>
+<td>121600 (KOSDAQ)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>대표자</td>
+<td>박장우</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>업종</td>
+<td>기타 화학제품 제조업</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>설립일</td>
+<td>2000.03.15</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td>보통주 12,211,191주</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>유통주식수</td>
+<td>12,211,191주 (자기주식 정보없음)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>Fully-Diluted 시총</td>
+<td>~9,256억원 (전환권·워런트·스옵 해당없음)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>~9,256억원 (75,800원 기준)</td>
+<td>KIS</td>
+</tr>
+<tr>
+<td>현재가 / PER / PBR</td>
+<td>75,800원 / 566.1x / 3.72x</td>
+<td>KIS (2026.04.16)</td>
+</tr>
+<tr>
+<td>52주 고/저</td>
+<td>75,800 / 44,400</td>
+<td>KIS</td>
+</tr>
+<tr>
+<td>최대주주</td>
+<td>박장우 20.04% (특수관계인 합계 22.9%)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>감사의견</td>
+<td>—</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>결산월</td>
+<td>12월</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. 사업 구조</h2>
+<h3>사업부문별 매출 구조</h3>
+<table>
+<thead>
+<tr>
+<th>사업부문</th>
+<th>주요 품목</th>
+<th style="text-align: right;">매출(억원)</th>
+<th style="text-align: right;">비중(%)</th>
+<th style="text-align: right;">YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이차전지소재</td>
+<td>CNT 도전재</td>
+<td style="text-align: right;">659</td>
+<td style="text-align: right;">59.0</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>반도체소재</td>
+<td>CMP 슬러리</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">9.6</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>디스플레이소재</td>
+<td>중공실리카, TCO 타겟</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">6.7</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>태양전지소재</td>
+<td>실버페이스트, TCO 타겟</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">2.8</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>나노분말 등</td>
+<td style="text-align: right;">244</td>
+<td style="text-align: right;">21.8</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>1,117</strong></td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>※ 2025년 연결 기준 추정 (매출 비중은 사업보고서 기준)</p>
+<h3>핵심 사업: CNT 도전재 (이차전지소재)</h3>
+<p>나노신소재는 금속·비금속을 초미립 나노 분말로 합성하고 이를 타겟·액상(페이스트, 졸, 슬러리) 등으로 제품화하는 <strong>원천 기술 기반의 첨단소재 기업</strong>이다. 전체 매출의 약 59%를 차지하는 <strong>CNT(탄소나노튜브) 도전재</strong>가 핵심 제품으로, 이차전지 양극재·음극재의 전자 이동을 촉진하여 배터리 성능을 높이는 필수 소재다. 특히 <strong>실리콘 음극재의 충방전 팽창을 제어</strong>하는 데 CNT 도전재가 핵심 역할을 하여, 차세대 배터리 기술 전환의 직접적 수혜 기업이다.</p>
+<ul>
+<li><strong>국내</strong>: 국내 배터리 3사(LG에너지솔루션, 삼성SDI, SK온)에 CNT 도전재 공급</li>
+<li><strong>해외</strong>: 미국(텍사스), 폴란드에 생산시설 구축·가동 중. 일본·독일 배터리 셀 업체 신규 수주 확보</li>
+<li><strong>신사업</strong>: 건식 전극용 도전재 개발, SWCNT(단일벽 CNT) 기술 고도화</li>
+</ul>
+<h3>비즈니스 특성</h3>
+<ul>
+<li><strong>기술 진입장벽</strong>: 나노 분말 합성 → 제품화까지 일관 공정을 보유한 글로벌 소수 업체. 20년 이상 축적된 나노 합성 원천기술</li>
+<li><strong>고객 다변화 진행</strong>: 국내 배터리 3사 외 일본·독일·북미 OEM으로 고객 확대 중</li>
+<li><strong>대규모 투자 사이클</strong>: 2023~2024년 합계 ~890억원 CAPEX 투자(해외 공장). 2025년부터 가동률 상승 국면 진입</li>
+</ul>
+<h3>고객 구조 &amp; 원가 구조</h3>
+<ul>
+<li><strong>고객 구조</strong>: B2B. 국내 배터리 3사가 핵심 고객(이차전지소재 59%). 삼성디스플레이(디스플레이소재), First Solar·한화큐셀(태양전지소재)</li>
+<li><strong>매입/원가</strong>: 핵심 원재료는 탄소나노튜브 원료, 금속분말, 실리카 등. 해외 공장 초기 가동에 따른 고정비 부담이 수익성 압박 요인</li>
+</ul>
+<hr />
+<h2>3. 실적 분석</h2>
+<h3>연결 기준 직전 4개년 실적 및 2개년 추정</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td>799</td>
+<td>+30.9%</td>
+<td>168</td>
+<td>+194.0%</td>
+<td>192</td>
+<td>21.0</td>
+<td>24.0</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>832</td>
+<td>+4.1%</td>
+<td>119</td>
+<td>-29.3%</td>
+<td>168</td>
+<td>14.3</td>
+<td>20.2</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>878</td>
+<td>+5.5%</td>
+<td>30</td>
+<td>-74.9%</td>
+<td>-19</td>
+<td>3.4</td>
+<td>-2.1</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>1,117</td>
+<td>+27.3%</td>
+<td>47</td>
+<td>+56.7%</td>
+<td>16</td>
+<td>4.2</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>2026E</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2027E</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: DART CFS, 네이버 금융</p>
+<h3>최근 8분기 실적</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024Q1</td>
+<td>224</td>
+<td>+26.6%</td>
+<td>18</td>
+<td>-13.3%</td>
+<td>11</td>
+<td>7.8</td>
+<td>5.1</td>
+</tr>
+<tr>
+<td>2024Q2</td>
+<td>211</td>
+<td>-10.0%</td>
+<td>24</td>
+<td>-47.8%</td>
+<td>22</td>
+<td>11.2</td>
+<td>10.4</td>
+</tr>
+<tr>
+<td>2024Q3</td>
+<td>216</td>
+<td>+5.4%</td>
+<td>2</td>
+<td>-89.4%</td>
+<td>5</td>
+<td>0.8</td>
+<td>2.3</td>
+</tr>
+<tr>
+<td>2024Q4</td>
+<td>226</td>
+<td>+5.3%</td>
+<td>-13</td>
+<td>적전</td>
+<td>-57</td>
+<td>-5.8</td>
+<td>-25.1</td>
+</tr>
+<tr>
+<td>2025Q1</td>
+<td>223</td>
+<td>-0.1%</td>
+<td>3</td>
+<td>-83.2%</td>
+<td>8</td>
+<td>1.3</td>
+<td>3.4</td>
+</tr>
+<tr>
+<td>2025Q2</td>
+<td>294</td>
+<td>+38.9%</td>
+<td>18</td>
+<td>-22.0%</td>
+<td>-20</td>
+<td>6.3</td>
+<td>-6.6</td>
+</tr>
+<tr>
+<td>2025Q3</td>
+<td>312</td>
+<td>+44.6%</td>
+<td>9</td>
+<td>+418.9%</td>
+<td>16</td>
+<td>2.9</td>
+<td>5.2</td>
+</tr>
+<tr>
+<td>2025Q4</td>
+<td>288</td>
+<td>+27.2%</td>
+<td>16</td>
+<td>흑전</td>
+<td>12</td>
+<td>5.7</td>
+<td>4.2</td>
+</tr>
+</tbody>
+</table>
+<p>※ Q4 = 연간 - Q1 - Q2 - Q3 산출 | 소스: DART CFS</p>
+<p>매출은 2024년까지 한 자릿수 성장에 그쳤으나, 2025년부터 해외 공장 가동과 신규 수주 반영으로 +27.3% 성장. 특히 2025년 하반기(Q3 +44.6%, Q4 +27.2%)에 성장세가 두드러짐.</p>
+<p>영업이익률은 2022년 21.0% 피크 이후 급락하여 2024년 3.4%까지 하락. 해외 공장(미국·폴란드) 초기 가동에 따른 고정비 부담과 감가상각비 증가가 주요 원인. 2024Q4에는 영업적자(-13억) 기록. 2025년은 매출 증가에도 OPM 4.2%로 수익성 회복이 더딘 상황이나, 하반기 Q3→Q4로 갈수록 개선 추세.</p>
+<h3>재무상태표 요약</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>자산총계</strong></td>
+<td style="text-align: right;">4,300</td>
+<td style="text-align: right;">4,422</td>
+<td style="text-align: right;">4,554</td>
+</tr>
+<tr>
+<td>(현금성자산)</td>
+<td style="text-align: right;">525</td>
+<td style="text-align: right;">470</td>
+<td style="text-align: right;">553</td>
+</tr>
+<tr>
+<td>(매출채권)</td>
+<td style="text-align: right;">148</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">164</td>
+</tr>
+<tr>
+<td>(재고자산)</td>
+<td style="text-align: right;">396</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">458</td>
+</tr>
+<tr>
+<td>(유형자산)</td>
+<td style="text-align: right;">911</td>
+<td style="text-align: right;">1,340</td>
+<td style="text-align: right;">1,371</td>
+</tr>
+<tr>
+<td><strong>부채총계</strong></td>
+<td style="text-align: right;">1,905</td>
+<td style="text-align: right;">1,980</td>
+<td style="text-align: right;">2,081</td>
+</tr>
+<tr>
+<td>(이자부부채)</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>자본총계</strong></td>
+<td style="text-align: right;">2,395</td>
+<td style="text-align: right;">2,442</td>
+<td style="text-align: right;">2,473</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: DART CFS</p>
+<p>2023~2024년 유형자산이 911→1,340억으로 급증. 미국·폴란드 해외 공장 건설 투자 반영. 현금은 2024년 470억으로 소폭 감소했으나 2025년 553억으로 회복. 무차입 경영 기조 유지(이자부부채 ≈ 0). 2025년 유동부채가 전년 104억에서 2,068억으로 급증한 것은 주목할 변화로, 계약부채·선수금 등 영업성 부채 증가로 추정됨.</p>
+<h3>핵심 재무비율</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE</td>
+<td style="text-align: right;">7.0%</td>
+<td style="text-align: right;">-0.8%</td>
+<td style="text-align: right;">0.7%</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td style="text-align: right;">79.5%</td>
+<td style="text-align: right;">81.1%</td>
+<td style="text-align: right;">84.2%</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td style="text-align: right;">-21.9%</td>
+<td style="text-align: right;">-19.3%</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>유동비율</td>
+<td style="text-align: right;">1,802%</td>
+<td style="text-align: right;">2,924%</td>
+<td style="text-align: right;">150%</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td style="text-align: right;">-296억</td>
+<td style="text-align: right;">-255억</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td style="text-align: right;">0.20%</td>
+<td style="text-align: right;">0.40%</td>
+<td style="text-align: right;">0.47%</td>
+</tr>
+<tr>
+<td>Cash Runway</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">101.4Q</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+<h3>실적 해석</h3>
+<p>2022년 매출 799억·OPM 21%로 역대 최고 실적을 기록한 뒤, 2023~2024년은 대규모 해외 설비 투자(합계 ~890억)로 인한 감가상각비 증가와 초기 가동 비용이 수익성을 크게 압박. 2024년은 순이익 -19억으로 적자 전환. 2025년은 매출 1,117억(+27.3%)으로 톱라인은 반등했으나 OPM 4.2%로 여전히 수익성 회복은 초기 단계. 다만 2025년 하반기부터 분기별 영업이익이 뚜렷하게 개선되고 있어(Q3 9억 → Q4 16억), 2026년 이후 수익성 정상화에 대한 기대감이 형성되고 있음.</p>
+<hr />
+<h2>4. 성장 동력 분석</h2>
+<p><strong>동력 1: CNT 도전재 글로벌 시장 확대 ⭐⭐⭐ (◉)</strong><br />
+실리콘 음극재 채택이 2026년 프리미엄 전기차의 70% 이상으로 확대되면서, 실리콘 팽창을 제어하는 CNT 도전재 수요가 폭증 전망. 나노신소재는 국내 배터리 3사 공급에 더해 일본·독일 배터리 셀 업체 신규 수주를 확보했으며, 2026년부터 본격 출하 시작. 미국(텍사스)·폴란드 해외 공장 가동률 상승으로 근접 공급 이점 확보. 이차전지소재 매출 비중 59%로 실적 기여도가 가장 큰 핵심 동력. LG에너지솔루션의 원형전지 Si 음극재 채택 본격화도 추가 촉매.</p>
+<p><strong>동력 2: 태양전지 TCO 타겟 — 탈중국 수혜 ⭐⭐ (◎)</strong><br />
+미국 탈중국 기조 강화로 태양광 패널 전극 소재(TCO 타겟) 시장에서 반사이익 기대. 중국을 제외하면 나노신소재가 사실상 유일한 글로벌 공급처. First Solar, 한화큐셀 USA 등으로부터 신규 수주 빠르게 확대 중. 매출 비중은 2.8%로 아직 작으나 성장 속도가 빠름.</p>
+<p><strong>동력 3: 건식 전극용 도전재 ⭐⭐ (◎)</strong><br />
+북미 주요 OEM 고객사의 음극 건식 전극 대량 양산이 2026년 상반기 예상되며, 건식 도전재 수주 확보 가능성. SWCNT(단일벽 CNT) 기술 경쟁력을 바탕으로 차세대 배터리 기술 전환의 수혜가 기대됨. 아직 매출 기여 전 단계로 구체적 수주 규모 확인 필요.</p>
+<p><strong>동력 4: 반도체 CMP 슬러리 ⭐ (○)</strong><br />
+메모리 반도체 업황 회복에 연동한 CMP 슬러리 매출 증가 기대. 반도체소재 매출 비중 9.6%로 보조적 성장 동력. 업황 사이클 의존도가 높아 독자적 성장 모멘텀은 제한적.</p>
+<hr />
+<h2>5. 리스크 분석</h2>
+<h3>DART 체크리스트</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>항목</th>
+<th>상태</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>감사의견</td>
+<td>ℹ️ 정보없음</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CB/BW 발행</td>
+<td>✅ 0건</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>3</td>
+<td>유상증자</td>
+<td>✅ 해당없음</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>4</td>
+<td>최대주주 지분</td>
+<td>⚠️ 20.04% (다소 낮음)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>5</td>
+<td>자기주식</td>
+<td>ℹ️ 정보없음</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>6</td>
+<td>부채비율</td>
+<td>✅ 84.2%</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>7</td>
+<td>유동비율</td>
+<td>⚠️ 150% (전년 대비 급락)</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<h3>Ownership &amp; 오버행</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th style="text-align: right;">지분율(%)</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최대주주 및 특수관계인</td>
+<td style="text-align: right;">22.9</td>
+<td>박장우 20.04% 외 9인</td>
+</tr>
+<tr>
+<td>자사주</td>
+<td style="text-align: right;">—</td>
+<td>정보없음</td>
+</tr>
+<tr>
+<td>기타 유통주식</td>
+<td style="text-align: right;">~77.1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>잔액/수량</th>
+<th>행사가</th>
+<th>희석비율</th>
+<th>해제 시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>해당없음</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>CB/BW 0건, 스톡옵션 정보 없음. 오버행 리스크는 제한적이나, 최대주주 지분이 20.04%로 코스닥 평균 대비 낮은 편이어서 경영권 안정성 모니터링 필요.</p>
+<h3>기타 리스크</h3>
+<ul>
+<li><strong>수익성 미증명</strong>: 2024년 순적자 전환, 2025년 OPM 4.2%로 대규모 설비투자 대비 수익 회수가 지연 중. 해외 공장 가동률 상승 속도가 기대에 못 미칠 경우 적자 지속 가능성</li>
+<li><strong>EV 시장 성장 둔화</strong>: 미국 IRA 전기차 세액공제 정책 변경, 글로벌 전기차 수요 성장률 둔화 시 CNT 도전재 수요 전망 하향 조정 불가피</li>
+<li><strong>CNT 도전재 경쟁 심화</strong>: 중국 CNT 도전재 업체의 가격 공세, LG화학 등 대기업의 자체 내재화 가능성</li>
+<li><strong>유동비율 급락</strong>: 2024년 2,924% → 2025년 150%로 급락. 유동부채가 104억 → 2,068억으로 급증한 원인(계약부채/선수금 vs 차입금) 확인 필요</li>
+</ul>
+<hr />
+<h2>6. 경쟁 구도</h2>
+<h3>국내 Peer</h3>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th style="text-align: right;">시총(억원)</th>
+<th>PER</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>나노신소재</strong></td>
+<td style="text-align: right;">~9,256</td>
+<td>566x</td>
+<td>CNT 도전재 국내 1위, 나노소재 원천기술</td>
+</tr>
+<tr>
+<td>LG화학</td>
+<td style="text-align: right;">~249,896</td>
+<td>—</td>
+<td>종합화학, 이차전지 양극재·분리막</td>
+</tr>
+<tr>
+<td>에코프로</td>
+<td style="text-align: right;">~200,812</td>
+<td>—</td>
+<td>양극재 중심 이차전지 소재</td>
+</tr>
+<tr>
+<td>포스코퓨처엠</td>
+<td style="text-align: right;">~193,458</td>
+<td>—</td>
+<td>양극재·음극재 통합 소재</td>
+</tr>
+<tr>
+<td>OCI홀딩스</td>
+<td style="text-align: right;">~43,875</td>
+<td>46.3x</td>
+<td>태양광 폴리실리콘, 화학소재</td>
+</tr>
+</tbody>
+</table>
+<h3>글로벌 Peer</h3>
+<ul>
+<li><strong>Nanocyl, OCSiAl (비상장)</strong>: 글로벌 CNT 전문 제조사로 직접 경쟁 관계. 나노신소재는 양산 규모와 고객 다변화에서 우위</li>
+<li><strong>DuPont (DD)</strong>: 전자소재·산업소재 대형사. PER fwd 18.2x, OPM 34.7%. 반도체·디스플레이 소재 부문에서 간접 경쟁</li>
+<li><strong>LyondellBasell (LYB)</strong>: 글로벌 종합화학. PER fwd 14.0x. 범용 화학소재 중심으로 직접 경쟁은 제한적</li>
+</ul>
+<p><strong>포지셔닝</strong>: 나노신소재는 국내 CNT 도전재 시장에서 독보적 기술력을 보유한 소형 스페셜티 소재 기업. 국내 Peer 대비 시총 규모는 작으나, CNT 도전재라는 특화 시장에서의 글로벌 경쟁력과 탈중국 수혜 포지셔닝이 차별화 요소. 중국 제외 TCO 타겟 사실상 유일 공급사.</p>
+<hr />
+<h2>7. 밸류에이션</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>현재</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>566.1x</td>
+<td>2025년 NI 16억 기준, EPS 134원</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>—</td>
+<td>2026년 컨센서스 없음</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>3.72x</td>
+<td>BPS 20,390원 기준</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>~66x</td>
+<td>EBITDA ~131억 추정 (OP 47 + D&amp;A ~84)</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>0.7%</td>
+<td>2025년 기준</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>-255억</td>
+<td>2024년 기준, 대규모 투자 사이클</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td>~-22%</td>
+<td>순현금 상태</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0.47%</td>
+<td>DPS 250원</td>
+</tr>
+</tbody>
+</table>
+<h3>증권사 목표주가</h3>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th style="text-align: right;">목표가</th>
+<th>투자의견</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iM증권</td>
+<td style="text-align: right;">88,000</td>
+<td>매수</td>
+<td>2025.11</td>
+</tr>
+<tr>
+<td>하이투자증권</td>
+<td style="text-align: right;">180,000</td>
+<td>매수</td>
+<td>—</td>
+</tr>
+<tr>
+<td>한국투자증권</td>
+<td style="text-align: right;">65,000</td>
+<td>매수</td>
+<td>2025.10</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td style="text-align: right;">~71,250</td>
+<td>—</td>
+<td>2025.10 기준</td>
+</tr>
+</tbody>
+</table>
+<p><strong>밸류에이션 판단</strong>: 현재가 75,800원은 컨센서스 평균 71,250원을 약 6% 상회하며 52주 신고가 영역. PER 566x, PBR 3.72x, EV/EBITDA ~66x로 전통적 밸류에이션 지표로는 극단적 고평가 상태이나, 이는 대규모 투자 사이클로 인한 일시적 수익성 저하를 반영. 2026~2027년 수익성 정상화 시 밸류에이션 부담은 빠르게 완화될 수 있으나, 현 시점에서는 실적 턴어라운드 확인이 선행되어야 함. iM증권의 2028E EPS 3,360원 × PER 26배 = 88,000원 목표가가 중장기 밸류에이션 앵커.</p>
+<hr />
+<h2>8. Bull vs Bear</h2>
+<h3>🐂 Bull Case — "CNT 도전재의 글로벌 독주"</h3>
+<p>◉ <strong>실리콘 음극재 대세화</strong> — 2026년 프리미엄 EV 70%+ 실리콘 음극재 채택. CNT 도전재는 팽창 제어 필수 소재로 수요 폭증<br />
+◉ <strong>해외 공장 가동률 상승</strong> — 미국·폴란드 공장 가동 본격화 → 글로벌 배터리 셀 업체 근접 공급. 2026년부터 실적 레벨업<br />
+◎ <strong>탈중국 TCO 타겟 독점</strong> — 중국 외 유일한 TCO 타겟 공급사. First Solar·한화큐셀 USA 수주 확대<br />
+◎ <strong>기업가치 제고 계획</strong> — 2025~2030년 연평균 38%+ 성장, 2030년 OPM 20% 목표 공시 (2026.03.30). 경영진 의지 확인<br />
+○ <strong>건식 전극 도전재</strong> — 북미 OEM 건식 전극 양산 시 SWCNT 기반 건식 도전재 수주 → 신규 성장 카탈리스트</p>
+<h3>🐻 Bear Case — "투자만 하고 회수는 언제?"</h3>
+<p>◉ <strong>수익성 회복 지연</strong> — 2024년 순적자, 2025년 OPM 4.2%. 해외 공장 감가상각 부담이 예상보다 길어질 가능성<br />
+◉ <strong>밸류에이션 부담</strong> — PER 566x, PBR 3.72x. 실적 턴어라운드 지연 시 주가 하방 압력 극대화<br />
+◎ <strong>EV 시장 성장 둔화</strong> — IRA 정책 변경, 글로벌 전기차 수요 둔화 시 CNT 도전재 수요 전망 하향<br />
+◎ <strong>경쟁 심화</strong> — 중국 CNT 업체 가격 공세, 대기업(LG화학 등) 내재화 시 시장 점유율 방어 부담<br />
+○ <strong>유동비율 급락</strong> — 2,924% → 150%로 급락. 대규모 유동부채 증가 원인 불투명, 재무 안정성 우려</p>
+<hr />
+<h2>9. 종합 판단</h2>
+<p><strong>기업의 체질</strong>: 나노신소재는 나노 분말 합성 원천기술을 기반으로 CNT 도전재, 디스플레이·반도체·태양전지 소재를 생산하는 스페셜티 소재 기업이다. 매출의 59%를 차지하는 CNT 도전재가 실리콘 음극재 대세화의 직접적 수혜를 받을 위치에 있으나, 2023~2024년 대규모 해외 설비투자(~890억)로 수익성이 크게 훼손된 상태. 투자의 핵심은 2026년 이후 해외 공장 가동률 상승과 신규 수주 반영으로 수익성이 정상화되는지 여부에 달려 있다.</p>
+<p><strong>투자 가치가 있는 조건</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>시점</th>
+<th>확인 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분기 OPM 10%+ 회복</td>
+<td>분기별</td>
+<td>분기 실적 공시 — 해외 공장 고정비 희석 확인</td>
+</tr>
+<tr>
+<td>해외 신규 수주 본격 매출 인식</td>
+<td>2026H1</td>
+<td>IR 공시, 수출 비중 및 해외 매출 추이</td>
+</tr>
+<tr>
+<td>연간 FCF 흑자 전환</td>
+<td>연간</td>
+<td>사업보고서 현금흐름표 — CAPEX 사이클 종료 확인</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 모니터링</strong>:<br />
+- ✅ <strong>분기 OPM 추이</strong> — 해외 공장 가동률 상승에 따른 고정비 레버리지 확인 (목표: 10%+)<br />
+- ✅ <strong>CNT 도전재 신규 수주</strong> — 일본·독일·북미 배터리 셀 업체 수주 공시 및 매출 인식 시점<br />
+- ✅ <strong>TCO 타겟 미국 시장</strong> — First Solar, 한화큐셀 USA 향 수주 확대 속도<br />
+- ✅ <strong>유동부채 구성</strong> — 2,068억 급증 원인(계약부채/선수금 vs 차입금) 확인 및 정상화 여부</p>
+</body>
+</html>
