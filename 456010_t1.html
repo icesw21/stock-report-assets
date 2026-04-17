@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아이씨티케이(456010) 기초보고서</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-18<br />
+updated: 2026-04-18<br />
+tags:<br />
+  - 반도체<br />
+  - 양자보안<br />
+  - PUF<br />
+  - 양자내성암호<br />
+  - 스테이블코인<br />
+links: </p>
+<hr />
+<h1>아이씨티케이(456010) 기초 리서치 보고서</h1>
+<hr />
+<h2>1. 기업 개요</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>종목코드</td>
+<td>456010 (KOSDAQ)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>대표자</td>
+<td>이정원</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>업종</td>
+<td>반도체 제조업</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>설립일</td>
+<td>2017-10-18</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td>보통주 13,901,854주</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>유통주식수</td>
+<td>약 9,325천주 (자기주식 N/A)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>Fully-Diluted 시총</td>
+<td>~3,896억원 (CB 5회차 전환주식 1,197,741주 포함)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>~3,587억원 (25,800원 기준)</td>
+<td>KIS</td>
+</tr>
+<tr>
+<td>현재가 / PER / PBR</td>
+<td>25,800원 / N/A (적자) / 8.16x</td>
+<td>KIS (2026-04-17)</td>
+</tr>
+<tr>
+<td>52주 고/저</td>
+<td>27,750 / 22,300원 (KIS) · 25,800 / 11,100원 (pykrx)</td>
+<td>KIS</td>
+</tr>
+<tr>
+<td>최대주주</td>
+<td>이정원 15.30% (특수관계인 합계 32.90%)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>감사의견</td>
+<td>광교회계법인 — 적정 (2026)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>결산월</td>
+<td>12월</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. 사업 구조</h2>
+<h3>사업부문별 매출 구조</h3>
+<table>
+<thead>
+<tr>
+<th>사업부문</th>
+<th>주요 품목</th>
+<th style="text-align: right;">매출(억원)</th>
+<th style="text-align: right;">비중(%)</th>
+<th style="text-align: right;">YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>솔루션 개발용역</td>
+<td>PUF·PQC 기반 보안 솔루션 개발/커스터마이징</td>
+<td style="text-align: right;">27.2</td>
+<td style="text-align: right;">67.6</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>보안칩</td>
+<td>VIA-PUF 기반 시스템 반도체(G3, QCIM 등)</td>
+<td style="text-align: right;">10.7</td>
+<td style="text-align: right;">26.6</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>보안모듈/디바이스</td>
+<td>USIM/eSIM, IoT 보안모듈</td>
+<td style="text-align: right;">2.3</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>40.2</strong></td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">-39.9%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 2025년 연결기준, DART 사업보고서 제품별 매출 비중 반영 (총매출 40억원에 비중 안분)</p>
+<h3>핵심 사업: PUF(Physical Unclonable Function) 기반 보안 시스템 반도체</h3>
+<p>동사는 2017년 설립된 보안 시스템 반도체 설계 전문 기업으로, <strong>세계 최초로 VIA-PUF 기반 보안칩을 상용화</strong>한 유일한 업체이다. CMOS 공정의 VIA 홀 형성 원리를 활용해 반도체 내부에 복제 불가능한 고유 ID를 생성하며, <strong>수동소자 기반이어서 전력 소모가 없고 외부 환경(온습도) 변화에도 둔감</strong>한 점이 글로벌 경쟁기술(SRAM PUF, RO PUF, Optical PUF) 대비 핵심 차별화 포인트이다. 150개 이상의 특허와 Intel·Amazon·Siemens급 특허 포트폴리오를 보유한다.</p>
+<ul>
+<li><strong>국내</strong>: LG유플러스 USIM/eSIM 보안칩 공급, 무선공유기(AP)·지능형 CCTV·양자보안 VPN용 칩 공급, 과기부/KISA 양자내성암호(PQC) 과제 참여</li>
+<li><strong>해외</strong>: 캐나다 BTQ Technologies와 143억원 규모 QCIM(양자보안칩) 공동개발 및 전략적 지분 협력, 글로벌 스테이블코인 보안 표준 플랫폼 <strong>QSSN</strong> 파트너사 선정(QuINSA 표준), 유럽 글로벌 노트북 제조사향 보안칩 공급 준비 중</li>
+<li><strong>신사업</strong>: BTQ/Q Perfect 인수 기반 풀스택 양자솔루션(양자 시뮬레이션+PQC+PUF), 미국 디지털 자산·결제 인프라 PQC 전환 파일럿, 휴머노이드·자율주행 등 피지컬 AI 보안</li>
+</ul>
+<h3>비즈니스 특성</h3>
+<ul>
+<li><strong>IP 라이선스 기반 고마진 구조</strong>: 칩 판매 외에 PUF/PQC IP 라이선스 수수료 매출 비중 확대 시 마진율 80% 이상 달성 가능. 하나증권은 2026F 매출총이익률 70%, 영업이익률 21.9% 추정</li>
+<li><strong>기술 해자 + 승자독식 구조</strong>: VIA-PUF 글로벌 상용화 유일 업체. 양자컴퓨터발 해킹 위협(Q-Day) 가시화와 각국 PQC 전환 정책으로 보안칩은 "공급자가 없다"는 독점적 포지셔닝</li>
+<li><strong>규제 내러티브 수혜</strong>: 한국 개인정보보호법 개정(매출 10% 과징금), 미국 트럼프 행정부 6개조 사이버보안 전략(PQC+Zero Trust), EU 스마트폰 배터리 정품인증 의무화 등이 모두 TAM 확장 촉매</li>
+</ul>
+<h3>고객 구조 &amp; 원가 구조</h3>
+<ul>
+<li><strong>고객 구조</strong>: B2B(통신사·빅테크·디바이스 제조사). 과거 LG유플러스 의존도 높음 → 2026년부터 SKT/KT 단말·기지국, 글로벌 빅테크(노트북·IT디바이스 정품인증), 미국 암호화폐 결제 보안으로 고객 다변화 진행</li>
+<li><strong>매입/원가</strong>: 팹리스 모델 — 설계 후 파운드리(국내외) 위탁생산. 기존 CMOS 공정 사용으로 추가 설비 불필요, 원가 경쟁력 우수. 2025년 매출총이익률 50%, 판관비(R&amp;D 중심)가 매출 대비 과다해 영업적자 지속</li>
+</ul>
+<hr />
+<h2>3. 실적 분석</h2>
+<h3>연결 기준 직전 3개년 실적 및 2개년 추정</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023</td>
+<td>62</td>
+<td>—</td>
+<td>-24</td>
+<td>—</td>
+<td>-90</td>
+<td>-38.7</td>
+<td>-145.2</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>67</td>
+<td>+8.0%</td>
+<td>-67</td>
+<td>적지</td>
+<td>-58</td>
+<td>-100.0</td>
+<td>-86.6</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>40</td>
+<td>-39.9%</td>
+<td>-89</td>
+<td>적지</td>
+<td>-67</td>
+<td>-222.5</td>
+<td>-167.5</td>
+</tr>
+<tr>
+<td>2026E</td>
+<td>237</td>
+<td>+492.5%</td>
+<td>52</td>
+<td>흑전</td>
+<td>48</td>
+<td>21.9</td>
+<td>20.3</td>
+</tr>
+<tr>
+<td>2027E</td>
+<td>296</td>
+<td>+24.9%</td>
+<td>87</td>
+<td>+67.3%</td>
+<td>75</td>
+<td>29.4</td>
+<td>25.3</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: DART CFS (2023~2025), 하나증권 추정(2026~2027F), 컨센서스 일치</p>
+<h3>최근 8분기 실적</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024Q1</td>
+<td>5.2</td>
+<td>—</td>
+<td>-15</td>
+<td>—</td>
+<td>-15</td>
+<td>-285.3</td>
+<td>-283.3</td>
+</tr>
+<tr>
+<td>2024Q2</td>
+<td>16.4</td>
+<td>—</td>
+<td>-20</td>
+<td>—</td>
+<td>-15</td>
+<td>-121.2</td>
+<td>-93.4</td>
+</tr>
+<tr>
+<td>2024Q3</td>
+<td>21.3</td>
+<td>+42.3%</td>
+<td>-20</td>
+<td>적지</td>
+<td>-18</td>
+<td>-94.4</td>
+<td>-85.3</td>
+</tr>
+<tr>
+<td>2024Q4</td>
+<td>23.9</td>
+<td>-49.0%</td>
+<td>-12</td>
+<td>적지</td>
+<td>-9.9</td>
+<td>-50.2</td>
+<td>-41.5</td>
+</tr>
+<tr>
+<td>2025Q1</td>
+<td>4.1</td>
+<td>-20.6%</td>
+<td>-26</td>
+<td>적지</td>
+<td>-22</td>
+<td>-629.5</td>
+<td>-521.0</td>
+</tr>
+<tr>
+<td>2025Q2</td>
+<td>8.3</td>
+<td>-49.4%</td>
+<td>-26</td>
+<td>적지</td>
+<td>-42</td>
+<td>-313.9</td>
+<td>-505.7</td>
+</tr>
+<tr>
+<td>2025Q3</td>
+<td>4.0</td>
+<td>-81.3%</td>
+<td>-29</td>
+<td>적지</td>
+<td>-25</td>
+<td>-724.0</td>
+<td>-629.7</td>
+</tr>
+<tr>
+<td>2025Q4</td>
+<td>23.8</td>
+<td>-0.7%</td>
+<td>-7.7</td>
+<td>적지</td>
+<td>22</td>
+<td>-32.2</td>
+<td>91.8</td>
+</tr>
+</tbody>
+</table>
+<p>※ Q4 = 연간 - Q1 - Q2 - Q3 산출 | 소스: DART CFS</p>
+<p>매출 추세 해석 — 2024년은 상장 원년으로 용역매출이 분기를 거듭하며 레벨업되었으나, 2025년은 대형 개발용역 공백 + 통신사 신규 발주 지연으로 Q1~Q3 연속 급락(YoY -20%/-49%/-81%)했다. Q4에 23.8억원으로 일시적 회복했으나 연간으로는 40% 역성장. <strong>2026년부터 통신사(LGU+ 외 SKT/KT), 빅테크, BTQ-QSSN 파트너십 매출이 동시에 인식되며 +492% 폭발 성장</strong>이라는 시장 기대가 형성되어 있다(컨센서스 237억).</p>
+<p>영업이익/마진 해석 — 매출총이익률은 2024년 44.8% → 2025년 50%로 오히려 개선되었으나, R&amp;D·상장 관련 판관비(109억원)가 매출(40억원)의 2.7배에 달해 영업손실 -89억원이 발생. 2025Q4 순이익 +22억원은 지분법·평가이익 등 일회성(자산 재평가·투자자산 이익)으로 추정되며 영업단은 여전히 적자. 고정비 레버리지 구조상 매출이 손익분기점(추정 120~150억원)을 넘기면 급격한 흑자 전환 가능.</p>
+<h3>재무상태표 요약</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>자산총계</strong></td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">458</td>
+<td style="text-align: right;">732</td>
+</tr>
+<tr>
+<td>(현금성자산)</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">171</td>
+</tr>
+<tr>
+<td>(매출채권)</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>(재고자산)</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>(유형자산)</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td><strong>부채총계</strong></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">293</td>
+</tr>
+<tr>
+<td>(이자부부채)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">259</td>
+</tr>
+<tr>
+<td><strong>자본총계</strong></td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">430</td>
+<td style="text-align: right;">439</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: DART CFS, 단위 억원</p>
+<p>재무상태 해석 — 2024년 상장 공모로 자본금·자본잉여금 대거 유입되며 자본 94억→430억으로 급증. 2025년 <strong>25.9억 달러→259억원 규모의 CB/차입금이 신규 조달</strong>되어 이자부부채가 18억→259억으로 증가, 부채비율이 6.5% → 66.6%로 상승. 현금성자산은 171억원으로 크게 확보(2024년 58억 대비 3배)되어 Cash Runway 10.2분기(약 2.5년) 확보. 분기별 영업손실 -25~-30억 수준을 감안할 때 2026~2027년 흑자전환 실패 시에도 2~3년은 생존 가능한 현금 쿠션.</p>
+<h3>핵심 재무비율</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE</td>
+<td style="text-align: right;">-96.0%</td>
+<td style="text-align: right;">-13.5%</td>
+<td style="text-align: right;">-15.2%</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td style="text-align: right;">110.7%</td>
+<td style="text-align: right;">106.5%</td>
+<td style="text-align: right;">166.6%</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">-61.6% (순현금)</td>
+<td style="text-align: right;">-54.0% (순현금)</td>
+</tr>
+<tr>
+<td>유동비율</td>
+<td style="text-align: right;">1,008.7%</td>
+<td style="text-align: right;">2,988.1%</td>
+<td style="text-align: right;">193.0%</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td style="text-align: right;">-15억</td>
+<td style="text-align: right;">-59억</td>
+<td style="text-align: right;">-39억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">0%</td>
+</tr>
+<tr>
+<td>Cash Runway</td>
+<td style="text-align: right;">0.7분기</td>
+<td style="text-align: right;">4.0분기</td>
+<td style="text-align: right;">10.2분기</td>
+</tr>
+</tbody>
+</table>
+<h3>실적 해석</h3>
+<p>2025년은 "매출 공백 + R&amp;D 집중투자" 국면. 2025Q4 순이익 +22억 흑자는 영업외 일회성(지분법·평가이익) 기여. 2026년 매출 컨센서스 237억은 <strong>하나증권 기준 통신사 130억 + 빅테크 80억 + 기타</strong>로 구성, 통신사 주파수 재할당(2026년 시행)과 스테이블코인 QSSN 상용화 가시성이 관건. 과거 실제 실적(40억)과 컨센서스(237억) 간 괴리가 5배에 달해 상반기 수주/매출 인식 속도가 최우선 모니터링 지표.</p>
+<hr />
+<h2>4. 성장 동력 분석</h2>
+<p><strong>동력 1: 스테이블코인·암호화폐 보안 (QSSN) 미국 진출 ⭐⭐⭐ (◉)</strong><br />
+BTQ Technologies의 QSSN(Quantum Safe Stablecoin Network)은 미국 디지털 자산·결제 인프라 PQC 전환 파일럿으로 선정되었고, 글로벌 양자 표준화 기구 QuINSA의 표준으로 지정되었다. ICTK는 QCIM칩을 통해 QSSN 생태계의 유일한 하드웨어 PUF 파트너로 참여. 2026년 미 노동부 401K 암호화폐 편입(3/30), 재무부 GENIUS ACT 공개(4/1)로 제도권 편입 가속화. 빠르면 올해 하반기부터 미국발 암호화폐 보안 매출이 가시화될 가능성. TAM 수십조원, ICTK가 표준 자리매김 시 리레이팅 가장 큰 동력.</p>
+<p><strong>동력 2: 5G SA 통신사향 보안칩 + 개인정보보호법 과징금 리스크 ⭐⭐⭐ (◉)</strong><br />
+개인정보보호법 개정안(2/12 국회 통과)으로 반복·중대 위반 시 전체 매출의 10% 과징금 부과. 과방위에서도 통신사 침해사고 시 3% 과징금 법안 통과. 2025년 KT 펨토셀 해킹으로 기지국 보안 니즈 부상. 주파수 재할당(2026년)을 기점으로 SKT/KT 단말기 및 기지국·중계기까지 PUF칩 확대 예상. 하나증권 추정 2026년 통신사향 매출 130억원. <strong>LG유플러스 단독 공급 트랙레코드</strong>가 있어 실현 확률 높음.</p>
+<p><strong>동력 3: 양자솔루션 풀스택(BTQ·Q Perfect 협력) ⭐⭐⭐ (◎)</strong><br />
+BTQ가 인수한 Q Perfect의 양자 시뮬레이션 기술(MIMIQ — Google Cirq 대비 12.9배, IBM Qiskit 대비 20.7배 빠른 QAOA 12큐빗 테스트) 결합을 통해 단순 양자암호업체에서 <strong>풀스택 양자솔루션 업체로 사업모델 강화</strong>. 하나증권은 "국내 양자솔루션 수출 1호 기업" 타이틀을 부여하며 타겟 PBR을 글로벌 양자업체(BTQ 15배, 리게티 11배, IBM 7배) 대비 12배로 상향 적용. 국내 유일 양자보안칩 개발업체로 양자 관련주 주도주.</p>
+<p><strong>동력 4: 피지컬 AI(휴머노이드·자율주행) + EU 배터리 정품인증 ⭐⭐ (◎)</strong><br />
+휴머노이드·자율주행차가 새 무선 디바이스로 자리잡으며 PUF칩 수요 몇 배 성장 예상. VIA-PUF가 전력이 필요없는 수동소자여서 저전력·환경안정성 요구되는 피지컬 AI 디바이스에 가장 적합. EU 2027년 스마트폰 배터리 탈부착 의무화로 배터리 정품인증용 PUF 수요 창출. 타임라인은 2027~2028년으로 다소 길지만 침투 시 매출 규모 매우 큼.</p>
+<p><strong>동력 5: 글로벌 빅테크 IT디바이스 정품인증 ⭐⭐ (○)</strong><br />
+2026년부터 글로벌 빅테크 IT 디바이스 정품인증용 칩, 글로벌 노트북 제조사향 보안칩 공급 본격화 전망(IR팀 자료). 마진율 80%+ IP 라이선스 수수료 매출 비중 확대 요인.</p>
+<hr />
+<h2>5. 리스크 분석</h2>
+<h3>DART 체크리스트</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>항목</th>
+<th>상태</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>감사의견</td>
+<td>✅ 적정 (광교회계법인, 2026)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CB/BW 발행</td>
+<td>⚠️ 2건 (CB 5회차 80억 + BW 주석 확인)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>3</td>
+<td>유상증자</td>
+<td>⚠️ 4건 이력 (2025.10, 11, 12 최근 3건 기재정정)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>4</td>
+<td>최대주주 지분</td>
+<td>⚠️ 15.30% (낮음, 특관 합계 32.90%)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>5</td>
+<td>자기주식</td>
+<td>ℹ️ N/A</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>6</td>
+<td>부채비율</td>
+<td>⚠️ 166.6% (CB 조달로 급등)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>7</td>
+<td>유동비율</td>
+<td>✅ 193.0%</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<h3>Ownership &amp; 오버행</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th style="text-align: right;">지분율(%)</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최대주주 및 특수관계인</td>
+<td style="text-align: right;">32.90</td>
+<td>이정원 15.30%, 김동현 6.50%, YU SEUNG SAM 4.10%</td>
+</tr>
+<tr>
+<td>자사주</td>
+<td style="text-align: right;">N/A</td>
+<td>미공시</td>
+</tr>
+<tr>
+<td>기타 유통주식</td>
+<td style="text-align: right;">67.10</td>
+<td>외국인 지분율 4.6~20%대로 상승 중</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>잔액/수량</th>
+<th>행사가</th>
+<th>희석비율</th>
+<th>해제 시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CB 5회차</td>
+<td>80억원 / 1,197,741주</td>
+<td>17,533원</td>
+<td>8.19%</td>
+<td>2026-05-23 ~ 2029-04-23</td>
+</tr>
+<tr>
+<td>BW</td>
+<td>잔액 미공시 (주석 확인)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>유상증자</td>
+<td>2025.10/11/12 기재정정 3건</td>
+<td>—</td>
+<td>—</td>
+<td>진행 중</td>
+</tr>
+</tbody>
+</table>
+<p>오버행 해석 — <strong>CB 5회차가 2026년 5월 23일 전환가능일 도래</strong>하며, 현재가 25,800원이 전환가 17,533원 대비 +47% 상회하여 <strong>전환권 행사 인센티브 매우 크다</strong>. 전환 시 8.19% 희석 + 전환주식 매출 가능성으로 단기 수급 부담. 또한 2025년 4분기 3차례 유상증자 결정(기재정정)이 반복된 점은 자금 조달 필요성과 희석 리스크를 동시에 시사. 최대주주 지분 15.30%로 낮아 경영권 방어력이 취약할 수 있다.</p>
+<h3>기타 리스크</h3>
+<ul>
+<li><strong>매출 컨센서스 괴리</strong>: 2025년 실제 40억 vs 2026년 컨센 237억으로 5.9배 급증 가정. 통신사·QSSN 매출 인식이 하반기로 밀릴 경우 컨센서스 하향으로 단기 주가 충격 가능</li>
+<li><strong>누적 적자 + 지속 자본조달</strong>: 이익잉여금 -448억원 누적, 매분기 영업적자 -25~-30억원. 2025년 CB 80억 + 유상증자 결정 반복으로 희석 리스크 상시 존재</li>
+<li><strong>기술 대체 리스크</strong>: 양자컴퓨터 발전이 예상보다 늦어지면 PQC 전환 수요 지연. 반대로 글로벌 빅테크(Intel, Samsung, Qualcomm)가 내재화 PUF 개발 시 IP 라이선스 모델 위협</li>
+<li><strong>주가 과열 리스크</strong>: RSI 75.9 과매수, 20일선 +62.7% 이격, 거래량 12.67배 폭증 — 재료 노출 후 차익 실현 구간</li>
+</ul>
+<hr />
+<h2>6. 경쟁 구도</h2>
+<h3>국내 Peer</h3>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th style="text-align: right;">시총(억원)</th>
+<th>PER</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>아이씨티케이</strong></td>
+<td style="text-align: right;">~3,587</td>
+<td>N/A(적자)</td>
+<td>PUF 기반 보안칩 세계 최초 상용화, 양자보안 유일</td>
+</tr>
+<tr>
+<td>한화비전</td>
+<td style="text-align: right;">40,037</td>
+<td>87.8x</td>
+<td>지능형 CCTV, 보안솔루션 대형사</td>
+</tr>
+<tr>
+<td>RFHIC</td>
+<td style="text-align: right;">24,774</td>
+<td>86.2x</td>
+<td>RF 반도체, 5G 기지국 부품</td>
+</tr>
+<tr>
+<td>대한광통신</td>
+<td style="text-align: right;">24,224</td>
+<td>N/A</td>
+<td>광통신·양자암호키분배(QKD) 관련주</td>
+</tr>
+<tr>
+<td>인텔리안테크</td>
+<td style="text-align: right;">15,118</td>
+<td>202.6x</td>
+<td>위성통신 안테나, 보안 네트워크</td>
+</tr>
+</tbody>
+</table>
+<h3>글로벌 Peer</h3>
+<ul>
+<li><strong>BTQ Technologies</strong> (파트너, 상장) — PBR ~15배, QSSN 플랫폼 개발 모회사격 협력사</li>
+<li><strong>Intrinsic ID</strong> (네덜란드, 비상장) — SRAM PUF 상용화. 2023년 Synopsys에 인수됨. ICTK의 직접 경쟁자</li>
+<li><strong>PUFsecurity·eMemory</strong> (대만) — PUF IP 라이선스 전문. 특허 ICTK보다 적음</li>
+<li><strong>양자컴퓨터</strong>: IonQ, Rigetti, D-Wave, IBM — PBR 7~15배 평균, 매출 대비 고평가 유지</li>
+</ul>
+<p><strong>포지셔닝</strong>: ICTK는 "VIA-PUF 글로벌 유일 상용화 + PQC 소프트웨어까지 보유"한 국내 유일의 이중 양자보안 솔루션 기업. 국내 통신장비/보안 peer는 양자보안 기술이 없고, 글로벌 PUF peer는 SRAM/RO 방식으로 환경 민감도가 높음. 양자주 주도주 프리미엄을 누리고 있으나 실적 측면에선 아직 규모 매우 작음.</p>
+<hr />
+<h2>7. 밸류에이션</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>현재</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>N/A</td>
+<td>EPS -499원 적자</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>62.1x (하나) / 75.0x (컨센 345원)</td>
+<td>2026F EPS 344~345원 기준</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>8.16x</td>
+<td>BPS 3,161원, 2026F 3,505원 기준 Fwd PBR 7.36x</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>33.0x (하나 2026F)</td>
+<td>2025년 EBITDA -71억 적용 불가, Fwd 기준</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>-15.2% (2025) → 10.3% (2026F)</td>
+<td>흑전 가정</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>-39.4억 (2025)</td>
+<td>2026F +110억 흑전 (하나)</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td>-54.0% (순현금 171억)</td>
+<td>CB 조달 후 현금 쿠션 풍부</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0%</td>
+<td>DPS 0원, 배당 계획 없음</td>
+</tr>
+</tbody>
+</table>
+<h3>증권사 목표주가</h3>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th style="text-align: right;">목표가</th>
+<th>투자의견</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>하나증권 (김홍식)</td>
+<td style="text-align: right;">40,000원</td>
+<td>BUY (상향)</td>
+<td>2026-04-17</td>
+</tr>
+<tr>
+<td>한국IR협의회</td>
+<td style="text-align: right;">N/A (커버리지)</td>
+<td>—</td>
+<td>2026-04-09</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td style="text-align: right;">40,000원</td>
+<td>BUY</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>밸류에이션 판단</strong>: 현재가 25,800원은 하나증권 TP 40,000원 대비 +55% 상승여력. 하나증권은 글로벌 양자업체 평균 PBR을 고려해 <strong>타겟 PBR 12배 적용</strong>(2026F BPS 3,505원 × 12 ≈ 42,000원). 다만 2026F 컨센서스 EPS 345원 기준 Fwd PER 75배로 국내 peer(87~203배)보다는 낮으나 절대수준은 성장주 버블 수준. <strong>실적 가시화(2026년 매출 237억 달성 여부)가 밸류에이션 정당화의 관건</strong>이며, 미달 시 PBR 배수가 빠르게 축소될 수 있다. 단기 기술적 지표는 RSI 75.9 과매수·52주 고가 도달로 조정 경계 구간.</p>
+<hr />
+<h2>8. Bull vs Bear</h2>
+<h3>🐂 Bull Case — "양자솔루션 수출 1호 + 스테이블코인 표준 독점"</h3>
+<p>◉ <strong>QSSN 글로벌 표준 독점</strong> — BTQ-ICTK가 미국 스테이블코인 PQC 전환 파일럿 + QuINSA 표준 지정. QCIM칩 공급 시 TAM 수십조원 시장의 표준 하드웨어 포지션 차지<br />
+◉ <strong>통신사 전방위 PUF 도입</strong> — 개인정보보호법 10% 과징금 + KT 펨토셀 해킹 트라우마 + 2026 주파수 재할당으로 통신 3사 단말·기지국 PUF 수요 폭발. 하나 추정 통신사향만 130억원<br />
+◎ <strong>피지컬 AI 양자보안 수혜</strong> — 휴머노이드·자율주행 전력·환경 제약 조건에 VIA-PUF가 유일한 상용 솔루션. 2027~2028년 TAM 10배 이상 확장<br />
+◎ <strong>IP 라이선스 고마진 레버리지</strong> — 매출 BEP(120~150억원) 돌파 시 매출총이익률 70%·영업이익률 22%+ 도약. 하나 2026F OP 52억, 2028F OP 131억<br />
+○ <strong>M&amp;A 통합자 포지션</strong> — 통신장비 업체들의 러브콜 → ICTK 주도 M&amp;A 가능성으로 대형 장비업체 성장 시나리오</p>
+<h3>🐻 Bear Case — "컨센서스 괴리 + 희석 리스크"</h3>
+<p>◉ <strong>2026 컨센 237억 vs 2025 실적 40억</strong> — 5.9배 급증 가정 실현되지 않을 경우 즉각적인 목표주가 하향·멀티플 축소. 1~2분기 연속 매출 부진 시 주가 반토막 리스크<br />
+◉ <strong>CB 5회차 5/23 전환가능 도래</strong> — 80억원 / 1,197,741주 / 8.19% 희석 + 현재가 17,533원 대비 +47% 수익구간으로 전환 인센티브 극대. 유증 4건 + BW 존재로 추가 희석 상시<br />
+◎ <strong>누적 적자 448억 + 분기 영업적자 지속</strong> — CB·유증 반복 자금조달 불가피. 2025년 Q4 순이익 흑자도 일회성 평가이익<br />
+◎ <strong>RSI 75.9 과매수 + 52주 고가</strong> — 기술적 과열, 거래량 12.67배 폭증은 피크 시그널 가능. 재료 노출 후 조정<br />
+○ <strong>최대주주 15.30%의 낮은 지분</strong> — 경영권 방어력 취약. 적대적 M&amp;A 또는 주주 이견 리스크</p>
+<hr />
+<h2>9. 종합 판단</h2>
+<p><strong>기업의 체질</strong>: ICTK는 세계 유일의 VIA-PUF 상용화 팹리스 기업으로, PUF(하드웨어 보안키) + PQC(소프트웨어 알고리즘) 이중 양자보안 솔루션을 모두 보유한 국내 유일 업체이다. 기술 해자는 분명하나 현재는 연매출 40억원 수준의 적자 초기 기업이며, 주가는 "양자솔루션 수출 1호"라는 테마·내러티브 + 미국 스테이블코인·통신 규제 트리거에 의해 형성된 성장 프리미엄이 지배적이다. 실적 현실화 여부가 향후 12개월 내 주가 방향을 결정한다.</p>
+<p><strong>투자 가치가 있는 조건</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>시점</th>
+<th>확인 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>통신사향 신규 발주 (SKT/KT 단말/기지국)</td>
+<td>분기별</td>
+<td>DART 공급계약 공시, 분기 매출 breakdown</td>
+</tr>
+<tr>
+<td>QSSN·BTQ 매출 인식</td>
+<td>분기별</td>
+<td>미국 암호화폐 보안 개별 계약·파일럿 결과 공시</td>
+</tr>
+<tr>
+<td>2026 분기 매출 50억 이상</td>
+<td>2026Q1~Q2</td>
+<td>DART 분기보고서 매출 추이</td>
+</tr>
+<tr>
+<td>CB 5회차 전환 진행도</td>
+<td>2026-05-23 이후</td>
+<td>전환청구 공시, 신주 상장</td>
+</tr>
+<tr>
+<td>BTQ 양자 시뮬레이션 기술 이전 성과</td>
+<td>2026년 내</td>
+<td>사업보고서·IR 자료</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 모니터링</strong>:<br />
+- ✅ <strong>2026Q1 매출</strong> — 40억원 돌파 시 컨센서스 상향, 미달 시 멀티플 축소<br />
+- ✅ <strong>CB 5회차 전환공시</strong> — 5월 23일 이후 1,197,741주 희석 이벤트 모니터링<br />
+- ✅ <strong>미국 QSSN 계약 공시</strong> — BTQ 관련 파일럿→양산 전환 시점·규모<br />
+- ✅ <strong>통신 3사 PUF 도입 공시</strong> — LG유플러스 외 SKT/KT 신규 계약 여부<br />
+- ✅ <strong>외국인 수급</strong> — 20일 +81.5만주 매집 지속 여부, 외국인 지분율 10%+ 확대 가능성<br />
+- ✅ <strong>주파수 재할당 일정</strong> — 2026년 기지국 투자 사이클 진행 상황</p>
+</body>
+</html>

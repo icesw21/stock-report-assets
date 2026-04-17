@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아이씨티케이(456010) 기술적분석</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-18<br />
+updated: 2026-04-18<br />
+tags:<br />
+  - 반도체<br />
+  - 보안IC<br />
+  - PUF<br />
+links:</p>
+<hr />
+<h1>아이씨티케이(456010) 기술적 분석</h1>
+<p>2026-04-18 | T2 Technical Analysis</p>
+<hr />
+<h2>차트</h2>
+<p><img alt="아이씨티케이(456010) 캔들차트" src="/tmp/stock_chart_456010.png" /></p>
+<hr />
+<h2>1. 가격 현황</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>현재가</td>
+<td>25,800원 (+20.84%)</td>
+</tr>
+<tr>
+<td>52주 고가</td>
+<td>27,750원 (KIS) / 장중 터치 기준 29,000원대</td>
+</tr>
+<tr>
+<td>52주 저가</td>
+<td>11,100원 (pykrx)</td>
+</tr>
+<tr>
+<td>52주 범위 위치</td>
+<td>100.0%</td>
+</tr>
+<tr>
+<td>거래량</td>
+<td>20일 평균 대비 12.67x</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. 차트 패턴 분석</h2>
+<h3>2.1 캔들스틱 패턴</h3>
+<table>
+<thead>
+<tr>
+<th>패턴</th>
+<th>위치</th>
+<th>신뢰도</th>
+<th>해석</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>장대양봉 (Marubozu 유사)</td>
+<td>최근 2일 전</td>
+<td>강</td>
+<td>매수 폭발 — 장기 박스권(15,000~17,000)을 한 번에 돌파, 거래량 12.67x 동반으로 신뢰도 매우 강함</td>
+</tr>
+<tr>
+<td>유성형 / 긴 윗꼬리 음봉</td>
+<td>금일(2026-04-18)</td>
+<td>중</td>
+<td>매도 주의 — 장중 29,000원대까지 치솟은 후 25,800원으로 밀림, 단기 상단 저항 확인 및 차익실현 출회</td>
+</tr>
+<tr>
+<td>적이봉 (연속 2일 급등)</td>
+<td>최근 2~3일</td>
+<td>중</td>
+<td>매수 추세 — 단 기존 박스권 대비 괴리율이 극단적이라 단기 피로 누적</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 가격 구조 패턴</h3>
+<ul>
+<li>
+<p><strong>장기 박스권 상단 돌파 (Box Breakout)</strong> (신뢰도: 강)<br />
+  2025년 11월~2026년 4월 초까지 약 5개월간 13,500~17,500원 박스권에 갇혀 있다가 4월 중순 한 번에 돌파. MA20(15,854원)을 기저로 한 거래량 축적(Volume Dry-up) 구간이 완성된 직후의 폭발적 이탈로, 교과서적 박스권 상향 돌파. 다만 돌파 이후 가격이 박스 상단 대비 +47% 급등해 단기 과열.</p>
+</li>
+<li>
+<p><strong>급등 후 유성형 반전 시그널 (Blow-off Top 가능성)</strong> (신뢰도: 중)<br />
+  직전일 장대양봉 고가(약 29,000원)에서 금일 긴 윗꼬리를 남기며 25,800원으로 회귀. 거래량 역시 직전일 대비 감소 추세로 전환되면 단기 Blow-off Top 형성 가능성 존재. 확인 조건은 익일 종가가 24,000원(직전 갭) 하회 여부.</p>
+</li>
+<li>
+<p><strong>볼린저 밴드 Expansion Breakout</strong> (신뢰도: 강)<br />
+  2~3월 내내 밴드 폭이 좁아진 BB 스퀴즈(Squeeze) 구간에서 상단 2σ를 뚫고 이탈한 전형적 밴드 확장 패턴. 밴드 폭 87.1%로 극한 확장 상태 — 추세는 강하나 "밴드 내부 복귀(Band Walk 종료)" 리스크가 커짐.</p>
+</li>
+</ul>
+<h3>2.3 다이버전스</h3>
+<ul>
+<li>
+<p><strong>RSI 상승 임펄스 (다이버전스 아님 / 기존 추세 지속 신호)</strong> (신뢰도: 강)<br />
+  RSI가 지난 6개월 내 도달한 적 없는 75.9 레벨로 수직 상승. 가격 신고가 ↔ 지표 신고가 동반 상승이므로 하락 다이버전스는 <strong>아직 미형성</strong>. 다만 75 이상 과매수권 진입은 역사적 관점에서 단기 조정 트리거가 되는 경우가 많음.</p>
+</li>
+<li>
+<p><strong>MACD 히스토그램 강세 확장 (다이버전스 아님)</strong> (신뢰도: 강)<br />
+  MACD 1,683 / Signal 453 / Histogram +1,230 — 3월 저점 대비 MACD가 가격과 함께 수직 전환. 가격-지표 동행이므로 추세 지속 신호. 향후 가격이 추가 상승하는데 히스토그램이 이 레벨을 넘지 못하면 그때 비로소 하락 다이버전스 경계.</p>
+</li>
+</ul>
+<h3>2.4 패턴 종합 판단</h3>
+<p>5개월간의 박스권 압축 뒤 거래량 12.67배를 동반한 상향 돌파는 명확한 추세 전환 시그널이며, RSI·MACD·BB 모두 상승 추세를 확인한다. 그러나 금일 긴 윗꼬리 음봉(유성형 패턴)과 MA5 대비 +24.6% / MA20 대비 +62.7%의 극단적 괴리는 단기 과열·피로 누적을 경고한다. <strong>중장기 방향은 상승(박스 돌파 유효), 단기는 조정 가능성 우세</strong>라는 상충 시그널 구간.</p>
+<hr />
+<h2>3. 이동평균선 — 비정배열 (강세 급전환)</h2>
+<table>
+<thead>
+<tr>
+<th>MA</th>
+<th>값</th>
+<th>현재가 괴리율</th>
+<th>위치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MA5</td>
+<td>20,712원</td>
+<td>+24.6%</td>
+<td>위</td>
+</tr>
+<tr>
+<td>MA20</td>
+<td>15,854원</td>
+<td>+62.7%</td>
+<td>위</td>
+</tr>
+<tr>
+<td>MA60</td>
+<td>16,085원</td>
+<td>+60.4%</td>
+<td>위</td>
+</tr>
+<tr>
+<td>MA120</td>
+<td>15,952원</td>
+<td>+61.7%</td>
+<td>위</td>
+</tr>
+<tr>
+<td>MA200</td>
+<td>15,024원</td>
+<td>+71.7%</td>
+<td>위</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해석</strong>: 모든 MA가 15,000~16,000원대에 수렴해 있는 상태에서 현재가가 +60% 이상 괴리되어 있음 — 극단적 과열. MA5 대비 +24.6%만으로도 역사적 과매수권(통상 +15% 초과 시 과열). 중장기 MA(60/120/200)가 평탄하게 수평 이동 중이므로 아직 정배열은 형성되지 않았으며, MA5 → MA20 → MA60 순서로 순차 상향 정렬되려면 최소 2~3주의 시간이 필요. <strong>MA20(15,854원)이 중요 지지</strong> — 이 레벨까지 되돌림이 올 경우 장기 박스 상단(17,500원) 부근이 1차 지지로 전환될 가능성.</p>
+<hr />
+<h2>4. 보조 지표</h2>
+<h3>RSI(14) — 75.9 (🔴과매수)</h3>
+<p>5개월간 35~60 박스에서 머물다 단 3~4거래일 만에 75.9까지 수직 돌파. 추세 전환을 강력히 확인하는 동시에 과매수 구간 진입 — 통상 RSI가 80을 터치하거나 70 아래로 다시 밀릴 때까지 단기 매수 강도가 약화될 수 있음.</p>
+<h3>MACD(12,26,9)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MACD</td>
+<td>1,683</td>
+</tr>
+<tr>
+<td>Signal</td>
+<td>453</td>
+</tr>
+<tr>
+<td>Histogram</td>
+<td>+1,230</td>
+</tr>
+<tr>
+<td>크로스 상태</td>
+<td>매수 구간 (확대 중)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해석</strong>: 2~3월 내내 0선 아래 머물던 MACD가 급격히 반전, 시그널선과의 간격이 1,200포인트 이상 벌어진 초강세 확장 구간. 히스토그램 최대 확대 구간은 추세 초기 가속 국면의 전형이나, 이후 히스토그램 축소 전환이 오면 조정 시그널.</p>
+<h3>볼린저밴드(20, 2σ)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>상단</td>
+<td>22,762원</td>
+</tr>
+<tr>
+<td>중단 (MA20)</td>
+<td>15,854원</td>
+</tr>
+<tr>
+<td>하단</td>
+<td>8,945원</td>
+</tr>
+<tr>
+<td>밴드 폭</td>
+<td>87.1%</td>
+</tr>
+<tr>
+<td>현재 위치</td>
+<td>상단 이탈 (상단 근접)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해석</strong>: 3월 말까지 밴드 폭 20% 내외의 강한 스퀴즈 구간이 지속되다 이번 주 87.1%로 극한 확장. 현재가 25,800원은 상단(22,762원)마저 상회하는 상단 이탈(Band Breakout) 상태로, 역사적으로 Band Walk가 지속되면 추세 연장, 상단 안쪽으로 복귀하면 평균회귀(Mean Reversion) 가능성 — 후자의 경우 22,500원선이 1차 목표.</p>
+<h3>스토캐스틱(14, 3, 3)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Slow %K</td>
+<td>76.7</td>
+</tr>
+<tr>
+<td>Slow %D</td>
+<td>79.4</td>
+</tr>
+<tr>
+<td>크로스 상태</td>
+<td>데드크로스 (K &lt; D)</td>
+</tr>
+<tr>
+<td>판단</td>
+<td>과매수권 이탈 경고</td>
+</tr>
+</tbody>
+</table>
+<p><strong>해석</strong>: %K(76.7)가 %D(79.4)를 하향 돌파한 데드크로스. 과매수권(80) 근방에서 발생한 데드크로스는 단기 모멘텀 둔화의 대표적 선행 신호 — RSI·MACD의 강세 신호와 <strong>상충</strong>. 단기 트레이더라면 주의 구간.</p>
+<hr />
+<h2>5. 지지/저항 — 추세선 · 피보나치 · PRZ 통합</h2>
+<h3>5.1 피보나치 되돌림/확장</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>비율</th>
+<th>가격</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swing High</td>
+<td>—</td>
+<td>27,750원</td>
+<td>+7.6%</td>
+</tr>
+<tr>
+<td>되돌림</td>
+<td>0.236</td>
+<td>24,701원</td>
+<td>-4.3%</td>
+</tr>
+<tr>
+<td>되돌림</td>
+<td>0.382</td>
+<td>21,980원</td>
+<td>-14.8%</td>
+</tr>
+<tr>
+<td>되돌림</td>
+<td>0.5</td>
+<td>19,780원</td>
+<td>-23.3%</td>
+</tr>
+<tr>
+<td>되돌림</td>
+<td>0.618</td>
+<td>17,580원</td>
+<td>-31.9%</td>
+</tr>
+<tr>
+<td>되돌림</td>
+<td>0.786</td>
+<td>14,449원</td>
+<td>-44.0%</td>
+</tr>
+<tr>
+<td>Swing Low</td>
+<td>—</td>
+<td>11,100원</td>
+<td>-57.0%</td>
+</tr>
+<tr>
+<td>확장</td>
+<td>1.272</td>
+<td>32,308원</td>
+<td>+25.2%</td>
+</tr>
+<tr>
+<td>확장</td>
+<td>1.382</td>
+<td>33,947원</td>
+<td>+31.6%</td>
+</tr>
+<tr>
+<td>확장</td>
+<td>1.618</td>
+<td>38,250원</td>
+<td>+48.3%</td>
+</tr>
+<tr>
+<td>확장</td>
+<td>2.0</td>
+<td>44,400원</td>
+<td>+72.1%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 피보나치 기준: 상승 추세 (Swing Low 11,100원 → Swing High 27,750원)<br />
+※ 되돌림 = 직전 상승분에서 되돌림 비율, 확장 = 추세 연장 목표</p>
+<h3>5.2 추세선</h3>
+<table>
+<thead>
+<tr>
+<th>추세선</th>
+<th>방향</th>
+<th>현재 교차가</th>
+<th>포인트 수</th>
+<th>해석</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>상승 지지선</td>
+<td>상승</td>
+<td>14,782원</td>
+<td>3개</td>
+<td>2025-11 저점과 2026-02 저점을 연결한 장기 상승 추세선 — 먼 거리 지지</td>
+</tr>
+<tr>
+<td>상승 저항선 (돌파)</td>
+<td>상승</td>
+<td>19,795원</td>
+<td>3개</td>
+<td>장기 박스 상단 저항 — 이미 돌파, 향후 지지로 전환 가능성</td>
+</tr>
+</tbody>
+</table>
+<h3>5.3 PRZ (Potential Reversal Zone)</h3>
+<table>
+<thead>
+<tr>
+<th>방향</th>
+<th>가격 범위</th>
+<th>신뢰도</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>저항</td>
+<td>27,750~28,300원</td>
+<td>강</td>
+<td>52주 고가 + 피봇 R1(28,267원) + 직전 장대양봉 고가 겹침</td>
+</tr>
+<tr>
+<td>지지 (1차)</td>
+<td>22,500~22,820원</td>
+<td>중</td>
+<td>피봇 S1(22,817원) + BB 상단(22,762원) + 피보 0.382 되돌림(21,980원)</td>
+</tr>
+<tr>
+<td>지지 (2차)</td>
+<td>19,780~19,830원</td>
+<td>강</td>
+<td>피봇 S2(19,833원) + 추세선 저항 전환(19,795원) + 피보 0.5(19,780원) 3중 겹침</td>
+</tr>
+</tbody>
+</table>
+<p>※ 2차 지지 PRZ(19,800원 부근)는 3개 소스가 겹치는 <strong>가장 강력한 반전/지지 구간</strong>.</p>
+<h3>5.4 종합 지지/저항 테이블</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>가격</th>
+<th>근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>저항</td>
+<td>32,308원</td>
+<td>피보 1.272 확장 (추세 연장 1차 목표)</td>
+</tr>
+<tr>
+<td>저항</td>
+<td>28,267원</td>
+<td>피봇 R1 + 직전 고점권</td>
+</tr>
+<tr>
+<td>저항</td>
+<td>27,750원</td>
+<td>52주 고가</td>
+</tr>
+<tr>
+<td><strong>현재가</strong></td>
+<td><strong>25,800원</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td>지지</td>
+<td>22,817원</td>
+<td>피봇 S1 + BB 상단 근처 (1차 되돌림 지지)</td>
+</tr>
+<tr>
+<td>지지</td>
+<td>19,803원</td>
+<td>PRZ (중) — 피봇 S2 + 피보 0.5 + 추세선 저항 전환</td>
+</tr>
+<tr>
+<td>지지</td>
+<td>17,580원</td>
+<td>피보 0.618 되돌림 + 박스 상단 근처</td>
+</tr>
+<tr>
+<td>지지</td>
+<td>15,854원</td>
+<td>MA20 / BB 중단 (장기 핵심 지지)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. 시그널 종합</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>내용</th>
+<th>시그널</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>차트 패턴</strong></td>
+<td>박스 상향 돌파(강세) + 유성형 음봉(조정 경고) 혼재</td>
+<td>⚪</td>
+</tr>
+<tr>
+<td>이동평균선</td>
+<td>현재가 MA20 대비 +62.7% 극단 괴리, 비정배열</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>RSI</td>
+<td>75.9 — 과매수권 진입</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>MACD</td>
+<td>1,683 / 히스토그램 +1,230 매수 확장</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>볼린저밴드</td>
+<td>상단 이탈, 밴드 폭 87.1% 극한 확장</td>
+<td>🟢</td>
+</tr>
+<tr>
+<td>스토캐스틱</td>
+<td>K 76.7 / D 79.4 데드크로스</td>
+<td>🔴</td>
+</tr>
+<tr>
+<td>거래량</td>
+<td>12.67x — 폭발적</td>
+<td>🟢</td>
+</tr>
+</tbody>
+</table>
+<p><strong>종합 판단</strong>: 🟢 매수 3개 / 🔴 매도 3개 / ⚪ 중립 1개 → <strong>중립(과열 경고)</strong></p>
+<p>5개월 박스권을 거래량 12.67배로 돌파한 <strong>추세 전환은 유효</strong>하나, MA20 괴리율 +62.7%, RSI 75.9, 스토캐스틱 데드크로스, 유성형 윗꼬리 음봉이 동시에 단기 과열을 알린다. 중기(2~3개월) 관점에서는 상승 추세 초입일 수 있으나, 현 레벨에서 신규 추격 매수는 불리한 리스크/리워드이며 <strong>20,000~22,500원 되돌림 후 재진입이 교과서적 대응</strong>이다.</p>
+<hr />
+<h2>7. 전략 제안</h2>
+<h3>보유 중인 경우</h3>
+<ul>
+<li><strong>홀드 + 부분 익절 권고</strong></li>
+<li>익절 라인: 26,316원 (피봇 기반 TP / 1차 저항) — 추가 상승 시 28,000원 분할 익절</li>
+<li>손절 라인: 19,833원 (피봇 S2 + 피보 0.5 + 추세선 3중 PRZ 이탈 시)</li>
+<li>리스크/리워드: +2.0% vs -23.1% → <strong>비대칭 불리</strong> (단기 관점). 따라서 추격 매수 대신 보유분 30~50% 부분 익절로 헷지 권고</li>
+</ul>
+<h3>진입 대기인 경우</h3>
+<ul>
+<li><strong>관망 (추격 매수 비권장)</strong></li>
+<li>1차 진입가: 22,817원 (피봇 S1 + BB 상단 되돌림)</li>
+<li>2차 진입가: 19,803원 (PRZ 강력 지지 — 피봇 S2 + 피보 0.5 + 추세선 전환)</li>
+<li>진입 조건:<br />
+  1) 1차 진입: 22,500~22,800원 구간에서 양봉 + 거래량 평균 이상 동반 시<br />
+  2) 2차 진입: 19,800원 근처 터치 후 반등 확인 양봉 + MA20(15,854원) 하향 이탈 없을 것<br />
+  3) 절대 회피: RSI 75 재돌파 전 과열 구간에서의 추격 매수</li>
+</ul>
+</body>
+</html>
