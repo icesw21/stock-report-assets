@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>후성(093370) DeepDive</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-18<br />
+updated: 2026-04-18<br />
+tags:<br />
+  - 2차전지소재<br />
+  - 불소화학<br />
+  - LiPF6<br />
+  - 전해질<br />
+  - 사이클턴어라운드<br />
+links:</p>
+<hr />
+<h1>후성(093370) — LiPF6 전해질 사이클 턴어라운드와 국내 2차전지 소재 공급망 재편</h1>
+<hr />
+<h2>Executive Summary</h2>
+<p>후성은 국내 유일의 LiPF6(리튬헥사플루오로포스페이트) 양산 업체로, 2023~2024년 중국발 과잉공급·판가 폭락(톤당 RMB 4~5만위안대)으로 2년 연속 대규모 적자를 시현했으나, 2025년 2H 이후 LiPF6 가격이 RMB 4.7만 → 18만 위안(+280%)으로 급반등하며 2025년 흑자전환(OP 253억)에 성공했다. 2026년에는 글로벌 LiPF6 수급이 공급부족 구간(2026Q4 약 7,000톤 deficit 추정)에 진입할 가능성이 높고, 동시에 반도체 특수가스(HBM4·2나노용 C4F6·WF6·세정가스) 수혜가 중첩되며 구조적 리레이팅 국면에 진입했다. 확률가중 적정주가는 <strong>17,450원(현재가 13,820원 대비 +26.3%)</strong> 으로, 이미 현재가가 52주 고점(+261% YTD 급등)이 기본 시나리오의 상당 부분을 반영 중이나 낙관 시나리오(LiPF6 슈퍼사이클+반도체 수혜 가시화)에서는 20,000원대 재진입 여지가 존재한다.</p>
+<hr />
+<h2>1. 분석 배경</h2>
+<p>2023~2024년 후성은 2년 연속 두 자릿수 영업적자와 2024Q4 유형자산 손상차손 -817억을 반영하며 부채비율 248%까지 악화됐다. 그러나 2025년 2H부터 ① 중국 LiPF6 감산·수요 회복으로 판가가 RMB 4.7만 → 18만 위안으로 +280% 반등, ② 후성 단독 국내 공급자 지위를 배경으로 매출 +7.7%·OP 253억 흑전·부채비율 112%로 급속 정상화가 진행됐다. 현재 주가 13,820원은 52주 저점 3,830원 대비 +261% 상승한 상태로 RSI 78.9 과매수 구간이며, 시장은 이미 '턴어라운드'를 선반영했다. T4의 핵심 질문은 "현재 가격이 구조적 사이클 회복을 얼마나 반영했는가, 그리고 LiPF6 슈퍼사이클·반도체 수혜가 추가로 프라이싱될 여지는 얼마인가"이다.</p>
+<h3>왜 이 주제인가</h3>
+<p>T1 성장동력 분석에서 'LiPF6 전해질 사이클 턴어라운드'를 ⭐⭐⭐ 최고 중요도로 평가.</p>
+<ul>
+<li><strong>TAM</strong>: 글로벌 LiPF6 시장 2026년 USD 6.38억 → 2035년 USD 16.36억 (CAGR 9.87%). EV·ESS 수요 동반 반등</li>
+<li><strong>실적 기여 시점</strong>: 이미 2025년 흑전 반영, 2026년 매출 5,795억·OP 417억(컨센 추정) 가속 구간</li>
+<li><strong>리레이팅 임팩트</strong>: 현재 PBR 4.43x는 턴어라운드 초기 프리미엄. 사이클 피크 EPS 회복 시 PER 15~20x 밸류에이션 로드맵 확보</li>
+<li><strong>차별화</strong>: 후성은 <strong>국내 유일</strong> LiPF6 양산사이자 셀 3사(LGES·삼성SDI·SK온)의 한국 내 공급망 국산화 유일 대안</li>
+</ul>
+<h3>분석 범위</h3>
+<ul>
+<li>글로벌 LiPF6 수급 싸이클(2023~2027)과 가격 경로</li>
+<li>중국 Do-Fluoride·Tinci·Capchem 대비 후성 경쟁 포지션</li>
+<li>국내 셀 3사의 LiPF6 조달 구조와 국산화 정책 효과</li>
+<li>LiFSI 등 차세대 리튬염 전환 리스크</li>
+<li>후성의 반도체 특수가스(HBM·C4F6·세정가스) + 한텍 + 탄소배출권 non-LiPF6 옵션 가치</li>
+</ul>
+<h3>한계</h3>
+<ul>
+<li>증권사 컨센서스 2026E/2027E가 공개 채널에서 제한적(2026 매출 5,795억·OP 417억은 일부 매체 인용치)</li>
+<li>사업부문별 세그먼트 수익성 공시가 한텍 편입 이후 합산 공시 — 기초화합물 단독 OPM은 업계 추정 사용</li>
+<li>중국 Tier-2 LiPF6 생산업체 미공개 감산 규모에 대한 불확실성</li>
+</ul>
+<hr />
+<h2>2. 산업/시장 개요</h2>
+<h3>글로벌 LiPF6 시장 현황</h3>
+<p>LiPF6는 리튬이온 배터리 액체 전해질의 핵심 리튬염으로, 액체 전해질 비용의 약 40~50%를 차지하는 핵심 소재다. 2022년 EV 수요 급증으로 톤당 RMB 60만위안(피크)까지 급등했던 가격은 2023~2024년 중국의 대규모 capacity 증설(2024년 중국 생산량 187,000톤, +45% YoY)로 RMB 4~5만위안대까지 폭락했다.</p>
+<p><strong>2025~2026 사이클 재전환</strong>: 2025년 2H부터 ① 중국 내 누적 적자 장기화로 Tier-2 업체 자연 감산, ② EV·ESS 수요 동반 회복, ③ 재고 바닥 국면의 복합 작용으로 판가가 6개월만에 +280% 급등했다. 2026년 2월 현재 RMB 13.8만위안으로 일부 조정되었으나 2026Q4 약 7,000톤 공급부족(deficit) 전망이 지배적이다. 중국 LiPF6 surplus capacity는 2026년 중 대부분 소진될 것으로 전망된다.</p>
+<h3>주요 공급자/경쟁 구도</h3>
+<table>
+<thead>
+<tr>
+<th>지역/국가</th>
+<th>주요 생산자</th>
+<th>캐파 (톤/년)</th>
+<th>포지션</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🇨🇳 중국</td>
+<td>Do-Fluoride (多氟多)</td>
+<td>~55,000 (Guangxi 3만 + 기존)</td>
+<td>글로벌 1위, BYD 장기계약</td>
+</tr>
+<tr>
+<td>🇨🇳 중국</td>
+<td>Tinci Materials (天赐材料)</td>
+<td>30,000+</td>
+<td>전해액 글로벌 1위 수직통합</td>
+</tr>
+<tr>
+<td>🇨🇳 중국</td>
+<td>Capchem (新宙邦)</td>
+<td>~15,000</td>
+<td>전해액·불소계 첨가제 다각화</td>
+</tr>
+<tr>
+<td>🇰🇷 한국</td>
+<td><strong>후성</strong></td>
+<td><strong>4,000 (국내) + 중국 난통</strong></td>
+<td><strong>국내 유일</strong>, 증설 중</td>
+</tr>
+<tr>
+<td>🇯🇵 일본</td>
+<td>Kanto Denka, Central Glass, Stella</td>
+<td>~8,000 합산</td>
+<td>일본 셀메이커·고급 전해질 중심</td>
+</tr>
+</tbody>
+</table>
+<h3>시장 규모(TAM) 추정</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>전제</th>
+<th>2028E LiPF6 TAM</th>
+<th>후성 기회(매출 관점)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>LFP 확대·중국 재증설 → LiPF6 톤당 RMB 8만위안, EV 성장 둔화</td>
+<td>USD 7억</td>
+<td>900~1,100억 (글로벌 MS 2~3%)</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>LiPF6 톤당 RMB 12~15만위안, EV·ESS 동반 회복, 한국 셀 3사 국산화 가속</td>
+<td>USD 10억</td>
+<td>1,700~2,000억 (MS 4~5%)</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>LiPF6 슈퍼사이클 RMB 18만위안+, LGES·SDI·SK온 국산화 Quota 확대</td>
+<td>USD 14억</td>
+<td>2,500~2,800억 (MS 6~7%)</td>
+</tr>
+</tbody>
+</table>
+<p>※ LiPF6 단독 매출 기준. 후성 전체 매출 = LiPF6 + 냉매 + 반도체 특수가스 + 한텍 화공기기</p>
+<h3>시장의 특수성</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>일반 기초화학</th>
+<th>LiPF6 전해질</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가격 변동성</td>
+<td>±10~20%</td>
+<td>±200~500% (사이클 진폭 극단)</td>
+</tr>
+<tr>
+<td>진입장벽</td>
+<td>중</td>
+<td>상 (불산+리튬 통합 + 무수 공정 + 셀사 품질인증 3~5년)</td>
+</tr>
+<tr>
+<td>고객 교체비용</td>
+<td>저</td>
+<td>상 (셀 인증 재획득 18~24개월 소요)</td>
+</tr>
+<tr>
+<td>지역 의존성</td>
+<td>글로벌</td>
+<td>중국 중심(~75% 글로벌 공급) → 지정학 리스크</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. 경쟁 구도</h2>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>LiPF6 캐파</th>
+<th>강점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Do-Fluoride (多氟多)</td>
+<td>🇨🇳</td>
+<td>~RMB 200억대</td>
+<td>55,000톤/년</td>
+<td>원재료 수직통합, BYD 장기계약</td>
+</tr>
+<tr>
+<td>Tinci Materials (天赐材料)</td>
+<td>🇨🇳</td>
+<td>~RMB 300억대</td>
+<td>30,000+톤/년</td>
+<td>전해액 글로벌 1위 수직통합</td>
+</tr>
+<tr>
+<td>Capchem (新宙邦)</td>
+<td>🇨🇳</td>
+<td>~RMB 200억대</td>
+<td>15,000톤/년</td>
+<td>전해액·불소계 첨가제 다각화</td>
+</tr>
+<tr>
+<td>엔켐</td>
+<td>🇰🇷</td>
+<td>~1.4조원 (KOSDAQ)</td>
+<td>0 (믹서)</td>
+<td>북미 전해액 MS 50%+, CATL 35만톤 LOA</td>
+</tr>
+<tr>
+<td>천보</td>
+<td>🇰🇷</td>
+<td>1조원대</td>
+<td>0 (LiFSI·LiPO2F2 등 첨가제)</td>
+<td>차세대 리튬염 집중</td>
+</tr>
+<tr>
+<td><strong>후성</strong></td>
+<td>🇰🇷</td>
+<td><strong>1.48조원</strong></td>
+<td><strong>4,000톤/년 + 증설</strong></td>
+<td><strong>국내 유일 LiPF6, 불소+반도체 가스 통합</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>후성의 포지셔닝</strong>: 중국 Top3 대비 Scale은 1/10 수준이나, ① 한국 셀 3사의 공급망 국산화 유일 대안, ② 불소 밸류체인(HF → LiPF6 + 반도체가스) 수직통합, ③ 한텍 화공기기·CDM 부수사업 옵션가치 보유. 중국과의 가격 경쟁이 아닌 <strong>"지정학 리스크 헤지 프리미엄"</strong>으로 밸류에이션 근거가 재편되는 중.</p>
+<hr />
+<h2>4. 후성의 역량 분석</h2>
+<h3>진입 전략 / 경쟁력 확보 경로</h3>
+<p>후성은 1990년대부터 국내 유일의 불산(HF) → 냉매(HFC) 수직계열화를 구축해왔고, 2010년대 초반 LiPF6 양산으로 진입하여 <strong>국내 유일 양산 경험 15년+</strong>를 축적. 셀 3사(LGES·삼성SDI·SK온)의 품질인증을 모두 획득한 유일 한국 기업이며, 중국 난통공장은 Tinci·Capchem 등 로컬 전해액 믹서에 직납하는 구조.</p>
+<h3>기존 사업과의 시너지</h3>
+<table>
+<thead>
+<tr>
+<th>기존 역량</th>
+<th>LiPF6 활용</th>
+<th>시너지 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>불산(HF) 제조 — 냉매 공정</td>
+<td>LiPF6 주원료 HF 내재화</td>
+<td>원가 경쟁력 (중국 업체는 HF 외주)</td>
+</tr>
+<tr>
+<td>반도체 특수가스 (WF6·C4F8)</td>
+<td>고순도 불소 공정 know-how</td>
+<td>LiPF6 품질 프리미엄 + HBM 수혜</td>
+</tr>
+<tr>
+<td>한텍 화공기기</td>
+<td>플랜트 설비 자체 제작</td>
+<td>CAPEX 효율 + 증설 속도</td>
+</tr>
+<tr>
+<td>CDM(HFC-23 감축)</td>
+<td>냉매 공정 부산물</td>
+<td>탄소배출권 현금흐름 추가</td>
+</tr>
+</tbody>
+</table>
+<h3>경쟁우위 요소</h3>
+<ul>
+<li><strong>국내 유일 지위 (Structural Moat)</strong>: LGES·SDI·SK온이 LiPF6 국산화를 추진할 때 선택지가 후성 단 하나. IRA·공급망 재편 수혜 직접 노출</li>
+<li><strong>불소 수직통합</strong>: 형석 → HF → LiPF6 / 반도체가스 / 냉매 멀티 애플리케이션으로 원재료 변동성 완충</li>
+<li><strong>Multi-material Optionality</strong>: LiPF6 사이클 외에도 HBM4·2나노용 C4F6·WF6 양산, 일본 센트럴글래스와 극저온 식각가스 JV로 반도체 특수가스 매출 비중 확대</li>
+<li><strong>Capex 선행 완료</strong>: 2021~2024 누적 3,319억 CAPEX 집행 종료, 2025~2027은 가동률 레버리지 구간</li>
+</ul>
+<hr />
+<h2>5. 실적 기여 시나리오</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2026E</th>
+<th>2027E</th>
+<th>2028E</th>
+<th>2029E</th>
+<th>2030E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>보수적 (LiPF6 RMB 8~10만위안, 중국 재증설)</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— 매출</td>
+<td>5,100억</td>
+<td>5,300억</td>
+<td>5,500억</td>
+<td>5,600억</td>
+<td>5,700억</td>
+</tr>
+<tr>
+<td>— 영업이익</td>
+<td>280억</td>
+<td>320억</td>
+<td>360억</td>
+<td>380억</td>
+<td>400억</td>
+</tr>
+<tr>
+<td>— OPM</td>
+<td>5.5%</td>
+<td>6.0%</td>
+<td>6.5%</td>
+<td>6.8%</td>
+<td>7.0%</td>
+</tr>
+<tr>
+<td><strong>기본 (RMB 12~15만, 정상 싸이클)</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— 매출</td>
+<td>5,795억</td>
+<td>6,400억</td>
+<td>7,000억</td>
+<td>7,500억</td>
+<td>7,900억</td>
+</tr>
+<tr>
+<td>— 영업이익</td>
+<td>417억</td>
+<td>560억</td>
+<td>720억</td>
+<td>830억</td>
+<td>900억</td>
+</tr>
+<tr>
+<td>— OPM</td>
+<td>7.2%</td>
+<td>8.8%</td>
+<td>10.3%</td>
+<td>11.1%</td>
+<td>11.4%</td>
+</tr>
+<tr>
+<td><strong>낙관 (슈퍼사이클 RMB 18만+, 국산화 가속)</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— 매출</td>
+<td>6,200억</td>
+<td>7,200억</td>
+<td>8,500억</td>
+<td>9,400억</td>
+<td>10,000억</td>
+</tr>
+<tr>
+<td>— 영업이익</td>
+<td>620억</td>
+<td>900억</td>
+<td>1,250억</td>
+<td>1,500억</td>
+<td>1,700억</td>
+</tr>
+<tr>
+<td>— OPM</td>
+<td>10.0%</td>
+<td>12.5%</td>
+<td>14.7%</td>
+<td>16.0%</td>
+<td>17.0%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 기본 시나리오 2026E는 일부 매체 인용 컨센서스 매출 5,795억·OP 417억 반영. 2027E~ 는 LiPF6 판가 정상화 + 반도체 특수가스(Central Glass JV) 가동 + 한텍 화공기기 성장률 가정. 세그먼트: LiPF6/2차전지 40% · 냉매+특수가스 25% · 한텍 35% 전제.</p>
+<hr />
+<h2>6. 밸류에이션 영향</h2>
+<h3>PBR 리레이팅 논리</h3>
+<p>2022년 사이클 피크(ROE 27%·PBR 3~4x) → 2023~2024 적자(PBR 1.5x 붕괴) → 2025 턴어라운드 + 과열(PBR 4.43x). 현재는 선행 실적 회복을 선반영 중이며 PBR 4.43x는 <strong>peak cycle multiple</strong> 구간. 추가 리레이팅은 ① ROE 10%+ 지속 증명, ② LiPF6 슈퍼사이클 확인, ③ 반도체 특수가스 매출 비중 30%+ 도달 전제.</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 근거</th>
+<th>적정 PBR</th>
+<th>BPS</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적 (사이클 재둔화)</td>
+<td>PBR 3.0x — 2025 정상화만 반영, 추가 모멘텀 소멸</td>
+<td>3.0x</td>
+<td>3,500원</td>
+<td><strong>10,500원</strong></td>
+<td>-24.0%</td>
+</tr>
+<tr>
+<td>기본 (정상 싸이클)</td>
+<td>PBR 4.5x — 2027 EPS 500원 기준 PER 32x ≈ PBR 4.5x</td>
+<td>4.5x</td>
+<td>3,700원</td>
+<td><strong>16,650원</strong></td>
+<td>+20.5%</td>
+</tr>
+<tr>
+<td>낙관 (LiPF6 슈퍼사이클 + 반도체 수혜)</td>
+<td>PBR 6.5x — 2028 ROE 15%+·EPS 900원 기준 PER 25x</td>
+<td>6.5x</td>
+<td>4,000원</td>
+<td><strong>26,000원</strong></td>
+<td>+88.1%</td>
+</tr>
+</tbody>
+</table>
+<p>※ BPS는 시나리오별 2026~2028 누적 이익잉여금 증분 반영. 현재 BPS 3,118원 → 기본 2027E 3,700원.</p>
+<hr />
+<h2>7. 리스크 매트릭스</h2>
+<table>
+<thead>
+<tr>
+<th>리스크</th>
+<th>영향</th>
+<th>확률</th>
+<th>대응/헤지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>중국 LiPF6 재증설 → 판가 재급락</td>
+<td>상</td>
+<td>중</td>
+<td>원가 수직통합·국내 독점지위로 버퍼</td>
+</tr>
+<tr>
+<td>LiFSI 등 차세대 리튬염 전환 가속</td>
+<td>상</td>
+<td>하~중</td>
+<td>LiFSI는 2030+ 본격, 중단기 LiPF6 주력 유지</td>
+</tr>
+<tr>
+<td>LGES·SDI·SK온 EV 수요 둔화</td>
+<td>중</td>
+<td>중</td>
+<td>ESS·HBM 특수가스로 다각화</td>
+</tr>
+<tr>
+<td>CB 2회차 270억 전환에 따른 희석 (ITM +101%)</td>
+<td>중</td>
+<td>상</td>
+<td>주식수 +3.9% 희석 제한적, 재무개선 긍정</td>
+</tr>
+<tr>
+<td>형석·리튬 원재료 가격 급등</td>
+<td>중</td>
+<td>중</td>
+<td>장기계약 + 판가 연동 조항</td>
+</tr>
+<tr>
+<td>삼성·SK하이닉스 HBM Capex 조정</td>
+<td>중</td>
+<td>하</td>
+<td>C4F6·세정가스 다변화</td>
+</tr>
+<tr>
+<td>환율 급변 (원화 강세)</td>
+<td>하</td>
+<td>중</td>
+<td>수출·수입 Natural Hedge 부분</td>
+</tr>
+<tr>
+<td>주가 과열(RSI 78.9)·단기 차익실현</td>
+<td>중</td>
+<td>상</td>
+<td>중장기 펀더멘털 베이스 유효</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. 확률가중 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적정주가</th>
+<th>확률</th>
+<th>가중 기여</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적 (사이클 재둔화·중국 재증설)</td>
+<td>10,500원</td>
+<td>25%</td>
+<td>2,625원</td>
+</tr>
+<tr>
+<td>기본 (정상 싸이클 + 국산화 수혜)</td>
+<td>16,650원</td>
+<td>50%</td>
+<td>8,325원</td>
+</tr>
+<tr>
+<td>낙관 (LiPF6 슈퍼사이클 + HBM 수혜)</td>
+<td>26,000원</td>
+<td>25%</td>
+<td>6,500원</td>
+</tr>
+<tr>
+<td><strong>확률가중 합계</strong></td>
+<td><strong>17,450원</strong></td>
+<td>100%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>현재가 13,820원 대비 +26.3% 업사이드</strong></p>
+<p>※ 다만 현재가가 이미 52주 고점(+261% 급등)이며 RSI 78.9 과매수라는 점을 감안, 단기 조정 후 재진입 전략이 리스크·리워드 관점에서 우월. <strong>1차 매집 구간 11,000~12,500원(MA20·피봇 S1 부근), 2차 9,000원대(MA60)</strong> 권고.</p>
+<hr />
+<h2>9. 결론</h2>
+<p>후성은 LiPF6 사이클 최저점을 통과하며 구조적 턴어라운드 국면에 진입했고, 국내 유일 양산사 지위를 기반으로 한국 셀 3사 공급망 국산화 정책의 최대 수혜주이다. 2026~2028년 LiPF6 수급 타이트닝 + 반도체 특수가스(HBM4·2나노) 동시 수혜가 이익 가속 구간을 형성할 가능성이 높다. 현재가는 기본 시나리오(16,650원)의 83% 수준을 반영해 단기 상방 여지는 제한적이나, 낙관 시나리오 현실화 시 20,000원대 재진입 여지가 존재한다. 확률가중 적정주가 <strong>17,450원(+26.3%)</strong>.</p>
+<p><strong>모니터링 체크포인트</strong>:<br />
+- ✅ LiPF6 중국 현물가 RMB 12만위안 수성 여부 (2026 2H)<br />
+- ✅ LGES·SDI·SK온 LiPF6 국산화 장기공급 계약 체결 공시<br />
+- ✅ 후성 울산공장 LiPF6 4,000톤 라인 가동률 (분기별 IR)<br />
+- ✅ 센트럴글래스 JV 극저온 식각가스 양산 개시 시점 (2026 4Q 목표)<br />
+- ✅ 한텍 코스닥 상장 승인·공모가 (지분가치 재평가 트리거)<br />
+- ✅ CB 2회차 270억 전환 공시 (주식 희석 +3.9%)<br />
+- ✅ 2026Q1 실적: OPM 7%+ 유지 여부가 기본 시나리오 유효성 가늠자</p>
+<hr />
+<h2>참고 자료</h2>
+<ul>
+<li><a href="https://www.chemanalyst.com/Pricing-data/lithium-hexafluorophosphate-1268">LiPF6 Price Trend — ChemAnalyst</a></li>
+<li><a href="https://www.sunsirs.com/commodity-news/petail-30361.html">LiPF6 Prices Soar 280% — SunSirs</a></li>
+<li><a href="https://news.metal.com/newscontent/103222503/">LiPF6 Supply-Demand Tightening Ahead of Schedule — SMM</a></li>
+<li><a href="https://www.metal.com/en/newscontent/103144700">2024 LiPF6 Market Review — SMM</a></li>
+<li><a href="https://www.marketgrowthreports.com/market-reports/lithium-hexafluorophosphate-lipf6-market-113468">LiPF6 Market Size 2035 — Market Growth Reports</a></li>
+<li><a href="https://pmstoryhub.com/foosungchem-analysis-2026/">후성 실적 분석 — PMStoryHub</a></li>
+<li><a href="https://www.creditnews.kr/news/articleView.html?idxno=1847">LiPF6 가격 2배↑ 후성 — 한국신용신문</a></li>
+<li><a href="https://stock1.brokdam.com/%ED%9B%84%EC%84%B1-17-40-%EA%B8%89%EB%93%B1-%EC%9D%B4%EC%9C%A0-%EB%B0%98%EB%8F%84%EC%B2%B4%C2%B7%EB%B0%B0%ED%84%B0%EB%A6%AC-%EB%8F%99%EC%8B%9C-%EC%88%98%ED%98%9C-%EB%B6%84%EC%84%9D/">후성 반도체·배터리 동시 수혜 — Brokdam</a></li>
+<li><a href="https://kr.investing.com/news/markets/article-1313608">후성 한텍 코스닥 상장 — Investing.com</a></li>
+<li><a href="https://www.sneresearch.com/kr/insight/special_view/756/page/0">LiFSI 시장전망 — SNE Research</a></li>
+<li><a href="https://dealsite.co.kr/articles/153871/089059">엔켐 CATL 35만톤 공급 — 딜사이트</a></li>
+<li><a href="https://www.world-energy.org/article/21219.html">Do-Fluoride BYD Supply Deal — World-Energy</a></li>
+</ul>
+</body>
+</html>
