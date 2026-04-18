@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>코세스(089890) Valuation</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-18<br />
+updated: 2026-04-18<br />
+tags:<br />
+  - 반도체장비<br />
+  - SOFC<br />
+  - 연료전지<br />
+  - BloomEnergy<br />
+links:</p>
+<hr />
+<h1>코세스(089890) Valuation Report</h1>
+<hr />
+<h2>1. 현재 멀티플</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>코세스</th>
+<th>산출 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>40.2x</td>
+<td>32,000원 ÷ TTM EPS 796원 (2025 순이익 132억 ÷ 유통주식 16,584,962주)</td>
+</tr>
+<tr>
+<td>PER (Fwd, 2026E)</td>
+<td>12.5x</td>
+<td>26E 컨센 순이익 425억 기준 EPS 2,563원 반영</td>
+</tr>
+<tr>
+<td>PBR (현재)</td>
+<td>6.9x</td>
+<td>32,000원 ÷ BPS 4,635원 (2025말 자본 769억 ÷ 발행주식 16,584,962주)</td>
+</tr>
+<tr>
+<td>PBR (Fwd, 2026E)</td>
+<td>4.4x</td>
+<td>26E 예상 BPS 7,199원 (키움 26E 자본 1,194억 기준)</td>
+</tr>
+<tr>
+<td>EV/EBITDA (2026E)</td>
+<td>10.4x</td>
+<td>EV 5,053억 (시총 5,307억 - 순현금 254억) ÷ 26E EBITDA 485억</td>
+</tr>
+<tr>
+<td>EV/Revenue (2026E)</td>
+<td>2.7x</td>
+<td>EV 5,053억 ÷ 26E 매출 1,876억</td>
+</tr>
+<tr>
+<td>ROE (2025)</td>
+<td>17.8%</td>
+<td>2025 순이익 132억 ÷ 자본 769억</td>
+</tr>
+<tr>
+<td>OP Margin (2025→26E)</td>
+<td>21.1% → 24.1%</td>
+<td>25년 OP 174억·매출 824억 / 26E OP 452억·매출 1,876억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0.0%</td>
+<td>무배당</td>
+</tr>
+</tbody>
+</table>
+<p>※ KIS API + DART CFS 기준 (2026-04-18), Fwd 수치는 키움·SK증권 컨센서스 반영</p>
+<p><strong>핵심</strong>: TTM PER 40.2x는 2024년 적자·2025년 회복 과정의 왜곡치이며, Bloom Energy향 SOFC 매출이 본격 반영되는 2026E 기준 Fwd PER 12.5x·Fwd PBR 4.4x로 급락 — 실적 레벨업 구간에서의 전형적 멀티플 압축 국면.</p>
+<hr />
+<h2>2. Peer Comparison</h2>
+<h3>선정 기준</h3>
+<p>SOFC 장비의 최종 고객인 <strong>Bloom Energy</strong>(글로벌 SOFC 리더), 국내 연료전지 동종군 <strong>두산퓨얼셀</strong>, 그리고 후공정 장비 본업 비교 대상인 <strong>한미반도체·HPSP</strong>를 함께 편성. 단일 Peer 그룹으로 묶기 어려운 하이브리드 비즈니스(반도체 후공정 + SOFC 장비)이므로 연료전지·장비 두 축으로 평균을 분리 산출.</p>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>Fwd PE</th>
+<th>PBR</th>
+<th>EV/EBITDA</th>
+<th>OP Margin</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>코세스 (089890)</strong></td>
+<td>🇰🇷</td>
+<td>5,307억</td>
+<td>12.5x</td>
+<td>6.9x (Fwd 4.4x)</td>
+<td>10.4x</td>
+<td>24.1%</td>
+<td>17.8%</td>
+</tr>
+<tr>
+<td>Bloom Energy (BE)</td>
+<td>🇺🇸</td>
+<td>$12B대</td>
+<td>약 45x</td>
+<td>약 10x</td>
+<td>약 25x</td>
+<td>7~9%</td>
+<td>NM</td>
+</tr>
+<tr>
+<td>두산퓨얼셀 (336260)</td>
+<td>🇰🇷</td>
+<td>1.3조원대</td>
+<td>35~40x</td>
+<td>3.0x</td>
+<td>20x+</td>
+<td>4~6%</td>
+<td>5% 내외</td>
+</tr>
+<tr>
+<td>한미반도체 (042700)</td>
+<td>🇰🇷</td>
+<td>27.3조원</td>
+<td>40x+</td>
+<td>39.4x</td>
+<td>30x+</td>
+<td>33%</td>
+<td>34.8%</td>
+</tr>
+<tr>
+<td>HPSP (403870)</td>
+<td>🇰🇷</td>
+<td>3조원대</td>
+<td>25~30x</td>
+<td>6~7x</td>
+<td>18~20x</td>
+<td>50%+</td>
+<td>30%+</td>
+</tr>
+<tr>
+<td>엘오티베큠 (083310)</td>
+<td>🇰🇷</td>
+<td>5천억대</td>
+<td>15x 내외</td>
+<td>2.5x</td>
+<td>9x</td>
+<td>10~12%</td>
+<td>10%</td>
+</tr>
+<tr>
+<td><strong>Peer 평균 (5사)</strong></td>
+<td>—</td>
+<td>—</td>
+<td><strong>약 31x</strong></td>
+<td><strong>약 12x</strong></td>
+<td><strong>약 20x</strong></td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: yfinance, 네이버증권 (2026-04-18 기준), 키움·SK증권 리포트 언급치 참조. 일부는 레인지 추정</p>
+<h3>할인율 분석 (Fwd 기준)</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>코세스</th>
+<th>Peer 평균</th>
+<th>할인율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fwd PE</td>
+<td>12.5x</td>
+<td>31x</td>
+<td><strong>-60%</strong></td>
+</tr>
+<tr>
+<td>Fwd PBR</td>
+<td>4.4x</td>
+<td>12x</td>
+<td><strong>-63%</strong></td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>10.4x</td>
+<td>20x</td>
+<td><strong>-48%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>포지셔닝</strong>: Peer 평균 대비 모든 지표에서 45~65% 할인 거래. (1) 한미반도체·HPSP 등 후공정 Best-in-class 장비株는 ROE 30%+ 프리미엄을 반영하고 있어 단순 비교는 과도 — 할인의 상당부분은 <strong>코세스가 아직 단일 품목(SOFC 전극 셀 장비) 수주 레코드가 1건(366억)에 불과한 신규 진입자</strong>라는 가시성 디스카운트로 정당화. (2) 다만 두산퓨얼셀(PAFC·고정형) 대비 <strong>SOFC 성장성·OP마진(24% vs 5%)</strong>을 감안하면 현 멀티플은 오히려 프리미엄 여지가 있음. 한국 디스카운트(-20~30%p)를 반영해도 Fwd PER 15~18x 수준은 정당화 가능.</p>
+<hr />
+<h2>3. PBR 기반 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>BPS (2026E)</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>3.5x</td>
+<td>7,199원</td>
+<td><strong>25,200원</strong></td>
+<td>-21.3%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>4.5x</td>
+<td>7,199원</td>
+<td><strong>32,400원</strong></td>
+<td>+1.2%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>5.5x</td>
+<td>7,199원</td>
+<td><strong>39,600원</strong></td>
+<td>+23.7%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PBR 적용 근거</strong>:<br />
+- <strong>Fwd BPS 7,199원</strong>은 키움증권 26E 자본총계 1,194억원 기준. 2025말 BPS 4,635원 대비 +55%<br />
+- <strong>히스토리컬 밴드</strong>: 키움 자료상 PBR 최저 1.57x~최고 5.98x. 2024년 적자 국면 저점 1.79x, 2025년 실적 회복기 고점 4.66x~5.98x 부근<br />
+- <strong>보수 3.5x</strong>: SOFC 장비 추가 수주 지연·Bloom CAPEX 사이클 둔화 가정. 26E ROE 43%(키움)임에도 불구 일반 반도체 장비 평균 밴드 적용<br />
+- <strong>기본 4.5x</strong>: Bloom 2GW 증설(26년말) 로드맵 이행, 2GW 신규 수주 현실화. 현재 Fwd PBR 4.44x와 일치 → 현 주가는 기본 시나리오를 정확히 반영<br />
+- <strong>낙관 5.5x</strong>: Bloom CAPEX 4GW급 가속화 + 2차전지/반도체 본업 동반 회복 시. 히스토리컬 상단(5.98x) 근접</p>
+<hr />
+<h2>4. DCF Valuation</h2>
+<h3>가정</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WACC</td>
+<td>6.2%</td>
+<td>무위험이자율 3.5% + β1.2 × 시장프리미엄 5.0%</td>
+</tr>
+<tr>
+<td>자기자본비용</td>
+<td>9.5%</td>
+<td>CAPM 기반</td>
+</tr>
+<tr>
+<td>타인자본비용</td>
+<td>4.5%</td>
+<td>BBB 회사채 기준, 세후</td>
+</tr>
+<tr>
+<td>자본구조</td>
+<td>자기자본 45% / 타인자본 55%</td>
+<td></td>
+</tr>
+<tr>
+<td>FCF 기준</td>
+<td>152억원</td>
+<td>2025 CFO - CAPEX 추정</td>
+</tr>
+<tr>
+<td>성장률</td>
+<td>18.4% (5Y)</td>
+<td>과거 CAGR 기반</td>
+</tr>
+<tr>
+<td>예측기간</td>
+<td>5년</td>
+<td>이후 Terminal Value</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 DCF 적정주가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>성장률</th>
+<th>영구성장률</th>
+<th>EV(억)</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>18.4%</td>
+<td>1.0%</td>
+<td>8,793억</td>
+<td><strong>48,150원</strong></td>
+<td>+50.5%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>18.4%</td>
+<td>1.5%</td>
+<td>9,624억</td>
+<td><strong>53,158원</strong></td>
+<td>+66.1%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>18.4%</td>
+<td>2.0%</td>
+<td>10,653억</td>
+<td><strong>59,366원</strong></td>
+<td>+85.5%</td>
+</tr>
+<tr>
+<td><strong>확률가중</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>52,897원</strong></td>
+<td><strong>+65.3%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ DCF는 FCF 안정성이 전제. 코세스는 (1) 2024년 적자→2025년 흑자전환 구간, (2) 단일 대형 수주에 의존하는 구조로 FCF 변동성이 큼 → DCF 결과는 참고용이며 <strong>PBR/PER 시나리오와 교차 검증 필수</strong>. Peer 대비 60% 할인이라는 Relative Value 결과(25,000~32,000원 밴드)를 더 신뢰 가능.</p>
+<hr />
+<h2>5. 증권사 컨센서스</h2>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th>목표가</th>
+<th>투자의견</th>
+<th>방법론</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>키움증권 (오현진)</td>
+<td>제시 안함</td>
+<td>Not Rated</td>
+<td>26E EPS 2,564원 기준 Fwd PER 10.7x 언급</td>
+<td>2026-02-03</td>
+</tr>
+<tr>
+<td>SK증권 (허선재)</td>
+<td>제시 안함</td>
+<td>Not Rated</td>
+<td>26E OP 452억 기준 현재 PER 약 8x 언급 (당시 주가 22,850원)</td>
+<td>2026-02-26</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td>—</td>
+<td>—</td>
+<td>양사 모두 Not Rated — 공식 TP 부재</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>리포트 핵심 메시지</strong>:<br />
+- <strong>키움</strong>: 매출 1,842억(+120% YoY) / OP 471억(+149% YoY, OPM 25.6%) / EPS 2,564원. "높은 가시성 대비 현재 주가는 저평가" 판단<br />
+- <strong>SK증권</strong>: 매출 1,876억(+126.3%) / OP 452억(OPM 24.1%). Bloom 1GW당 매출 400~450억, 4GW(약 1,800억) 캐파 확보. 2Q26·3Q26 각 1GW 신규 수주 예상. "실적 및 주가 모멘텀 확인 구간별 비중 확대 유효"<br />
+- <strong>양사 공통 리스크</strong>: 공식 TP 부재 → 밸류에이션 기준점이 없고, 양산 램프업 실행 리스크를 시장이 아직 가격에 반영 중</p>
+<hr />
+<h2>6. 밸류에이션 논평</h2>
+<p><strong>핵심 판단</strong>: 현재 주가 32,000원은 <strong>PBR 기본 시나리오(32,400원)와 정확히 일치</strong>하는 Fair Value 수준. Peer 대비 60% 할인은 존재하나 "신규 진입자 디스카운트"로 정당화되는 구간이며, 추가 업사이드는 <strong>Bloom 2GW 수주 가시화 → Fwd PER 13x+ 재평가</strong>에 달림.</p>
+<p><strong>프리미엄/디스카운트 요인</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>방향</th>
+<th>조정폭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KOSDAQ 소형주 디스카운트</td>
+<td>↓</td>
+<td>-15%p</td>
+</tr>
+<tr>
+<td>단일 대형 고객(Bloom) 의존 리스크</td>
+<td>↓</td>
+<td>-15%p</td>
+</tr>
+<tr>
+<td>SOFC/AI 데이터센터 전력 테마 프리미엄</td>
+<td>↑</td>
+<td>+20%p</td>
+</tr>
+<tr>
+<td>SOFC 전극 셀 장비 사실상 독점 공급 지위</td>
+<td>↑</td>
+<td>+15%p</td>
+</tr>
+<tr>
+<td>대주주 지분 49.47%·무배당 (유동성 낮음)</td>
+<td>↓</td>
+<td>-5%p</td>
+</tr>
+<tr>
+<td>2024년 적자 이력, 이익 변동성 큼</td>
+<td>↓</td>
+<td>-10%p</td>
+</tr>
+<tr>
+<td><strong>순효과</strong></td>
+<td>—</td>
+<td><strong>약 -10%p</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>재평가 트리거</strong>:<br />
+1. <strong>Bloom Energy 추가 대형 수주 공시 (1GW급, 400~450억 단위)</strong> — 2Q26 가시권<br />
+2. <strong>Bloom 2GW 캐파 증설 완료 (26년말)</strong> — 추가 4GW급 수주 로드맵 확인 시<br />
+3. <strong>분기 실적에서 OPM 25% 이상 지속 확인</strong> — 단일 분기가 아닌 2개 분기 연속 (2Q26·3Q26)</p>
+<p><strong>결론</strong>: 32,000원(52주 고가 근접, Fwd PBR 4.4x / Fwd PER 12.5x)은 Bloom 성장 시나리오를 이미 <strong>기본 수준으로 반영</strong>한 주가. 단기 상승여력은 +20% 내외(낙관 PBR 5.5x → 39,600원)로 제한적이며, 추가 업사이드는 2Q26 수주 이벤트가 트리거. <strong>비중 확대는 보수 시나리오(25,000원대) 조정 시</strong>에 유리하며, 현 가격대에서는 <strong>홀드(Hold) / 실적 이벤트 확인 후 분할 매수</strong> 전략이 합리적. DCF 기반 52,897원은 참조 지표이나 FCF 가시성이 낮아 액면 그대로 적용 지양.</p>
+</body>
+</html>
