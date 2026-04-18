@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우원개발(046940) Valuation</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-18<br />
+updated: 2026-04-18<br />
+tags:<br />
+  - 건설<br />
+  - 토공사<br />
+  - SOC<br />
+links:</p>
+<hr />
+<h1>우원개발(046940) Valuation Report</h1>
+<hr />
+<h2>1. 현재 멀티플</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>우원개발</th>
+<th>산출 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td><strong>2.04x</strong></td>
+<td>5,410원 ÷ TTM EPS 2,654원 (순이익 480억 ÷ 유통주식 18,074,350주)</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>N/A</td>
+<td>2026 컨센서스 부재 (커버리지 희소, 키움 2025.01 추정치만 존재)</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td><strong>0.62x</strong></td>
+<td>5,410원 ÷ BPS 8,672원 (자본총계 1,567억 ÷ 발행주식 18,074,350주)</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>약 1.1x</td>
+<td>EV ≈ 시총 978억 - 순현금 256억 = 722억 ÷ EBITDA 약 700억 (OP 672+감가 추정)</td>
+</tr>
+<tr>
+<td>EV/Revenue</td>
+<td>약 0.19x</td>
+<td>EV 722억 ÷ TTM 매출 3,763억</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td><strong>30.6%</strong></td>
+<td>TTM 순이익 480억 ÷ 자본 1,567억</td>
+</tr>
+<tr>
+<td>OP Margin</td>
+<td><strong>17.9%</strong></td>
+<td>TTM OP 672억 ÷ 매출 3,763억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td><strong>3.4%</strong></td>
+<td>DPS 120원 ÷ 5,410원</td>
+</tr>
+</tbody>
+</table>
+<p>※ KIS API + DART CFS 기준 (2026-04-18)</p>
+<p><strong>핵심</strong>: TTM PER 2.04x는 2025년 OP +2,277%·NI +6,417% 서프라이즈의 기저효과. 2021~2024 평균 NI 18억 대비 2025년 480억은 구조적 레벨업보다 대형 토공 프로젝트 집중 매출인식 가능성이 커 Fwd 관점에서는 PER가 크게 정상화될 여지가 있음.</p>
+<hr />
+<h2>2. Peer Comparison</h2>
+<h3>선정 기준</h3>
+<p>국내 중형 토공사/SOC 전문 건설사 중 사업 포트폴리오(기반조성·교량·터널·지질) 가 겹치고 시총 1,000~6,000억원대에 속한 4개사를 선정. 대형 종합건설(현대·대우·DL) 은 사업 믹스 차이가 커 참고용으로만 활용.</p>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>PER(TTM)</th>
+<th>PBR</th>
+<th>EV/EBITDA</th>
+<th>OP Margin</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>우원개발</strong></td>
+<td>🇰🇷</td>
+<td>978억</td>
+<td><strong>2.04x</strong></td>
+<td><strong>0.62x</strong></td>
+<td>~1.1x</td>
+<td>17.9%</td>
+<td>30.6%</td>
+</tr>
+<tr>
+<td>특수건설(026150)</td>
+<td>🇰🇷</td>
+<td>1,202억</td>
+<td>적자(-6.15)</td>
+<td>1.39x</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>적자</td>
+</tr>
+<tr>
+<td>동아지질(028100)</td>
+<td>🇰🇷</td>
+<td>2,377억</td>
+<td>12.7x</td>
+<td>0.96x</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>7.5%</td>
+</tr>
+<tr>
+<td>태영건설(009410)</td>
+<td>🇰🇷</td>
+<td>6,205억</td>
+<td>9.65x</td>
+<td>1.02x</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>10.6%</td>
+</tr>
+<tr>
+<td>HL D&amp;I(014790)</td>
+<td>🇰🇷</td>
+<td>1,363억</td>
+<td>11.11x</td>
+<td>0.29x</td>
+<td>N/A</td>
+<td>N/A</td>
+<td>2.6%</td>
+</tr>
+<tr>
+<td><strong>Peer 평균</strong></td>
+<td>—</td>
+<td>—</td>
+<td><strong>~11.2x</strong></td>
+<td><strong>0.92x</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: KIS (2026-04-18). 특수건설은 적자로 PER 평균 산출시 제외.</p>
+<h3>할인율 분석</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>우원개발</th>
+<th>Peer 평균</th>
+<th>할인율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>2.04x</td>
+<td>11.2x</td>
+<td><strong>-82%</strong></td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>0.62x</td>
+<td>0.92x</td>
+<td><strong>-33%</strong></td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>30.6%</td>
+<td>~6.9%</td>
+<td><strong>+343%</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>포지셔닝</strong>: 우원개발은 Peer 대비 PER 82%·PBR 33% 할인 상태인 반면, ROE는 4~5배 높음. 이는 시장이 2025년 수익성 급등을 일회성(대형 현장 매출인식 집중)으로 해석하고 있음을 시사. 2026년 OP/NI가 평년 수준으로 회귀할 경우 Fwd PER는 10~15x 수준까지 팽창할 수 있어, 표면 PER 2x는 안전마진이 아닌 수익 지속성 리스크의 반영으로 해석해야 함.</p>
+<hr />
+<h2>3. PBR 기반 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>BPS</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>0.5x</td>
+<td>8,672원</td>
+<td><strong>4,340원</strong></td>
+<td>-19.8%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>1.0x</td>
+<td>8,672원</td>
+<td><strong>8,670원</strong></td>
+<td>+60.3%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>1.5x</td>
+<td>8,672원</td>
+<td><strong>13,010원</strong></td>
+<td>+140.5%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PBR 적용 근거</strong>:<br />
+- <strong>보수</strong>(0.5x): 2025 이익의 상당 부분이 일회성이고 2026 이후 평년 ROE 3~5%로 회귀할 경우, HL D&amp;I(0.29x)·태영건설(1.02x) 하단 수준을 고려해 0.5x 적용.<br />
+- <strong>기본</strong>(1.0x): Peer 평균 0.92x에 부합. 2025 잉여이익이 BPS에 반영되며 자본구조 개선(부채비율 220→68%)을 감안한 정상화 가치.<br />
+- <strong>낙관</strong>(1.5x): 연이은 SOC/토공 수주 모멘텀과 ROE 두 자리 유지 시 동아지질 수준(0.96x)을 상회하는 리레이팅. 과거 소형 토공사 호황기 PBR 밴드 상단.</p>
+<hr />
+<h2>4. DCF Valuation</h2>
+<h3>가정</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WACC</td>
+<td>9.2%</td>
+<td>무위험 3.5% + β1.2 × MRP 5.0%</td>
+</tr>
+<tr>
+<td>자기자본비용</td>
+<td>9.5%</td>
+<td>CAPM</td>
+</tr>
+<tr>
+<td>타인자본비용</td>
+<td>4.5%</td>
+<td>세후, BBB 회사채 가정</td>
+</tr>
+<tr>
+<td>자본구조</td>
+<td>E 95% / D 5%</td>
+<td>순현금 상태</td>
+</tr>
+<tr>
+<td>FCF 기준</td>
+<td>460억원</td>
+<td>2025 CFO-CAPEX 추정</td>
+</tr>
+<tr>
+<td>예측기간</td>
+<td>5년</td>
+<td>이후 Terminal</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 DCF 적정주가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>성장률</th>
+<th>영구성장률</th>
+<th>EV(억)</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>8.1%</td>
+<td>1.0%</td>
+<td>9,007억</td>
+<td><strong>51,254원</strong></td>
+<td>+847%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>13.6%</td>
+<td>1.5%</td>
+<td>12,980억</td>
+<td><strong>73,231원</strong></td>
+<td>+1,254%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>18.4%</td>
+<td>2.0%</td>
+<td>17,970억</td>
+<td><strong>100,843원</strong></td>
+<td>+1,764%</td>
+</tr>
+<tr>
+<td><strong>확률가중</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>72,160원</strong></td>
+<td><strong>+1,234%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ <strong>경고</strong>: DCF 결과는 2025년 1회성 이익 기반 FCF 460억을 baseline으로 확장한 것으로 심각하게 과대평가됨. 2021~2024 평균 OP(13억)·FCF(실질 마이너스 연도 포함)를 감안하면 DCF 신뢰도 매우 낮음. PBR 기반 적정주가 중심 해석 권장.</p>
+<hr />
+<h2>5. 증권사 컨센서스</h2>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th>목표가</th>
+<th>투자의견</th>
+<th>방법론</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>키움증권</td>
+<td>5,000원</td>
+<td>N/R (단발 리포트)</td>
+<td>PBR 0.6x</td>
+<td>2025.01.15</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>커버리지 없음</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td><strong>5,000원</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ FnGuide Estimate 컨센서스 부재. 키움증권 2025.01 리포트 이후 공식 커버리지 업데이트 없음. 해당 TP는 2025년 이익 서프라이즈 이전 시점의 추정치로 현재 실적을 반영하지 못함.</p>
+<hr />
+<h2>6. 밸류에이션 논평</h2>
+<p><strong>핵심 판단</strong>: 현재가 5,410원은 TTM PER 2.04x·PBR 0.62x로 표면상 극단적 저평가이나, 2025년 이익 폭증의 지속성 여부가 전체 밸류에이션의 결정 변수. PBR 기반 fair value 범위는 <strong>4,340~13,010원</strong>이며 기본 시나리오 <strong>8,670원(+60%)</strong> 이 합리적 중앙값. DCF는 일회성 FCF로 인해 왜곡되어 참고 불가.</p>
+<p><strong>프리미엄/디스카운트 요인</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>방향</th>
+<th>조정폭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>소형주·코스닥 디스카운트</td>
+<td>↓</td>
+<td>-15%p</td>
+</tr>
+<tr>
+<td>2025 이익 일회성 리스크 (평년 대비 30배 급등)</td>
+<td>↓</td>
+<td>-25%p</td>
+</tr>
+<tr>
+<td>커버리지 부재·정보 비대칭</td>
+<td>↓</td>
+<td>-10%p</td>
+</tr>
+<tr>
+<td>순현금(256억) + 부채비율 급개선</td>
+<td>↑</td>
+<td>+10%p</td>
+</tr>
+<tr>
+<td>3.4% 배당 + 지배구조 안정(최대주주 35%)</td>
+<td>↑</td>
+<td>+5%p</td>
+</tr>
+<tr>
+<td>SOC/토공 수주 모멘텀</td>
+<td>↑</td>
+<td>+10%p</td>
+</tr>
+</tbody>
+</table>
+<p><strong>재평가 트리거</strong>:<br />
+1. 2026년 1~2분기 실적이 OP 100억 이상 유지 → 이익 지속성 입증 시 PBR 1.0x 도달<br />
+2. 수주잔고 공시 재개 + 대형 철도/공항 SOC 프로젝트 수주 → 리레이팅 트리거<br />
+3. 증권사 커버리지 재개·DPS 인상(배당성향 상향) → 기관 수급 유입</p>
+<p><strong>결론</strong>: 기본 시나리오 적정주가 <strong>8,670원</strong>, 현재가 대비 <strong>+60% 업사이드</strong>. 단, 2026년 1~2분기 실적에서 OP 레벨이 분기당 100억 이상 유지되는지 확인 후 확신도 상향 필요. 현 구간에서는 <strong>중립~비중확대 초기 진입</strong>이 합리적이며, 2025 고PBR(1.5x+) 시나리오는 이익 지속성 입증 이후에만 유효.</p>
+</body>
+</html>

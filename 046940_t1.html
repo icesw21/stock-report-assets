@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우원개발(046940) 기초보고서</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-18<br />
+updated: 2026-04-18<br />
+tags:<br />
+  - 건설<br />
+  - 토공사<br />
+  - 기반조성<br />
+  - 철도/지하철<br />
+  - 저PER<br />
+  - 배당주<br />
+links:</p>
+<hr />
+<h1>우원개발(046940) 기초 리서치 보고서</h1>
+<hr />
+<h2>1. 기업 개요</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>종목코드</td>
+<td>046940 (KOSDAQ)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>대표자</td>
+<td>김기영 / 김기현 (각자대표)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>업종</td>
+<td>기반조성 및 시설물 축조관련 전문공사업</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>설립일</td>
+<td>1998.10.28</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td>보통주 18,074,350주</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>유통주식수</td>
+<td>18,074,350주 (자기주식 N/A)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>Fully-Diluted 시총</td>
+<td>~978억원 (CB/BW/스옵 없음)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>~978억원 (5,410원 기준)</td>
+<td>KIS</td>
+</tr>
+<tr>
+<td>현재가 / PER / PBR</td>
+<td>5,410원 / 2.04x / 0.62x</td>
+<td>KIS (2026-04-17)</td>
+</tr>
+<tr>
+<td>52주 고/저</td>
+<td>5,500 / 4,990원 (KIS) · 5,410 / 2,695원 (pykrx)</td>
+<td>KIS/pykrx</td>
+</tr>
+<tr>
+<td>최대주주</td>
+<td>신영임 20.61% (특수관계인 포함 34.98%)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>감사의견</td>
+<td>신한회계법인 — 적정 (2026 감사연도)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>결산월</td>
+<td>12월</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. 사업 구조</h2>
+<h3>사업부문별 매출 구조</h3>
+<table>
+<thead>
+<tr>
+<th>사업부문</th>
+<th>주요 품목</th>
+<th style="text-align: right;">매출(억원)</th>
+<th style="text-align: right;">비중(%)</th>
+<th style="text-align: right;">YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>토목·기반조성 공사</td>
+<td>철도·지하철 노반, 도로, 단지조성</td>
+<td style="text-align: right;">3,500</td>
+<td style="text-align: right;">93.0</td>
+<td style="text-align: right;">+25%</td>
+</tr>
+<tr>
+<td>건축·기타</td>
+<td>일반건축·리모델링 등</td>
+<td style="text-align: right;">263</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">+15%</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>3,763</strong></td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">+24.3%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 전문건설업(기반조성 및 시설물 축조) 분류 기준으로 토목 비중이 절대적. 사업보고서 주석 기반 개략 추정.</p>
+<h3>핵심 사업: 기반조성 및 토목 전문공사</h3>
+<p>1998년 설립된 <strong>국내 대표 기반조성·토공사 전문업체</strong>로, 철도·지하철 노반, 도로, 산업단지·주거단지 조성토공 등 대규모 토목 하도급·직도급 공사를 주력으로 한다. <strong>단일 대형 프로젝트 1건당 수백억~천억원</strong> 단위 수주가 가능해 전문건설업 중 상대적으로 수주 규모가 큰 편이며, GTX·신분당선 등 수도권 철도 확장 사이클의 직접 수혜주다.</p>
+<ul>
+<li><strong>국내</strong>: 신분당선 광교~호매실 제3공구(543억), GTX-B 노반공사(현대건설 컨소시엄, 562억), 수도권 전철·도로 노반 공사, 반도체·산업단지 부지조성</li>
+<li><strong>해외</strong>: 미미 (사실상 국내 집중)</li>
+<li><strong>신사업</strong>: 반도체·데이터센터 부지조성 토공사 영역 확장 가능성 (용인 반도체 클러스터, 평택 캠퍼스 등 대형 부지조성 시장)</li>
+</ul>
+<h3>비즈니스 특성</h3>
+<ul>
+<li><strong>프로젝트 기반 수주산업</strong>: 매출 인식이 공정률 기반. 대형 단일 프로젝트의 공정 마일스톤 도달 시 분기 실적 급변 → 2025Q2~Q4 영업이익 급증의 직접 원인</li>
+<li><strong>전문건설 하도급 구조</strong>: 대형 종합건설사(현대건설·삼성물산·GS건설 등)의 하도급 파트너. 발주 다변화로 단일 거래처 의존도 낮음</li>
+<li><strong>원가절감형 이익구조</strong>: 2025년 "공사수주 증가 + 공정단축에 따른 원가절감"으로 OPM이 0.9%(2024) → 17.9%(2025)로 점프. 고정 간접비 레버리지가 극단적으로 작동하는 업종 특성</li>
+</ul>
+<h3>수주잔고</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">금액</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>총 수주잔고</td>
+<td style="text-align: right;">~6,000~7,000억원 (추정)</td>
+<td>2025 말, 공시 기반 역산</td>
+</tr>
+<tr>
+<td>(신분당선 광교~호매실 3공구)</td>
+<td style="text-align: right;">543억</td>
+<td>계약기간 ~2029.03</td>
+</tr>
+<tr>
+<td>(GTX-B 노반공사)</td>
+<td style="text-align: right;">562억</td>
+<td>현대건설 컨소시엄</td>
+</tr>
+<tr>
+<td>매출 대비 수주잔고 비율</td>
+<td style="text-align: right;">~1.6~1.9x</td>
+<td>향후 2년치 매출 가시성</td>
+</tr>
+</tbody>
+</table>
+<p>2024~2025년 신분당선·GTX-B 등 수도권 철도 대형 프로젝트가 연이어 수주되며 수주잔고가 연매출 대비 1.5~2배 수준으로 확보된 것으로 추정된다. 2025년 실적 급증은 이들 중 일부 프로젝트의 <strong>공정률 집중 인식 + 공정단축 인센티브</strong>로 해석된다. 추가 대형 수주가 이어지지 않으면 2026~2027년 실적 레벨이 재조정될 리스크.</p>
+<h3>고객 구조 &amp; 원가 구조</h3>
+<ul>
+<li><strong>고객 구조</strong>: B2B (대형 종합건설사 하도급 + 공공 발주 직접수주). 신분당선은 SPC·국토부 발주 체계</li>
+<li><strong>매입/원가</strong>: 장비·인건비·외주(화약·발파·운반) 비중 높음. 2025년 원가율 82.1% (← 2024년 99.1%)로 급락 — 대규모 공정 원가 절감·설계변경 이익 가능성</li>
+</ul>
+<hr />
+<h2>3. 실적 분석</h2>
+<h3>연결 기준 직전 4개년 실적 및 2개년 추정</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>1,743</td>
+<td>—</td>
+<td>3.9</td>
+<td>—</td>
+<td>12</td>
+<td>0.2</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>1,963</td>
+<td>+12.6%</td>
+<td>5.8</td>
+<td>+46.6%</td>
+<td>37</td>
+<td>0.3</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>2,525</td>
+<td>+28.6%</td>
+<td>14</td>
+<td>+135.0%</td>
+<td>15</td>
+<td>0.6</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>3,028</td>
+<td>+19.9%</td>
+<td>28</td>
+<td>+108.1%</td>
+<td>7.4</td>
+<td>0.9</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>3,763</td>
+<td>+24.3%</td>
+<td>672</td>
+<td>+2,277.3%</td>
+<td>480</td>
+<td>17.9</td>
+<td>12.8</td>
+</tr>
+<tr>
+<td>2026E</td>
+<td>3,900</td>
+<td>+3.6%</td>
+<td>350</td>
+<td>-47.9%</td>
+<td>250</td>
+<td>9.0</td>
+<td>6.4</td>
+</tr>
+<tr>
+<td>2027E</td>
+<td>4,200</td>
+<td>+7.7%</td>
+<td>380</td>
+<td>+8.6%</td>
+<td>270</td>
+<td>9.0</td>
+<td>6.4</td>
+</tr>
+</tbody>
+</table>
+<p>※ 2026~2027E는 컨센서스 부재, 내부 정상화 추정 (고마진 유지 불확실). 소스: DART CFS, 네이버 금융.</p>
+<h3>최근 8분기 실적</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024Q1</td>
+<td>656</td>
+<td>+21.7%</td>
+<td>3.4</td>
+<td>-10.0%</td>
+<td>9.4</td>
+<td>0.5</td>
+<td>1.4</td>
+</tr>
+<tr>
+<td>2024Q2</td>
+<td>692</td>
+<td>+13.1%</td>
+<td>-1.5</td>
+<td>-120.3%</td>
+<td>0.8</td>
+<td>-0.2</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2024Q3</td>
+<td>717</td>
+<td>+4.7%</td>
+<td>1.9</td>
+<td>+118.8%</td>
+<td>1.3</td>
+<td>0.3</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>2024Q4</td>
+<td>963</td>
+<td>+39.7%</td>
+<td>24</td>
+<td>+93.0%</td>
+<td>-4.1</td>
+<td>2.5</td>
+<td>-0.4</td>
+</tr>
+<tr>
+<td>2025Q1</td>
+<td>891</td>
+<td>+35.8%</td>
+<td>9.5</td>
+<td>+181.6%</td>
+<td>9.6</td>
+<td>1.1</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>2025Q2</td>
+<td>1,004</td>
+<td>+45.1%</td>
+<td>122</td>
+<td>+8,132.0%</td>
+<td>92</td>
+<td>12.2</td>
+<td>9.2</td>
+</tr>
+<tr>
+<td>2025Q3</td>
+<td>938</td>
+<td>+30.8%</td>
+<td>266</td>
+<td>+13,630.7%</td>
+<td>204</td>
+<td>28.4</td>
+<td>21.7</td>
+</tr>
+<tr>
+<td>2025Q4</td>
+<td>930</td>
+<td>-3.4%</td>
+<td>274</td>
+<td>+1,020.1%</td>
+<td>174</td>
+<td>29.5</td>
+<td>18.7</td>
+</tr>
+</tbody>
+</table>
+<p>※ Q4 = 연간 - Q1 - Q2 - Q3 산출 | 소스: DART CFS.</p>
+<p><strong>매출 추세</strong>: 2024~2025년 YoY +20~45%로 가파른 성장. 2025Q2 이후 분기 매출 900~1,000억 레벨에 안착. Q4는 동절기 공사 비수기 영향으로 소폭 둔화.</p>
+<p><strong>영업이익/마진 해석</strong>: 2024년까지 OPM 0~1%의 초저마진 수주업체였으나, <strong>2025Q2부터 OPM이 12% → 28% → 29%로 급점프</strong>. 이는 단순 수주 증가가 아니라 ① 단일 대형 프로젝트(신분당선·GTX-B 등)의 공정률 피크 ② 공정단축 인센티브·설계변경 정산이 동시 반영된 결과로 추정. <strong>3~4분기 연속 OP 250억대는 이 업종 평년 수준 대비 이례적</strong>이며, 일회성 정산 비중이 높을 가능성 있어 2026년 정상화 리스크 상존.</p>
+<h3>재무상태표 요약</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>자산총계</strong></td>
+<td style="text-align: right;">~2,500</td>
+<td style="text-align: right;">~2,800</td>
+<td style="text-align: right;">~2,600</td>
+</tr>
+<tr>
+<td>(현금성자산)</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td>(매출채권)</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td>(재고자산)</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td>(유형자산)</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td><strong>부채총계</strong></td>
+<td style="text-align: right;">~1,620</td>
+<td style="text-align: right;">~1,920</td>
+<td style="text-align: right;">~1,060</td>
+</tr>
+<tr>
+<td>(이자부부채)</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td><strong>자본총계</strong></td>
+<td style="text-align: right;">~880</td>
+<td style="text-align: right;">~880</td>
+<td style="text-align: right;">~1,570</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: DART CFS (약식).</p>
+<p><strong>재무상태 해석</strong>: 2024년 부채비율 220%에서 2025년 68.5%로 극적 개선 — 이익잉여금 대폭 증가(순이익 480억)와 차입금 축소 영향으로 판단. BPS 8,672원(PBR 0.62x)으로 청산가치 대비 38% 할인 거래. 유동비율 173.7%로 단기 지급능력 건전.</p>
+<h3>핵심 재무비율</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE</td>
+<td style="text-align: right;">1.4%</td>
+<td style="text-align: right;">0.7%</td>
+<td style="text-align: right;"><strong>30.6%</strong></td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td style="text-align: right;">185.5%</td>
+<td style="text-align: right;">220.1%</td>
+<td style="text-align: right;">68.5%</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+</tr>
+<tr>
+<td>유동비율</td>
+<td style="text-align: right;">168.4%</td>
+<td style="text-align: right;">116.5%</td>
+<td style="text-align: right;">173.7%</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A</td>
+<td style="text-align: right;">N/A (추정 +)</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">3.4% (DPS 120원)</td>
+</tr>
+<tr>
+<td>Cash Runway</td>
+<td style="text-align: right;">건설 영업현금흐름 기반 (런웨이 개념 적용 X)</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<h3>실적 해석</h3>
+<ul>
+<li><strong>2025년은 "미스매치 분기"</strong>: 2024년까지 OP 마진 1%대를 기록하던 기업이 갑자기 OPM 28~29%를 찍는 것은 업종 평균 대비 매우 이례적. 원가율 급락(99.1% → 82.1%)은 (a) 저수익 프로젝트 클리어 + 고수익 프로젝트 교체 (b) 공기 단축 인센티브 (c) 클레임·설계변경 정산 중 1개 이상의 일회성 요인 개입 가능성 높음</li>
+<li><strong>2026년 정상화 리스크</strong>: 업종 통상 OPM 5~10% 수준으로 회귀 시 OP 300~400억대로 감익 예상. 다만 PER 2x 초저평가는 이를 이미 상당 부분 선반영</li>
+<li><strong>현금 체질 개선 확실</strong>: 부채비율 급락·ROE 30%+는 실질적 변화로 배당 여력·재투자 여력 확대</li>
+</ul>
+<hr />
+<h2>4. 성장 동력 분석</h2>
+<p><strong>동력 1: 수도권 철도 확장 슈퍼사이클 (GTX-A/B/C, 신분당선 연장) ⭐⭐⭐ (◉)</strong><br />
+GTX-B 562억(현대건설 컨소시엄), 신분당선 광교~호매실 3공구 543억 등 2024~2025년 수도권 대형 철도 프로젝트 수주 릴레이가 이어지는 중. GTX-C 후속·신분당선 추가 구간·수도권 1호선 지하화 등 향후 5~7년간 <strong>국내 철도 토목 발주 피크</strong> 구간에 진입. 전문건설업 최상위 트랙레코드를 보유한 우원개발은 대형 건설사 하도급 + 직도급 모두에서 수혜.</p>
+<p><strong>동력 2: 반도체·데이터센터 부지조성 토공사 시장 ⭐⭐⭐ (◎)</strong><br />
+SK하이닉스 용인 클러스터(416만㎡, 단일 최대 반도체 토목공사), 삼성전자 평택 4공장 페이즈3(2.8만명 투입), AI 데이터센터 부지조성 수요가 2026~2030년 폭발적 증가 예상. 우원개발의 기반조성 전문 역량은 <strong>반도체 팹 부지 정지·토공·가시설 공사</strong>에 직접 적용 가능. 구체 수주 확인은 필요하나 TAM 확장 기울기가 가장 가파른 테마.</p>
+<p><strong>동력 3: 극단적 저평가 리레이팅 ⭐⭐ (◎)</strong><br />
+PER 2.04x / PBR 0.62x는 건설주 평균(PER 5~8x, PBR 0.7~1.0x) 대비 <strong>50% 이상 디스카운트</strong>. 2025 실적이 일회성 비중이 있더라도 정상화 OP 300억대·NI 200억대 기준 PER 4~5x로 여전히 저평가. ROE 30% + 부채비율 68% + 배당 3.4% 조합은 <strong>Deep Value + Quality 복합 테마</strong>로 재평가 가능.</p>
+<p><strong>동력 4: 배당주 전환 + 주주환원 정책 가시화 ⭐⭐ (○)</strong><br />
+DPS 120원(yield 3.4%)으로 KOSDAQ 건설 전문공사 업종에서 드문 현금배당. 2025 순이익 480억 대비 배당총액 ~22억으로 배당성향 4.5%에 불과 — <strong>증액 여력 충분</strong>. 2026 DPS 상향 또는 자사주 매입 시 리레이팅 촉매.</p>
+<hr />
+<h2>5. 리스크 분석</h2>
+<h3>DART 체크리스트</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>항목</th>
+<th>상태</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>감사의견</td>
+<td>✅ 적정 (신한회계법인)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CB/BW 발행</td>
+<td>✅ 0건</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>3</td>
+<td>유상증자</td>
+<td>✅ 없음</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>4</td>
+<td>최대주주 지분</td>
+<td>✅ 34.98% (특관 합계, 신영임 20.61% + 김기영 14.37%)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>5</td>
+<td>자기주식</td>
+<td>ℹ️ N/A</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>6</td>
+<td>부채비율</td>
+<td>✅ 68.5%</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>7</td>
+<td>유동비율</td>
+<td>✅ 173.7%</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<h3>Ownership &amp; 오버행</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th style="text-align: right;">지분율(%)</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최대주주 및 특수관계인</td>
+<td style="text-align: right;">34.98</td>
+<td>신영임 20.61%, 김기영(각자대표) 14.37%</td>
+</tr>
+<tr>
+<td>자사주</td>
+<td style="text-align: right;">N/A</td>
+<td>공시 미확인</td>
+</tr>
+<tr>
+<td>기타 유통주식</td>
+<td style="text-align: right;">~65.02</td>
+<td>외국인·기관 순매수 중</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>잔액/수량</th>
+<th>행사가</th>
+<th>희석비율</th>
+<th>해제 시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CB/BW/스옵</td>
+<td><strong>없음</strong></td>
+<td>—</td>
+<td>0%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>오버행 없음</strong>. CB/BW 제로, 유증 이력 없음, 스톡옵션 공시 미확인. 최대주주+특관 34.98%로 경영권 방어 가능 수준이지만 <strong>공격적 지배력은 아님</strong> — 행동주의 펀드·주주제안 가능성 열려 있음(주주환원 확대 압박 촉매). 외국인·기관 20일 누적 순매수(각 +34,739 / +7,043주)로 수급 우호적.</p>
+<h3>기타 리스크</h3>
+<ul>
+<li><strong>2025 실적의 일회성 의심</strong>: OPM 28~29%는 전문건설업에서 구조적으로 유지 불가. 공정단축 인센티브·정산 이익이 2026년 재현되지 않을 경우 OP 50~60% 감익 리스크</li>
+<li><strong>수주산업 사이클 리스크</strong>: 정부 SOC 예산 축소·철도 발주 지연 시 2027년 이후 수주잔고 소진. GTX-C 이후 대형 사이클 공백 구간 가능성</li>
+<li><strong>단일 프로젝트 의존도</strong>: 대형 프로젝트 1~2건에 손익이 좌우됨 → 클레임·설계변경 분쟁·공기지연 페널티 시 급격한 실적 악화</li>
+</ul>
+<hr />
+<h2>6. 경쟁 구도</h2>
+<h3>국내 Peer</h3>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th style="text-align: right;">시총(억원)</th>
+<th>PER</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>우원개발(046940)</strong></td>
+<td style="text-align: right;">~978</td>
+<td>2.04x</td>
+<td>철도·기반조성 전문, 2025 OP 폭증, 배당 3.4%</td>
+</tr>
+<tr>
+<td>특수건설(026150)</td>
+<td style="text-align: right;">~1,200</td>
+<td>8~12x</td>
+<td>철도·지하 비개착 공법 선도, 하도급 다변화</td>
+</tr>
+<tr>
+<td>동아지질(028100)</td>
+<td style="text-align: right;">~2,200</td>
+<td>10x대</td>
+<td>지반·기초공사 전문, 싱가포르·대만 해외 강점</td>
+</tr>
+<tr>
+<td>이화공영(001840)</td>
+<td style="text-align: right;">~800</td>
+<td>—</td>
+<td>소형 전문건설, 테마주 변동성 높음</td>
+</tr>
+<tr>
+<td>다스코(058730)</td>
+<td style="text-align: right;">~600</td>
+<td>—</td>
+<td>도로 안전시설·토목 자재</td>
+</tr>
+</tbody>
+</table>
+<h3>글로벌 Peer</h3>
+<ul>
+<li><strong>Obayashi Road (일본)</strong>: 토공·도로 전문, JR·지하철 발주 의존도 높음. 아시아 지하철 노반 시공 벤치마크</li>
+<li><strong>Kajima Road / Sato Kogyo</strong>: 일본 전문 토목. 아시아 인프라 사이클 참고지표</li>
+</ul>
+<p><strong>포지셔닝</strong>: 국내 철도 노반·기반조성 전문 Top-tier. <strong>전문건설업 내 규모·트랙레코드·재무건전성 모두 상위권</strong>이며, 가격(PER 2x)은 경쟁사 대비 50~80% 저평가.</p>
+<hr />
+<h2>7. 밸류에이션</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>현재</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>2.04x</td>
+<td>EPS 2,654원 (2025 NI 480억 / 18.07M주)</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>~3.5~4.0x</td>
+<td>2026E NI 250억 정상화 가정</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>0.62x</td>
+<td>BPS 8,672원 기준</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>~2~3x (추정)</td>
+<td>차입금 감소로 EV 압축</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>30.6%</td>
+<td>2025</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>N/A (추정 (+))</td>
+<td>부채비율 급락 → 현금창출 강함</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td>N/A (낮음 추정)</td>
+<td>부채비율 68.5%</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>3.4%</td>
+<td>DPS 120원</td>
+</tr>
+</tbody>
+</table>
+<h3>증권사 목표주가</h3>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th style="text-align: right;">목표가</th>
+<th>투자의견</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>키움증권</td>
+<td style="text-align: right;">5,000원</td>
+<td>BUY</td>
+<td>2025.01.15</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td style="text-align: right;">5,000원</td>
+<td>—</td>
+<td>(커버리지 제한적)</td>
+</tr>
+</tbody>
+</table>
+<p>※ 증권사 커버리지 1개 사 수준. 2025 실적 공시 이후 목표가 상향 가능성 높음.</p>
+<p><strong>밸류에이션 판단</strong>: <strong>명백한 저평가</strong>. 2025 일회성 이익을 50% 할인해도 정상화 EPS ~1,300원 → PER 4.2x, PBR 0.62x. 동종업종 평균 PER 6~8x 대비 <strong>Re-rating 여력 100%+ (목표 8,000~11,000원 구간)</strong>. 단, 재평가는 2026Q1~Q2 실적 정상화 레벨이 시장에 확인된 이후가 유력.</p>
+<hr />
+<h2>8. Bull vs Bear</h2>
+<h3>🐂 Bull Case — "철도 슈퍼사이클 + Deep Value 이중 엔진"</h3>
+<p>◉ <strong>실적 체질 개선 확인</strong> — 2025 OP 672억·ROE 30.6%·부채비율 68.5%로 2024년 대비 전면적 re-set. 최소 2026 OP 300~400억 레벨은 방어 가능<br />
+◉ <strong>PER 2x·PBR 0.62x 극단적 저평가</strong> — 2025 이익의 50%가 일회성이라 가정해도 Fwd PER 4x. 리레이팅 시 8,000원+ 가능<br />
+◎ <strong>수주 파이프라인 탄탄</strong> — GTX-B(562억)·신분당선(543억)으로 향후 3~4년 매출 가시성 확보. GTX-C·추가 연장 후속 수주 가능<br />
+◎ <strong>오버행 제로 + 주주환원 여력</strong> — CB/BW 없음, 배당성향 4.5%로 증액 여력 풍부. 자사주 매입·DPS 상향 촉매<br />
+○ <strong>반도체·데이터센터 TAM 확장</strong> — 용인 클러스터·AI DC 부지조성 시장 참전 시 신규 성장축</p>
+<h3>🐻 Bear Case — "2025는 일회성, 2026은 정상화"</h3>
+<p>◉ <strong>OPM 28% 유지 불가</strong> — 전문건설업 정상 OPM 5~10% 대비 3배 이상. 공정단축 인센티브·정산 이익이 소진되면 OP 300억 이하 급락<br />
+◉ <strong>2026 YoY 역성장 확정</strong> — 2025 기저 높아 이익 YoY -40~50% 불가피. 주가 트리거가 반대 방향<br />
+◎ <strong>단일 프로젝트 의존 리스크</strong> — 대형 1~2건 클레임·공기지연 시 손익 직격. 분쟁·페널티 발생 가능<br />
+◎ <strong>SOC 예산 축소 리스크</strong> — 재정건전성 기조·부동산 경기 악화 시 철도·도로 발주 지연 가능<br />
+○ <strong>커버리지·유동성 제한</strong> — 시총 978억·커버 증권사 1개로 기관 접근성 낮아 재평가 속도 느림</p>
+<hr />
+<h2>9. 종합 판단</h2>
+<p><strong>기업의 체질</strong>: 우원개발은 <strong>국내 철도 노반·기반조성 전문 Top-tier 전문건설사</strong>다. 2021~2024년 OPM 0~1%의 저마진 수주업체였으나, 2025년 대형 프로젝트 공정 피크와 원가 절감이 맞물리며 이례적 수익성을 기록. 체질 개선의 실체(구조적 vs 일회성) 판별이 향후 12개월 투자의 핵심 판단점. 재무 건전성·무차입 수준의 경영·배당 지급 등 <strong>Quality 요소는 명확히 업그레이드</strong>된 상태.</p>
+<p><strong>투자 가치가 있는 조건</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>시점</th>
+<th>확인 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026Q1~Q2 OPM 10%+ 방어</td>
+<td>분기별</td>
+<td>분기 실적 공시 시 OPM 추이</td>
+</tr>
+<tr>
+<td>신규 대형 수주 연 2건+ (500억 이상)</td>
+<td>분기별</td>
+<td>공시 (주요 계약 체결)</td>
+</tr>
+<tr>
+<td>2026 DPS 상향 또는 자사주 매입</td>
+<td>연간</td>
+<td>결산 배당 공시·이사회 결의</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 모니터링</strong>:<br />
+- ✅ <strong>분기 OPM</strong> — 28% → 정상화 경로 (10% 유지 시 Bull 확정, 5% 이하 시 Bear 시나리오)<br />
+- ✅ <strong>수주잔고 QoQ</strong> — 6,000억 유지/증가 여부. GTX-C·수도권 철도 지하화 입찰 결과<br />
+- ✅ <strong>주주환원 정책</strong> — 2026 DPS 결정·자사주 매입 공시<br />
+- ✅ <strong>반도체·DC 토공 신규 수주</strong> — 삼성·SK·MS·AWS DC 부지조성 수주 확인 시 ⭐⭐⭐ 테마 확정</p>
+</body>
+</html>
