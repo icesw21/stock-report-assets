@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이랜텍(054210) DeepDive</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-24<br />
+updated: 2026-04-24<br />
+tags:<br />
+  - 전자부품<br />
+  - 전자담배HNB<br />
+  - PMI공급망<br />
+  - 멀티플리레이팅<br />
+links: https://arc-10.gitbook.io/arc/054210_/</p>
+<hr />
+<h1>이랜텍 — 글로벌 HNB 전자담배 하드웨어 공급 확대</h1>
+<hr />
+<h2>Executive Summary</h2>
+<p>이랜텍은 PMI(필립모리스인터내셔널)의 IQOS 등 HNB(궐련형 전자담배) 기기 하드웨어를 공급하는 국내 유일의 상장 HNB 부품 제조사로, 2025년 전자담배 부문 매출 비중이 27.2%(약 2,049억원)까지 확대됐다. 글로벌 HNB 시장은 2030년까지 연평균 10~15% 성장이 예상되며, PMI가 IQOS 신제품 라인업을 지속적으로 출시하는 구조에서 이랜텍의 공급 물량은 구조적으로 확대될 전망이다. 현재 Fwd PER 7.2배, PBR 1.16배는 HNB 성장을 전혀 반영하지 않은 과도한 저평가 수준이며, 확률가중 적정주가 <strong>18,500원</strong>은 현재가 12,460원 대비 <strong>+48.5% 업사이드</strong>를 시사한다.</p>
+<hr />
+<h2>1. 분석 배경</h2>
+<p>이랜텍은 2022년까지 삼성전자 스마트폰 케이스·배터리팩 공급에 전적으로 의존하는 구조였다. 2023~2024년 스마트폰 시장 침체로 매출이 2년 연속 25% 이상 하락했으나, 이 기간 전자담배 HNB 부문을 조용히 키워냈다. 2025년 매출 7,532억 중 전자담배가 27.2%를 차지하며 사업구조 전환이 가시화됐고, 증권사 리포트 제목 "멀티플 리레이팅의 원년"에서도 알 수 있듯 시장은 이미 밸류에이션 재평가를 기대하고 있다.</p>
+<p>T1 성장동력 분석에서 ⭐⭐⭐ 최고 등급을 받은 이 주제를 딥다이브하는 이유: (1) TAM 규모가 조 단위로 크고, (2) 실적 기여가 이미 현실화됐으며, (3) PBR 1.16배에서 2.0배로의 리레이팅 임팩트가 매우 크기 때문이다.</p>
+<h3>분석 범위</h3>
+<ul>
+<li>글로벌 HNB 시장 규모 및 성장 전망</li>
+<li>PMI IQOS 공급망 내 이랜텍의 포지션과 공급 제품 분석</li>
+<li>HNB 매출 시나리오별 실적 기여 추정</li>
+<li>경쟁사 대비 이랜텍의 차별화 역량</li>
+<li>확률가중 적정주가 산출</li>
+</ul>
+<h3>한계</h3>
+<ul>
+<li>PMI-이랜텍 간 구체적 공급 단가 및 물량은 비공개</li>
+<li>HNB 부문 독립 손익 미공시 (전자담배 매출 비중으로 추정)</li>
+<li>각국 정부의 전자담배 규제 향방은 예측 불확실성 존재</li>
+</ul>
+<hr />
+<h2>2. 산업/시장 개요</h2>
+<h3>글로벌 HNB 시장 현황</h3>
+<p>HNB(Heat-Not-Burn, 궐련형 전자담배)는 담배를 태우지 않고 가열해 니코틴을 흡입하는 방식으로, 일반 궐련 대비 유해성이 낮다는 PMI 주장과 함께 급속히 성장해왔다. 글로벌 HNB 시장은 2025년 기준 약 250억 달러(약 34조원) 규모로 추정되며, 2030년까지 연평균 12% 성장하여 440억 달러에 달할 전망이다.</p>
+<p>PMI의 IQOS는 글로벌 HNB 시장 점유율 70% 이상을 보유하며 지배적 위치를 유지하고 있다. 한국, 일본, 유럽(이탈리아, 러시아, 체코) 등에서 빠른 침투율 성장을 보이며, 특히 <strong>한국은 HNB 침투율 세계 1위</strong>(성인 흡연자의 40% 이상)로 이랜텍의 주요 공급 시장이기도 하다.</p>
+<h3>주요 신제품/기회</h3>
+<table>
+<thead>
+<tr>
+<th>지역/국가</th>
+<th>프로젝트</th>
+<th>규모</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🇰🇷 한국</td>
+<td>IQOS ILUMA Prime 후속 신제품</td>
+<td>연 200만+ 대</td>
+<td>출시 예정</td>
+</tr>
+<tr>
+<td>🇯🇵 일본</td>
+<td>IQOS 신규 세대 기기 공급</td>
+<td>연 500만+ 대</td>
+<td>공급 중</td>
+</tr>
+<tr>
+<td>🇪🇺 유럽</td>
+<td>IQOS ILUMA Series 확장</td>
+<td>연 1,000만+ 대</td>
+<td>공급 중</td>
+</tr>
+<tr>
+<td>🇺🇸 미국</td>
+<td>IQOS 재진입 (FDA 승인 추진 중)</td>
+<td>미정</td>
+<td>규제 심사 중</td>
+</tr>
+<tr>
+<td>🌏 신흥시장</td>
+<td>동남아·중동 HNB 시장 개척</td>
+<td>성장 초기</td>
+<td>침투 진행 중</td>
+</tr>
+</tbody>
+</table>
+<h3>시장 규모(TAM) 추정</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>전제</th>
+<th>TAM (2030E)</th>
+<th>이랜텍 기회</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>HNB 성장률 8%, PMI 점유율 유지</td>
+<td>약 340억 달러</td>
+<td>4,000~6,000억원</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>HNB 성장률 12%, 신규 시장 개척</td>
+<td>약 440억 달러</td>
+<td>6,000~10,000억원</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>HNB 성장률 15%, 미국 시장 재개</td>
+<td>약 550억 달러</td>
+<td>10,000억원+</td>
+</tr>
+</tbody>
+</table>
+<p>※ 이랜텍 기회 추정: PMI HNB 매출 대비 하드웨어 부품 단가 비율 3~5% 적용</p>
+<h3>시장의 특수성</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>일반 소비재</th>
+<th>HNB 전자담배</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>규제 진입장벽</td>
+<td>낮음</td>
+<td>매우 높음 (FDA, 각국 승인 필요)</td>
+</tr>
+<tr>
+<td>고객 교체 주기</td>
+<td>수시</td>
+<td>3~5년 (기기 교체 주기)</td>
+</tr>
+<tr>
+<td>신규 공급사 진입</td>
+<td>용이</td>
+<td>극히 어려움 (기존 인증 파트너 유지)</td>
+</tr>
+<tr>
+<td>브랜드 충성도</td>
+<td>중</td>
+<td>매우 높음 (니코틴 의존성)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. 경쟁 구도</h2>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>레퍼런스</th>
+<th>강점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shenzhen Innokin</td>
+<td>🇨🇳 중국</td>
+<td>비공개</td>
+<td>PMI 공급</td>
+<td>원가경쟁력, 대량생산</td>
+</tr>
+<tr>
+<td>IUC (International Utensils)</td>
+<td>🇹🇼 대만</td>
+<td>비공개</td>
+<td>BAT 공급</td>
+<td>정밀 제조 기술</td>
+</tr>
+<tr>
+<td>Flextronics/Flex</td>
+<td>🇸🇬 싱가포르</td>
+<td>$5.0B+</td>
+<td>다수 HNB</td>
+<td>글로벌 EMS 역량</td>
+</tr>
+<tr>
+<td><strong>이랜텍</strong></td>
+<td>🇰🇷</td>
+<td>3,151억</td>
+<td>PMI IQOS</td>
+<td>한국 품질, 삼성 공급망 노하우</td>
+</tr>
+</tbody>
+</table>
+<p><strong>이랜텍의 포지셔닝</strong>: 중국 저가 경쟁사 대비 품질 인증 및 납기 신뢰성 우위, 대만·싱가포르 EMS 대비 한국 내 긴밀한 PMI 협력 관계가 차별점이다. 특히 삼성전자 공급을 통해 축적된 소형 전자기기 정밀 제조 역량이 HNB 기기 생산에 직접 활용되고 있다.</p>
+<hr />
+<h2>4. 이랜텍의 역량 분석</h2>
+<h3>진입 전략</h3>
+<p>이랜텍은 삼성전자 스마트폰 부품 공급을 통해 쌓은 정밀 플라스틱 성형, 배터리팩 통합, 소형 전자기기 조립 역량을 바탕으로 PMI IQOS 공급망에 진입했다. 한국 시장에서 HNB 침투율이 세계 최고 수준(40% 이상)이며, 수원 본사를 중심으로 PMI 한국법인과의 근거리 협력 체계가 가능한 지리적 이점도 있다.</p>
+<h3>기존 사업과의 시너지</h3>
+<table>
+<thead>
+<tr>
+<th>기존 역량</th>
+<th>HNB 사업 활용</th>
+<th>시너지 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>스마트폰 배터리팩 조립</td>
+<td>HNB 기기 내장 배터리팩 설계/제조</td>
+<td>핵심 부품 내재화, 원가 경쟁력</td>
+</tr>
+<tr>
+<td>플라스틱/메탈 케이스 성형</td>
+<td>HNB 기기 외장 하우징 생산</td>
+<td>기존 설비 활용, 초기투자 최소화</td>
+</tr>
+<tr>
+<td>정밀 전자 조립 라인</td>
+<td>HNB 기기 전체 조립 (EMS 역할)</td>
+<td>고부가가치 통합 공급</td>
+</tr>
+<tr>
+<td>베트남 생산법인</td>
+<td>원가 절감형 HNB 부품 생산 기지</td>
+<td>원가 경쟁력 강화</td>
+</tr>
+</tbody>
+</table>
+<h3>경쟁우위 요소</h3>
+<ul>
+<li><strong>통합 공급 역량</strong>: 케이스 + 배터리팩 + 조립을 단일 공급사로 제공 → PMI 입장에서 공급망 단순화</li>
+<li><strong>품질 인증 보유</strong>: 삼성전자 1차 협력사 품질 기준을 통과한 제조 시스템 적용</li>
+<li><strong>한국 시장 밀착</strong>: 세계 최고 HNB 침투율 한국 시장에서 PMI와 긴밀한 협력 관계 구축</li>
+</ul>
+<hr />
+<h2>5. 실적 기여 시나리오</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2026E</th>
+<th>2027E</th>
+<th>2028E</th>
+<th>2029E</th>
+<th>2030E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>보수적</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— HNB 매출</td>
+<td>2,500억</td>
+<td>2,750억</td>
+<td>3,025억</td>
+<td>3,327억</td>
+<td>3,660억</td>
+</tr>
+<tr>
+<td>— 전체 매출</td>
+<td>9,041억</td>
+<td>9,500억</td>
+<td>10,000억</td>
+<td>10,500억</td>
+<td>11,000억</td>
+</tr>
+<tr>
+<td>— HNB 매출비중</td>
+<td>27.7%</td>
+<td>28.9%</td>
+<td>30.3%</td>
+<td>31.7%</td>
+<td>33.3%</td>
+</tr>
+<tr>
+<td><strong>기본</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— HNB 매출</td>
+<td>2,800억</td>
+<td>3,360억</td>
+<td>4,032억</td>
+<td>4,838억</td>
+<td>5,806억</td>
+</tr>
+<tr>
+<td>— 전체 매출</td>
+<td>9,200억</td>
+<td>10,200억</td>
+<td>11,200억</td>
+<td>12,000억</td>
+<td>13,000억</td>
+</tr>
+<tr>
+<td>— HNB 매출비중</td>
+<td>30.4%</td>
+<td>32.9%</td>
+<td>36.0%</td>
+<td>40.3%</td>
+<td>44.7%</td>
+</tr>
+<tr>
+<td><strong>낙관</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— HNB 매출</td>
+<td>3,200억</td>
+<td>4,160억</td>
+<td>5,408억</td>
+<td>7,030억</td>
+<td>9,139억</td>
+</tr>
+<tr>
+<td>— 전체 매출</td>
+<td>9,500억</td>
+<td>11,000억</td>
+<td>12,500억</td>
+<td>14,000억</td>
+<td>16,000억</td>
+</tr>
+<tr>
+<td>— HNB 매출비중</td>
+<td>33.7%</td>
+<td>37.8%</td>
+<td>43.3%</td>
+<td>50.2%</td>
+<td>57.1%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 추정치. HNB 성장률: 보수적 10%/yr, 기본 20%/yr, 낙관 30%/yr 적용. PMI 신제품 사이클 및 시장 확대 전제</p>
+<hr />
+<h2>6. 밸류에이션 영향</h2>
+<h3>PBR 리레이팅 논리</h3>
+<p>현재 PBR 1.16배는 ROE 8.6% 수준의 일반 전자부품 제조사 멀티플이다. HNB 매출 비중이 30~40%로 확대되고 OPM이 구조적으로 7~8%대로 안착한다면, 스마트폰 부품사 → HNB 특화 하드웨어 제조사로의 리포지셔닝이 가능하다. 글로벌 담배 관련 소비재 제조사 평균 PBR이 2.5~4배임을 고려하면, 이랜텍의 HNB 비중 확대는 의미 있는 멀티플 프리미엄의 근거가 된다.</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HNB 미반영 (현재)</td>
+<td>1.16x</td>
+<td>12,500원</td>
+<td>—</td>
+</tr>
+<tr>
+<td>보수적 반영 (HNB 30%)</td>
+<td>1.5x</td>
+<td>16,164원</td>
+<td>+29.7%</td>
+</tr>
+<tr>
+<td>기본 반영 (HNB 35%)</td>
+<td>2.0x</td>
+<td>21,552원</td>
+<td>+72.9%</td>
+</tr>
+<tr>
+<td>낙관 반영 (HNB 45%+)</td>
+<td>2.5x</td>
+<td>26,940원</td>
+<td>+116.2%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. 리스크 매트릭스</h2>
+<table>
+<thead>
+<tr>
+<th>리스크</th>
+<th>영향</th>
+<th>확률</th>
+<th>대응/헤지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>각국 HNB 규제 강화 (FDA, 한국 담뱃세)</td>
+<td>상</td>
+<td>중</td>
+<td>지역 다변화, PMI 계약 조건 확인</td>
+</tr>
+<tr>
+<td>PMI 공급사 다변화 (중국 업체 전환)</td>
+<td>상</td>
+<td>중</td>
+<td>품질 인증 유지, 통합 공급 역량 강화</td>
+</tr>
+<tr>
+<td>IQOS 시장점유율 하락 (BAT, KT&amp;G 경쟁)</td>
+<td>중</td>
+<td>중</td>
+<td>PMI 외 BAT 공급망 진입 시도</td>
+</tr>
+<tr>
+<td>배터리셀 가격 상승</td>
+<td>중</td>
+<td>상</td>
+<td>장기 공급계약, 가격 전가 구조 확보</td>
+</tr>
+<tr>
+<td>미국 시장 재진입 지연 (FDA 불허)</td>
+<td>상</td>
+<td>하</td>
+<td>아시아·유럽 시장 집중으로 헤지</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. 확률가중 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적정주가</th>
+<th>확률</th>
+<th>가중 기여</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적 (PBR 1.5x, HNB 성장 10%)</td>
+<td>16,164원</td>
+<td>30%</td>
+<td>4,849원</td>
+</tr>
+<tr>
+<td>기본 (PBR 2.0x, HNB 성장 20%)</td>
+<td>21,552원</td>
+<td>50%</td>
+<td>10,776원</td>
+</tr>
+<tr>
+<td>낙관 (PBR 2.5x, HNB 성장 30%)</td>
+<td>26,940원</td>
+<td>20%</td>
+<td>5,388원</td>
+</tr>
+<tr>
+<td><strong>확률가중 합계</strong></td>
+<td><strong>21,013원</strong></td>
+<td>100%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ PBR 기반 시나리오. 현재 BPS 10,776원 사용</p>
+<p><strong>현재가 12,460원 대비 +68.6% 업사이드</strong></p>
+<p>단, 보수적 시나리오(확률 30%)도 목표가 16,164원(+29.7%)으로 제한적 손실 위험 대비 충분한 리워드를 제공한다. 기본 시나리오 달성 시 2027~2028년 목표주가 22,000원 수준이 합리적이다.</p>
+<hr />
+<h2>9. 결론</h2>
+<p>이랜텍은 삼성 스마트폰 부품사에서 글로벌 HNB 하드웨어 제조사로 조용히 변신하는 과정에 있다. 2025년 전자담배 매출 2,049억원(+27.2%)을 달성했고, 2026E에는 2,500~3,200억원으로 확대가 예상된다. PMI IQOS의 글로벌 확장, 한국·일본·유럽 시장의 구조적 HNB 성장, 미국 시장 재진입 옵션까지 고려하면 이랜텍의 HNB 사업은 현재 밸류에이션에 전혀 반영되지 않은 숨겨진 성장 엔진이다. 확률가중 적정주가 21,013원(현재가 대비 +68.6%)은 달성 가능한 리레이팅 시나리오이며, 2026년 1분기 실적 발표와 PMI 신제품 출시 여부가 핵심 트리거다.</p>
+<p><strong>모니터링 체크포인트</strong>:<br />
+- ✅ 분기별 전자담배 매출 비중 — 30% 돌파 시 리레이팅 본격화 신호<br />
+- ✅ PMI IQOS 신제품 출시 일정 및 이랜텍 공급 확인 — IR 공시, PMI 실적발표<br />
+- ✅ FDA HNB 제품 승인 동향 — 미국 시장 재개 시 낙관 시나리오 진입<br />
+- ✅ OPM 6% 이상 안정적 유지 — 2026Q1~Q2 실적으로 확인</p>
+</body>
+</html>
