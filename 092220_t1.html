@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KEC(092220) 기초보고서</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-24<br />
+updated: 2026-04-24<br />
+tags:<br />
+  - 반도체<br />
+  - 전력반도체<br />
+  - 비메모리<br />
+links: https://arc-10.gitbook.io/arc/092220_/</p>
+<hr />
+<h1>KEC(092220) 기초 리서치 보고서</h1>
+<hr />
+<h2>1. 기업 개요</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>종목코드</td>
+<td>092220 (KOSPI)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>대표자</td>
+<td>배석홍</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>업종</td>
+<td>반도체 제조업</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>설립일</td>
+<td>2006년 9월 12일</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td>보통주 200,763,141주</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>유통주식수</td>
+<td>~138백만주 추정 (최대주주 외 특관 31.31% 제외)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>Fully-Diluted 시총</td>
+<td>~3,533억원 (CB/BW 0건, 스옵 미행사 0주)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>~3,533억원 (1,760원 기준)</td>
+<td>KIS</td>
+</tr>
+<tr>
+<td>현재가 / PER / PBR</td>
+<td>1,760원 / N/A (적자) / 1.08x</td>
+<td>KIS (2026-04-24)</td>
+</tr>
+<tr>
+<td>52주 고/저</td>
+<td>1,917원 / 668원 (pykrx 기준)</td>
+<td>KIS</td>
+</tr>
+<tr>
+<td>최대주주</td>
+<td>한국전자홀딩스 29.59% (특수관계인 합계 31.31%)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>감사의견</td>
+<td>삼정회계법인 — 적정 (2026년)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>결산월</td>
+<td>12월</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. 사업 구조</h2>
+<h3>사업부문별 매출 구조</h3>
+<table>
+<thead>
+<tr>
+<th>사업부문</th>
+<th>주요 품목</th>
+<th style="text-align: right;">매출(억원)</th>
+<th style="text-align: right;">비중(%)</th>
+<th style="text-align: right;">YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TR(트랜지스터)</td>
+<td>전력 트랜지스터, MOSFET</td>
+<td style="text-align: right;">1,135</td>
+<td style="text-align: right;">49.4</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>IC</td>
+<td>집적회로, 드라이버 IC</td>
+<td style="text-align: right;">636</td>
+<td style="text-align: right;">27.7</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>기타 반도체 부품</td>
+<td style="text-align: right;">525</td>
+<td style="text-align: right;">22.9</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td></td>
+<td style="text-align: right;"><strong>2,296</strong></td>
+<td style="text-align: right;"><strong>100.0</strong></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>※ 2025년 연간 매출 기준. 부문별 매출액은 비중 × 총매출 추산</p>
+<h3>핵심 사업: 비메모리 전력 반도체</h3>
+<p>KEC는 <strong>국내 유일의 자체 생산시설 보유 전력 반도체 중견기업</strong>으로, 트랜지스터·MOSFET·IC 등 비메모리 전력 반도체를 설계-제조-판매하는 수직계열화된 사업구조를 가진다. 주요 고객은 국내 가전·자동차 제조사이며, 11개 현지법인을 통해 중국·일본·미국으로 수출을 확대하고 있다.</p>
+<ul>
+<li><strong>국내</strong>: 가전(삼성·LG), 자동차(현대·기아) 등 주요 제조기업에 전력 반도체 공급</li>
+<li><strong>해외</strong>: 중국·일본·미국 수출, 11개 현지법인 운영</li>
+<li><strong>신사업</strong>: 전기차(xEV) 향 전력 반도체(SiC/GaN 포함) 수요 대응 및 신규 응용처 확대</li>
+</ul>
+<h3>비즈니스 특성</h3>
+<ul>
+<li><strong>자체 생산시설 보유</strong>: 국내 전력반도체 중견기업 중 유일하게 자체 Fab을 보유, 설계-제조-판매 수직통합</li>
+<li><strong>다변화된 응용처</strong>: 가전·모바일·자동차·산업용 전원 등 광범위한 수요처 확보</li>
+<li><strong>글로벌 영업망</strong>: 11개 해외 현지법인을 통한 아시아·북미 영업 커버리지</li>
+</ul>
+<hr />
+<h2>3. 실적 분석</h2>
+<h3>연결 기준 직전 4개년 실적 및 2개년 추정</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2021</td>
+<td>—</td>
+<td>—</td>
+<td>265</td>
+<td>—</td>
+<td>102</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>—</td>
+<td>—</td>
+<td>180</td>
+<td>-32.0%</td>
+<td>223</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>—</td>
+<td>—</td>
+<td>-330</td>
+<td>-283.0%</td>
+<td>-378</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>—</td>
+<td>—</td>
+<td>-133</td>
+<td>+59.8%</td>
+<td>-110</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>2,296</td>
+<td>—</td>
+<td>-218</td>
+<td>-64.0%</td>
+<td>-266</td>
+<td>-9.5%</td>
+<td>-11.6%</td>
+</tr>
+<tr>
+<td>2026E</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: DART CFS, KIS. 2021~2024 매출액 미공시 (비교공시 미흡). 2026E 컨센서스 없음</p>
+<h3>최근 8분기 실적</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024Q1</td>
+<td>—</td>
+<td>—</td>
+<td>-16</td>
+<td>+56.2%</td>
+<td>-7.5</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024Q2</td>
+<td>—</td>
+<td>—</td>
+<td>+4</td>
+<td>+105.1%</td>
+<td>+13</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024Q3</td>
+<td>—</td>
+<td>—</td>
+<td>-57</td>
+<td>+13.3%</td>
+<td>-54</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2024Q4</td>
+<td>—</td>
+<td>—</td>
+<td>-64</td>
+<td>+56.9%</td>
+<td>-61</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025Q1</td>
+<td>—</td>
+<td>—</td>
+<td>-31</td>
+<td>-93.7%</td>
+<td>-23</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025Q2</td>
+<td>—</td>
+<td>—</td>
+<td>-51</td>
+<td>-1,364.1%</td>
+<td>-37</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025Q3</td>
+<td>—</td>
+<td>—</td>
+<td>-74</td>
+<td>-30.3%</td>
+<td>-74</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2025Q4</td>
+<td>2,296</td>
+<td>—</td>
+<td>-61</td>
+<td>+4.0%</td>
+<td>-132</td>
+<td>-2.7%</td>
+<td>-5.7%</td>
+</tr>
+</tbody>
+</table>
+<p>※ Q4 = 연간 - Q1 - Q2 - Q3 산출 | 소스: DART CFS</p>
+<p>2024년은 전방 수요 위축에도 Q2에 유일하게 영업이익 흑자(+4억) 전환을 기록했으나 하반기 다시 적자로 회귀했다. 2025년은 분기별 영업손실이 전년 대비 악화되었으며, 특히 Q2·Q3에 손실이 집중되는 계절성 패턴이 뚜렷하다. 글로벌 반도체 다운사이클과 원가 부담이 주요 원인이다.</p>
+<p>2025년 OPM -9.5%는 수익성 악화의 심각성을 보여주며, 2025Q4 순이익 -132억은 연간 손실의 약 50%가 집중된 것으로 전기차 관련 재고 조정 및 일회성 요인 반영 가능성이 있다.</p>
+<h3>재무상태표 요약</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>자산총계</strong></td>
+<td style="text-align: right;">4,477억</td>
+<td style="text-align: right;">4,505억</td>
+<td style="text-align: right;">4,489억</td>
+</tr>
+<tr>
+<td>(현금성자산)</td>
+<td style="text-align: right;">103억</td>
+<td style="text-align: right;">306억</td>
+<td style="text-align: right;">90억</td>
+</tr>
+<tr>
+<td>(재고자산)</td>
+<td style="text-align: right;">789억</td>
+<td style="text-align: right;">655억</td>
+<td style="text-align: right;">573억</td>
+</tr>
+<tr>
+<td>(유형자산)</td>
+<td style="text-align: right;">1,362억</td>
+<td style="text-align: right;">1,488억</td>
+<td style="text-align: right;">1,776억</td>
+</tr>
+<tr>
+<td><strong>부채총계</strong></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>(이자부부채)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td><strong>자본총계</strong></td>
+<td style="text-align: right;">3,567억</td>
+<td style="text-align: right;">3,491억</td>
+<td style="text-align: right;">3,259억</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: DART CFS. 부채총계는 자산-자본 산출</p>
+<p>현금성자산이 2024년 306억에서 2025년 90억으로 급감(-70%)했다. 반면 유형자산은 1,776억으로 전년 대비 약 288억 증가해 CAPEX 집중 투자(386억, 전년 113억 대비 3.4배)가 이루어졌음을 확인할 수 있다. 자본총계는 3년간 지속 감소 중이며, 적자 누적으로 자본잠식 우려가 점증되는 국면이다.</p>
+<h3>핵심 재무비율</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE</td>
+<td style="text-align: right;">-10.6%</td>
+<td style="text-align: right;">-3.2%</td>
+<td style="text-align: right;">-8.2%</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td style="text-align: right;">125.5%</td>
+<td style="text-align: right;">129.0%</td>
+<td style="text-align: right;">137.8%</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>유동비율</td>
+<td style="text-align: right;">319.8%</td>
+<td style="text-align: right;">297.6%</td>
+<td style="text-align: right;">202.8%</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">-345억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td style="text-align: right;">1.2%(DPS 20원)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>Cash Runway</td>
+<td style="text-align: right;">1.1분기</td>
+<td style="text-align: right;">11.1분기</td>
+<td style="text-align: right;">1.4분기</td>
+</tr>
+</tbody>
+</table>
+<h3>실적 해석</h3>
+<p>부채비율이 2021년 43.5%에서 2025년 137.8%로 급등한 점이 핵심 리스크다. 2023년 유상증자(4건 공시)로 자본을 확충했음에도 지속적 적자로 자본이 잠식되고 있다. 2025년 CAPEX 386억은 사상 최대 수준으로, 신규 설비 투자(SiC 파워 반도체 라인 등 추정)가 단기 FCF 부담을 가중시키고 있다. 유동비율은 202.8%로 단기 유동성은 양호하나, Cash Runway 1.4분기는 현금 고갈 위험 신호다.</p>
+<hr />
+<h2>4. 성장 동력 분석</h2>
+<p><strong>동력 1: 전기차(xEV) 전력 반도체 수요 확대 ⭐⭐⭐ (◉)</strong><br />
+전기차·하이브리드 시장 성장에 따른 전력 반도체(MOSFET, SiC, GaN) 수요가 급증하고 있다. KEC는 국내 유일 Fab 보유 전력반도체 업체로 xEV 향 제품 라인업 확장 중이며, 2025년 사상 최대 CAPEX(386억)를 통해 생산능력 확충에 나섰다. 글로벌 전기차 침투율 상승(2025년 약 20% → 2030E 40%+)이 TAM 확대의 핵심 모멘텀이다.</p>
+<p><strong>동력 2: AI 서버·데이터센터 전원관리 반도체 ⭐⭐⭐ (◎)</strong><br />
+AI 가속기·서버 확산으로 전원관리(PMIC) 및 전력변환 반도체 수요가 구조적으로 증가하고 있다. KEC의 트랜지스터·IC 제품군은 서버 전원공급장치(PSU)에 사용 가능하며, 글로벌 빅테크 데이터센터 투자 확대가 잠재적 수요처를 형성한다.</p>
+<p><strong>동력 3: 국내 반도체 소부장 공급망 재편 ⭐⭐ (◎)</strong><br />
+미·중 무역갈등 심화로 한국 내 전력 반도체 로컬 소싱 니즈가 증가하고 있다. KEC는 삼성전자·현대차 등 국내 대형 고객과의 장기 공급 관계를 보유해 공급망 재편 시 수혜 가능성이 있다.</p>
+<p><strong>동력 4: 해외 법인 수익성 개선 ⭐⭐ (○)</strong><br />
+중국·일본 현지법인의 수익성 회복이 전사 실적 개선에 기여할 수 있다. 엔화 강세 환경에서 일본 법인 실적 개선, 중국 전기차 OEM 향 공급 확대가 촉매 역할을 할 수 있다.</p>
+<hr />
+<h2>5. 리스크 분석</h2>
+<h3>DART 체크리스트</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>항목</th>
+<th>상태</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>감사의견</td>
+<td>✅ 적정 (삼정회계법인, 2026년)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CB/BW 발행</td>
+<td>✅ 0건</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>3</td>
+<td>유상증자</td>
+<td>⚠️ 2023년 4건 이력 (희석 이력 존재)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>4</td>
+<td>최대주주 지분</td>
+<td>⚠️ 29.59% (30% 미만, 경영권 취약성 우려)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>5</td>
+<td>자기주식</td>
+<td>ℹ️ 미확인 (N/A)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>6</td>
+<td>부채비율</td>
+<td>⚠️ 137.8% (상승 추세)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>7</td>
+<td>유동비율</td>
+<td>✅ 202.8% (양호, 단 하락 추세)</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<h3>Ownership &amp; 오버행</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th style="text-align: right;">지분율(%)</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최대주주 및 특수관계인</td>
+<td style="text-align: right;">31.31%</td>
+<td>한국전자홀딩스(29.59%) 포함</td>
+</tr>
+<tr>
+<td>자사주</td>
+<td style="text-align: right;">N/A</td>
+<td>미확인</td>
+</tr>
+<tr>
+<td>기타 유통주식</td>
+<td style="text-align: right;">~68.69%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>잔액/수량</th>
+<th>행사가</th>
+<th>희석비율</th>
+<th>해제 시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CB/BW</td>
+<td>0건</td>
+<td>—</td>
+<td>0%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>스톡옵션</td>
+<td>미행사 0주</td>
+<td>—</td>
+<td>0%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>CB/BW 0건으로 전환권 오버행은 없다. 그러나 2023년 4차례 유상증자 공시 이력이 존재해 재차 자본조달 가능성을 배제할 수 없다. 지속적 적자 누적(2023~2025년 3개년 연속 순손실 합계 약 755억)으로 추가 증자 압박이 잠재한다.</p>
+<h3>기타 리스크</h3>
+<ul>
+<li><strong>지속 적자 및 현금 소진</strong>: 2023년부터 3년 연속 적자, Cash Runway 1.4분기는 단기 유동성 위험 신호</li>
+<li><strong>글로벌 반도체 다운사이클 장기화</strong>: 전방 수요(가전·모바일·자동차) 회복 지연 시 추가 손실 불가피</li>
+<li><strong>고CAPEX 부담</strong>: 2025년 386억 설비투자로 FCF 적자 심화, 부채 차환 리스크 존재</li>
+<li><strong>추가 유상증자 리스크</strong>: 2023년 4건 공시 선례에 비추어 현금 소진 시 희석성 자금 조달 재발 가능성</li>
+</ul>
+<hr />
+<h2>6. 경쟁 구도</h2>
+<h3>국내 Peer</h3>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th style="text-align: right;">시총(억원)</th>
+<th>PER</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KEC(092220)</strong></td>
+<td style="text-align: right;">~3,533</td>
+<td>N/A</td>
+<td>전력반도체 전문, 국내 유일 Fab 보유 중견기업</td>
+</tr>
+<tr>
+<td>삼성전자(005930)</td>
+<td style="text-align: right;">~12,891,044</td>
+<td>33.6x</td>
+<td>메모리+시스템반도체 종합</td>
+</tr>
+<tr>
+<td>SK하이닉스(000660)</td>
+<td style="text-align: right;">~8,709,222</td>
+<td>20.7x</td>
+<td>HBM 메모리 선두</td>
+</tr>
+<tr>
+<td>한미반도체(042700)</td>
+<td style="text-align: right;">~281,647</td>
+<td>132.3x</td>
+<td>TC Bonder 장비, AI 밸류체인</td>
+</tr>
+</tbody>
+</table>
+<h3>글로벌 Peer</h3>
+<p>글로벌 전력 반도체 경쟁사로는 인피니언(Infineon, 독일), ON세미컨덕터(미국), 로옴(ROHM, 일본)이 주요 경쟁자다. 인피니언은 SiC·GaN 전력반도체 세계 1위이며, 로옴은 SiC 전기차 적용에서 강점을 보인다. KEC는 이들과 직접 경쟁하기보다 국내 중소형 가전·자동차 고객 특화 니치 포지션을 유지하고 있다.</p>
+<p><strong>포지셔닝</strong>: KEC는 삼성·현대차 등 국내 대형 고객에 밀착한 전력 반도체 전문 중견기업으로, 글로벌 플레이어 대비 소형주 디스카운트가 크나 국내 공급망 재편 수혜와 xEV 성장의 레버리지 포지션을 보유한다.</p>
+<hr />
+<h2>7. 밸류에이션</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>현재</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>N/A</td>
+<td>3개년 연속 순손실 — PER 산출 불가</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>N/A</td>
+<td>컨센서스 EPS 없음</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>1.08x</td>
+<td>BPS 1,623원 기준</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>N/A (음수)</td>
+<td>EBITDA 음수</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>-8.2%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>-345억</td>
+<td>CFO - CAPEX (추산)</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>1.1%</td>
+<td>DPS 20원 (2023년 실적 기준, 최근 지급 여부 불확실)</td>
+</tr>
+</tbody>
+</table>
+<h3>증권사 목표주가</h3>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th style="text-align: right;">목표가</th>
+<th>투자의견</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td style="text-align: right;">—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td style="text-align: right;">N/A</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ FnGuide 리포트 0건, 컨센서스 없음</p>
+<p><strong>밸류에이션 판단</strong>: PBR 1.08x는 장부가치 수준에서 거래 중으로, 3년 연속 적자 기업 대비 과도한 프리미엄은 아니나 BPS 감소 추세(자본잠식 진행) 고려 시 하방 압력이 존재한다. xEV/AI 테마 모멘텀이 붙을 경우 단기 리레이팅 가능성은 있으나, 실적 턴어라운드 확인 전까지 펀더멘털 정당화가 어렵다.</p>
+<hr />
+<h2>8. Bull vs Bear</h2>
+<h3>🐂 Bull Case — "전력반도체 르네상스의 숨겨진 수혜자"</h3>
+<p>◉ <strong>xEV 전력반도체 수요 급증</strong> — 전기차 침투율 확대로 차량당 전력반도체 탑재량 3~5배 증가, 국내 유일 Fab 보유 KEC의 생산 레버리지 극대화 가능<br />
+◉ <strong>2025년 대규모 CAPEX 선행 투자</strong> — 386억 설비투자 완료 시 2026~2027년 생산능력 확대 및 매출 급성장 발판 마련<br />
+◎ <strong>국내 공급망 재편 수혜</strong> — 미·중 갈등 심화로 반도체 로컬 소싱 수요 증가, 국내 대형 고객의 KEC 공급 비중 확대 가능<br />
+◎ <strong>현 PBR 1.08x — 바닥권 진입 가능성</strong> — 3년 적자 이후 BPS 추가 감소 제한 시 역사적 저점 밸류에이션<br />
+○ <strong>해외 법인 회복</strong> — 엔화 강세 및 중국 전기차 회복으로 해외 매출 반등 가능</p>
+<h3>🐻 Bear Case — "현금 소진과 추가 희석 악순환"</h3>
+<p>◉ <strong>Cash Runway 1.4분기</strong> — 2026년 상반기 내 자금 재조달 필요, 유상증자·대출 확대로 주주가치 희석 가능성<br />
+◉ <strong>3년 연속 적자 지속</strong> — 2025년 영업손실 -218억, 반도체 다운사이클 장기화 시 BPS 추가 잠식<br />
+◎ <strong>고CAPEX·저가동률 악순환</strong> — 신규 설비 투자에도 수요 미회복 시 감가상각 부담만 증가하여 손실 심화<br />
+◎ <strong>컨센서스 부재</strong> — 증권사 커버리지·목표주가 없어 기관 수급 유입 어려움<br />
+○ <strong>최대주주 지분 29.59%</strong> — 경영권 방어력 취약, 적대적 주주 행동 리스크</p>
+<hr />
+<h2>9. 종합 판단</h2>
+<p><strong>기업의 체질</strong>: KEC는 국내 비메모리 전력 반도체 분야의 희소한 Fab 보유 중견기업으로, 장기 성장 테마(xEV, AI 전원관리)에 구조적으로 노출되어 있다. 그러나 2023년부터 3개년 연속 순손실이 누적되고, Cash Runway가 1.4분기로 단기 현금 위기에 노출되어 있어 현재는 성장 잠재력보다 생존 리스크가 우선적으로 점검되어야 하는 구간이다.</p>
+<p><strong>투자 가치가 있는 조건</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>시점</th>
+<th>확인 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분기 영업이익 흑자 전환</td>
+<td>2026Q1~Q2</td>
+<td>분기 실적 발표</td>
+</tr>
+<tr>
+<td>Cash Runway 3분기 이상 확보</td>
+<td>즉시</td>
+<td>분기 재무제표 현금 확인</td>
+</tr>
+<tr>
+<td>xEV 향 신규 수주/공급계약 공시</td>
+<td>연내</td>
+<td>DART 공시, IR자료</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 모니터링</strong>:<br />
+- ✅ <strong>분기 영업이익 흑자 전환 시점</strong> — 2026Q 연속 흑자 여부 확인<br />
+- ✅ <strong>CAPEX 집행 완료 및 가동률</strong> — 신규 라인 가동 시작 및 Utilization Rate<br />
+- ✅ <strong>현금성자산 추이</strong> — 분기별 현금 잔액 (90억 이하 유지 시 위험)<br />
+- ✅ <strong>유상증자 공시 여부</strong> — 추가 희석 이벤트 사전 모니터링</p>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KEC(092220) Valuation</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-24<br />
+updated: 2026-04-24<br />
+tags:<br />
+  - 반도체<br />
+  - 전력반도체<br />
+  - 밸류에이션<br />
+links: https://arc-10.gitbook.io/arc/092220_/</p>
+<hr />
+<h1>KEC(092220) Valuation Report</h1>
+<hr />
+<h2>1. 현재 멀티플</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>KEC</th>
+<th>산출 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>N/A</td>
+<td>3년 연속 적자 — EPS -132원, PER 산출 불가</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>N/A</td>
+<td>컨센서스 EPS 없음</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>1.08x</td>
+<td>1,760원 ÷ BPS 1,623원 (자본 3,259억 ÷ 발행주식 200,763,141주)</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>N/A (음수)</td>
+<td>EBITDA 음수 — EV/EBITDA 산출 불가</td>
+</tr>
+<tr>
+<td>EV/Revenue</td>
+<td>1.3x</td>
+<td>EV ~2,985억 ÷ TTM 매출 2,296억</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>-8.2%</td>
+<td>순손실 -266억 ÷ 자본 3,259억</td>
+</tr>
+<tr>
+<td>OP Margin</td>
+<td>-9.5%</td>
+<td>영업손실 -218억 ÷ 매출 2,296억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>~1.1%</td>
+<td>DPS 20원 (2023년 마지막 배당, 2024~2025 미지급 추정)</td>
+</tr>
+</tbody>
+</table>
+<p>※ KIS API + DART CFS (2026-04-24). 2025년 연간 기준</p>
+<p><strong>핵심</strong>: KEC는 3년 연속 적자 기업으로 전통적 이익 기반 멀티플(PER, EV/EBITDA) 적용이 불가하며, PBR 1.08x와 EV/Revenue 1.3x만이 유의미한 현재 밸류에이션 기준이 된다. 적자 구조에서 PBR이 1배 초과 유지되는 것은 xEV·AI 성장 테마 프리미엄 또는 자산가치 반영으로 해석된다.</p>
+<hr />
+<h2>2. Peer Comparison</h2>
+<h3>선정 기준</h3>
+<p>글로벌 반도체 제조업체 중 파운드리(TSMC), 종합 반도체(Intel, Micron), 장비(ASML)를 포함하되, 이들은 KEC의 직접 경쟁사보다는 업종 벤치마크로 활용한다. KEC와 사업모델이 유사한 순수 전력반도체 플레이(Infineon, ON Semi)는 별도 정성 비교에 포함한다.</p>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>Fwd PE</th>
+<th>PBR</th>
+<th>EV/EBITDA</th>
+<th>OP Margin</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KEC(092220)</strong></td>
+<td>🇰🇷</td>
+<td>3,533억</td>
+<td>N/A</td>
+<td>1.08x</td>
+<td>N/A</td>
+<td>-9.5%</td>
+<td>-8.2%</td>
+</tr>
+<tr>
+<td>TSMC(TSM)</td>
+<td>🇹🇼</td>
+<td>~$1.98T</td>
+<td>19.8x</td>
+<td>58.5x</td>
+<td>2.7x</td>
+<td>58.1%</td>
+<td>36.2%</td>
+</tr>
+<tr>
+<td>Intel(INTC)</td>
+<td>🇺🇸</td>
+<td>~$335B</td>
+<td>59.7x</td>
+<td>2.9x</td>
+<td>28.1x</td>
+<td>5.1%</td>
+<td>0.0%</td>
+</tr>
+<tr>
+<td>Micron(MU)</td>
+<td>🇺🇸</td>
+<td>~$543B</td>
+<td>4.8x</td>
+<td>7.5x</td>
+<td>14.7x</td>
+<td>67.6%</td>
+<td>39.8%</td>
+</tr>
+<tr>
+<td>ASML(ASML)</td>
+<td>🇳🇱</td>
+<td>~$546B</td>
+<td>29.8x</td>
+<td>1,236.8x</td>
+<td>42.6x</td>
+<td>36.0%</td>
+<td>52.2%</td>
+</tr>
+<tr>
+<td><strong>글로벌 평균</strong></td>
+<td>—</td>
+<td>—</td>
+<td>28.5x</td>
+<td>326.4x</td>
+<td>22.0x</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: yfinance (2026-04-24 기준)</p>
+<h3>할인율 분석</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>KEC</th>
+<th>글로벌 평균</th>
+<th>비교</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fwd PE</td>
+<td>N/A</td>
+<td>28.5x</td>
+<td>비교 불가 (적자)</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>1.08x</td>
+<td>326.4x</td>
+<td><strong>글로벌 대비 99.7% 할인</strong></td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>N/A</td>
+<td>22.0x</td>
+<td>비교 불가 (적자)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>포지셔닝</strong>: KEC는 글로벌 반도체 Peer 대비 PBR 기준 극단적 할인 상태에 있으나, 이는 적자 기업의 본질적 특성과 국내 소형주 디스카운트가 복합 반영된 결과다. 전력반도체 전문기업인 Infineon(독일, PBR ~3.0x), ON세미컨덕터(미국, PBR ~2.5x) 대비로도 KEC PBR 1.08x는 현저한 할인 수준으로, 턴어라운드 시 리레이팅 여지가 크다.</p>
+<hr />
+<h2>3. PBR 기반 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>BPS</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>0.8x</td>
+<td>1,623원</td>
+<td><strong>1,298원</strong></td>
+<td>-26.3%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>1.2x</td>
+<td>1,623원</td>
+<td><strong>1,948원</strong></td>
+<td>+10.7%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>1.8x</td>
+<td>1,623원</td>
+<td><strong>2,921원</strong></td>
+<td>+65.9%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PBR 적용 근거</strong>: 보수적 0.8x는 적자 지속·BPS 잠식 시나리오(자산가치 10~20% 헤어컷). 기본 1.2x는 현재 수준에서 소폭 리레이팅(흑자 전환 가시성 부분 반영). 낙관 1.8x는 xEV 전력반도체 성장 모멘텀 + 흑자 전환 완전 반영 시 국내 전력반도체 피어 평균 수준. KEC의 히스토리컬 PBR 밴드는 공시 데이터 부족으로 확인이 어려우나 BPS 감소 추세를 고려해 보수적 하단을 설정했다.</p>
+<hr />
+<h2>4. DCF Valuation</h2>
+<h3>가정</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WACC</td>
+<td>N/A</td>
+<td>FCF 음수로 DCF 적용 불가</td>
+</tr>
+<tr>
+<td>FCF 기준</td>
+<td>-345억원</td>
+<td>2025년 CFO 추정 - CAPEX 386억</td>
+</tr>
+<tr>
+<td>적용 불가 사유</td>
+<td>FCF 음수</td>
+<td>적자 + 대규모 투자 사이클 진행 중</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 DCF 적정주가</h3>
+<p>DCF 적용 불가 — FCF 음수(추정 -345억원) 및 컨센서스 추정치 부재로 신뢰도 있는 DCF 산출이 불가능하다. PBR 기반 적정주가와 전력반도체 섹터 EV/Revenue 멀티플(1.0~2.5x)을 교차 검증 기준으로 활용한다.</p>
+<p><strong>EV/Revenue 교차검증</strong>: 매출 2,296억 × 1.5x(기본 멀티플) = EV 3,444억 → 순부채 차감 후 시총 ~3,000~3,500억 → 주당 1,500~1,740원 (현재가 1,760원과 유사 수준, 기본 시나리오와 부합)</p>
+<hr />
+<h2>5. 증권사 컨센서스</h2>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th>목표가</th>
+<th>투자의견</th>
+<th>방법론</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td>N/A</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ FnGuide 리포트 0건 — 커버리지 없음. 소형주 특성상 기관 리서치 부재</p>
+<hr />
+<h2>6. 밸류에이션 논평</h2>
+<p><strong>핵심 판단</strong>: PBR 1.08x는 현 적자 구조와 BPS 감소 추세를 감안하면 다소 높은 수준이다. 기본 시나리오(PBR 1.2x) 적정주가 1,948원 대비 현재가 1,760원은 약 10.7% 업사이드에 불과해, xEV 모멘텀 본격화 전까지 밸류에이션 매력이 제한적이다.</p>
+<p><strong>프리미엄/디스카운트 요인</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>방향</th>
+<th>조정폭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>소형주 디스카운트 (시총 3,533억, 커버리지 부재)</td>
+<td>↓</td>
+<td>-20%p</td>
+</tr>
+<tr>
+<td>3년 연속 적자 (BPS 잠식 진행)</td>
+<td>↓</td>
+<td>-15%p</td>
+</tr>
+<tr>
+<td>xEV 전력반도체 성장 테마 프리미엄</td>
+<td>↑</td>
+<td>+10%p</td>
+</tr>
+<tr>
+<td>국내 유일 Fab 보유 희소성</td>
+<td>↑</td>
+<td>+5%p</td>
+</tr>
+<tr>
+<td>추가 유상증자 가능성 (Cash Runway 1.4Q)</td>
+<td>↓</td>
+<td>-10%p</td>
+</tr>
+</tbody>
+</table>
+<p><strong>재평가 트리거</strong>: ① 분기 영업이익 흑자 전환 확인 ② xEV 향 신규 공급계약(현대·기아 등) 공시 ③ Cash Runway 3분기 이상 안정화</p>
+<p><strong>결론</strong>: 현 주가 1,760원은 EV/Revenue 및 PBR 기본 시나리오 수준에 근접해 있어 단기 밸류에이션 매력은 크지 않다. 다만 xEV·AI 전원관리 수요의 구조적 성장 테마와 국내 유일 Fab 보유 희소성이 리레이팅의 잠재적 촉매로 작용할 수 있어, 흑자 전환 시그널 확인 후 매수 접근이 유효하다.</p>
+</body>
+</html>

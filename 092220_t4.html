@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KEC(092220) DeepDive</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-24<br />
+updated: 2026-04-24<br />
+tags:<br />
+  - 반도체<br />
+  - 전력반도체<br />
+  - 전기차<br />
+  - xEV<br />
+links: https://arc-10.gitbook.io/arc/092220_/</p>
+<hr />
+<h1>KEC — 전기차(xEV) 전력 반도체 수요 확대 분석</h1>
+<hr />
+<h2>Executive Summary</h2>
+<p>KEC는 국내 유일의 자체 Fab 보유 전력 반도체 중견기업으로, 글로벌 전기차(xEV) 보급 확대라는 구조적 수요 성장 곡선 위에 위치해 있다. 차량 1대당 전력 반도체 탑재량이 내연기관(ICE) 대비 전기차에서 3~5배 증가하며, KEC의 주력 제품인 트랜지스터(TR)·MOSFET·IC가 직접 수혜를 받을 수 있는 구조다. 2025년 사상 최대 CAPEX 386억원을 집행해 생산능력을 확충했으며, 이는 2026~2027년 매출 반등의 선행 지표로 해석된다. 확률가중 적정주가는 2,180원으로 현재가 1,760원 대비 +23.9% 업사이드가 추정된다.</p>
+<hr />
+<h2>1. 분석 배경</h2>
+<p>T1 기초보고서에서 KEC의 최우선 성장 동력(⭐⭐⭐)으로 선정된 전기차(xEV) 전력 반도체 수요 확대를 심층 분석한다. 2025년 3년 연속 적자와 Cash Runway 1.4분기의 위기 국면에서도 회사가 386억원의 사상 최대 CAPEX를 집행한 것은, xEV 수요 대응이 단순한 전략 옵션이 아닌 생존을 위한 필수 투자임을 시사한다.</p>
+<h3>분석 범위</h3>
+<ul>
+<li>글로벌 전기차 시장 성장과 전력 반도체 TAM 추정</li>
+<li>전기차 전력 반도체 공급 경쟁 구도 및 KEC 포지셔닝</li>
+<li>KEC의 역량 분석 및 기존 사업과의 시너지</li>
+<li>실적 기여 시나리오 및 PBR 리레이팅 논리</li>
+<li>확률가중 적정주가 도출</li>
+</ul>
+<h3>한계</h3>
+<ul>
+<li>KEC의 xEV 고객사·수주 계약 세부 내용은 비공개로 추정치 사용</li>
+<li>전력 반도체 시장 내 KEC 점유율 독립 통계 부재</li>
+<li>CAPEX 투자 완료 시점 및 신규 라인 가동 일정 미확인</li>
+</ul>
+<hr />
+<h2>2. 산업/시장 개요</h2>
+<h3>글로벌 전기차 전력 반도체 시장 현황</h3>
+<p>글로벌 전기차 시장은 2024년 약 1,700만 대 판매(침투율 ~18%)에서 2030년 4,000만 대(침투율 ~40%)로 성장이 전망된다. 전기차 1대에는 ICE 차량 대비 3~5배 많은 전력 반도체가 필요하다. 구체적으로 EV 파워트레인(인버터·컨버터·OBC)에 IGBT·MOSFET·SiC 소자가 대거 탑재되며, 배터리 관리 시스템(BMS), 온보드 충전기(OBC), DC-DC 컨버터 등 다수의 전력 변환 모듈에서 KEC 주력 제품군(TR, MOSFET, IC)의 수요가 발생한다.</p>
+<p>글로벌 전력 반도체 시장 규모는 2024년 약 $250억에서 2030년 $450억 이상으로 연평균 10% 이상 성장이 예상되며, 이 중 xEV 응용이 가장 빠른 성장 세그먼트다.</p>
+<h3>주요 수요 기회</h3>
+<table>
+<thead>
+<tr>
+<th>지역/국가</th>
+<th>프로젝트</th>
+<th>규모</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🇰🇷 한국</td>
+<td>현대·기아 전기차 전력 반도체 로컬 소싱 확대</td>
+<td>대형</td>
+<td>진행 중</td>
+</tr>
+<tr>
+<td>🇨🇳 중국</td>
+<td>BYD·SAIC 등 중국 EV OEM 부품 공급</td>
+<td>대형</td>
+<td>KEC 현지법인 활용</td>
+</tr>
+<tr>
+<td>🇺🇸 미국</td>
+<td>IRA 보조금 기반 EV 확산, 현지 공급망 구축</td>
+<td>대형</td>
+<td>미국 영업망 활용</td>
+</tr>
+<tr>
+<td>🇯🇵 일본</td>
+<td>하이브리드차(HEV) 전력 반도체 수요</td>
+<td>중형</td>
+<td>KEC 일본 법인 활용</td>
+</tr>
+</tbody>
+</table>
+<h3>시장 규모(TAM) 추정</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>전제</th>
+<th>TAM (글로벌 xEV 전력반도체)</th>
+<th>KEC 기회</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>2030년 EV 침투율 30%, KEC 점유 0.1%</td>
+<td>~$100억</td>
+<td>~$1,000만 (~140억원)</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>2030년 EV 침투율 40%, KEC 점유 0.2%</td>
+<td>~$150억</td>
+<td>~$3,000만 (~420억원)</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>2030년 EV 침투율 45%, KEC 점유 0.4%</td>
+<td>~$180억</td>
+<td>~$7,200만 (~1,000억원)</td>
+</tr>
+</tbody>
+</table>
+<p>※ KEC 현재 연매출 2,296억 대비 기본 시나리오 xEV 매출 비중 18% 수준 추정 (2030년)</p>
+<h3>시장의 특수성</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>일반 반도체 시장</th>
+<th>xEV 전력 반도체</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수요 특성</td>
+<td>소비자 전자 경기 연동</td>
+<td>전기차 보급 구조적 성장</td>
+</tr>
+<tr>
+<td>제품 수명</td>
+<td>2~3년 세대 교체</td>
+<td>차량 탑재 10년 이상</td>
+</tr>
+<tr>
+<td>고객 관계</td>
+<td>단기 스팟</td>
+<td>장기 공급 협약</td>
+</tr>
+<tr>
+<td>진입 장벽</td>
+<td>중간</td>
+<td>높음 (차량용 인증 AEC-Q101 필수)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. 경쟁 구도</h2>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>레퍼런스</th>
+<th>강점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infineon Technologies</td>
+<td>🇩🇪 독일</td>
+<td>~€40B</td>
+<td>글로벌 xEV 전력반도체 1위</td>
+<td>SiC·IGBT 전체 포트폴리오, 완성차 인증 풍부</td>
+</tr>
+<tr>
+<td>ON Semiconductor</td>
+<td>🇺🇸 미국</td>
+<td>~$20B</td>
+<td>SiC 자체 웨이퍼 생산</td>
+<td>SiC 웨이퍼 수직통합, Tesla 공급사</td>
+</tr>
+<tr>
+<td>ROHM</td>
+<td>🇯🇵 일본</td>
+<td>~¥1.3T</td>
+<td>SiC MOSFET 세계 2위</td>
+<td>일본 완성차 협력 강점</td>
+</tr>
+<tr>
+<td><strong>KEC</strong></td>
+<td>🇰🇷 한국</td>
+<td>~3,533억</td>
+<td>국내 가전·자동차 공급</td>
+<td>국내 유일 Fab, 현대·기아 근접성</td>
+</tr>
+</tbody>
+</table>
+<p><strong>KEC의 포지셔닝</strong>: 글로벌 전력반도체 3강(Infineon, ON Semi, ROHM)과의 정면 경쟁보다 <strong>국내 완성차(현대·기아) + 국내 Tier 1 부품사 특화</strong>의 니치 전략이 현실적이다. 국내 공급망 재편 수혜와 신속한 기술 대응력이 KEC의 핵심 경쟁 포인트다.</p>
+<hr />
+<h2>4. KEC의 역량 분석</h2>
+<h3>진입 전략</h3>
+<p>KEC는 기존 TR·MOSFET 제품을 xEV 차량용 규격(AEC-Q101)으로 인증 획득 후, 국내 현대·기아 Tier 1 공급사를 통해 간접 공급하는 방식으로 시장 진입이 가능하다. 11개 해외 현지법인(중국·일본·미국)을 통해 현지 완성차 OEM과의 직접 공급 계약도 추진 중인 것으로 추정된다.</p>
+<h3>기존 사업과의 시너지</h3>
+<table>
+<thead>
+<tr>
+<th>기존 역량</th>
+<th>xEV 사업 활용</th>
+<th>시너지 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>자체 Fab 보유</td>
+<td>xEV 전용 라인 구축 용이</td>
+<td>외주 없는 빠른 제품 개발 주기</td>
+</tr>
+<tr>
+<td>TR·MOSFET 제조 기술</td>
+<td>SiC/GaN 전환 기술 기반</td>
+<td>기존 공정 레거시 → 차세대 소재 전환</td>
+</tr>
+<tr>
+<td>현대·기아 공급 이력</td>
+<td>xEV 부품 공급 레퍼런스</td>
+<td>기존 신뢰 관계 기반 신제품 채택 가능성</td>
+</tr>
+<tr>
+<td>중국 현지법인 11개</td>
+<td>중국 EV OEM 직접 대응</td>
+<td>로컬 납품 역량</td>
+</tr>
+</tbody>
+</table>
+<h3>경쟁우위 요소</h3>
+<ul>
+<li><strong>국내 유일 Fab</strong>: 자체 생산시설 보유로 설계-제조-판매 수직통합, 빠른 커스터마이징 대응</li>
+<li><strong>현대·기아 그룹 공급 기반</strong>: 국내 최대 EV 완성차 그룹과의 기존 공급 관계 — 신모델 채택 파이프라인</li>
+<li><strong>2025년 CAPEX 386억 완료</strong>: 신규 생산라인 구축으로 xEV 수요 급등 시 즉각적 공급 대응 가능</li>
+</ul>
+<hr />
+<h2>5. 실적 기여 시나리오</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2026E</th>
+<th>2027E</th>
+<th>2028E</th>
+<th>2029E</th>
+<th>2030E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>보수적</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— xEV 매출</td>
+<td>50억</td>
+<td>100억</td>
+<td>150억</td>
+<td>200억</td>
+<td>250억</td>
+</tr>
+<tr>
+<td>— 총매출</td>
+<td>2,400억</td>
+<td>2,600억</td>
+<td>2,800억</td>
+<td>3,000억</td>
+<td>3,200억</td>
+</tr>
+<tr>
+<td>— xEV 매출비중</td>
+<td>2%</td>
+<td>3.8%</td>
+<td>5.4%</td>
+<td>6.7%</td>
+<td>7.8%</td>
+</tr>
+<tr>
+<td><strong>기본</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— xEV 매출</td>
+<td>100억</td>
+<td>200억</td>
+<td>300억</td>
+<td>400억</td>
+<td>500억</td>
+</tr>
+<tr>
+<td>— 총매출</td>
+<td>2,500억</td>
+<td>2,800억</td>
+<td>3,100억</td>
+<td>3,400억</td>
+<td>3,700억</td>
+</tr>
+<tr>
+<td>— xEV 매출비중</td>
+<td>4%</td>
+<td>7.1%</td>
+<td>9.7%</td>
+<td>11.8%</td>
+<td>13.5%</td>
+</tr>
+<tr>
+<td><strong>낙관</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— xEV 매출</td>
+<td>200억</td>
+<td>400억</td>
+<td>600억</td>
+<td>800억</td>
+<td>1,000억</td>
+</tr>
+<tr>
+<td>— 총매출</td>
+<td>2,700억</td>
+<td>3,200억</td>
+<td>3,700억</td>
+<td>4,200억</td>
+<td>4,700억</td>
+</tr>
+<tr>
+<td>— xEV 매출비중</td>
+<td>7.4%</td>
+<td>12.5%</td>
+<td>16.2%</td>
+<td>19.0%</td>
+<td>21.3%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 추정치. xEV 매출 기준은 전기차·하이브리드 향 TR/MOSFET/IC 수요 성장분. 총매출은 기존 가전·산업용 수요 회복 가정 포함</p>
+<hr />
+<h2>6. 밸류에이션 영향</h2>
+<h3>PBR 리레이팅 논리</h3>
+<p>현재 PBR 1.08x는 3년 연속 적자로 인한 BPS 잠식 우려를 반영한 것이다. xEV 매출이 본격화되어 영업이익 흑자 전환이 확인되면, 전력반도체 전문기업 밸류에이션(Infineon PBR ~3x, ROHM ~1.5x)으로의 리레이팅이 가능하다. 특히 국내 반도체 소부장 정책 수혜 및 공급망 재편 테마가 추가 프리미엄 요인으로 작용할 수 있다.</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xEV 미반영 (현재)</td>
+<td>1.08x</td>
+<td>1,760원</td>
+<td>—</td>
+</tr>
+<tr>
+<td>보수적 반영</td>
+<td>1.2x</td>
+<td>1,948원</td>
+<td>+10.7%</td>
+</tr>
+<tr>
+<td>기본 반영</td>
+<td>1.6x</td>
+<td>2,597원</td>
+<td>+47.6%</td>
+</tr>
+<tr>
+<td>낙관 반영</td>
+<td>2.2x</td>
+<td>3,571원</td>
+<td>+102.9%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. 리스크 매트릭스</h2>
+<table>
+<thead>
+<tr>
+<th>리스크</th>
+<th>영향</th>
+<th>확률</th>
+<th>대응/헤지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>글로벌 EV 수요 성장 둔화</td>
+<td>상</td>
+<td>중</td>
+<td>가전·산업용 등 다변화 포트폴리오 유지</td>
+</tr>
+<tr>
+<td>현금 소진 + 추가 유상증자</td>
+<td>상</td>
+<td>높음</td>
+<td>Cash Runway 모니터링, 증자 발표 시 비중 축소</td>
+</tr>
+<tr>
+<td>글로벌 경쟁사(Infineon, ON Semi) 시장 잠식</td>
+<td>중</td>
+<td>상</td>
+<td>국내 고객 밀착 + 가격 경쟁력으로 니치 방어</td>
+</tr>
+<tr>
+<td>SiC/GaN 전환 지연 (기술 투자 미흡)</td>
+<td>중</td>
+<td>중</td>
+<td>CAPEX 투자 목적 공시 확인 필요</td>
+</tr>
+<tr>
+<td>반도체 다운사이클 장기화</td>
+<td>상</td>
+<td>중</td>
+<td>분기별 손익 추이 모니터링</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. 확률가중 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적정주가</th>
+<th>확률</th>
+<th>가중 기여</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적 (xEV 미반영·적자 지속)</td>
+<td>1,298원</td>
+<td>30%</td>
+<td>389원</td>
+</tr>
+<tr>
+<td>기본 (xEV 성장 궤도 진입·흑자 전환)</td>
+<td>1,948원</td>
+<td>50%</td>
+<td>974원</td>
+</tr>
+<tr>
+<td>낙관 (xEV 본격 수혜·PBR 리레이팅)</td>
+<td>2,921원</td>
+<td>20%</td>
+<td>584원</td>
+</tr>
+<tr>
+<td><strong>확률가중 합계</strong></td>
+<td><strong>1,947원</strong></td>
+<td>100%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>현재가 1,760원 대비 +10.6% 업사이드</strong></p>
+<p>※ 보수적 시나리오 적정주가는 T3 PBR 0.8x 기준(BPS 잠식 반영), 기본은 PBR 1.2x, 낙관은 PBR 1.8x 기준</p>
+<hr />
+<h2>9. 결론</h2>
+<p>KEC는 국내 유일 Fab 보유라는 희소한 자산과 글로벌 xEV 성장 테마의 교차점에 위치한 고위험·고잠재 종목이다. 현재는 3년 연속 적자와 Cash Runway 1.4분기라는 재무 위기가 우선 해결 과제이며, 2025년 집행한 사상 최대 CAPEX(386억)의 실질적 매출 기여가 2026~2027년에 가시화되는지가 핵심 관찰 포인트다. 확률가중 적정주가 1,947원은 현재가 1,760원 대비 +10.6% 수준으로 단기 업사이드가 크지 않으나, 기본~낙관 시나리오(1,948~2,921원)의 리레이팅은 흑자 전환 이후 빠르게 실현될 수 있어 턴어라운드 트레이딩 전략에 적합하다.</p>
+<p><strong>모니터링 체크포인트</strong>:<br />
+- ✅ 2026Q1~Q2 영업이익 흑자 전환 여부 — 분기 실적 발표 후 즉각 확인<br />
+- ✅ xEV 향 신규 공급계약 또는 현대·기아 Tier 1 공급 공시 — DART 공시 모니터링<br />
+- ✅ 현금성자산 분기말 잔액 90억 이상 유지 여부 — 유상증자 리스크 선행 지표</p>
+</body>
+</html>
