@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>삼영엠텍(054540) Valuation</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-24<br />
+updated: 2026-04-24<br />
+tags:<br />
+  - 구조용금속제품<br />
+  - 선박엔진기자재<br />
+  - 밸류에이션<br />
+links: https://arc-10.gitbook.io/arc/054540_/</p>
+<hr />
+<h1>삼영엠텍(054540) Valuation Report</h1>
+<hr />
+<h2>1. 현재 멀티플</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>삼영엠텍</th>
+<th>산출 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>24.55x</td>
+<td>15,370원 ÷ TTM EPS 626원 (순이익 84억 ÷ 발행주식 1,300만)</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>~18.5x</td>
+<td>2026E 순이익 88억 자체 추정 (컨센서스 없음)</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>2.49x</td>
+<td>15,370원 ÷ BPS 6,172원 (자본 248억* ÷ 발행주식 1,300만)</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>~12.0x</td>
+<td>추정 (EV ~2,125억 ÷ 추정 EBITDA ~178억)</td>
+</tr>
+<tr>
+<td>EV/Revenue</td>
+<td>~1.79x</td>
+<td>EV ~2,125억 ÷ TTM 매출 1,185억</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>3.4%</td>
+<td>TTM 순이익 84억 ÷ 연결 자본 2,487억 (종속사 편입 자본 팽창)</td>
+</tr>
+<tr>
+<td>OP Margin</td>
+<td>8.6%</td>
+<td>TTM OP 102억 ÷ 매출 1,185억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>1.12%</td>
+<td>DPS 165원 ÷ 15,370원</td>
+</tr>
+</tbody>
+</table>
+<p>※ KIS API + DART CFS (2026-04-24 기준). *BPS는 KIS 제공값(6,172원) 기준 — 연결 자본 팽창 반영 불완전할 수 있음</p>
+<p><strong>핵심</strong>: TTM PER 24.55x는 조선 기자재 소형주 대비 다소 높은 수준이며, ROE 3.4%는 종속사 연결 편입에 따른 자본 팽창 효과로 실질 수익성(별도 기준 약 8~9%)보다 낮게 왜곡되어 있다. Fwd PER ~18.5x는 2026년 실적 정상화를 전제로 한 추정치이며 컨센서스 부재로 불확실성이 높다.</p>
+<hr />
+<h2>2. Peer Comparison</h2>
+<h3>선정 기준</h3>
+<p>국내 선박엔진기자재·플랜트 기자재 공급 밸류체인에서 삼영엠텍과 유사한 사업 구조를 보유한 조선 대형사(발주처 겸 업스트림)를 비교 대상으로 선정. 직접 Peer인 동일 업종 소형사는 상장 데이터 부재로 조선 3사를 참조 Peer로 활용한다.</p>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>Fwd PE</th>
+<th>PBR</th>
+<th>EV/EBITDA</th>
+<th>OP Margin</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>삼영엠텍</strong></td>
+<td>🇰🇷</td>
+<td>1,998억</td>
+<td>~18.5x</td>
+<td>2.49x</td>
+<td>~12.0x</td>
+<td>8.6%</td>
+<td>3.4%</td>
+</tr>
+<tr>
+<td>HD현대중공업</td>
+<td>🇰🇷</td>
+<td>691,694억</td>
+<td>42.03x</td>
+<td>7.40x</td>
+<td>—</td>
+<td>11.1%</td>
+<td>18.8%</td>
+</tr>
+<tr>
+<td>한화오션</td>
+<td>🇰🇷</td>
+<td>409,061억</td>
+<td>32.86x</td>
+<td>6.63x</td>
+<td>—</td>
+<td>7.4%</td>
+<td>22.6%</td>
+</tr>
+<tr>
+<td>HD한국조선해양</td>
+<td>🇰🇷</td>
+<td>335,110억</td>
+<td>15.45x</td>
+<td>2.52x</td>
+<td>—</td>
+<td>12.7%</td>
+<td>17.8%</td>
+</tr>
+<tr>
+<td>삼성중공업</td>
+<td>🇰🇷</td>
+<td>300,080억</td>
+<td>55.0x</td>
+<td>7.02x</td>
+<td>—</td>
+<td>10.4%</td>
+<td>13.7%</td>
+</tr>
+<tr>
+<td><strong>국내 Peer 평균</strong></td>
+<td>—</td>
+<td>—</td>
+<td><strong>36.3x</strong></td>
+<td><strong>5.89x</strong></td>
+<td>—</td>
+<td><strong>10.4%</strong></td>
+<td><strong>18.2%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: KIS API (2026-04-24 기준) — 글로벌 Peer 멀티플 데이터 미수집</p>
+<h3>할인율 분석</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>삼영엠텍</th>
+<th>Peer 평균</th>
+<th>할인율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fwd PE</td>
+<td>~18.5x</td>
+<td>36.3x</td>
+<td><strong>-49%</strong></td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>2.49x</td>
+<td>5.89x</td>
+<td><strong>-58%</strong></td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>3.4%</td>
+<td>18.2%</td>
+<td>— (구조적 차이)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>포지셔닝</strong>: 삼영엠텍은 국내 조선사 Peer 대비 PER·PBR 모두 40~60% 할인 거래 중이다. 이는 소형주 유동성 디스카운트, 낮은 ROE(연결 기준 3.4%), 단일 사이클 의존도 등을 반영한 결과다. 다만 조선사(업스트림)와 부품 공급사(다운스트림) 간 사업 성격 차이가 있어 직접 비교에는 한계가 있다. 실질 별도 ROE(~8~9%)를 감안하면 현재 PBR 2.49x는 과도한 할인은 아니다.</p>
+<hr />
+<h2>3. PBR 기반 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>BPS</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>1.5x</td>
+<td>6,172원</td>
+<td><strong>9,258원</strong></td>
+<td>-39.8%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>2.0x</td>
+<td>6,172원</td>
+<td><strong>12,344원</strong></td>
+<td>-19.7%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>3.0x</td>
+<td>6,172원</td>
+<td><strong>18,516원</strong></td>
+<td>+20.5%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PBR 적용 근거</strong>: <br />
+- <strong>보수적(1.5x)</strong>: 조선 사이클 하강기 또는 실적 악화 시 ROE 5% 이하 유지 가정. 히스토리컬 밴드 하단.<br />
+- <strong>기본(2.0x)</strong>: 현재 별도 ROE 8~9% 수준 유지, 조선 사이클 호황 지속 가정. 2023~2024년 평균 PBR 수준.<br />
+- <strong>낙관(3.0x)</strong>: 선박엔진기자재 매출 급증 + 플랜트 해외 직접 수주 성공 시 수익성 개선 반영. 조선사 Peer 최저 PBR(2.52x)에 중소형 모멘텀 프리미엄 부가.</p>
+<hr />
+<h2>4. DCF Valuation</h2>
+<h3>가정</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WACC</td>
+<td>8.8%</td>
+<td>무위험이자율 3.5% + β1.2 × 시장프리미엄 5.0%</td>
+</tr>
+<tr>
+<td>자기자본비용</td>
+<td>9.5%</td>
+<td>CAPM 기반</td>
+</tr>
+<tr>
+<td>타인자본비용</td>
+<td>4.5%</td>
+<td>BBB 회사채 기준, 세후 3.5%</td>
+</tr>
+<tr>
+<td>자본구조</td>
+<td>자기자본 88% / 타인자본 12%</td>
+<td>2025 연결 기준</td>
+</tr>
+<tr>
+<td>FCF 기준</td>
+<td>90억원</td>
+<td>2025 CFO(98억) - CAPEX(8억)</td>
+</tr>
+<tr>
+<td>예측기간</td>
+<td>5년</td>
+<td>이후 Terminal Value</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 DCF 적정주가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>성장률</th>
+<th>영구성장률</th>
+<th>EV(억)</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>4.1%</td>
+<td>1.0%</td>
+<td>1,449억</td>
+<td><strong>12,123원</strong></td>
+<td>-21.1%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>6.9%</td>
+<td>1.5%</td>
+<td>1,809억</td>
+<td><strong>14,891원</strong></td>
+<td>-3.1%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>9.7%</td>
+<td>2.0%</td>
+<td>2,262억</td>
+<td><strong>18,377원</strong></td>
+<td>+19.6%</td>
+</tr>
+<tr>
+<td><strong>확률가중</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>14,758원</strong></td>
+<td><strong>-4.0%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ 확률가중: 보수적 30% × 12,123 + 기본 50% × 14,891 + 낙관 20% × 18,377 = 14,758원<br />
+※ DCF는 FCF 안정성이 전제. 소형주 특성상 신뢰도 제한 — PBR 기반 적정주가와 교차 검증 권장</p>
+<hr />
+<h2>5. 증권사 컨센서스</h2>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th>목표가</th>
+<th>투자의견</th>
+<th>방법론</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소형 KOSDAQ 종목으로 FnGuide 등록 증권사 리포트 없음. 자체 DCF 기반 추정치 활용.</p>
+<hr />
+<h2>6. 밸류에이션 논평</h2>
+<p><strong>핵심 판단</strong>: 현재 주가 15,370원은 DCF 확률가중 적정주가(14,758원) 대비 소폭 고평가(+4.1%) 상태이며, PBR 기본 시나리오(12,344원) 대비로는 24.5% 프리미엄이 붙어 있다. 당일 +10.97% 급등으로 단기 과열이 심화되었고, 중장기 적정가는 12,000~18,500원 범위로 넓다.</p>
+<p><strong>프리미엄/디스카운트 요인</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>방향</th>
+<th>조정폭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>소형주 유동성 디스카운트 (시총 2,000억)</td>
+<td>↓</td>
+<td>-20%p</td>
+</tr>
+<tr>
+<td>조선 사이클 수혜 모멘텀 (2024~2025 호황)</td>
+<td>↑</td>
+<td>+15%p</td>
+</tr>
+<tr>
+<td>CB/BW 오버행 (73만주, 5.45% 희석)</td>
+<td>↓</td>
+<td>-5%p</td>
+</tr>
+<tr>
+<td>최대주주 지분 9.23% (경영권 취약)</td>
+<td>↓</td>
+<td>-5%p</td>
+</tr>
+<tr>
+<td>종속사 연결 편입 불확실성</td>
+<td>↓</td>
+<td>-5%p</td>
+</tr>
+</tbody>
+</table>
+<p><strong>재평가 트리거</strong>:<br />
+1. 선박엔진기자재 분기 매출 350억 이상 재가속 (조선 도크 가동률 상승 확인)<br />
+2. 중동·인도 플랜트 신규 해외 수주 공시<br />
+3. 2026년 별도 기준 ROE 10% 이상 회복</p>
+<p><strong>결론</strong>: 현재 주가 15,370원은 당일 급등에 따른 단기 과열 국면이며, DCF 기준 공정가치(14,758원)에 근접 또는 소폭 상회한다. 조선 사이클 수혜 모멘텀이 지속되고 해외 플랜트 수주가 가시화될 경우 PBR 낙관 시나리오(18,516원)까지 상승 여지가 있으나, 단기 진입보다는 14,293원(피봇 S1) 이하 되돌림 구간 대기가 적합하다.</p>
+</body>
+</html>
