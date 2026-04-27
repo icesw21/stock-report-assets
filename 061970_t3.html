@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LB세미콘(061970) Valuation</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-28<br />
+updated: 2026-04-28<br />
+tags:<br />
+  - 반도체<br />
+  - 후공정<br />
+  - 밸류에이션<br />
+links: https://arc-10.gitbook.io/arc/061970_/</p>
+<hr />
+<h1>LB세미콘(061970) Valuation Report</h1>
+<hr />
+<h2>1. 현재 멀티플</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>LB세미콘</th>
+<th>산출 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>N/A</td>
+<td>TTM 순손실 -1,509억 (적용 불가)</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>N/A</td>
+<td>컨센서스 없음</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>1.48x</td>
+<td>6,880원 ÷ BPS 4,640원 (자본총계 2,700억 ÷ 발행주식 58,083,006주)</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>N/A</td>
+<td>영업손실 지속으로 EBITDA 산출 불가</td>
+</tr>
+<tr>
+<td>EV/Revenue</td>
+<td>1.28x</td>
+<td>EV = 시총 3,996억 + 순차입금 1,933억 = 5,929억 ÷ TTM 매출 4,798억</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>-55.9%</td>
+<td>TTM 순손실 -1,509억 ÷ 자본 2,700억</td>
+</tr>
+<tr>
+<td>OP Margin</td>
+<td>-8.3%</td>
+<td>TTM OP -398억 ÷ 매출 4,798억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0%</td>
+<td>무배당 (2022년 이후)</td>
+</tr>
+</tbody>
+</table>
+<p>※ KIS API + pykrx (2026-04-28 기준). DART CFS 2025년 기준</p>
+<p><strong>핵심</strong>: PER/EV/EBITDA 등 수익 기반 멀티플이 모두 적용 불가한 구조적 적자 기업. PBR 1.48x만 유일하게 참고 가능하나, 적자 지속으로 BPS가 매년 하락하고 있어 PBR 역시 실질적 매력 대비 높게 보일 수 있다. EV/Revenue 1.28x는 매출 성장성 대비 저평가 측면이 있으나, 마진 개선 없이는 의미가 제한적이다.</p>
+<hr />
+<h2>2. Peer Comparison</h2>
+<h3>선정 기준</h3>
+<p>LB세미콘은 비메모리 반도체 후공정(OSAT) 전문기업으로, 글로벌 반도체 제조·패키징 기업을 Peer로 선정. 규모 차이가 크므로 멀티플 수준 비교에 집중하고, 한국 소형주 디스카운트를 별도 감안한다.</p>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>Fwd PE</th>
+<th>PBR</th>
+<th>EV/EBITDA</th>
+<th>OP Margin</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LB세미콘</strong></td>
+<td>🇰🇷</td>
+<td>3,996억</td>
+<td>N/A</td>
+<td>1.48x</td>
+<td>N/A</td>
+<td>-8.3%</td>
+<td>-55.9%</td>
+</tr>
+<tr>
+<td>TSMC</td>
+<td>🇹🇼</td>
+<td>$2.1T</td>
+<td>21.0x</td>
+<td>61.9x</td>
+<td>2.8x</td>
+<td>58.1%</td>
+<td>36.2%</td>
+</tr>
+<tr>
+<td>Intel</td>
+<td>🇺🇸</td>
+<td>$427B</td>
+<td>57.7x</td>
+<td>3.7x</td>
+<td>31.1x</td>
+<td>6.9%</td>
+<td>-2.9%</td>
+</tr>
+<tr>
+<td>Micron</td>
+<td>🇺🇸</td>
+<td>$592B</td>
+<td>5.2x</td>
+<td>8.2x</td>
+<td>15.1x</td>
+<td>67.6%</td>
+<td>39.8%</td>
+</tr>
+<tr>
+<td>ASML</td>
+<td>🇳🇱</td>
+<td>$552B</td>
+<td>30.2x</td>
+<td>1,249.6x</td>
+<td>43.8x</td>
+<td>36.0%</td>
+<td>52.2%</td>
+</tr>
+<tr>
+<td><strong>글로벌 평균</strong></td>
+<td>—</td>
+<td>—</td>
+<td>28.5x</td>
+<td>330.8x</td>
+<td>23.2x</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: yfinance (2026-04-28 기준). 글로벌 Peer는 대형 반도체 종합기업으로 직접 비교 한계 있음</p>
+<h3>할인율 분석</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>LB세미콘</th>
+<th>글로벌 평균</th>
+<th>할인율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fwd PE</td>
+<td>N/A</td>
+<td>28.5x</td>
+<td>해당 없음 (적자)</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>1.48x</td>
+<td>330.8x</td>
+<td><strong>-99.6%</strong> (ASML 등 왜곡, 제외 시 TSMC/Intel/MU 평균 ~24.6x 대비 -94%)</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>N/A</td>
+<td>23.2x</td>
+<td>해당 없음 (영업손실)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>포지셔닝</strong>: LB세미콘은 글로벌 대형 반도체 기업과 직접 비교 시 모든 수익 지표에서 열위. 다만 글로벌 Peer는 제조+설계+장비를 포함한 이질적 집합으로 직접 비교 의미가 제한적이다. 국내 동종 OSAT(하나마이크론, 네패스) 기준으로는 PBR 1.48x가 오히려 동종 적자 기업 대비 프리미엄 수준이며, <strong>AI 패키징 기대감이 일부 선반영된 상태</strong>로 판단된다.</p>
+<hr />
+<h2>3. PBR 기반 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>BPS</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>0.7x</td>
+<td>4,640원</td>
+<td><strong>3,248원</strong></td>
+<td>-52.8%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>1.0x</td>
+<td>4,640원</td>
+<td><strong>4,640원</strong></td>
+<td>-32.6%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>1.5x</td>
+<td>4,640원</td>
+<td><strong>6,960원</strong></td>
+<td>+1.2%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PBR 적용 근거</strong>:<br />
+- <strong>보수적 0.7x</strong>: 3년 연속 적자 + 부채비율 253.3% + 유동성 위기 가능성 — 해외 OSAT 디스트레스드 기업 밴드(0.5~0.8x) 적용<br />
+- <strong>기본 1.0x</strong>: 구조적 적자이나 AI 패키징 기대감 + 매출 완만 회복 중 — BPS 수준(청산가치)에 수렴<br />
+- <strong>낙관 1.5x</strong>: HBM/AI 수주 가시화 + CAPEX 사이클 마무리로 마진 턴어라운드 기대 반영 — 현재 PBR(1.48x)과 유사</p>
+<p><strong>주의</strong>: BPS 4,640원은 2025년 말 기준이나, 2026년에도 적자가 지속될 경우 BPS가 추가 하락하여 실제 PBR은 더 높아진다. 적정주가 역시 하향 조정 필요.</p>
+<hr />
+<h2>4. DCF Valuation</h2>
+<h3>가정</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WACC</td>
+<td>6.8%</td>
+<td>무위험이자율 3.5% + β1.2 × 시장프리미엄 5.0% (자기자본비용 9.5%), 세후 타인자본비용 3.5%, E:D = 54:46</td>
+</tr>
+<tr>
+<td>자기자본비용</td>
+<td>9.5%</td>
+<td>CAPM 기반</td>
+</tr>
+<tr>
+<td>타인자본비용</td>
+<td>3.5%</td>
+<td>세후 (세전 4.5% × (1-22%))</td>
+</tr>
+<tr>
+<td>자본구조</td>
+<td>자기자본 54% / 타인자본 46%</td>
+<td></td>
+</tr>
+<tr>
+<td>FCF 기준</td>
+<td>95억원</td>
+<td>2025년 CFO 95억 (CAPEX 잠정 0원)</td>
+</tr>
+<tr>
+<td>예측기간</td>
+<td>5년</td>
+<td>이후 Terminal Value</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 DCF 적정주가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>성장률</th>
+<th>영구성장률</th>
+<th>EV(억)</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>2.7%</td>
+<td>1.0%</td>
+<td>1,906억</td>
+<td><strong>N/A (음수)</strong></td>
+<td>-100%+</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>4.5%</td>
+<td>1.5%</td>
+<td>2,306억</td>
+<td><strong>641원</strong></td>
+<td>-90.7%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>6.3%</td>
+<td>2.0%</td>
+<td>2,812억</td>
+<td><strong>1,512원</strong></td>
+<td>-78.0%</td>
+</tr>
+<tr>
+<td><strong>확률가중</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>608원</strong></td>
+<td><strong>-91.2%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ DCF 적정주가가 현재가(6,880원) 대비 -90% 이상 낮은 이유: 순차입금 1,933억이 기업가치에서 차감되어 지분 가치를 크게 희석. 현재 FCF 베이스(95억)가 너무 낮아 성장 가정을 높여도 충분한 기업가치 창출 불가. <strong>DCF는 현재 구조에서 신뢰도 매우 낮음</strong> — PBR 기반 적정주가와 교차 검증 권장.</p>
+<hr />
+<h2>5. 증권사 컨센서스</h2>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th>목표가</th>
+<th>투자의견</th>
+<th>방법론</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>FnGuide 리포트 없음</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ LB세미콘은 증권사 커버리지가 매우 제한적 (스몰캡 OSAT 특성). FnGuide 데이터베이스에서 최근 리포트 미확인.</p>
+<hr />
+<h2>6. 밸류에이션 논평</h2>
+<p><strong>핵심 판단</strong>: 현재 주가(6,880원)는 PBR 기반 보수적 적정주가(3,248원) 대비 111% 프리미엄, 기본 시나리오(4,640원) 대비 48% 프리미엄으로 <strong>구조적 과대평가</strong> 구간. DCF 기준으로는 -90% 이상 하락 리스크. 오직 HBM/AI 패키징 수주 현실화 + 수익성 턴어라운드가 동시에 발생할 경우에만 현재 주가가 정당화된다.</p>
+<p><strong>프리미엄/디스카운트 요인</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>방향</th>
+<th>조정폭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>소형주·적자 기업 디스카운트</td>
+<td>↓</td>
+<td>-30~40%p</td>
+</tr>
+<tr>
+<td>AI/HBM 패키징 기대 프리미엄 (아직 수주 없음)</td>
+<td>↑</td>
+<td>+20~30%p</td>
+</tr>
+<tr>
+<td>CB 오버행(5.51% 희석, 전환 인센티브 높음)</td>
+<td>↓</td>
+<td>-5~10%p</td>
+</tr>
+<tr>
+<td>유동성 위기 리스크 (Cash Runway 0.9Q)</td>
+<td>↓</td>
+<td>-10~15%p</td>
+</tr>
+</tbody>
+</table>
+<p><strong>재평가 트리거</strong>:<br />
+1. <strong>HBM/AI 패키징 수주 공시</strong> — 신규 매출 기여 확인 시 PBR 2.0x 이상 리레이팅 가능<br />
+2. <strong>분기 영업 BEP 달성</strong> — 2026Q1 이상 영업이익 흑자 전환 시 멀티플 재정립<br />
+3. <strong>유동성 확보 확인</strong> — 추가 차입 또는 CB 전환으로 현금 잔고 500억+ 회복</p>
+<p><strong>결론</strong>: 현재 주가(6,880원)는 기대감만으로 형성된 과대평가 구간. 실적 가시성이 없는 상태에서 신규 매수는 투기적 성격이 강하다. 재평가 트리거가 현실화될 때까지 관망이 합리적이며, 보수적 적정주가(3,248원) ~ 기본 적정주가(4,640원)가 공정 가치 범위다.</p>
+</body>
+</html>

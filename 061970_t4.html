@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LB세미콘(061970) DeepDive</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-28<br />
+updated: 2026-04-28<br />
+tags:<br />
+  - 반도체<br />
+  - 후공정<br />
+  - HBM<br />
+  - AI패키징<br />
+links: https://arc-10.gitbook.io/arc/061970_/</p>
+<hr />
+<h1>LB세미콘 — AI/HBM 패키징 수혜 가능성과 현재 주가의 정당성</h1>
+<hr />
+<h2>Executive Summary</h2>
+<p>LB세미콘(061970)은 비메모리 반도체 후공정(OSAT) 전문기업으로, 2025년 주가가 3,135원(저점)에서 6,880원(52주 고가)까지 119% 급등했다. 이 급등의 배경에는 글로벌 AI 가속기 수요 폭발에 따른 HBM·고급 패키징 수혜 기대가 자리한다. 그러나 3년 연속 영업손실(-398억), 순손실 -1,509억(2025년), Cash Runway 0.9분기라는 위험한 재무 현실과 대조적이다. 확률가중 적정주가 3,790원은 현재가(6,880원) 대비 -44.9% 하방 리스크를 시사하며, 실질적 수주 확인 전까지는 현재 주가가 기대감만으로 지탱되는 구간이다.</p>
+<hr />
+<h2>1. 분석 배경</h2>
+<h3>주가 흐름 컨텍스트</h3>
+<p>LB세미콘은 2024년 말~2025년 상반기에 걸쳐 국내 AI 반도체 후공정 테마주로 분류되며 거래량과 함께 급등했다. T1에서 파악한 최대 성장동력(⭐⭐⭐)은 <strong>HBM/AI 패키징 수주 확보 가능성</strong>이며, 이 주제가 현재 주가 프리미엄의 핵심 근거다. T2에서는 RSI 79.8 과매수 + MA20 괴리 44.4%의 극단적 기술적 과열을 확인했고, T3에서는 PBR 기반 기본 적정주가 4,640원 대비 현재가가 48% 프리미엄임을 확인했다.</p>
+<p>이 T4 분석의 핵심 질문: <strong>LB세미콘이 HBM/AI 패키징 시장에서 실질적 수혜를 얻을 수 있는가? 그리고 현재 주가(6,880원)는 그 가능성을 얼마나 반영하고 있는가?</strong></p>
+<h3>분석 범위</h3>
+<ul>
+<li>글로벌 AI/HBM 패키징 시장 현황 및 성장성</li>
+<li>LB세미콘의 기술 역량 및 경쟁 포지셔닝</li>
+<li>수혜 시나리오별 실적 기여 추정</li>
+<li>확률가중 적정주가 산출</li>
+</ul>
+<h3>한계</h3>
+<ul>
+<li>LB세미콘의 HBM 관련 수주는 공식 공시 없음 — 업계 루머 및 간접 추정 활용</li>
+<li>AI 패키징 시장 TAM은 독립 통계 기관별 추정치가 상이</li>
+<li>삼성전자 HBM 공급망 내부 정보 접근 불가</li>
+</ul>
+<hr />
+<h2>2. 산업/시장 개요</h2>
+<h3>AI 반도체 패키징 시장 현황</h3>
+<p>AI 가속기(NVIDIA H100/B200, AMD MI300X, 구글 TPU v5 등)는 HBM(High Bandwidth Memory)과 GPU/NPU를 하나의 패키지에 집적하는 <strong>고급 패키징 기술</strong>을 필수로 한다. 이 기술의 핵심은 ①2.5D 인터포저(CoWoS, EMIB), ②3D 스택 패키징(SoIC, Foveros), ③Fan-out WLP다.</p>
+<p>글로벌 AI 서버 투자가 2024년 ~$1,000억에서 2028년 $3,000억+ 규모로 확대될 것으로 전망되며, OSAT 업체들의 고급 패키징 수요도 함께 폭발적으로 성장 중이다. TSMC CoWoS 생산능력은 2024년 대비 2025년 2배 확장 계획이지만 여전히 수요에 미치지 못하는 상황이다.</p>
+<h3>주요 프로젝트/기회</h3>
+<table>
+<thead>
+<tr>
+<th>지역/국가</th>
+<th>프로젝트</th>
+<th>규모</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🇰🇷 한국</td>
+<td>삼성전자 HBM4 후공정 아웃소싱</td>
+<td>수백억~수천억 가능성</td>
+<td>추진 중 (공식 미확인)</td>
+</tr>
+<tr>
+<td>🇰🇷 한국</td>
+<td>SK하이닉스 HBM3E 패키징 파트너</td>
+<td>미정</td>
+<td>탐색 단계</td>
+</tr>
+<tr>
+<td>🌐 글로벌</td>
+<td>AI 팹리스(미디어텍 등) 비메모리 패키징</td>
+<td>수백억 단위</td>
+<td>점진적 확대</td>
+</tr>
+</tbody>
+</table>
+<h3>시장 규모(TAM) 추정</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>전제</th>
+<th>TAM</th>
+<th>LB세미콘 기회</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>AI 서버 증가율 30%, OSAT 점유 제한</td>
+<td>$8B (2027E)</td>
+<td>$30~50M (~400~680억)</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>AI 서버 50% CAGR, HBM 패키징 외주 확대</td>
+<td>$15B (2027E)</td>
+<td>$80~150M (~1,100~2,000억)</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>TSMC CoWoS 병목 지속, 국내 OSAT 반사이익</td>
+<td>$25B (2028E)</td>
+<td>$200M+ (~2,700억+)</td>
+</tr>
+</tbody>
+</table>
+<p>※ Yole Intelligence, TechInsights 전망치 참고. LB세미콘 점유율은 현재 극히 낮아 추정 불확실성 높음.</p>
+<h3>시장의 특수성</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>일반 OSAT 시장</th>
+<th>AI/HBM 패키징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>진입 장벽</td>
+<td>중간</td>
+<td>매우 높음 (CoWoS, SoIC 등 고난도 기술)</td>
+</tr>
+<tr>
+<td>수익성</td>
+<td>낮음 (DDI 등 범용)</td>
+<td>높음 (고급 패키징 ASP 3~5배)</td>
+</tr>
+<tr>
+<td>고객 집중도</td>
+<td>분산</td>
+<td>TSMC·삼성 등 2~3개사 집중</td>
+</tr>
+<tr>
+<td>시장 성장성</td>
+<td>연 5~10%</td>
+<td>연 40~60% (AI 사이클)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. 경쟁 구도</h2>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>레퍼런스</th>
+<th>강점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASE Technology</td>
+<td>🇹🇼 대만</td>
+<td>$18B</td>
+<td>HBM 패키징, CoWoS 보조</td>
+<td>글로벌 1위 OSAT, 규모·기술 압도</td>
+</tr>
+<tr>
+<td>Amkor Technology</td>
+<td>🇺🇸 미국</td>
+<td>$4.5B</td>
+<td>Fan-out WLP, SiP</td>
+<td>글로벌 2위, 삼성·인텔 공급</td>
+</tr>
+<tr>
+<td>하나마이크론</td>
+<td>🇰🇷 한국</td>
+<td>~3,000억</td>
+<td>HBM TC-NCF 특화</td>
+<td>SK하이닉스 HBM 공급망 진입 성공</td>
+</tr>
+<tr>
+<td>네패스</td>
+<td>🇰🇷 한국</td>
+<td>~4,500억</td>
+<td>Fan-out WLP 전문</td>
+<td>퀄컴 등 팹리스 공급</td>
+</tr>
+<tr>
+<td><strong>LB세미콘</strong></td>
+<td>🇰🇷</td>
+<td>3,996억</td>
+<td>DDI/PMIC 후공정</td>
+<td>삼성전자 공급망 내 기반, 설비 보유</td>
+</tr>
+</tbody>
+</table>
+<p><strong>LB세미콘의 포지셔닝</strong>: DDI·PMIC 패키징 기반 보유, 평택 공장 설비 인프라 존재. 그러나 HBM 패키징에 필요한 핵심 기술(TC-NCF, CoWoS 등) 레퍼런스가 공식 확인되지 않아 진입 장벽이 높다. 하나마이크론(HBM TC-NCF 성공)과 달리 LB세미콘의 HBM 수혜는 아직 기대 단계.</p>
+<hr />
+<h2>4. LB세미콘의 역량 분석</h2>
+<h3>진입 전략</h3>
+<p>LB세미콘의 AI/HBM 패키징 진입 경로는 두 가지다. ①삼성전자 HBM 후공정 아웃소싱 파트너 — 삼성이 HBM 생산량 확대 및 후공정 외주화를 결정할 경우 기존 협력사로서 수혜 가능. ②기존 DDI·PMIC 공정 고도화 — Fan-out 및 2.5D 기술로 점진적 업그레이드, 고부가 비메모리 팹리스 고객 확보.</p>
+<h3>기존 사업과의 시너지</h3>
+<table>
+<thead>
+<tr>
+<th>기존 역량</th>
+<th>신사업 활용</th>
+<th>시너지 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>평택 공장 클린룸·설비</td>
+<td>AI 패키징 일부 공정 전용</td>
+<td>신규 CAPEX 없이 단기 수혜 가능</td>
+</tr>
+<tr>
+<td>삼성전자 공급망 관계</td>
+<td>HBM 후공정 외주 수주 교섭력</td>
+<td>관계 자산 → 계약 우선협상 가능성</td>
+</tr>
+<tr>
+<td>범프(Bumping) 공정</td>
+<td>2.5D 인터포저 연결 공정 호환</td>
+<td>기존 장비 활용 부분 가능</td>
+</tr>
+</tbody>
+</table>
+<h3>경쟁우위 요소</h3>
+<ul>
+<li><strong>삼성전자와의 기존 협력 관계</strong>: 최대 고객이자 HBM 수혜의 관문 — 관계 단절 없이 고급 패키징으로 전환 가능성</li>
+<li><strong>평택 공장 위치</strong>: 삼성 평택 캠퍼스 인근 — 물류·협력 용이성</li>
+<li><strong>설비 과잉 상태의 역설</strong>: 2024년 대규모 CAPEX 투자로 클린룸·장비가 과잉 공급 상태 — AI 수요 전환 시 빠른 전용 가능</li>
+</ul>
+<hr />
+<h2>5. 실적 기여 시나리오</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2026E</th>
+<th>2027E</th>
+<th>2028E</th>
+<th>2029E</th>
+<th>2030E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>보수적</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— AI/HBM 수주</td>
+<td>0억</td>
+<td>0억</td>
+<td>50억</td>
+<td>150억</td>
+<td>300억</td>
+</tr>
+<tr>
+<td>— 전체 매출</td>
+<td>5,100억</td>
+<td>5,300억</td>
+<td>5,550억</td>
+<td>5,850억</td>
+<td>6,200억</td>
+</tr>
+<tr>
+<td>— AI 매출비중</td>
+<td>0%</td>
+<td>0%</td>
+<td>0.9%</td>
+<td>2.6%</td>
+<td>4.8%</td>
+</tr>
+<tr>
+<td><strong>기본</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— AI/HBM 수주</td>
+<td>50억</td>
+<td>200억</td>
+<td>500억</td>
+<td>900억</td>
+<td>1,400억</td>
+</tr>
+<tr>
+<td>— 전체 매출</td>
+<td>5,150억</td>
+<td>5,500억</td>
+<td>6,100억</td>
+<td>6,800억</td>
+<td>7,400억</td>
+</tr>
+<tr>
+<td>— AI 매출비중</td>
+<td>1.0%</td>
+<td>3.6%</td>
+<td>8.2%</td>
+<td>13.2%</td>
+<td>18.9%</td>
+</tr>
+<tr>
+<td><strong>낙관</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— AI/HBM 수주</td>
+<td>200억</td>
+<td>600억</td>
+<td>1,200억</td>
+<td>2,000억</td>
+<td>2,800억</td>
+</tr>
+<tr>
+<td>— 전체 매출</td>
+<td>5,300억</td>
+<td>5,800억</td>
+<td>6,900억</td>
+<td>8,100억</td>
+<td>9,200억</td>
+</tr>
+<tr>
+<td>— AI 매출비중</td>
+<td>3.8%</td>
+<td>10.3%</td>
+<td>17.4%</td>
+<td>24.7%</td>
+<td>30.4%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 추정치. 수주 공시 없는 기대 시나리오. 실적 기여는 수주 후 6~12개월 래그 반영.</p>
+<hr />
+<h2>6. 밸류에이션 영향</h2>
+<h3>PBR 리레이팅 논리</h3>
+<p>현재 PBR 1.48x는 3년 연속 적자 기업에 대한 AI 기대감 반영 수준. 실제 수주가 확인되고 매출 기여가 가시화되면 이익 성장성 프리미엄이 붙어 2.0~3.0x까지 리레이팅 가능. 그러나 수주 없이 현재 수준을 유지하면 BPS 하락에 따른 디레이팅 위험이 더 크다.</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>수주 없음 (현재 BPS 반영)</td>
+<td>0.7~1.0x</td>
+<td>3,248~4,640원</td>
+<td>-33~-53%</td>
+</tr>
+<tr>
+<td>보수적 수주 확인 (2027~)</td>
+<td>1.2x</td>
+<td>5,568원</td>
+<td>-19.1%</td>
+</tr>
+<tr>
+<td>기본 수주 가시화</td>
+<td>1.8x</td>
+<td>8,352원</td>
+<td>+21.4%</td>
+</tr>
+<tr>
+<td>낙관 수주·마진 회복</td>
+<td>2.5x</td>
+<td>11,600원</td>
+<td>+68.6%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. 리스크 매트릭스</h2>
+<table>
+<thead>
+<tr>
+<th>리스크</th>
+<th>영향</th>
+<th>확률</th>
+<th>대응/헤지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI 패키징 수주 미달 (기대 소멸)</td>
+<td>상</td>
+<td>상</td>
+<td>손절 기준 명확화, 포지션 축소</td>
+</tr>
+<tr>
+<td>CB 전환권 행사 (3.4백만주 오버행)</td>
+<td>중</td>
+<td>상</td>
+<td>전환 공시 즉시 리스크 재평가</td>
+</tr>
+<tr>
+<td>추가 자금조달 (유증/CB 4회차)</td>
+<td>상</td>
+<td>중</td>
+<td>공시 모니터링, 희석률 계산</td>
+</tr>
+<tr>
+<td>유동성 위기 (현금 소진)</td>
+<td>상</td>
+<td>중</td>
+<td>Cash Runway 분기별 추적</td>
+</tr>
+<tr>
+<td>삼성전자 공급망 재편</td>
+<td>중</td>
+<td>중</td>
+<td>고객 다변화 진척도 확인</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. 확률가중 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적정주가</th>
+<th>확률</th>
+<th>가중 기여</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적 (수주 없음, 재무 악화)</td>
+<td>3,248원</td>
+<td>45%</td>
+<td>1,462원</td>
+</tr>
+<tr>
+<td>기본 (수주 일부 가시화, BEP 회복)</td>
+<td>5,568원</td>
+<td>40%</td>
+<td>2,227원</td>
+</tr>
+<tr>
+<td>낙관 (수주 대규모, 마진 턴어라운드)</td>
+<td>8,352원</td>
+<td>15%</td>
+<td>1,253원</td>
+</tr>
+<tr>
+<td><strong>확률가중 합계</strong></td>
+<td><strong>4,942원</strong></td>
+<td>100%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>현재가 6,880원 대비 -28.2% 하방 리스크</strong></p>
+<p>※ 시나리오 확률 가정: 수주 미확인 현실 + 유동성 위기 가능성으로 보수적에 45% 배분. 실제 수주 공시 시 기본·낙관 확률 상향 조정 필요.</p>
+<hr />
+<h2>9. 결론</h2>
+<p>LB세미콘의 AI/HBM 패키징 수혜 스토리는 <strong>매력적이나 현재는 기대만 있고 실적 근거가 없다</strong>. 주가(6,880원)는 확률가중 적정주가(4,942원) 대비 39% 프리미엄 상태이며, 이는 AI 수주가 실현되는 낙관 시나리오(확률 15%)에 의존하는 구조다. 3년 연속 적자 + Cash Runway 0.9분기 + CB 오버행이라는 삼중 리스크는 강력한 상방 카탈리스트 없이는 주가를 지지하기 어렵다.</p>
+<p>재평가 트리거가 현실화될 때까지 현재 주가는 고위험·고변동성 영역에 있으며, 신규 진입보다는 4,640~5,577원(기본 PBR~피보나치 0.382) 구간까지 조정 후 진입이 합리적이다.</p>
+<p><strong>모니터링 체크포인트</strong>:<br />
+- ✅ <strong>HBM/AI 패키징 수주 공시</strong> — 구체적 금액·고객명 확인 시 시나리오 즉시 재평가<br />
+- ✅ <strong>2026Q1 분기 영업손익</strong> — BEP 달성 여부가 주가 방향성 결정<br />
+- ✅ <strong>CB 전환권 행사 공시</strong> — 3,383,897주 전환 시 지분 5.51% 희석, 수급 영향 직접적</p>
+</body>
+</html>
