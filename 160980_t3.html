@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>싸이맥스(160980) Valuation</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-29<br />
+updated: 2026-04-29<br />
+tags:<br />
+  - 반도체장비<br />
+  - 웨이퍼이송<br />
+  - Valuation<br />
+links: https://arc-10.gitbook.io/arc/160980_/</p>
+<hr />
+<h1>싸이맥스(160980) Valuation Report</h1>
+<hr />
+<h2>1. 현재 멀티플</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>싸이맥스</th>
+<th>산출 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>28.84x</td>
+<td>39,450원 ÷ TTM EPS 1,368원 (순이익 149억 ÷ 발행주식 10,924,243주)</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>—</td>
+<td>컨센서스 미형성 (소형 전문 장비사)</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>2.22x</td>
+<td>39,450원 ÷ BPS 17,779원 (자본총계 1,942억 ÷ 발행주식 10,924,243주)</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>~7x (추정)</td>
+<td>시총 4,310억 - 순현금 893억 = EV ~3,417억 ÷ EBITDA ~480억 추정</td>
+</tr>
+<tr>
+<td>EV/Revenue</td>
+<td>~0.21x</td>
+<td>EV ~3,417억 ÷ 매출 1,644억</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>7.7%</td>
+<td>TTM 순이익 149억 ÷ 자본 1,942억</td>
+</tr>
+<tr>
+<td>OP Margin</td>
+<td>14.2%</td>
+<td>TTM OP 233억 ÷ 매출 1,644억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>2.7%</td>
+<td>DPS 400원 ÷ 39,450원</td>
+</tr>
+</tbody>
+</table>
+<p>※ KIS API (2026-04-29 기준). DART CFS 기준.</p>
+<p><strong>핵심</strong>: TTM PER 28.84x는 ROE 7.7% 대비 현저히 높은 수준. 당일 +18.83% 급등으로 멀티플이 하루 만에 20% 이상 확장됐다. 다만 순현금 893억을 차감한 EV/Revenue 0.21x는 절대적으로 낮아 순수 사업 가치 기준으로는 저평가 여지도 있다.</p>
+<hr />
+<h2>2. Peer Comparison</h2>
+<h3>선정 기준</h3>
+<p>반도체 웨이퍼 이송·자동화 장비 전문기업 및 국내 반도체 소형 장비사 중심으로 선정. 삼성전자·SK하이닉스는 고객사(수요처)로 제외하고, 장비 공급사 관점의 Peer 비교.</p>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>Fwd PE</th>
+<th>PBR</th>
+<th>EV/EBITDA</th>
+<th>OP Margin</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>싸이맥스</strong></td>
+<td>🇰🇷</td>
+<td>4,310억</td>
+<td>—</td>
+<td>2.22x</td>
+<td>~7x</td>
+<td>14.2%</td>
+<td>7.7%</td>
+</tr>
+<tr>
+<td>한미반도체</td>
+<td>🇰🇷</td>
+<td>340,741억</td>
+<td>160.1x</td>
+<td>49.12x</td>
+<td>—</td>
+<td>33.2%</td>
+<td>34.8%</td>
+</tr>
+<tr>
+<td>Rorze Corporation</td>
+<td>🇯🇵</td>
+<td>~$1.2B</td>
+<td>~18x</td>
+<td>~2.5x</td>
+<td>~12x</td>
+<td>~12%</td>
+<td>~14%</td>
+</tr>
+<tr>
+<td>Azenta (Brooks Auto.)</td>
+<td>🇺🇸</td>
+<td>~$2.8B</td>
+<td>~30x</td>
+<td>~1.8x</td>
+<td>~20x</td>
+<td>~8%</td>
+<td>~5%</td>
+</tr>
+<tr>
+<td><strong>글로벌 참고 평균</strong></td>
+<td>—</td>
+<td>—</td>
+<td>~24x</td>
+<td>~2.1x</td>
+<td>~16x</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 글로벌 Peer: yfinance 기준 추정치. 한미반도체는 HBM 수혜 고밸류로 이상치 제외 권장.</p>
+<h3>할인율 분석</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>싸이맥스</th>
+<th>글로벌 참고</th>
+<th>할인율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fwd PE</td>
+<td>—</td>
+<td>~24x</td>
+<td>미산출 (컨센 없음)</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>2.22x</td>
+<td>~2.1x</td>
+<td><strong>+6%</strong> (소폭 프리미엄)</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>~7x</td>
+<td>~16x</td>
+<td><strong>-56%</strong> (대폭 할인)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>포지셔닝</strong>: 싸이맥스는 EV/EBITDA 기준 글로벌 Peer 대비 약 56% 할인 거래 중이나, 이는 순현금 893억이 EV를 크게 낮추는 효과 때문이기도 하다. PBR 2.22x는 ROE 7.7% 대비 과도한 멀티플로 판단되며, 반도체 투자 사이클 확대로 ROE가 12~15%대로 회복될 경우 현재 PBR 수준이 정당화될 수 있다. 한국 소형주 디스카운트를 감안해도 EV 기준 저평가 매력이 있다.</p>
+<hr />
+<h2>3. PBR 기반 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>BPS</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>1.5x</td>
+<td>17,779원</td>
+<td><strong>26,669원</strong></td>
+<td>-32.4%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>2.0x</td>
+<td>17,779원</td>
+<td><strong>35,558원</strong></td>
+<td>-9.9%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>2.8x</td>
+<td>17,779원</td>
+<td><strong>49,781원</strong></td>
+<td>+26.2%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PBR 적용 근거</strong>:<br />
+- <strong>보수적 1.5x</strong>: 반도체 투자 사이클 침체 지속, ROE 7~8% 정체 시나리오. 과거 업황 저점(2023년) 구간 밸류에이션 수준.<br />
+- <strong>기본 2.0x</strong>: ROE 10% 수준 회복, HBM·첨단 패키징 사이클 점진적 수혜. 현재 글로벌 Peer PBR 중간값(~2.1x) 적용.<br />
+- <strong>낙관 2.8x</strong>: 2021년 피크 실적 수준 회복(매출 2,000억+, ROE 15%+), 해외 ODM 확대 성공 시나리오. 한미반도체 급등 전 밸류에이션 참조.</p>
+<hr />
+<h2>4. DCF Valuation</h2>
+<h3>가정</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WACC</td>
+<td>8.7%</td>
+<td>무위험이자율 3.5% + β1.2 × 시장프리미엄 5.0%</td>
+</tr>
+<tr>
+<td>자기자본비용</td>
+<td>9.5%</td>
+<td>CAPM 기반</td>
+</tr>
+<tr>
+<td>타인자본비용</td>
+<td>4.5%</td>
+<td>세후, 현재 무차입 (D=0)</td>
+</tr>
+<tr>
+<td>자본구조</td>
+<td>자기자본 87% / 타인자본 13%</td>
+<td>2025년 BS 기준</td>
+</tr>
+<tr>
+<td>FCF 기준</td>
+<td>159억원</td>
+<td>2025 추정 CFO 159억 - CAPEX 8억 ≒ 159억</td>
+</tr>
+<tr>
+<td>예측기간</td>
+<td>5년</td>
+<td>이후 Terminal Value</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 DCF 적정주가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>성장률</th>
+<th>영구성장률</th>
+<th>EV(억)</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>0.9%</td>
+<td>1.0%</td>
+<td>2,120억</td>
+<td><strong>24,855원</strong></td>
+<td>-37.0%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>1.5%</td>
+<td>1.5%</td>
+<td>2,319억</td>
+<td><strong>26,673원</strong></td>
+<td>-32.4%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>2.1%</td>
+<td>2.0%</td>
+<td>2,548억</td>
+<td><strong>28,773원</strong></td>
+<td>-27.1%</td>
+</tr>
+<tr>
+<td><strong>확률가중</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>26,548원</strong></td>
+<td><strong>-32.7%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ DCF는 2025년 FCF ~159억원 기준. 순현금 893억(주당 8,175원) 별도 가산. 확률가중 합계: 보수 30% + 기본 50% + 낙관 20%.</p>
+<p><strong>주의</strong>: DCF 적정주가에 순현금(주당 ~8,175원)을 가산하면 기본 시나리오 기준 ~34,848원. 현재가 39,450원은 순현금 가산 DCF 대비 약 13% 프리미엄 상태.</p>
+<hr />
+<h2>5. 증권사 컨센서스</h2>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th>목표가</th>
+<th>투자의견</th>
+<th>방법론</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(FnGuide 다운로드 실패 — 컨센서스 미확인)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>소형 전문 장비사로 공식 커버리지 증권사 미확인. FnGuide에 1건 리포트 존재("실적·멀티플 동반 개선 구간 진입") 확인됐으나 다운로드 실패. 제목으로 미루어 긍정적 투자의견 보고서로 추정.</p>
+<hr />
+<h2>6. 밸류에이션 논평</h2>
+<p><strong>핵심 판단</strong>: 현재가 39,450원은 PBR 기반 기본 적정주가(35,558원) 대비 약 10.9% 프리미엄, 낙관 적정주가(49,781원) 대비 20.7% 업사이드 병존 상태다. DCF 기반으로는 순현금 가산 후에도 약 13% 과평가 구간이나, 당일 +18.83% 급등의 핵심 모멘텀이 지속될 경우 낙관 시나리오로 수렴할 여지가 있다.</p>
+<p><strong>프리미엄/디스카운트 요인</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>방향</th>
+<th>조정폭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>소형주·저유동성 디스카운트</td>
+<td>↓</td>
+<td>-10~15%p</td>
+</tr>
+<tr>
+<td>무차입 순현금 893억 프리미엄</td>
+<td>↑</td>
+<td>+8~12%p</td>
+</tr>
+<tr>
+<td>HBM·첨단 패키징 사이클 기대 프리미엄</td>
+<td>↑</td>
+<td>+5~10%p</td>
+</tr>
+<tr>
+<td>2025Q4 실적 급락 불확실성</td>
+<td>↓</td>
+<td>-5~8%p</td>
+</tr>
+</tbody>
+</table>
+<p><strong>재평가 트리거</strong>: 2026Q1 매출 회복(350억+) + 고객사 CAPEX 가이던스 상향 + 자사주·배당 확대 공시</p>
+<p><strong>결론</strong>: 현재가는 단기 과열 구간이나 반도체 투자 사이클 재개 시 낙관 시나리오(49,781원)까지 26% 업사이드가 존재. 리스크/리워드 측면에서는 PRZ 34,000~35,000원 구간 진입 후 포지셔닝이 합리적.</p>
+</body>
+</html>
