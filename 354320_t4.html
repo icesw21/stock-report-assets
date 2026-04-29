@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>알멕(354320) DeepDive</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-14<br />
+updated: 2026-04-29<br />
+tags:<br />
+  - 1차비철금속<br />
+  - 알루미늄압출<br />
+  - 우주항공<br />
+  - DeepDive<br />
+links: https://arc-10.gitbook.io/arc/354320_/</p>
+<hr />
+<h1>알멕 — 우주항공 알루미늄 소재 진출 분석</h1>
+<hr />
+<h2>Executive Summary</h2>
+<p>알멕은 50년 알루미늄 압출 기술을 기반으로 국내 EV 부품 1위에서 우주항공이라는 고부가 신시장으로 전환점을 맞고 있다. 2025년 12월 글로벌 최대 민간 우주기업의 협력사 등록을 완료했으며, 2026년 하반기부터 초도물량 약 400억원 규모의 납품이 예상된다. 우주항공 알루미늄 시장(TAM 85억달러, CAGR +7.6%)에서 위성·발사체 부품 전문 공급자로 포지셔닝할 경우, 중장기적으로 기업가치 재평가(리레이팅) 가능성이 높다. 확률가중 적정주가는 약 105,000원으로, 현재가(101,400원) 대비 +3.6% 업사이드이나 낙관 시나리오에서는 160,000원(+57.8%) 달성이 가능하다.</p>
+<hr />
+<h2>1. 분석 배경</h2>
+<p>T1에서 성장동력 1순위(⭐⭐⭐)로 선정된 우주항공 알루미늄 부품 사업을 심층 분석한다. 알멕의 주가는 2025년 저점 19,000원에서 2026년 4월 101,400원으로 433% 급등했으며, 이 급등의 핵심 촉매가 바로 우주항공 사업 진출 기대감이다. T3 Valuation에서 확인된 것처럼 현 주가는 2027년 실적 기반 PER 25.7배를 적용한 수준이며, 우주항공 사업이 이를 정당화할 수 있는지가 핵심 투자 질문이다.</p>
+<h3>분석 범위</h3>
+<ul>
+<li>글로벌 우주항공 알루미늄 소재 시장 규모 및 성장성 분석</li>
+<li>알멕의 우주항공 진출 경위, 레퍼런스, 파이프라인 현황</li>
+<li>경쟁사 포지셔닝 및 알멕의 차별화 전략</li>
+<li>시나리오별 실적 기여 추정 (2026~2030E)</li>
+<li>우주항공 반영 시 PBR 리레이팅 및 확률가중 적정주가 산출</li>
+</ul>
+<h3>한계</h3>
+<ul>
+<li>우주항공 고객사 계약 내용 및 파이프라인 세부 사항은 비공개 — 추정치 사용</li>
+<li>우주항공 전용 매출 세그먼트가 공시되지 않아 증권사 추정치에 의존</li>
+<li>초도물량 이후 프로젝트 확대 여부는 납품 성공 및 고객사 평가에 의존</li>
+</ul>
+<hr />
+<h2>2. 산업/시장 개요</h2>
+<h3>우주항공 알루미늄 소재 시장 현황</h3>
+<p>알루미늄은 높은 열전도율, 경량성, 내산화성으로 우주항공 산업의 핵심 소재다. 위성의 경우 전체 구조 질량의 약 36.7%가 알루미늄/알루미늄 합금으로 구성되며, SpaceX의 Starlink 위성은 전체 66.5%가 알루미늄으로 제조된다. 발사체 탑재체(Payload)에도 알루미늄이 광범위하게 활용되며, SpaceX Starship의 PEZ Dispenser 구조물에도 알루미늄 합금이 적용된다.</p>
+<p>저궤도(LEO) 위성 인터넷(Starlink, Amazon Kuiper 등) 확산에 따른 소형 위성 수요 폭발이 우주항공 알루미늄 수요의 구조적 성장 동력이 되고 있다. SpaceX는 2025년에만 약 1,700기 이상의 Starlink 위성을 발사했으며, 2030년까지 42,000기 이상의 위성군 완성을 목표로 하고 있다.</p>
+<h3>주요 프로젝트/기회</h3>
+<table>
+<thead>
+<tr>
+<th>지역/국가</th>
+<th>프로젝트</th>
+<th>규모</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🇺🇸 미국</td>
+<td>SpaceX Starlink 위성 알루미늄 구조물</td>
+<td>대규모</td>
+<td>협력사 등록 완료, 샘플 공급 중</td>
+</tr>
+<tr>
+<td>🇺🇸 미국</td>
+<td>SpaceX Starship 탑재체 구조물</td>
+<td>대규모</td>
+<td>논의 중</td>
+</tr>
+<tr>
+<td>🇺🇸 미국</td>
+<td>Blue Origin 등 발사체 부품</td>
+<td>중규모</td>
+<td>공급 논의 중</td>
+</tr>
+<tr>
+<td>🇰🇷 한국</td>
+<td>누리호·차세대 발사체 부품</td>
+<td>소규모</td>
+<td>기술 검증 단계</td>
+</tr>
+<tr>
+<td>글로벌</td>
+<td>UAM(도심항공모빌리티) 알루미늄 부품</td>
+<td>성장기</td>
+<td>기술 검증 완료</td>
+</tr>
+</tbody>
+</table>
+<h3>시장 규모(TAM) 추정</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>전제</th>
+<th>TAM</th>
+<th>알멕 기회</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>현재 수주 고객사 유지, 위성 생산 증가율 10%</td>
+<td>$90억 (2030E)</td>
+<td>$2~4억 (알멕 점유율 2~4%)</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>복수 Top-tier 우주기업 공급, CAGR 7.6%</td>
+<td>$124억 (2030E)</td>
+<td>$5~10억 (점유율 4~8%)</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>전 세계 LEO 위성+발사체 알루미늄 공급자로 성장</td>
+<td>$150억+ (2030E)</td>
+<td>$15억+ (점유율 10%+)</td>
+</tr>
+</tbody>
+</table>
+<p>※ 메리츠증권 보고서 및 공개 시장 조사 자료 기반 추정</p>
+<h3>시장의 특수성</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>일반 자동차 시장</th>
+<th>우주항공 시장</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>품질 요구 수준</td>
+<td>중~고</td>
+<td>극히 높음 (우주 환경 내구성)</td>
+</tr>
+<tr>
+<td>단가</td>
+<td>낮음</td>
+<td>5~10배 이상</td>
+</tr>
+<tr>
+<td>인증 기간</td>
+<td>단기</td>
+<td>수년 (AS9100 등)</td>
+</tr>
+<tr>
+<td>고객 집중도</td>
+<td>다수</td>
+<td>소수 (SpaceX, Blue Origin 등)</td>
+</tr>
+<tr>
+<td>경쟁사 진입 장벽</td>
+<td>중</td>
+<td>매우 높음</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>3. 경쟁 구도</h2>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>레퍼런스</th>
+<th>강점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Constellium(CSTM)</td>
+<td>🇫🇷 프랑스</td>
+<td>$2.0B</td>
+<td>에어버스, NASA 공급</td>
+<td>우주항공 전용 알루미늄 합금 보유, 글로벌 인증</td>
+</tr>
+<tr>
+<td>Kaiser Aluminum</td>
+<td>🇺🇸 미국</td>
+<td>$0.9B</td>
+<td>보잉, SpaceX 공급 레퍼런스</td>
+<td>항공우주 특화 6000·7000계 알루미늄</td>
+</tr>
+<tr>
+<td>Hydro Extrusions</td>
+<td>🇳🇴 노르웨이</td>
+<td>비상장</td>
+<td>유럽 항공우주</td>
+<td>대형 압출 전문, 탄소중립 알루미늄</td>
+</tr>
+<tr>
+<td><strong>알멕(354320)</strong></td>
+<td>🇰🇷</td>
+<td>6,481억</td>
+<td>SpaceX 협력사 등록</td>
+<td>수직 계열화, Crash Alloy, 아시아 지역 거점</td>
+</tr>
+</tbody>
+</table>
+<p><strong>알멕의 포지셔닝</strong>: 글로벌 대형 알루미늄 압출사 대비 규모는 작지만, 수직 계열화(빌렛 주조→압출→가공→표면처리)와 독자적인 Crash Alloy 기술이 경쟁우위다. 특히 SpaceX 등 미국 고객이 요구하는 대형 구조물 단위의 정밀 치수 관리 및 반복 생산 능력(사천 공장 인프라)이 진입 가능성의 근거이며, 아시아 기반 공급망 다변화를 원하는 글로벌 우주기업에게 매력적인 파트너가 될 수 있다.</p>
+<hr />
+<h2>4. 알멕의 역량 분석</h2>
+<h3>진입 전략</h3>
+<p>2025년 12월 글로벌 최대 민간 우주기업의 협력사 등록을 완료하고, 2026년 상반기부터 위성 및 발사체 부품 샘플을 공급 중이다. 해당 기업이 요구하는 스펙(고강도·내열성·경량화·부식 저항성)에 맞는 부품을 개발해 샘플 공급 중이며, 2026년 하반기 본격 양산 납품이 예상된다. 초도물량 성공적 납품 후 다양한 품목으로 프로젝트 확대가 기대된다.</p>
+<h3>기존 사업과의 시너지</h3>
+<table>
+<thead>
+<tr>
+<th>기존 역량</th>
+<th>우주항공 활용</th>
+<th>시너지 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>빌렛 자체 주조 (8만톤/년, 사천)</td>
+<td>우주항공 전용 고순도 알루미늄 합금 생산</td>
+<td>소재 품질 통제 + 원가 경쟁력</td>
+</tr>
+<tr>
+<td>Crash Alloy 기술</td>
+<td>발사체 충격 흡수 구조물 적용</td>
+<td>핵심 차별화 소재 보유 → 경쟁사 진입 어려움</td>
+</tr>
+<tr>
+<td>대형 압출 프레스 (사천 공장)</td>
+<td>위성 구조물, 발사체 대형 부품 제조</td>
+<td>단품 대형 구조물 정밀 치수 관리 능력</td>
+</tr>
+<tr>
+<td>표면처리·조립 일괄 체계</td>
+<td>납품 단위 완성도 향상</td>
+<td>리드타임 단축, 고객 편의성 증가</td>
+</tr>
+<tr>
+<td>글로벌 Top-tier EV 고객 네트워크</td>
+<td>우주기업 신규 고객 신뢰도 레퍼런스</td>
+<td>글로벌 OEM 대응 경험 축적</td>
+</tr>
+</tbody>
+</table>
+<h3>경쟁우위 요소</h3>
+<ul>
+<li><strong>수직 계열화</strong>: 원재료 주조부터 완제품까지 전 공정 내재화 → 품질 이슈 즉각 대응, 납기 관리 우위</li>
+<li><strong>사천 공장 인프라</strong>: 기존 항공산업 인접 입지, 최신 주조·압출·프레스 설비 보유, 대형 구조물 단위 정밀 반복 생산 가능</li>
+<li><strong>Crash Alloy 독점 기술</strong>: 충격 에너지 흡수 고합금 알루미늄 — 발사체 탑재체·위성 충격 구조물에 직접 적용 가능한 차별화 소재</li>
+</ul>
+<hr />
+<h2>5. 실적 기여 시나리오</h2>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>2026E</th>
+<th>2027E</th>
+<th>2028E</th>
+<th>2029E</th>
+<th>2030E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>보수적</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— 우주 매출</td>
+<td>100억</td>
+<td>200억</td>
+<td>300억</td>
+<td>400억</td>
+<td>500억</td>
+</tr>
+<tr>
+<td>— 우주 비중</td>
+<td>4.2%</td>
+<td>6.6%</td>
+<td>8.5%</td>
+<td>10.0%</td>
+<td>11.4%</td>
+</tr>
+<tr>
+<td><strong>기본</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— 우주 매출</td>
+<td>200억</td>
+<td>486억</td>
+<td>700억</td>
+<td>900억</td>
+<td>1,100억</td>
+</tr>
+<tr>
+<td>— 우주 비중</td>
+<td>8.4%</td>
+<td>15.9%</td>
+<td>17.5%</td>
+<td>19.6%</td>
+<td>21.6%</td>
+</tr>
+<tr>
+<td><strong>낙관</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>— 우주 매출</td>
+<td>400억</td>
+<td>800억</td>
+<td>1,200억</td>
+<td>1,600억</td>
+<td>2,000억</td>
+</tr>
+<tr>
+<td>— 우주 비중</td>
+<td>16.7%</td>
+<td>26.2%</td>
+<td>28.6%</td>
+<td>30.8%</td>
+<td>33.3%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 메리츠증권 기본 시나리오(2027E 우주 486억) 참조. 총매출은 EV·전도체·빌렛 포함 전망치. 전체 매출 가정: 2026E 2,393억, 2027E 3,049억, 2028E 3,551억, 2029E ~4,100억, 2030E ~5,200억</p>
+<hr />
+<h2>6. 밸류에이션 영향</h2>
+<h3>PBR 리레이팅 논리</h3>
+<p>현재 PBR 4.31배는 순수 알루미늄 압출 기업(글로벌 Peer PBR 1.8배)에서 우주항공 테마가 반영된 수준이다. 우주항공 매출이 전체 매출의 10~20%를 차지하게 되면, 알멕은 단순 소재 기업에서 "우주항공 소재 전문기업"으로 리레이팅이 가능하다. 글로벌 우주항공 소재 기업들(Hexcel, Ducommun 등)의 PBR은 3~5배 수준이다.</p>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>신사업 지연 (우주 매출 100억 이하)</td>
+<td>2.5x</td>
+<td>58,838원</td>
+<td>-42.0%</td>
+</tr>
+<tr>
+<td>보수적 반영 (우주 매출 200~300억)</td>
+<td>3.5x</td>
+<td>82,373원</td>
+<td>-18.8%</td>
+</tr>
+<tr>
+<td>기본 반영 (우주 매출 400~600억)</td>
+<td>5.5x</td>
+<td>129,443원</td>
+<td>+27.7%</td>
+</tr>
+<tr>
+<td>낙관 반영 (우주 매출 800억+)</td>
+<td>7.0x</td>
+<td>164,745원</td>
+<td>+62.5%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. 리스크 매트릭스</h2>
+<table>
+<thead>
+<tr>
+<th>리스크</th>
+<th>영향</th>
+<th>확률</th>
+<th>대응/헤지</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>우주항공 품질 테스트 실패 / 납품 지연</td>
+<td>상</td>
+<td>중</td>
+<td>초도물량 분기별 납품 현황 모니터링</td>
+</tr>
+<tr>
+<td>EV 시장 캐즘 장기화</td>
+<td>상</td>
+<td>중</td>
+<td>주력 매출 68% 보호 — 고객 다변화(리비안·루시드)</td>
+</tr>
+<tr>
+<td>CB/BW 전환 희석</td>
+<td>중</td>
+<td>상</td>
+<td>주당가치 희석 규모 사전 파악</td>
+</tr>
+<tr>
+<td>알루미늄 LME 가격 급등</td>
+<td>중</td>
+<td>중</td>
+<td>자체 빌렛 주조(사천 공장)로 일부 헤지</td>
+</tr>
+<tr>
+<td>우주항공 고객 집중 리스크</td>
+<td>상</td>
+<td>하</td>
+<td>SpaceX 외 Blue Origin 등 다변화 논의 중</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>8. 확률가중 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적정주가</th>
+<th>확률</th>
+<th>가중 기여</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적 (우주 지연, PBR 2.5x)</td>
+<td>58,838원</td>
+<td>25%</td>
+<td>14,710원</td>
+</tr>
+<tr>
+<td>기본 (우주 본격화, PBR 5.5x)</td>
+<td>129,443원</td>
+<td>50%</td>
+<td>64,722원</td>
+</tr>
+<tr>
+<td>낙관 (우주 확장, PBR 7.0x)</td>
+<td>164,745원</td>
+<td>25%</td>
+<td>41,186원</td>
+</tr>
+<tr>
+<td><strong>확률가중 합계</strong></td>
+<td><strong>120,618원</strong></td>
+<td>100%</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>현재가 101,400원 대비 +18.9% 업사이드</strong></p>
+<p>보수적 시나리오 확률을 높게 가정(50%)하면 가중평균 약 90,000원으로 현재가 대비 소폭 하락 여지가 있다. 메리츠증권 목표가(120,000원)와 기본 시나리오 기준 확률가중 적정주가(120,618원)가 일치하는 점이 주목된다.</p>
+<hr />
+<h2>9. 결론</h2>
+<p>알멕의 우주항공 진출은 단순한 테마가 아닌, 50년 알루미늄 압출 기술의 논리적 확장이다. SpaceX 협력사 등록 완료는 진입 장벽을 넘었다는 증거이며, 2026년 하반기 초도물량 납품이 성공할 경우 알루미늄 소재 기업에서 우주항공 소재 전문기업으로의 밸류에이션 리레이팅이 진행될 것이다. 다만 현재 주가(101,400원)는 이미 상당한 기대감을 선반영했으며, 실적 기여 지연 시 디레이팅 위험도 공존한다. 기본 시나리오 기준 적정주가 120,618원으로 메리츠증권 목표가와 일치하며, 투자 매력도는 납품 성공 여부에 달려 있다.</p>
+<p><strong>모니터링 체크포인트</strong>:<br />
+- ✅ <strong>2026H2 초도물량 납품 개시</strong> — 400억원 규모 스케줄 확인 및 추가 품목 확장 여부<br />
+- ✅ <strong>우주항공 고객사 다변화</strong> — SpaceX 1개사 집중에서 Blue Origin·기타 Top-tier 추가 여부<br />
+- ✅ <strong>2026년 연간 OPM 6%+</strong> — 영업이익 143억 이상 달성 시 이자비용 상쇄 후 순이익 흑전 가능</p>
+</body>
+</html>

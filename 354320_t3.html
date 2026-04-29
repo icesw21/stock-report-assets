@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>알멕(354320) Valuation</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-14<br />
+updated: 2026-04-29<br />
+tags:<br />
+  - 1차비철금속<br />
+  - 알루미늄압출<br />
+  - 밸류에이션<br />
+links: https://arc-10.gitbook.io/arc/354320_/</p>
+<hr />
+<h1>알멕(354320) Valuation Report</h1>
+<hr />
+<h2>1. 현재 멀티플</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>알멕</th>
+<th>산출 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>N/A</td>
+<td>현재가 101,400원 ÷ TTM EPS -205원 (순손실로 무의미)</td>
+</tr>
+<tr>
+<td>PER (Fwd 2026E)</td>
+<td>297.4x</td>
+<td>메리츠 2026E EPS 341원 기준</td>
+</tr>
+<tr>
+<td>PER (Fwd 2027E)</td>
+<td>25.7x</td>
+<td>메리츠 2027E EPS 3,943원 기준</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>4.31x</td>
+<td>101,400원 ÷ BPS 23,535원 (자본총계 1,612억 ÷ 발행주식 639만주)</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>10.9x</td>
+<td>EV ~2,160억 ÷ 2025 EBITDA 198억 추정</td>
+</tr>
+<tr>
+<td>EV/Revenue</td>
+<td>1.15x</td>
+<td>EV ÷ TTM 매출 1,878억</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>-3.8%</td>
+<td>TTM 순손실 -61억 ÷ 자본 1,612억</td>
+</tr>
+<tr>
+<td>OP Margin</td>
+<td>3.3%</td>
+<td>2025 OP 62억 ÷ 매출 1,878억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0%</td>
+<td>DPS 0원</td>
+</tr>
+</tbody>
+</table>
+<p>※ KIS API + DART CFS (2026-04-29 기준)</p>
+<p><strong>핵심</strong>: TTM 기준 PER 산출 불가 (3년 연속 순손실). 투자자들은 2027E EPS 3,943원에 PER 25.7배를 적용하는 미래 실적 기반의 밸류에이션을 적용 중이다. PBR 4.31배는 우주항공 신사업 진입 기대감이 반영된 프리미엄이나, 실적 개선 지연 시 디레이팅 압력이 상당하다.</p>
+<hr />
+<h2>2. Peer Comparison</h2>
+<h3>선정 기준</h3>
+<p>알루미늄 압출 전문 제조업체 중 EV 부품 또는 항공우주 소재 영역에서 사업을 영위하는 국내외 기업을 선정했다. 순수 알루미늄 압출 글로벌 플레이어 외에 국내 경쟁사로는 에이치브이엠을 참조한다.</p>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th>국가</th>
+<th>시총</th>
+<th>Fwd PE</th>
+<th>PBR</th>
+<th>EV/EBITDA</th>
+<th>OP Margin</th>
+<th>ROE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>알멕(354320)</strong></td>
+<td>🇰🇷</td>
+<td>6,481억</td>
+<td>25.7x(2027E)</td>
+<td>4.31x</td>
+<td>10.9x</td>
+<td>3.3%</td>
+<td>-3.8%</td>
+</tr>
+<tr>
+<td>에이치브이엠</td>
+<td>🇰🇷</td>
+<td>—</td>
+<td>229.3x(2025E)</td>
+<td>14.7x</td>
+<td>—</td>
+<td>—</td>
+<td>6.6%</td>
+</tr>
+<tr>
+<td>Constellium(CSTM)</td>
+<td>🇫🇷</td>
+<td>$2.0B</td>
+<td>~10x</td>
+<td>~1.0x</td>
+<td>~6.0x</td>
+<td>~7%</td>
+<td>~20%</td>
+</tr>
+<tr>
+<td>Kaiser Aluminum(KALU)</td>
+<td>🇺🇸</td>
+<td>$0.9B</td>
+<td>~14x</td>
+<td>~2.5x</td>
+<td>~8x</td>
+<td>~8%</td>
+<td>~15%</td>
+</tr>
+<tr>
+<td><strong>글로벌 평균</strong></td>
+<td>—</td>
+<td>—</td>
+<td>~12x</td>
+<td>~1.8x</td>
+<td>~7x</td>
+<td>~7.5%</td>
+<td>~17%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 소스: 공개 데이터 추정 (2026-04-29 기준). 글로벌 평균은 Constellium, Kaiser 기준</p>
+<h3>할인율 분석</h3>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>알멕</th>
+<th>글로벌 평균</th>
+<th>프리미엄/할인율</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fwd PE (2027E)</td>
+<td>25.7x</td>
+<td>~12x</td>
+<td><strong>+114%</strong> 프리미엄</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>4.31x</td>
+<td>~1.8x</td>
+<td><strong>+139%</strong> 프리미엄</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>10.9x</td>
+<td>~7x</td>
+<td><strong>+56%</strong> 프리미엄</td>
+</tr>
+</tbody>
+</table>
+<p><strong>포지셔닝</strong>: 알멕은 글로벌 알루미늄 압출 Peer 대비 PBR/PER 모두에서 대폭 프리미엄에 거래되고 있다. 이는 순수 알루미늄 압출 기업이 아닌 우주항공·전도체 신사업 진입에 따른 성장 프리미엄으로 해석된다. 단, 신사업 매출 기여가 아직 제한적인 상황에서 이 프리미엄이 정당화되려면 2026~2027년 실적 개선이 가시화되어야 한다. 코스닥 소형주 특성상 국내 우주항공 테마 모멘텀이 멀티플을 추가로 견인하고 있다.</p>
+<hr />
+<h2>3. PBR 기반 적정주가</h2>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>적용 PBR</th>
+<th>BPS</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>2.5x</td>
+<td>23,535원</td>
+<td><strong>58,838원</strong></td>
+<td>-42.0%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>4.0x</td>
+<td>23,535원</td>
+<td><strong>94,140원</strong></td>
+<td>-7.2%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>6.0x</td>
+<td>23,535원</td>
+<td><strong>141,210원</strong></td>
+<td>+39.3%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>PBR 적용 근거</strong>: <br />
+- <strong>보수적(2.5x)</strong>: 우주항공 신사업 지연·실패 시나리오. 순수 알루미늄 압출 기업 수준(글로벌 Peer 평균 1.8배에 국내 성장주 소폭 프리미엄 가산)<br />
+- <strong>기본(4.0x)</strong>: 우주항공 초도물량 납품 성공, 2027E 영업이익 298억 달성 시나리오. 현 주가 수준의 지속 가능성 판단<br />
+- <strong>낙관(6.0x)</strong>: 우주항공 매출 500억+ 본격화, 전도체 신사업 성장, EV 회복 복합 시나리오. 메리츠증권 목표가(120,000원) 수준을 상회</p>
+<hr />
+<h2>4. DCF Valuation</h2>
+<h3>가정</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WACC</td>
+<td>10.5%</td>
+<td>무위험이자율 3.5% + β1.5 × 시장프리미엄 4.5% + 소형주 프리미엄 2%</td>
+</tr>
+<tr>
+<td>자기자본비용</td>
+<td>12.25%</td>
+<td>CAPM 기반</td>
+</tr>
+<tr>
+<td>타인자본비용</td>
+<td>4.5%</td>
+<td>세후, 회사채 기준</td>
+</tr>
+<tr>
+<td>자본구조</td>
+<td>자기자본 47% / 타인자본 53%</td>
+<td>2025년 재무상태표 기준</td>
+</tr>
+<tr>
+<td>FCF 기준</td>
+<td>-0.2억원</td>
+<td>2025년 FCF (거의 손익분기)</td>
+</tr>
+<tr>
+<td>예측기간</td>
+<td>5년</td>
+<td>이후 Terminal Value</td>
+</tr>
+</tbody>
+</table>
+<h3>시나리오별 DCF 적정주가</h3>
+<table>
+<thead>
+<tr>
+<th>시나리오</th>
+<th>매출성장률(2026~30E)</th>
+<th>영구성장률</th>
+<th>EV(억)</th>
+<th>적정주가</th>
+<th>현재가 대비</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>보수적</td>
+<td>+15%</td>
+<td>2.0%</td>
+<td>1,800억</td>
+<td><strong>47,000원</strong></td>
+<td>-53.7%</td>
+</tr>
+<tr>
+<td>기본</td>
+<td>+25%</td>
+<td>3.0%</td>
+<td>3,500억</td>
+<td><strong>82,000원</strong></td>
+<td>-19.1%</td>
+</tr>
+<tr>
+<td>낙관</td>
+<td>+35%</td>
+<td>4.0%</td>
+<td>5,200억</td>
+<td><strong>138,000원</strong></td>
+<td>+36.1%</td>
+</tr>
+<tr>
+<td><strong>확률가중</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>89,000원</strong></td>
+<td><strong>-12.2%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ DCF는 FCF 안정성이 전제. 현재 FCF 거의 0, 3년 연속 순손실 기업으로 신뢰도 제한 — PBR 기반 적정주가와 교차 검증 필수. 확률가중: 보수 30% / 기본 45% / 낙관 25%</p>
+<hr />
+<h2>5. 증권사 컨센서스</h2>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th>목표가</th>
+<th>투자의견</th>
+<th>방법론</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>메리츠증권</td>
+<td>120,000원</td>
+<td>Buy (신규 커버리지)</td>
+<td>2027E EPS 3,943원 × Target PER 30.3배</td>
+<td>2026.04.13</td>
+</tr>
+<tr>
+<td>NH투자증권</td>
+<td>Not Rated</td>
+<td>—</td>
+<td>2026E OP 168억 참고</td>
+<td>2026.02.10</td>
+</tr>
+<tr>
+<td>하나증권</td>
+<td>Not Rated</td>
+<td>—</td>
+<td>2026E 매출 2,200억 참고</td>
+<td>2026.03.04</td>
+</tr>
+<tr>
+<td>키움증권</td>
+<td>Not Rated</td>
+<td>—</td>
+<td>2026E 매출 2,410억 참고</td>
+<td>2026.03.05</td>
+</tr>
+<tr>
+<td>컨센서스 평균</td>
+<td>~120,000원</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>증권사 전망 비교 (메리츠 최신):<br />
+- 2026E: 매출 2,393억(+27.4%), OP 146억(OPM 6.1%), 순이익 22억<br />
+- 2027E: 매출 3,049억(+27.4%), OP 298억(OPM 9.8%), EPS 3,943원</p>
+<hr />
+<h2>6. 밸류에이션 논평</h2>
+<p><strong>핵심 판단</strong>: 현재 주가 101,400원은 DCF 기본 시나리오(82,000원) 및 PBR 기본 적정주가(94,140원) 대비 소폭 고평가 수준이며, 메리츠증권 목표가(120,000원) 대비로는 약 18% 업사이드가 있다. 우주항공 모멘텀 프리미엄이 반영된 현 주가는 2027년 실적 가시화 여부에 따라 방향성이 결정될 것이다.</p>
+<p><strong>프리미엄/디스카운트 요인</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>요인</th>
+<th>방향</th>
+<th>조정폭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>코스닥 소형주 디스카운트</td>
+<td>↓</td>
+<td>-15%p</td>
+</tr>
+<tr>
+<td>3년 연속 순손실 디스카운트</td>
+<td>↓</td>
+<td>-20%p</td>
+</tr>
+<tr>
+<td>우주항공 테마 프리미엄</td>
+<td>↑</td>
+<td>+40%p</td>
+</tr>
+<tr>
+<td>EV 부품 국내 1위 프리미엄</td>
+<td>↑</td>
+<td>+10%p</td>
+</tr>
+<tr>
+<td>고부채 재무 리스크 디스카운트</td>
+<td>↓</td>
+<td>-10%p</td>
+</tr>
+</tbody>
+</table>
+<p><strong>재평가 트리거</strong>:<br />
+1. 우주항공 초도물량 400억원 이상 납품 확인 (2026H2)<br />
+2. 2026년 연간 OPM 6%+ 달성 (영업이익 143억+ = 이자비용 상쇄 후 순이익 흑전 가능)<br />
+3. 전도체 신사업 수주 잔고 100억원 이상 가시화</p>
+<p><strong>결론</strong>: 현재 주가는 우주항공 모멘텀을 선반영한 상태로 단기 추가 상승 여력이 제한적이다. 2026~2027년 실적 개선이 가시화될 경우 메리츠 목표가(120,000원) 달성이 가능하나, 사업 지연 시 PBR 2.5배(~58,800원) 수준으로의 디레이팅 위험이 공존한다.</p>
+</body>
+</html>
