@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>라온텍(418420) 기초보고서</title>
+<style>
+  body { max-width:800px; margin:40px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; line-height:1.7; color:#1a1a1a; background:#fff; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
+  th, td { border:1px solid #ddd; padding:8px 12px; text-align:left; }
+  th { background:#f5f5f5; font-weight:600; }
+  tr:nth-child(even) { background:#fafafa; }
+  h1 { font-size:24px; border-bottom:2px solid #333; padding-bottom:8px; }
+  h2 { font-size:20px; border-bottom:1px solid #ddd; padding-bottom:6px; margin-top:32px; }
+  h3 { font-size:17px; margin-top:24px; }
+  hr { border:none; border-top:1px solid #ddd; margin:24px 0; }
+  img { max-width:100%; height:auto; margin:16px 0; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+  code { background:#f0f0f0; padding:2px 6px; border-radius:3px; font-size:13px; }
+  pre { background:#f5f5f5; padding:12px; border-radius:6px; overflow-x:auto; }
+  blockquote { border-left:4px solid #ddd; margin:16px 0; padding:8px 16px; color:#555; }
+  @media (prefers-color-scheme: dark) {
+    body { background:#1a1a1a; color:#e0e0e0; }
+    th { background:#2a2a2a; color:#e0e0e0; }
+    td { color:#e0e0e0; }
+    tr:nth-child(even) { background:#222; }
+    h1,h2,h3,p,li,span { color:#e0e0e0; }
+    h1 { border-color:#555; }
+    h2 { border-color:#444; }
+    code { background:#333; color:#e0e0e0; }
+    pre { background:#2a2a2a; color:#e0e0e0; }
+    blockquote { border-color:#555; color:#aaa; }
+    img { box-shadow:0 2px 8px rgba(0,0,0,0.4); }
+  }
+</style>
+</head>
+<body>
+<hr />
+<p>created: 2026-04-30<br />
+updated: 2026-04-30<br />
+tags:<br />
+  - 반도체<br />
+  - AI글래스<br />
+  - 마이크로디스플레이<br />
+  - LCoS<br />
+  - XR<br />
+  - AR-HUD<br />
+  - 광통신<br />
+links:</p>
+<hr />
+<h1>라온텍(418420) 기초 리서치 보고서</h1>
+<hr />
+<h2>1. 기업 개요</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>내용</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>종목코드</td>
+<td>418420 (KOSDAQ)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>대표자</td>
+<td>김보은</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>업종</td>
+<td>전자부품 제조업 (마이크로디스플레이용 DDI/SoC 팹리스)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>설립일</td>
+<td>2009-10-13</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>발행주식수</td>
+<td>보통주 30,700,933주</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>유통주식수</td>
+<td>~21.9백만주 (자기주식 76,629주)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>Fully-Diluted 시총</td>
+<td>~2,245억원 (CB 305.7만주, 스톡옵션 등 포함 추정)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>시가총액</td>
+<td>~2,042억원 (6,650원 기준)</td>
+<td>KIS</td>
+</tr>
+<tr>
+<td>현재가 / PER / PBR</td>
+<td>6,650원 / N/A(적자) / 12.14x</td>
+<td>KIS (2026-04-30)</td>
+</tr>
+<tr>
+<td>52주 고/저</td>
+<td>8,450 / 2,630원</td>
+<td>네이버금융</td>
+</tr>
+<tr>
+<td>최대주주</td>
+<td>김보은 대표 20.10% (특수관계인 합계 31.78%)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>감사의견</td>
+<td>삼화회계법인 — 적정 (2025)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>결산월</td>
+<td>12월</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<p>※ 시총·시가는 KIS 데이터(현재가 6,650원), 52주 레인지는 네이버금융 t2 데이터(8,450/2,630).</p>
+<hr />
+<h2>2. 사업 구조</h2>
+<h3>사업부문별 매출 구조</h3>
+<table>
+<thead>
+<tr>
+<th>사업부문</th>
+<th>주요 품목</th>
+<th style="text-align: right;">매출(억원)</th>
+<th style="text-align: right;">비중(%)</th>
+<th style="text-align: right;">YoY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>마이크로디스플레이</td>
+<td>LCoS Panel + 컨트롤러 SoC, 개발용역</td>
+<td style="text-align: right;">68.7</td>
+<td style="text-align: right;">78.6</td>
+<td style="text-align: right;">+0.3%</td>
+</tr>
+<tr>
+<td>모바일 TV</td>
+<td>RFIC &amp; DAB SoC</td>
+<td style="text-align: right;">17.9</td>
+<td style="text-align: right;">20.4</td>
+<td style="text-align: right;">-8.7%</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>상품판매 외</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">-35.6%</td>
+</tr>
+<tr>
+<td><strong>합계</strong></td>
+<td></td>
+<td style="text-align: right;">87.5</td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">-1.8%</td>
+</tr>
+</tbody>
+</table>
+<p>※ 2025년(제17기) 사업보고서 매출실적 기준. 마이크로디스플레이 내에서 Panel/SoC 제품 매출은 61.8억(YoY +48.6%, 양산 회복), 개발용역(NRE) 매출은 6.9억(YoY -74.4%, 일회성 NRE 종료)으로 <strong>제품 양산 매출은 회복세, 용역(NRE) 매출은 급감</strong>한 것이 핵심.</p>
+<h3>핵심 사업: AI/XR용 마이크로디스플레이 LCoS 패널 + 컨트롤러 SoC + AR-HUD/광통신용 LCoS</h3>
+<p>라온텍은 <strong>반도체 백플레인 위에 액정(LC)을 올린 LCoS(Liquid Crystal on Silicon) 마이크로디스플레이 패널</strong>과 이를 구동하는 <strong>이미지 처리 SoC</strong>를 함께 설계하는 <strong>세계에서 둘뿐인 LCoS 양강 팹리스</strong>(나머지 한 곳은 중국자본 Omnivision)이다. 미국·일본·대만 빅테크에게는 <strong>"비중국 우방 라인업"</strong>으로서의 전략적 가치까지 부여받고 있다.</p>
+<ul>
+<li><strong>국내</strong>: 글로벌 광학·완제품 고객사 대상 LCoS 패널 + SoC 직접영업 (성남 본사 영업본부)</li>
+<li><strong>해외</strong>: Avegant, Vuzix(美), Lumus, Goertek 등 광학 모듈 제조사에 패널 공급 → 광학모듈이 다시 Meta·Google·Apple·Samsung 등 빅테크 스마트안경에 채택. <strong>Qualcomm Snapdragon AR 레퍼런스 플랫폼에 라온텍 LCoS + SoC 동시 내장</strong> (中 상해/심천 사무소 운영)</li>
+<li><strong>신사업</strong>: ① <strong>Laser + LCoS</strong> 차세대 광엔진 (홀로그래픽 3D AR 가능, VitreaLab과 협력), ② 풀컬러 RGB 모놀리식 <strong>LEDoS(0.18", 4.5um, 720x720)</strong> 세계 최소 크기 개발 완료, ③ <strong>차세대 자율주행용 AR-HUD 4K2K SLM 백플레인</strong> 개발 완료·고객사 모듈 개발중</li>
+</ul>
+<h3>비즈니스 특성</h3>
+<ul>
+<li><strong>팹리스 + 후공정 외주</strong>: 자체 fab 없이 설계만 담당. 외부 파운드리(상해SMIC 등) + 후공정. 매출총이익률 64.9%(2025)는 고부가 제품 믹스 반영. 단, 영업이익률은 -66.4%로 R&amp;D 인건비·차세대 제품 선행투자 부담이 압도적.</li>
+<li><strong>레퍼런스 플랫폼 락인 효과</strong>: Qualcomm AR1/AR2 레퍼런스 + 글로벌 광학모듈사 표준 부품으로 채택되면 후속 OEM/ODM이 자연스럽게 라온텍 제품을 따라가는 구조. 진입장벽이 단순 제품 우월성보다 <strong>공급망 표준화</strong>에 있다.</li>
+<li><strong>수주 매출 + NRE 매출 혼합</strong>: 양산 매출(Panel 6,184백만원) + 개발용역 NRE(689백만원). NRE는 빅테크와의 backplane 공동개발 계약에서 발생하며 분기별 변동성이 크다. <strong>MicroLED/OLEDoS 영역은 현재 양산 대신 R&amp;D 계약 매출로 운영</strong>.</li>
+<li><strong>소재·원가 구조</strong>: 핵심 원재료는 8" 실리콘 백플레인 웨이퍼 + 액정, 외주 패키징. 광학 부품 자체는 라온텍이 제조하지 않으며 Avegant/Lumus/Goertek 등 광학 파트너에 판매. 가동율 변동은 외주 fab 의존.</li>
+</ul>
+<blockquote>
+<p><strong>수주현황 비고</strong>: DART 사업보고서(2026-03-18)에 따르면 <em>"고객사와의 비밀정보 보호계약(NDA)에 따라 수주상황은 별도로 기재하지 않습니다"</em>라 명시. 실제 매출은 1~3개월 단위 발주·납품 구조로 진행되며, 전형적인 건설/조선식 수주잔고 개념이 적용되지 않아 본 보고서에서는 <strong>수주잔고 섹션을 생략</strong>한다. 다만 IR자료(2026-03 기준)에 따르면 <strong>Project A 공시 완료, Project B 계약 완료, Project C·D·E·F 계약 협의 중</strong>으로 2026 상반기 다수 신규 공급계약이 가시권에 있음.</p>
+</blockquote>
+<h3>고객 구조 &amp; 원가 구조</h3>
+<ul>
+<li><strong>고객 구조</strong>: B2B. 광학모듈 1차 고객(Avegant·Lumus·Goertek 등) → 빅테크 완제품 고객(Meta/Google/Apple/Samsung/Vuzix 등) 2단 구조. <strong>Vuzix Ultralite Pro(CES 2025), Meta Ray-Ban Display(2025년 9월 출시)</strong> 등에 LCoS + SoC 채택. 광통신은 <strong>Lumentum/II-VI(Coherent) 등 글로벌 WSS 제조사</strong>에 LCoS 백플레인 양산 공급.</li>
+<li><strong>매입/원가</strong>: 매출원가율 35.1%(2025, 전년 45.0%에서 개선). 매출총이익률 64.9%로 매출 감소에도 마진은 상승 — 고부가 LCoS 양산제품 비중 확대 시그널. 다만 판관비율 131.3%(R&amp;D + 차세대 LEDoS/AR-HUD/Laser+LCoS 선행투자)로 영업적자 지속.</li>
+</ul>
+<hr />
+<h2>3. 실적 분석</h2>
+<h3>연결 기준 직전 4개년 실적 및 2개년 추정</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022</td>
+<td>109</td>
+<td>+88.7%</td>
+<td>3</td>
+<td>흑전</td>
+<td>6</td>
+<td>3.0</td>
+<td>5.4</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>107</td>
+<td>-1.6%</td>
+<td>-22</td>
+<td>적전</td>
+<td>-71</td>
+<td>-20.0</td>
+<td>-65.9</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>89</td>
+<td>-17.1%</td>
+<td>-70</td>
+<td>적자확대</td>
+<td>-65</td>
+<td>-78.5</td>
+<td>-72.8</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>87</td>
+<td>-1.8%</td>
+<td>-58</td>
+<td>적자축소</td>
+<td>-66</td>
+<td>-66.4</td>
+<td>-74.9</td>
+</tr>
+<tr>
+<td>2026E</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2027E</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 컨센서스는 추정치 부재(financials_consensus 빈 데이터). 2026E/2027E는 공시·증권사 추정 데이터 부재로 공란. 소스: DART CFS, FnGuide, 네이버금융</p>
+<h3>최근 8분기 실적</h3>
+<table>
+<thead>
+<tr>
+<th>분기</th>
+<th>매출(억)</th>
+<th>YoY</th>
+<th>영업이익(억)</th>
+<th>YoY</th>
+<th>순이익(억)</th>
+<th>OPM(%)</th>
+<th>NPM(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024 Q1</td>
+<td>27.5</td>
+<td>+26.6%</td>
+<td>-6.5</td>
+<td>적자축소</td>
+<td>-4.9</td>
+<td>-23.5</td>
+<td>-17.9</td>
+</tr>
+<tr>
+<td>2024 Q2</td>
+<td>16.7</td>
+<td>-29.4%</td>
+<td>-17.1</td>
+<td>적자확대</td>
+<td>-16.0</td>
+<td>-101.9</td>
+<td>-95.4</td>
+</tr>
+<tr>
+<td>2024 Q3</td>
+<td>15.1</td>
+<td>-34.1%</td>
+<td>-27.6</td>
+<td>적자확대</td>
+<td>-28.0</td>
+<td>-182.0</td>
+<td>-184.9</td>
+</tr>
+<tr>
+<td>2024 Q4</td>
+<td>29.7</td>
+<td>-24.1%</td>
+<td>-18.8</td>
+<td>적자확대</td>
+<td>-15.9</td>
+<td>-63.3</td>
+<td>-53.5</td>
+</tr>
+<tr>
+<td>2025 Q1</td>
+<td>7.4</td>
+<td>-73.1%</td>
+<td>-26.1</td>
+<td>적자확대</td>
+<td>-26.3</td>
+<td>-353.0</td>
+<td>-356.2</td>
+</tr>
+<tr>
+<td>2025 Q2</td>
+<td>42.1</td>
+<td>+151.3%</td>
+<td>3.0</td>
+<td>흑전</td>
+<td>1.4</td>
+<td>7.2</td>
+<td>3.3</td>
+</tr>
+<tr>
+<td>2025 Q3</td>
+<td>17.8</td>
+<td>+17.7%</td>
+<td>-15.0</td>
+<td>적자축소</td>
+<td>-16.3</td>
+<td>-84.0</td>
+<td>-91.2</td>
+</tr>
+<tr>
+<td>2025 Q4</td>
+<td>20.2</td>
+<td>-32.0%</td>
+<td>-20.1</td>
+<td>적자확대</td>
+<td>-24.3</td>
+<td>-99.6</td>
+<td>-120.5</td>
+</tr>
+</tbody>
+</table>
+<p>※ Q4 = 연간 - Q1 - Q2 - Q3 산출. 소스: DART CFS</p>
+<p><strong>매출 추세</strong>: 2022년 109억 피크 이후 <strong>3년 연속 감소(107→89→87억)</strong>. 2024년은 빅테크 NRE(개발용역) 일회성 종료 + 양산 모델 Transition 영향으로 -17.1% 급감. 2025년은 <strong>양산제품(Panel/SoC)은 +48.6% 회복(41.6억→61.8억)</strong>한 반면 NRE가 -74.4% 급감(26.9억→6.9억)하며 외형은 횡보. <strong>Q2 2025 +151% 점프(42.1억)</strong>는 Vuzix Ultralite Pro CES 2025 채택 이후 양산 출하 본격화의 흔적이고, <strong>Q1 2025 -73%</strong>는 NRE 공백 분기로 추정. 분기별 변동성 매우 큼.</p>
+<p><strong>영업이익/마진 해석</strong>: <strong>2025 Q2 일시 흑자전환(+3억, OPM 7.2%)</strong> 후 다시 적자 — 양산 매출이 일정 수준 이상 도달하면 BEP 가능함을 시사한 분기. 연간 OPM은 2024 -78.5% → 2025 -66.4%로 <strong>적자 폭은 축소</strong>되었으나 절대규모(-58억)는 여전히 큼. 판관비율 131.3%는 <strong>R&amp;D 65명/총 85명</strong> 인력 구조 + 차세대 LEDoS·AR-HUD 4K2K·Laser+LCoS 동시 개발 부담의 직접 반영.</p>
+<h3>재무상태표 요약</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>자산총계</strong></td>
+<td style="text-align: right;">357</td>
+<td style="text-align: right;">282</td>
+<td style="text-align: right;">418</td>
+</tr>
+<tr>
+<td>(현금성자산)</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td>(매출채권)</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>(재고자산)</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td>(유형자산)</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">186</td>
+</tr>
+<tr>
+<td><strong>부채총계</strong></td>
+<td style="text-align: right;">143</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">251</td>
+</tr>
+<tr>
+<td>(이자부부채)</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td><strong>자본총계</strong></td>
+<td style="text-align: right;">214</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">167</td>
+</tr>
+</tbody>
+</table>
+<p>※ 단위: 억원. 소스: DART CFS / FnGuide</p>
+<p><strong>재무상태 해석</strong>: 2025년 자산총계 +136억(282→418억) 급증의 핵심은 <strong>150억 사모전환사채(CB 2회차) 발행(2025-08, 전환가 4,906원, 0% 이자, 305.7만주 신주잠재)</strong> 자금 유입. 이로 인해 부채총계가 +131억(120→251억) 점프, 부채비율 75%→151%로 급등. 단, 신규 CB 자금이 현금(34억)·유동자산(226억)으로 보유되어 <strong>단기 유동성 위기는 아님</strong>(유동비율 434%). 유형자산 +25억은 Capex 28억(2025년 R&amp;D 장비/마스크 투자) 반영. 영업CF는 2025년 -51억으로 적자 누적 → 외부조달 의존 구조 지속.</p>
+<h3>핵심 재무비율</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROE</td>
+<td style="text-align: right;">-33.1%</td>
+<td style="text-align: right;">-40.2%</td>
+<td style="text-align: right;">-39.3%</td>
+</tr>
+<tr>
+<td>부채비율</td>
+<td style="text-align: right;">166.7%</td>
+<td style="text-align: right;">74.5%</td>
+<td style="text-align: right;">150.8%</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td style="text-align: right;">24.1%</td>
+<td style="text-align: right;">-34.6%</td>
+<td style="text-align: right;">-1.8%</td>
+</tr>
+<tr>
+<td>유동비율</td>
+<td style="text-align: right;">283.5%</td>
+<td style="text-align: right;">363.3%</td>
+<td style="text-align: right;">434.2%</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td style="text-align: right;">n/a</td>
+<td style="text-align: right;">-55억</td>
+<td style="text-align: right;">-79억</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">0%</td>
+</tr>
+<tr>
+<td>Cash Runway</td>
+<td style="text-align: right;">0.4Q</td>
+<td style="text-align: right;">3.7Q</td>
+<td style="text-align: right;">2.1Q (CB 자금 유입 후 ~6Q+)</td>
+</tr>
+</tbody>
+</table>
+<p>※ FCF = CFO - Capex. Cash Runway는 분기 영업적자 대비 현금잔액.</p>
+<h3>실적 해석</h3>
+<p><strong>핵심 포인트</strong>:<br />
+1. <strong>연속 적자 4년차</strong> — IPO 이후(2023.3 코스닥 상장) 2022년 흑전 한 해를 제외하고 영업적자 지속. 매출이 100억 미만 구간에서는 R&amp;D 고정비를 못 덮는 구조.<br />
+2. <strong>2025 Q2 흑자전환은 BEP 단서</strong> — 분기 매출 42억 도달 시 영업이익 +3억. 즉 <strong>연환산 ~170억 매출 도달 시 BEP 가능</strong>(매출총이익률 65% × 170억 = 110억 GP, 판관비 ~110억 추정 균형).<br />
+3. <strong>NRE→양산 Transition</strong> — 2024년 빅테크 NRE 26.9억 종료 → 2025년 양산 매출(Panel/SoC) 21.6억 증가로 부분 보충. 다음 단계는 양산 추가 확대.<br />
+4. <strong>CB 150억 자금 + 기말현금 34억</strong> → 향후 <strong>18~24개월 운영자금</strong> 충분 확보. 다만 2026.8.26부터 전환 시 <strong>10.07% 희석</strong>(305.7만주) 리스크.</p>
+<hr />
+<h2>4. 성장 동력 분석</h2>
+<p><strong>동력 1: AI 스마트안경 폭발성장 + LCoS 양강 포지션 ⭐⭐⭐ (◉)</strong></p>
+<p><strong>Meta가 SPIE Photonics West 2026에서 발표한 "100/4/100 캠페인"</strong>(100M 디스플레이 × $100 = $10B+ 시장)이 AR 디스플레이 시장의 골든서클 진입을 공식화. <strong>2030년 AR 글라스 출하 1억대(ABI/IDC/Omdia/Citigroup 컨센서스)</strong>. 핵심 부품인 LCoS 패널은 <strong>Raontech + Omnivision(中) 둘 뿐</strong>이며, 미·일·대만 우방 빅테크는 비중국 라인업으로 라온텍을 선호. 실제 ① <strong>Vuzix Ultralite Pro CES 2025 채택</strong>, ② <strong>Meta Ray-Ban Display 2025-09 출시</strong> (LCoS 광엔진 0.7cc, 600x600 FoV20), ③ <strong>Qualcomm Snapdragon AR1/AR2 레퍼런스 플랫폼 내장</strong>, ④ <strong>AR Alliance(Meta·Google·Qualcomm 주도) 합류</strong> 4종 모두 확보. IR자료에 따르면 <strong>2026 상반기 Project A 공시 완료, Project B 계약 완료, Project C·D·E·F 계약 협의 중</strong>. 캐파는 2026년 30k/월 → 2027년 1M/월 → 2030년 10M/월(연 1억개)로 33배 확장 계획.</p>
+<p><strong>동력 2: 메타 Ray-Ban Display 채택 → AR 글래스 BoM 표준화 ⭐⭐⭐ (◎)</strong></p>
+<p>Meta Ray-Ban Display(2025-09 출시, $399~499)는 풀컬러 정보+사진/영상 표시가 가능한 <strong>첫 메인스트림 AR 안경</strong>으로 LCoS 채택. APL(Average Pixel Lit) 100% 풀화면 컬러 표현은 <strong>microLED(APL 5~10%, 발열 한계)로는 수년 내 불가능</strong>하며, X-cube 3패널 RGB 결합 방식의 microLED 광엔진은 0.4cc + α(실효 2.3cc) 부피로 LCoS 0.5cc 광엔진 대비 4~5배 큼. <strong>"AR=AI Glass"</strong> 등식 확립 시 라온텍 LCoS는 향후 5~7년간 표준 부품화 가능성. Meta는 <strong>수요 폭증 → 생산 제한</strong> 상황 명시.</p>
+<p><strong>동력 3: 자동차 AR-HUD 4K2K SLM 백플레인 ⭐⭐ (◎)</strong></p>
+<p>차세대 자율주행 차량용 AR-HUD는 <strong>홀로그래피 기반 다초점 입체 정보 표시</strong>로 진화 중이며, 라온텍은 <strong>세계 최고 홀로그래피 기술 보유 고객사(추정 Envisics 등)와 장기 전략적 협력</strong>. <strong>4K2K 해상도 SLM 백플레인 개발 완료, 고객사 HUD 모듈 개발중</strong>. 2030년 자동차 HUD 시장 73억달러(2025년 42억달러)로 연평균 11.7% 성장 전망. 단, 자동차 사이클 특성상 SOP까지 24~36개월 lead time → 매출 기여는 <strong>2027년 이후</strong> 본격화.</p>
+<p><strong>동력 4: 광통신 WSS용 LCoS 백플레인 (AI 데이터센터 수혜) ⭐⭐ (◎)</strong></p>
+<p>광위상변조 LCoS는 <strong>광통신 WSS(Wavelength Selective Switch)</strong>의 핵심 부품. 라온텍은 <strong>Lumentum/Coherent급 글로벌 WSS 제조사에 LCoS 실리콘 백플레인 웨이퍼 양산 공급</strong>. AI 데이터센터 광스위치 수요 폭증으로 WSS 시장 빠른 성장. AR 만큼은 아니나 <strong>현금 캐시카우 가능성 + AI 테마 관련성</strong> 보유.</p>
+<p><strong>동력 5: 모바일 TV(DAB) RFIC + SoC 안정 매출 ⭐ (○)</strong></p>
+<p>유럽 차량용 DAB 라디오 시장 중심 10년 이상 반복매출. 2025년 17.9억(YoY -8.7%), 비중 20.4%. 성장성은 낮으나 <strong>장기 안정 캐시카우</strong> 역할.</p>
+<hr />
+<h2>5. 리스크 분석</h2>
+<h3>DART 체크리스트</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>항목</th>
+<th>상태</th>
+<th>소스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>감사의견</td>
+<td>✅ 적정 (삼화회계법인, 2025)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CB/BW 발행</td>
+<td>⚠️ <strong>2회차 CB 150억(2025-08)</strong> 발행, 전환가 4,906원, 305.7만주(10.07% 희석)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>3</td>
+<td>유상증자</td>
+<td>✅ 없음 (IPO 후 추가 유증 이력 없음)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>4</td>
+<td>최대주주 지분</td>
+<td>⚠️ 김보은 20.10% (특관 합계 31.78% — 중간 수준)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>5</td>
+<td>자기주식</td>
+<td>ℹ️ 76,629주 (0.25%) — 주가 방어 여력 제한적</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>6</td>
+<td>부채비율</td>
+<td>⚠️ 150.8% (CB 부채인식 영향, 2024년 74.5% 대비 급등)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>7</td>
+<td>유동비율</td>
+<td>✅ 434.2% (단기 유동성 양호, CB 현금 보유)</td>
+<td>DART</td>
+</tr>
+<tr>
+<td>8</td>
+<td>영업CF</td>
+<td>⚠️ -51억 (4년 연속 마이너스)</td>
+<td>DART</td>
+</tr>
+</tbody>
+</table>
+<h3>Ownership &amp; 오버행</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th style="text-align: right;">지분율(%)</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>최대주주 및 특수관계인</td>
+<td style="text-align: right;">31.78</td>
+<td>김보은 대표 20.10%, 고성은 4.01%, 정민수 3.66%, 기타 임원</td>
+</tr>
+<tr>
+<td>자사주</td>
+<td style="text-align: right;">0.25</td>
+<td>76,629주</td>
+</tr>
+<tr>
+<td>기타 유통주식</td>
+<td style="text-align: right;">67.97</td>
+<td>소액주주 + 기관 + 외국인</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>잔액/수량</th>
+<th>행사가</th>
+<th>희석비율</th>
+<th>해제 시점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2회차 CB</td>
+<td>150억원(305.7만주)</td>
+<td>4,906원</td>
+<td>10.07%</td>
+<td><strong>2026-08-26 ~ 2030-07-26</strong></td>
+</tr>
+<tr>
+<td>스톡옵션</td>
+<td>데이터 부재</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>오버행 분석</strong>: <br />
+- 현재가 6,650원 vs CB 전환가 4,906원 → <strong>+35.5% In-the-Money</strong>. 2026-08-26 첫 전환청구 가능일 도래 시 <strong>즉시 전환 인센티브</strong> 매우 강함. 7월말까지 주가가 강세 유지하면 8~9월 전환 + 매도 물량 출회 가능성.<br />
+- CB 인수자: 대신-뉴젠-엠포드 신기술투자조합 외 20곳, 16곳이 <strong>타이거자산운용 펀드</strong> → 펀드 메커니즘상 <strong>단기 매도 압력 가능성 높음</strong>.<br />
+- 최대주주 지분 31.78%는 적대적 M&amp;A 방어선(33%)에 미달. 다만 라온텍은 IT협의회 "기술성장기업" 코스닥 상장 종목으로 보호예수 이슈는 이미 대부분 해제(2023-03 상장 + 2년 경과).</p>
+<h3>기타 리스크</h3>
+<ul>
+<li><strong>NRE 매출 변동성</strong>: 빅테크 backplane 공동개발 계약 매출은 분기별로 ±70% 출렁. 2025 Q1 매출 7.4억(YoY -73%)이 대표 사례. 분기 실적 단위로 보면 매번 어닝쇼크/서프라이즈 가능성.</li>
+<li><strong>양산 매출 BEP 미달성</strong>: 2025년 매출 87억은 BEP(추정 ~170억)의 절반 수준. <strong>2026년 2배 매출 점프(170억+)</strong> 없으면 또 한 해 적자.</li>
+<li><strong>microLED 기술전환 시나리오</strong>: Meta Senior Director "LCoS could improve with better modulators..." 발언이 시사하듯, 2030년대 중반에 microLED/Laser가 우월해지는 시나리오 시 LCoS는 점진적 대체 위험. 단 라온텍은 LEDoS 720x720 4.5um RGB 모놀리식(세계 최소) 자체 개발 완료 + Laser+LCoS 차세대 사업 진행으로 기술 헤지.</li>
+<li><strong>고객 집중도 + NDA</strong>: 빅테크 1~2개사 의존도가 매우 높을 가능성(NDA로 비공시). 특정 프로젝트 캔슬 시 매출 절벽 위험.</li>
+<li><strong>CB 전환 + 추가 자금조달 가능성</strong>: 2025년 CB 150억으로 18~24개월 자금 확보했으나, 캐파 30k→1M/월 확장에는 추가 시설투자 필요 → <strong>2027년 이전 추가 자금조달(증자 또는 CB) 가능성</strong> 잔존.</li>
+</ul>
+<hr />
+<h2>6. 경쟁 구도</h2>
+<h3>국내 Peer</h3>
+<table>
+<thead>
+<tr>
+<th>기업</th>
+<th style="text-align: right;">시총(억원)</th>
+<th>PER</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>라온텍</strong></td>
+<td style="text-align: right;">~2,042</td>
+<td>N/A(적자)</td>
+<td>LCoS 마이크로디스플레이 + SoC 팹리스, AR/HUD/광통신 3축</td>
+</tr>
+<tr>
+<td>사피엔반도체(452430)</td>
+<td style="text-align: right;">2,000~3,000 (FnGuide 추정)</td>
+<td>N/A(적자)</td>
+<td>LEDoS 마이크로 디스플레이 백플레인 (LEDoS 전문)</td>
+</tr>
+<tr>
+<td>루멘스(038060)</td>
+<td style="text-align: right;">~1,500 (FnGuide 추정)</td>
+<td>N/A(적자)</td>
+<td>microLED 스마트안경 모듈, 매출 1,755억(2025) 중대형</td>
+</tr>
+</tbody>
+</table>
+<p>※ 진정한 1:1 경쟁사는 없음. 사피엔반도체는 LEDoS 백플레인 전문(라온텍 LEDoS 사업과 겹침)이고 루멘스는 microLED 모듈 완제품. <strong>LCoS 영역에서는 국내 단독.</strong></p>
+<h3>글로벌 Peer</h3>
+<ul>
+<li><strong>Omnivision Technologies(미국, 중국 자본)</strong>: LCoS 마이크로디스플레이 또 다른 양강. 0.39" 4.5um 1920x1080, 0.13" 3.8um 600x600 라인업. 라온텍은 <strong>3um pixel + 더 작은 광엔진(0.5cc vs 1cc)</strong>으로 차별화.</li>
+<li><strong>Sony Semiconductor Solutions / Kopin / eMagin / Jade Bird Display / BOE</strong>: OLED-on-Silicon(OLEDoS) 또는 microLED 진영. 5사 합계 microdisplay 시장의 ~55% 점유. <strong>단 풀컬러 풀화면(APL 100%) AI 글라스용 LCoS 영역에서는 직접 경쟁자 아님</strong>.</li>
+<li><strong>Avegant(미국)</strong>: LCoS 광엔진(라온텍 LCoS 패널 채택). 라온텍의 1차 고객사이자 광학 파트너.</li>
+</ul>
+<p><strong>포지셔닝</strong>: AI 스마트안경용 풀컬러 LCoS 패널 + SoC 동시 제공할 수 있는 곳은 사실상 <strong>라온텍 + Omnivision 2개사</strong>. 미·일·대만·한국 빅테크 입장에서 <strong>Omnivision은 중국자본 리스크</strong>가 있어 라온텍이 "비중국 1순위 옵션"이라는 지정학적 프리미엄을 누리는 구조.</p>
+<hr />
+<h2>7. 밸류에이션</h2>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>현재</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PER (TTM)</td>
+<td>N/A</td>
+<td>EPS -216원 (적자)</td>
+</tr>
+<tr>
+<td>PER (Fwd)</td>
+<td>N/A</td>
+<td>컨센서스 부재</td>
+</tr>
+<tr>
+<td>PBR</td>
+<td>12.14x</td>
+<td>BPS 548원 기준</td>
+</tr>
+<tr>
+<td>EV/EBITDA</td>
+<td>-30.4x (FnGuide)</td>
+<td>EBITDA 손실</td>
+</tr>
+<tr>
+<td>ROE</td>
+<td>-39.3%</td>
+<td>4년 연속 마이너스</td>
+</tr>
+<tr>
+<td>FCF</td>
+<td>-79억</td>
+<td>4년 연속 마이너스</td>
+</tr>
+<tr>
+<td>순차입금비율</td>
+<td>-1.8%</td>
+<td>현금 &gt; 차입금(CB 부채 제외 시)</td>
+</tr>
+<tr>
+<td>배당수익률</td>
+<td>0%</td>
+<td>무배당 (성장기업)</td>
+</tr>
+</tbody>
+</table>
+<h3>증권사 목표주가</h3>
+<table>
+<thead>
+<tr>
+<th>증권사</th>
+<th style="text-align: right;">목표가</th>
+<th>투자의견</th>
+<th>날짜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(커버리지 부재)</td>
+<td style="text-align: right;">—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>※ 라온텍은 코스닥 중소형주로 <strong>공식 증권사 커버리지 없음</strong>. 주가 방향은 IR 모멘텀(공급계약 공시) + 테마(AI 글라스/Meta Ray-Ban Display) 흐름에 강하게 좌우.</p>
+<p><strong>밸류에이션 판단</strong>: <br />
+- <strong>PBR 12.14x</strong>: 기술성장기업 IPO 종목치고는 매우 높음. 코스닥 IT 평균 PBR 2~3x 대비 4배. <strong>시장은 매출 87억 기업이 아닌 "2030년 1억대 AR 글라스 시장의 LCoS 양강"이라는 옵션 가치</strong>를 가격에 반영중.<br />
+- <strong>시총 2,042억 / 매출 87억 = PSR 23.4x</strong>: SaaS급 멀티플. AI 테마 한국 팹리스 기준으로도 매우 비쌈. 단, 매출이 2027년 500억(2026년 200억 → 2027년 500억 가정), 2030년 2,000억까지 성장 시 <strong>현재 시총은 정당화 가능</strong>.<br />
+- <strong>밸류에이션은 "Project C·D·E·F 계약 체결 + 양산 매출 2배 확대"가 전제된 가격</strong>. 2026년 상반기 신규 공급계약 공시 부재 또는 매출 fail 시 -30~50% 조정 위험.</p>
+<hr />
+<h2>8. Bull vs Bear</h2>
+<h3>🐂 Bull Case — "AI 글라스 골든서클 진입, LCoS 양강의 복리 성장"</h3>
+<p>◉ <strong>Meta Ray-Ban Display 시즌 2(2026E) + Apple/Samsung AI 안경(2026~2027E) 연쇄 채택</strong> — Meta 자체 발표 "100M 디스플레이 × $100 = $10B+ 시장" 시나리오 현실화. 라온텍이 비중국 1순위로 표준 부품화.</p>
+<p>◉ <strong>2026 상반기 Project C·D·E·F 계약 공시 → 매출 2~3배 점프</strong> — 단일 신규 공급계약 1건당 50~150억 추정 매출. 2026년 매출 200억대 진입 시 BEP 또는 흑전 가능. 일회성 NRE 아닌 <strong>다년 양산 계약</strong>이 핵심.</p>
+<p>◎ <strong>Qualcomm Snapdragon AR2 레퍼런스 락인 + AR Alliance 멤버십</strong> — 후속 OEM/ODM 200+개 잠재고객이 라온텍 부품 자동 채택. 영업비 없는 풀(pull) 매출 모델 형성.</p>
+<p>◎ <strong>광통신 WSS 매출 (AI 데이터센터 테마)</strong> — Lumentum/Coherent향 LCoS 백플레인 웨이퍼 매출이 AI 인프라 capex 사이클 수혜. AR 매출과 별도의 캐시카우 라인.</p>
+<p>○ <strong>2027~2028 자동차 AR-HUD SOP</strong> — 4K2K SLM 백플레인 양산 진입 시 자동차 부품 BoM 단가($200+/세트) 매출 누적. 카탈리스트는 2027 하반기 고객사 신차 발표.</p>
+<h3>🐻 Bear Case — "PBR 12배 받을 매출 fail, CB 전환 오버행"</h3>
+<p>◉ <strong>2026 양산 매출 점프 fail</strong> — Project A/B 외 C·D·E·F가 단순 NRE 또는 소량 PoC로 끝나면 2026년 매출 100~120억 박스권 + 영업적자 -50억 지속. PBR 12.14x 정당화 불가 → 주가 -40~50% 조정.</p>
+<p>◉ <strong>CB 305.7만주 전환 오버행 (2026-08-26~)</strong> — 현재가 6,650원 vs 전환가 4,906원에서 +35% ITM. 타이거자산운용 16개 펀드는 단기 차익실현 가능성 높음. 일평균 거래량 ~34만주 대비 305.7만주는 <strong>9거래일치 물량</strong> → 분할 출회 시 -10~15% 압박.</p>
+<p>◎ <strong>microLED 기술전환 가속</strong> — 2027~2028년 JBD/Raysolve의 풀컬러 microLED 4um 양산 도달 + APL 한계 극복 시 LCoS 입지 위협. 라온텍 LEDoS 720x720은 양산성 미검증.</p>
+<p>◎ <strong>빅테크 고객 단일 프로젝트 캔슬</strong> — NDA로 고객 1~2개사 집중도 높을 가능성. Meta Ray-Ban 시즌 2가 microLED로 전환되거나 Vuzix 양산이 부진하면 매출 절벽.</p>
+<p>○ <strong>연속 4년 영업적자 + R&amp;D 부담 확대</strong> — 차세대 LEDoS/AR-HUD 4K2K/Laser+LCoS 동시 R&amp;D 진행 → 판관비 추가 확대 가능. 2027년 추가 자금조달(증자/CB) 시 추가 희석.</p>
+<hr />
+<h2>9. 종합 판단</h2>
+<p><strong>기업의 체질</strong>: 라온텍은 <strong>"AI 글라스 시대의 LCoS 양강 중 비중국 1순위"</strong>라는 강력한 지정학적·기술적 해자를 갖춘 팹리스다. Meta Ray-Ban Display, Vuzix Ultralite Pro, Qualcomm AR 레퍼런스 채택 트리플 크라운으로 <strong>공급망 표준화 단계</strong>에 진입했다. 다만 매출 87억 / 영업적자 -58억 / PBR 12.14x라는 현재 재무·밸류는 "<strong>실적이 아니라 옵션 가치</strong>"에 100% 의존하는 구조이며, 향후 18~24개월 내 양산 매출이 2~3배 점프하지 못하면 멀티플 압축 위험이 매우 크다.</p>
+<p><strong>투자 가치가 있는 조건</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>조건</th>
+<th>시점</th>
+<th>확인 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026 상반기 신규 공급계약 공시 (Project C·D·E·F 중 1건+)</td>
+<td>2026년 5~7월</td>
+<td>DART 공급계약체결 공시</td>
+</tr>
+<tr>
+<td>2026년 분기 매출 50억+ 달성 (2025 Q2의 42억 돌파)</td>
+<td>분기별</td>
+<td>DART 분기보고서</td>
+</tr>
+<tr>
+<td>2026년 연간 매출 200억+ (BEP 근접)</td>
+<td>2027 Q1 사업보고서</td>
+<td>DART CFS</td>
+</tr>
+<tr>
+<td>Meta Ray-Ban Display 시즌 2 출시 + LCoS 채택 유지</td>
+<td>2026 하반기</td>
+<td>외신/IR Q&amp;A</td>
+</tr>
+<tr>
+<td>CB 전환 출회 흡수 (8~9월 일평균 거래량 50만주+ 유지)</td>
+<td>2026 Q3</td>
+<td>거래소 데이터</td>
+</tr>
+</tbody>
+</table>
+<p><strong>핵심 모니터링</strong>:<br />
+- ✅ <strong>DART 공급계약체결 공시</strong> — Project C·D·E·F 진행 상황. 단일 계약 50억+ 규모면 매수 시그널.<br />
+- ✅ <strong>분기 매출 트렌드</strong> — 2026 Q1 vs 2025 Q1(7.4억) YoY +200% 달성 여부. NRE → 양산 전환 검증.<br />
+- ✅ <strong>Meta/Apple/Samsung AI 글라스 외신 BoM 분석</strong> — LCoS 부품 채택사 명시 여부 (Omnivision vs Raontech).<br />
+- ✅ <strong>CB 전환 청구 추이</strong> — 2026-08-26 이후 일별 전환청구 공시 + 거래량/주가 반응. 305.7만주 흡수 가능 시 매수 가산점.<br />
+- ✅ <strong>Project A/B 매출화 시점</strong> — 2026년 어느 분기에 양산 매출로 인식되는지 IR 가이던스 추적.</p>
+</body>
+</html>
