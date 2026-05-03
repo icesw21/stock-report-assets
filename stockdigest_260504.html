@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Digest — 2026-05-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #131722;
+  --card-bg: #1e222d;
+  --card-border: #2a2e39;
+  --text: #d1d4dc;
+  --text-sub: #787b86;
+  --up: #EF5350;
+  --down: #26A69A;
+  --structural: #2962FF;
+  --temporary: #FF6D00;
+  --complex: #7B61FF;
+  --font-main: 'Noto Sans KR', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+html { font-size: 16px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.site-header {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--card-border);
+  padding: 20px 24px;
+}
+.header-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.header-left h1 { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.3px; }
+.header-left .date-badge {
+  font-family: var(--font-mono); font-size: 1.15rem;
+  color: var(--text-sub); margin-top: 2px;
+}
+.header-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+.stat-pill {
+  background: var(--bg); border: 1px solid var(--card-border);
+  border-radius: 20px; padding: 4px 14px;
+  font-size: 1rem; font-family: var(--font-mono); white-space: nowrap;
+}
+.stat-pill span { color: var(--up); font-weight: 600; }
+
+main { max-width: 1200px; margin: 0 auto; padding: 24px 16px 48px; }
+
+.section-title {
+  font-size: 1.15rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.8px; color: var(--text-sub);
+  margin-bottom: 16px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 16px; margin-bottom: 32px;
+}
+
+.card {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: 10px; overflow: hidden; transition: border-color 0.15s;
+}
+.card:hover { border-color: #3d4157; }
+
+.card-header {
+  padding: 14px 16px 10px;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 8px;
+}
+.card-title-group { flex: 1; min-width: 0; }
+.card-name {
+  font-size: 1.15rem; font-weight: 700;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.card-code { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-sub); margin-top: 1px; }
+
+.rate-badge {
+  font-family: var(--font-mono); font-size: 1rem; font-weight: 700;
+  padding: 4px 10px; border-radius: 6px; white-space: nowrap; flex-shrink: 0;
+}
+.rate-badge.up   { background: rgba(239,83,80,0.15); color: var(--up); }
+.rate-badge.down { background: rgba(38,166,154,0.15); color: var(--down); }
+
+.lw-chart {
+  height: 200px; background: var(--bg);
+  border-top: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.metrics-wrap { padding: 10px 16px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.metrics-table { width: 100%; border-collapse: collapse; font-size: 1rem; font-family: var(--font-mono); }
+.metrics-table th { text-align: left; color: var(--text-sub); font-weight: 400; padding: 4px 0; white-space: nowrap; width: 120px; }
+.metrics-table td { text-align: right; padding: 4px 0; white-space: nowrap; }
+.metrics-table td.up { color: var(--up); }
+.metrics-table td.down { color: var(--down); }
+.metrics-table td.neutral { color: var(--text); }
+.metrics-table tr + tr th, .metrics-table tr + tr td { border-top: 1px solid rgba(255,255,255,0.04); }
+
+.theme-section { padding: 12px 16px; border-top: 1px solid var(--card-border); margin-top: 10px; }
+.theme-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.type-badge { font-size: 0.82rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; }
+.type-badge.structural { background: rgba(41,98,255,0.2); color: #7b9fff; border: 1px solid rgba(41,98,255,0.4); }
+.type-badge.temporary  { background: rgba(255,109,0,0.2);  color: #ffaa66; border: 1px solid rgba(255,109,0,0.4); }
+.type-badge.complex    { background: rgba(123,97,255,0.2); color: #b3a0ff; border: 1px solid rgba(123,97,255,0.4); }
+
+.theme-label { font-size: 0.85rem; color: var(--text-sub); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.5px; }
+.theme-summary { font-size: 0.92rem; line-height: 1.55; color: var(--text); margin-bottom: 6px; }
+.theme-detail { font-size: 0.92rem; line-height: 1.55; color: var(--text-sub); }
+
+.sources-section { padding: 8px 16px 14px; border-top: 1px solid rgba(255,255,255,0.05); }
+.sources-label { font-size: 0.8rem; color: var(--text-sub); font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px; }
+.sources-list { display: flex; flex-wrap: wrap; gap: 4px; }
+.source-link {
+  font-size: 0.85rem; font-family: var(--font-mono); color: #5b9bd5; text-decoration: none;
+  background: rgba(91,155,213,0.08); border: 1px solid rgba(91,155,213,0.2);
+  border-radius: 4px; padding: 2px 6px; transition: background 0.12s; white-space: nowrap;
+}
+.source-link:hover { background: rgba(91,155,213,0.18); }
+
+.disclaimer {
+  max-width: 1200px; margin: 0 auto; padding: 20px 16px;
+  border-top: 1px solid var(--card-border);
+  font-size: 0.85rem; color: var(--text-sub); line-height: 1.6; text-align: center;
+}
+
+@media (max-width: 430px) {
+  html { font-size: 15px; }
+  .site-header { padding: 14px 12px; }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .header-stats { gap: 6px; }
+  .stat-pill { font-size: 0.85rem; padding: 3px 10px; }
+  main { padding: 14px 10px 40px; }
+  .cards-grid { grid-template-columns: 1fr; gap: 12px; }
+  .card-header { padding: 12px 12px 8px; }
+  .card-name { font-size: 1.1rem; }
+  .rate-badge { font-size: 0.92rem; padding: 4px 10px; }
+  .metrics-wrap { padding: 8px 12px 0; }
+  .metrics-table th { width: 90px; font-size: 0.85rem; }
+  .metrics-table td { font-size: 0.85rem; }
+  .theme-section { padding: 10px 12px; }
+  .theme-summary { font-size: 0.88rem; }
+  .theme-detail { font-size: 0.88rem; }
+  .sources-section { padding: 6px 12px 12px; }
+  .source-link { font-size: 0.8rem; }
+  .lw-chart { height: 160px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <h1>📈 Stock Digest</h1>
+      <div class="date-badge">2026-05-04 · KRX</div>
+    </div>
+    <div class="header-stats">
+      <div class="stat-pill">총 <span>94</span>종목</div>
+      <div class="stat-pill">주요(+10%) <span>0</span>종목</div>
+      <div class="stat-pill">관심(10회↑) <span>94</span>종목</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <p class="section-title">언급 종목 0개</p>
+  <div class="cards-grid">
+    
+  </div>
+</main>
+
+<footer class="disclaimer">
+  ⚠️ 본 자료는 정보 제공 목적으로만 작성되었으며, 투자 권유 또는 매매 추천이 아닙니다.
+  투자에 대한 최종 결정 및 그에 따른 손익은 투자자 본인이 부담하며,
+  본 자료를 기반으로 한 투자 결과에 대해 어떠한 책임도 지지 않습니다.
+  과거 수익률이 미래 수익률을 보장하지 않습니다.
+</footer>
+
+
+<script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+<script>
+(function() {
+  var chartData = {};
+  document.querySelectorAll('.lw-chart').forEach(function(el) {
+    var ticker = el.id.replace('chart-', '');
+    var data = chartData[ticker];
+    if (!data || data.length === 0) return;
+    var chart = LightweightCharts.createChart(el, {
+      layout: { background: { type: 'solid', color: '#131722' }, textColor: '#787b86', fontSize: 10 },
+      grid: { vertLines: { color: 'rgba(255,255,255,0.04)' }, horzLines: { color: 'rgba(255,255,255,0.04)' } },
+      rightPriceScale: { borderColor: 'rgba(255,255,255,0.1)' },
+      timeScale: { borderColor: 'rgba(255,255,255,0.1)', timeVisible: false },
+      crosshair: { mode: LightweightCharts.CrosshairMode.Magnet },
+      handleScroll: false, handleScale: false,
+    });
+    var cs = chart.addCandlestickSeries({
+      upColor: '#26A69A', downColor: '#EF5350',
+      borderUpColor: '#26A69A', borderDownColor: '#EF5350',
+      wickUpColor: '#26A69A', wickDownColor: '#EF5350',
+    });
+    cs.setData(data.map(function(d) { return { time: d.time, open: d.open, high: d.high, low: d.low, close: d.close }; }));
+    var vs = chart.addHistogramSeries({ priceFormat: { type: 'volume' }, priceScaleId: 'vol' });
+    chart.priceScale('vol').applyOptions({ scaleMargins: { top: 0.85, bottom: 0 } });
+    vs.setData(data.map(function(d) {
+      var c = d.close >= d.open ? 'rgba(38,166,154,0.3)' : 'rgba(239,83,80,0.3)';
+      return { time: d.time, value: d.volume, color: c };
+    }));
+    chart.timeScale().fitContent();
+  });
+})();
+</script>
+</body>
+</html>
