@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [SUMITOMO ELECTRIC INDUSTRIES (5802)](5802_/README.md)
+  * [기초보고서](5802_/t1.md)
+  * [기술적분석](5802_/t2.md)
+  * [Valuation](5802_/t3.md)
+  * [Deep Dive](5802_/t4.md)
 * [FUJIKURA (5803)](5803_/README.md)
   * [기초보고서](5803_/t1.md)
   * [기술적분석](5803_/t2.md)
