@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [FURUKAWA ELECTRIC CO (5801)](5801_/README.md)
+  * [기초보고서](5801_/t1.md)
+  * [기술적분석](5801_/t2.md)
+  * [Valuation](5801_/t3.md)
+  * [Deep Dive](5801_/t4.md)
 * [MITSUBISHI ELECTRIC CORP (6503)](6503_/README.md)
   * [기초보고서](6503_/t1.md)
   * [기술적분석](6503_/t2.md)
