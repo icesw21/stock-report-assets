@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Wolfspeed, Inc. (WOLF)](WOLF_/README.md)
+  * [기초보고서](WOLF_/t1.md)
+  * [기술적분석](WOLF_/t2.md)
+  * [Valuation](WOLF_/t3.md)
+  * [Deep Dive](WOLF_/t4.md)
 * [빛과전자 (069540)](069540_/README.md)
   * [기초보고서](069540_/t1.md)
   * [기술적분석](069540_/t2.md)
