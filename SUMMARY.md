@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Navitas Semiconductor Corporati (NVTS)](NVTS_/README.md)
+  * [기초보고서](NVTS_/t1.md)
+  * [기술적분석](NVTS_/t2.md)
+  * [Valuation](NVTS_/t3.md)
+  * [Deep Dive](NVTS_/t4.md)
 * [아비코전자 (036010)](036010_/README.md)
   * [기초보고서](036010_/t1.md)
   * [기술적분석](036010_/t2.md)

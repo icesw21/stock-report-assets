@@ -1,0 +1,1 @@
+# Navitas Semiconductor Corporati (NVTS)
