@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [두산에너빌리티 (034020)](034020_/README.md)
+  * [기초보고서](034020_/t1.md)
+  * [기술적분석](034020_/t2.md)
+  * [Valuation](034020_/t3.md)
+  * [Deep Dive](034020_/t4.md)
 * [Navitas Semiconductor Corporati (NVTS)](NVTS_/README.md)
   * [기초보고서](NVTS_/t1.md)
   * [기술적분석](NVTS_/t2.md)
