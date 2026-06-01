@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Frequency Electronics, Inc. (FEIM)](FEIM_/README.md)
+  * [기초보고서](FEIM_/t1.md)
+  * [기술적분석](FEIM_/t2.md)
+  * [Valuation](FEIM_/t3.md)
+  * [Deep Dive](FEIM_/t4.md)
 * [Equillium, Inc. (EQ)](EQ_/README.md)
   * [기초보고서](EQ_/t1.md)
   * [기술적분석](EQ_/t2.md)
