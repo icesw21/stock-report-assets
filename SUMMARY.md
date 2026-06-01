@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Allient Inc. (ALNT)](ALNT_/README.md)
+  * [기초보고서](ALNT_/t1.md)
+  * [기술적분석](ALNT_/t2.md)
+  * [Valuation](ALNT_/t3.md)
+  * [Deep Dive](ALNT_/t4.md)
 * [10x Genomics, Inc. (TXG)](TXG_/README.md)
   * [기초보고서](TXG_/t1.md)
   * [기술적분석](TXG_/t2.md)
