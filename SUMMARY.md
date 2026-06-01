@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [10x Genomics, Inc. (TXG)](TXG_/README.md)
+  * [기초보고서](TXG_/t1.md)
+  * [기술적분석](TXG_/t2.md)
+  * [Valuation](TXG_/t3.md)
+  * [Deep Dive](TXG_/t4.md)
 * [SkyWater Technology, Inc. (SKYT)](SKYT_/README.md)
   * [기초보고서](SKYT_/t1.md)
   * [기술적분석](SKYT_/t2.md)
