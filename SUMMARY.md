@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Ballard Power Systems, Inc. (BLDP)](BLDP_/README.md)
+  * [기초보고서](BLDP_/t1.md)
+  * [기술적분석](BLDP_/t2.md)
+  * [Valuation](BLDP_/t3.md)
+  * [Deep Dive](BLDP_/t4.md)
 * [ChipMOS TECHNOLOGIES INC. (IMOS)](IMOS_/README.md)
   * [기초보고서](IMOS_/t1.md)
   * [기술적분석](IMOS_/t2.md)
@@ -30,11 +35,6 @@
   * [기술적분석](UMAC_/t2.md)
   * [Valuation](UMAC_/t3.md)
   * [Deep Dive](UMAC_/t4.md)
-* [Ballard Power Systems, Inc. (BLDP)](BLDP_/README.md)
-  * [기초보고서](BLDP_/t1.md)
-  * [기술적분석](BLDP_/t2.md)
-  * [Valuation](BLDP_/t3.md)
-  * [Deep Dive](BLDP_/t4.md)
 * [아바텍 (149950)](149950_/README.md)
   * [기초보고서](149950_/t1.md)
   * [기술적분석](149950_/t2.md)
