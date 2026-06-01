@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Bandwidth Inc. (BAND)](BAND_/README.md)
+  * [기초보고서](BAND_/t1.md)
+  * [기술적분석](BAND_/t2.md)
+  * [Valuation](BAND_/t3.md)
+  * [Deep Dive](BAND_/t4.md)
 * [Iridium Communications Inc (IRDM)](IRDM_/README.md)
   * [기초보고서](IRDM_/t1.md)
   * [기술적분석](IRDM_/t2.md)
@@ -10,11 +15,6 @@
   * [기술적분석](IMOS_/t2.md)
   * [Valuation](IMOS_/t3.md)
   * [Deep Dive](IMOS_/t4.md)
-* [Bandwidth Inc. (BAND)](BAND_/README.md)
-  * [기초보고서](BAND_/t1.md)
-  * [기술적분석](BAND_/t2.md)
-  * [Valuation](BAND_/t3.md)
-  * [Deep Dive](BAND_/t4.md)
 * [BlackBerry Limited (BB)](BB_/README.md)
   * [기초보고서](BB_/t1.md)
   * [기술적분석](BB_/t2.md)
