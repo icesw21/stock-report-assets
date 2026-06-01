@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Equillium, Inc. (EQ)](EQ_/README.md)
+  * [기초보고서](EQ_/t1.md)
+  * [기술적분석](EQ_/t2.md)
+  * [Valuation](EQ_/t3.md)
+  * [Deep Dive](EQ_/t4.md)
 * [Unusual Machines, Inc. (UMAC)](UMAC_/README.md)
   * [기초보고서](UMAC_/t1.md)
   * [기술적분석](UMAC_/t2.md)
