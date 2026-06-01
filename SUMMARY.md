@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [ChipMOS TECHNOLOGIES INC. (IMOS)](IMOS_/README.md)
+  * [기초보고서](IMOS_/t1.md)
+  * [기술적분석](IMOS_/t2.md)
+  * [Valuation](IMOS_/t3.md)
+  * [Deep Dive](IMOS_/t4.md)
 * [Bandwidth Inc. (BAND)](BAND_/README.md)
   * [기초보고서](BAND_/t1.md)
   * [기술적분석](BAND_/t2.md)
@@ -10,11 +15,6 @@
   * [기술적분석](IRDM_/t2.md)
   * [Valuation](IRDM_/t3.md)
   * [Deep Dive](IRDM_/t4.md)
-* [ChipMOS TECHNOLOGIES INC. (IMOS)](IMOS_/README.md)
-  * [기초보고서](IMOS_/t1.md)
-  * [기술적분석](IMOS_/t2.md)
-  * [Valuation](IMOS_/t3.md)
-  * [Deep Dive](IMOS_/t4.md)
 * [BlackBerry Limited (BB)](BB_/README.md)
   * [기초보고서](BB_/t1.md)
   * [기술적분석](BB_/t2.md)
