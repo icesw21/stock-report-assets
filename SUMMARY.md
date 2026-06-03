@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Marvell Technology, Inc. (MRVL)](MRVL_/README.md)
+  * [기초보고서](MRVL_/t1.md)
+  * [기술적분석](MRVL_/t2.md)
+  * [Valuation](MRVL_/t3.md)
+  * [Deep Dive](MRVL_/t4.md)
 * [엠케이전자 (033160)](033160_/README.md)
   * [기초보고서](033160_/t1.md)
   * [기술적분석](033160_/t2.md)
