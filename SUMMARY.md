@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Syntec Optics Holdings, Inc. (OPTX)](OPTX_/README.md)
+  * [기초보고서](OPTX_/t1.md)
+  * [기술적분석](OPTX_/t2.md)
+  * [Valuation](OPTX_/t3.md)
+  * [Deep Dive](OPTX_/t4.md)
 * [Marvell Technology, Inc. (MRVL)](MRVL_/README.md)
   * [기초보고서](MRVL_/t1.md)
   * [기술적분석](MRVL_/t2.md)
