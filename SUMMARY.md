@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Aehr Test Systems (AEHR)](AEHR_/README.md)
+  * [기초보고서](AEHR_/t1.md)
+  * [기술적분석](AEHR_/t2.md)
+  * [Valuation](AEHR_/t3.md)
+  * [Deep Dive](AEHR_/t4.md)
 * [Syntec Optics Holdings, Inc. (OPTX)](OPTX_/README.md)
   * [기초보고서](OPTX_/t1.md)
   * [기술적분석](OPTX_/t2.md)
