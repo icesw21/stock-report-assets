@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Himax Technologies, Inc. (HIMX)](HIMX_/README.md)
+  * [기초보고서](HIMX_/t1.md)
+  * [기술적분석](HIMX_/t2.md)
+  * [Valuation](HIMX_/t3.md)
+  * [Deep Dive](HIMX_/t4.md)
 * [Ciena Corporation (CIEN)](CIEN_/README.md)
   * [기초보고서](CIEN_/t1.md)
   * [기술적분석](CIEN_/t2.md)
