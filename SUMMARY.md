@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Silicon Motion Technology Corpo (SIMO)](SIMO_/README.md)
+  * [기초보고서](SIMO_/t1.md)
+  * [기술적분석](SIMO_/t2.md)
+  * [Valuation](SIMO_/t3.md)
+  * [Deep Dive](SIMO_/t4.md)
 * [STMicroelectronics N.V. (STM)](STM_/README.md)
   * [기초보고서](STM_/t1.md)
   * [기술적분석](STM_/t2.md)
