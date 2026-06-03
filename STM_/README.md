@@ -1,0 +1,1 @@
+# STMicroelectronics N.V. (STM)
