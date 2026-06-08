@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Optical Cable Corporation (OCC)](OCC_/README.md)
+  * [기초보고서](OCC_/t1.md)
+  * [기술적분석](OCC_/t2.md)
+  * [Valuation](OCC_/t3.md)
+  * [Deep Dive](OCC_/t4.md)
 * [테크윙 (089030)](089030_/README.md)
   * [기초보고서](089030_/t1.md)
   * [기술적분석](089030_/t2.md)
@@ -70,11 +75,6 @@
   * [기술적분석](OPTX_/t2.md)
   * [Valuation](OPTX_/t3.md)
   * [Deep Dive](OPTX_/t4.md)
-* [Optical Cable Corporation (OCC)](OCC_/README.md)
-  * [기초보고서](OCC_/t1.md)
-  * [기술적분석](OCC_/t2.md)
-  * [Valuation](OCC_/t3.md)
-  * [Deep Dive](OCC_/t4.md)
 * [Navitas Semiconductor Corporati (NVTS)](NVTS_/README.md)
   * [기초보고서](NVTS_/t1.md)
   * [기술적분석](NVTS_/t2.md)
