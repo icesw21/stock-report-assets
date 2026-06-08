@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [AstroNova, Inc. (ALOT)](ALOT_/README.md)
+  * [기초보고서](ALOT_/t1.md)
+  * [기술적분석](ALOT_/t2.md)
+  * [Valuation](ALOT_/t3.md)
+  * [Deep Dive](ALOT_/t4.md)
 * [Optical Cable Corporation (OCC)](OCC_/README.md)
   * [기초보고서](OCC_/t1.md)
   * [기술적분석](OCC_/t2.md)
