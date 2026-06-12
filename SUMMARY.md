@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [메카로 (241770)](241770_/README.md)
+  * [기초보고서](241770_/t1.md)
+  * [기술적분석](241770_/t2.md)
+  * [Valuation](241770_/t3.md)
+  * [Deep Dive](241770_/t4.md)
 * [Ciena Corporation (CIEN)](CIEN_/README.md)
   * [기초보고서](CIEN_/t1.md)
   * [기술적분석](CIEN_/t2.md)
