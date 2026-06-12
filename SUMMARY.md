@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Ciena Corporation (CIEN)](CIEN_/README.md)
+  * [기초보고서](CIEN_/t1.md)
+  * [기술적분석](CIEN_/t2.md)
+  * [Valuation](CIEN_/t3.md)
+  * [Deep Dive](CIEN_/t4.md)
 * [Coherent Corp. (COHR)](COHR_/README.md)
   * [기초보고서](COHR_/t1.md)
   * [기술적분석](COHR_/t2.md)
@@ -130,11 +135,6 @@
   * [기술적분석](EQ_/t2.md)
   * [Valuation](EQ_/t3.md)
   * [Deep Dive](EQ_/t4.md)
-* [Ciena Corporation (CIEN)](CIEN_/README.md)
-  * [기초보고서](CIEN_/t1.md)
-  * [기술적분석](CIEN_/t2.md)
-  * [Valuation](CIEN_/t3.md)
-  * [Deep Dive](CIEN_/t4.md)
 * [Ballard Power Systems, Inc. (BLDP)](BLDP_/README.md)
   * [기초보고서](BLDP_/t1.md)
   * [기술적분석](BLDP_/t2.md)
