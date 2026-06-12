@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Amphenol Corporation (APH)](APH_/README.md)
+  * [기초보고서](APH_/t1.md)
+  * [기술적분석](APH_/t2.md)
+  * [Valuation](APH_/t3.md)
+  * [Deep Dive](APH_/t4.md)
 * [Astera Labs, Inc. (ALAB)](ALAB_/README.md)
   * [기초보고서](ALAB_/t1.md)
   * [기술적분석](ALAB_/t2.md)
