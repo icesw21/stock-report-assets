@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Ichor Holdings (ICHR)](ICHR_/README.md)
+  * [기초보고서](ICHR_/t1.md)
+  * [기술적분석](ICHR_/t2.md)
+  * [Valuation](ICHR_/t3.md)
+  * [Deep Dive](ICHR_/t4.md)
 * [Amtech Systems, Inc. (ASYS)](ASYS_/README.md)
   * [기초보고서](ASYS_/t1.md)
   * [기술적분석](ASYS_/t2.md)
@@ -70,11 +75,6 @@
   * [기술적분석](UCTT_/t2.md)
   * [Valuation](UCTT_/t3.md)
   * [Deep Dive](UCTT_/t4.md)
-* [Ichor Holdings (ICHR)](ICHR_/README.md)
-  * [기초보고서](ICHR_/t1.md)
-  * [기술적분석](ICHR_/t2.md)
-  * [Valuation](ICHR_/t3.md)
-  * [Deep Dive](ICHR_/t4.md)
 * [메가터치 (446540)](446540_/README.md)
   * [기초보고서](446540_/t1.md)
   * [기술적분석](446540_/t2.md)
