@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Amkor Technology, Inc. (AMKR)](AMKR_/README.md)
+  * [기초보고서](AMKR_/t1.md)
+  * [기술적분석](AMKR_/t2.md)
+  * [Valuation](AMKR_/t3.md)
+  * [Deep Dive](AMKR_/t4.md)
 * [Ultra Clean Holdings, Inc. (UCTT)](UCTT_/README.md)
   * [기초보고서](UCTT_/t1.md)
   * [기술적분석](UCTT_/t2.md)
