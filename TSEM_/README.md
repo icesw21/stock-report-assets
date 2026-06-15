@@ -1,0 +1,1 @@
+# Tower Semiconductor Ltd. (TSEM)
