@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [네패스아크 (330860)](330860_/README.md)
+  * [기초보고서](330860_/t1.md)
+  * [기술적분석](330860_/t2.md)
+  * [Valuation](330860_/t3.md)
+  * [Deep Dive](330860_/t4.md)
 * [Tower Semiconductor Ltd. (TSEM)](TSEM_/README.md)
   * [기초보고서](TSEM_/t1.md)
   * [기술적분석](TSEM_/t2.md)
