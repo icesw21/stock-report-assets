@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [SolarEdge Technologies, Inc. (SEDG)](SEDG_/README.md)
+  * [기초보고서](SEDG_/t1.md)
+  * [기술적분석](SEDG_/t2.md)
+  * [Valuation](SEDG_/t3.md)
+  * [Deep Dive](SEDG_/t4.md)
 * [AstroNova, Inc. (ALOT)](ALOT_/README.md)
   * [기초보고서](ALOT_/t1.md)
   * [기술적분석](ALOT_/t2.md)
