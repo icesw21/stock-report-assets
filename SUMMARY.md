@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [ADTEC PLASMA TECHNOLOGY CO LTD (6668)](6668_/README.md)
+  * [기초보고서](6668_/t1.md)
+  * [기술적분석](6668_/t2.md)
+  * [Valuation](6668_/t3.md)
+  * [Deep Dive](6668_/t4.md)
 * [지슨 (446840)](446840_/README.md)
   * [기초보고서](446840_/t1.md)
   * [기술적분석](446840_/t2.md)
