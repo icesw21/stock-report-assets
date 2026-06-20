@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [DEXERIALS CORPORATION (4980)](4980_/README.md)
+  * [기초보고서](4980_/t1.md)
+  * [기술적분석](4980_/t2.md)
+  * [Valuation](4980_/t3.md)
+  * [Deep Dive](4980_/t4.md)
 * [KOKUSAI ELECTRIC CORPORATION (6525)](6525_/README.md)
   * [기초보고서](6525_/t1.md)
   * [기술적분석](6525_/t2.md)
