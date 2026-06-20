@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [SANNO CO LTD (3441)](3441_/README.md)
+  * [기초보고서](3441_/t1.md)
+  * [기술적분석](3441_/t2.md)
+  * [Valuation](3441_/t3.md)
+  * [Deep Dive](3441_/t4.md)
 * [ADTEC PLASMA TECHNOLOGY CO LTD (6668)](6668_/README.md)
   * [기초보고서](6668_/t1.md)
   * [기술적분석](6668_/t2.md)
