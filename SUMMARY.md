@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Silicon Motion Technology Corpo (SIMO)](SIMO_/README.md)
+  * [기초보고서](SIMO_/t1.md)
+  * [기술적분석](SIMO_/t2.md)
+  * [Valuation](SIMO_/t3.md)
+  * [Deep Dive](SIMO_/t4.md)
 * [Methode Electronics, Inc. (MEI)](MEI_/README.md)
   * [기초보고서](MEI_/t1.md)
   * [기술적분석](MEI_/t2.md)
@@ -125,11 +130,6 @@
   * [기술적분석](SKYT_/t2.md)
   * [Valuation](SKYT_/t3.md)
   * [Deep Dive](SKYT_/t4.md)
-* [Silicon Motion Technology Corpo (SIMO)](SIMO_/README.md)
-  * [기초보고서](SIMO_/t1.md)
-  * [기술적분석](SIMO_/t2.md)
-  * [Valuation](SIMO_/t3.md)
-  * [Deep Dive](SIMO_/t4.md)
 * [SolarEdge Technologies, Inc. (SEDG)](SEDG_/README.md)
   * [기초보고서](SEDG_/t1.md)
   * [기술적분석](SEDG_/t2.md)
