@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [에이엘티 (172670)](172670_/README.md)
+  * [기초보고서](172670_/t1.md)
+  * [기술적분석](172670_/t2.md)
+  * [Valuation](172670_/t3.md)
+  * [Deep Dive](172670_/t4.md)
 * [Silicon Motion Technology Corpo (SIMO)](SIMO_/README.md)
   * [기초보고서](SIMO_/t1.md)
   * [기술적분석](SIMO_/t2.md)
