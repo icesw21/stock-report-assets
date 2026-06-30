@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Ichor Holdings (ICHR)](ICHR_/README.md)
+  * [기초보고서](ICHR_/t1.md)
+  * [기술적분석](ICHR_/t2.md)
+  * [Valuation](ICHR_/t3.md)
+  * [Deep Dive](ICHR_/t4.md)
 * [MKS Inc. (MKSI)](MKSI_/README.md)
   * [기초보고서](MKSI_/t1.md)
   * [기술적분석](MKSI_/t2.md)
@@ -180,11 +185,6 @@
   * [기술적분석](IMOS_/t2.md)
   * [Valuation](IMOS_/t3.md)
   * [Deep Dive](IMOS_/t4.md)
-* [Ichor Holdings (ICHR)](ICHR_/README.md)
-  * [기초보고서](ICHR_/t1.md)
-  * [기술적분석](ICHR_/t2.md)
-  * [Valuation](ICHR_/t3.md)
-  * [Deep Dive](ICHR_/t4.md)
 * [Himax Technologies, Inc. (HIMX)](HIMX_/README.md)
   * [기초보고서](HIMX_/t1.md)
   * [기술적분석](HIMX_/t2.md)
