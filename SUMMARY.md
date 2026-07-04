@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [KOKUSAI ELECTRIC CORPORATION (6525)](6525_/README.md)
+  * [기초보고서](6525_/t1.md)
+  * [기술적분석](6525_/t2.md)
+  * [Valuation](6525_/t3.md)
+  * [Deep Dive](6525_/t4.md)
 * [지오엘리먼트 (311320)](311320_/README.md)
   * [기초보고서](311320_/t1.md)
   * [기술적분석](311320_/t2.md)
@@ -110,11 +115,6 @@
   * [기술적분석](4980_/t2.md)
   * [Valuation](4980_/t3.md)
   * [Deep Dive](4980_/t4.md)
-* [KOKUSAI ELECTRIC CORPORATION (6525)](6525_/README.md)
-  * [기초보고서](6525_/t1.md)
-  * [기술적분석](6525_/t2.md)
-  * [Valuation](6525_/t3.md)
-  * [Deep Dive](6525_/t4.md)
 * [SANNO CO LTD (3441)](3441_/README.md)
   * [기초보고서](3441_/t1.md)
   * [기술적분석](3441_/t2.md)
