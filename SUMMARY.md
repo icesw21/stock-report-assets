@@ -1,5 +1,6 @@
-# 종목분석 아카이브
+# Table of contents
 
+* [README](README.md)
 * [KOKUSAI ELECTRIC CORPORATION (6525)](6525_/README.md)
   * [기초보고서](6525_/t1.md)
   * [기술적분석](6525_/t2.md)
@@ -1137,7 +1138,7 @@
   * [기술적분석](031330_/t2.md)
   * [Valuation](031330_/t3.md)
   * [Deep Dive](031330_/t4.md)
-* [삼성E&A (028050)](028050_/README.md)
+* [삼성E\&A (028050)](028050_/README.md)
   * [기초보고서](028050_/t1.md)
   * [기술적분석](028050_/t2.md)
 * [미래산업 (025560)](025560_/README.md)
@@ -1277,11 +1278,11 @@
   * [기술적분석](SMTC_/t2.md)
   * [Valuation](SMTC_/t3.md)
   * [Deep Dive](SMTC_/t4.md)
-  * [Semtech Corporation (SMTC)](SMTC_/README 2.md)
-  * [Semtech(SMTC) 기초 분석 리포트](SMTC_/t1 2.md)
-  * [Semtech(SMTC) 기술적 분석](SMTC_/t2 2.md)
-  * [Semtech(SMTC) Valuation Report](SMTC_/t3 2.md)
-  * [Semtech(SMTC) Deep Dive — Sierra 후유증 딛고 AI 데이터센터 연결로 재성장](SMTC_/t4 2.md)
+  * [\[Semtech Corporation (SMTC)\](SMTC\_/README 2.md)](smtc_/semtech-corporation-smtc-smtc_-readme-2-md.md)
+  * [\[Semtech(SMTC) 기초 분석 리포트\](SMTC\_/t1 2.md)](smtc_/semtech-smtc-smtc_-t1-2-md.md)
+  * [\[Semtech(SMTC) 기술적 분석\](SMTC\_/t2 2.md)](smtc_/semtech-smtc-smtc_-t2-2-md.md)
+  * [\[Semtech(SMTC) Valuation Report\](SMTC\_/t3 2.md)](smtc_/semtech-smtc-valuation-report-smtc_-t3-2-md.md)
+  * [\[Semtech(SMTC) Deep Dive — Sierra 후유증 딛고 AI 데이터센터 연결로 재성장\](SMTC\_/t4 2.md)](smtc_/semtech-smtc-deep-dive-sierra-ai-smtc_-t4-2-md.md)
 * [큐라클 (365270)](365270_/README.md)
   * [큐라클(365270) Valuation Report](365270_/T3.md)
   * [큐라클 — CU01-1001 당뇨병성 신증 2b상 성공과 3상 진입·기술이전 가능성](365270_/T4.md)
