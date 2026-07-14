@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Aehr Test Systems (AEHR)](AEHR_/README.md)
+  * [기초보고서](AEHR_/t1.md)
+  * [기술적분석](AEHR_/t2.md)
+  * [Valuation](AEHR_/t3.md)
+  * [Deep Dive](AEHR_/t4.md)
 * [케일럼 (258610)](258610_/README.md)
   * [기초보고서](258610_/t1.md)
   * [기술적분석](258610_/t2.md)
@@ -689,11 +694,6 @@
   * [기술적분석](AIP_/t2.md)
   * [Valuation](AIP_/t3.md)
   * [Deep Dive](AIP_/t4.md)
-* [Aehr Test Systems (AEHR)](AEHR_/README.md)
-  * [기초보고서](AEHR_/t1.md)
-  * [기술적분석](AEHR_/t2.md)
-  * [Valuation](AEHR_/t3.md)
-  * [Deep Dive](AEHR_/t4.md)
 * [ACM Research, Inc. (ACMR)](ACMR_/README.md)
   * [기초보고서](ACMR_/t1.md)
   * [기술적분석](ACMR_/t2.md)
