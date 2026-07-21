@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Super Micro Computer, Inc. (SMCI)](SMCI_/README.md)
+  * [기초보고서](SMCI_/t1.md)
+  * [기술적분석](SMCI_/t2.md)
+  * [Valuation](SMCI_/t3.md)
+  * [Deep Dive](SMCI_/t4.md)
 * [Aehr Test Systems (AEHR)](AEHR_/README.md)
   * [기초보고서](AEHR_/t1.md)
   * [기술적분석](AEHR_/t2.md)
