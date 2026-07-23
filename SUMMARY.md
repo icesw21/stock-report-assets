@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [예선테크 (250930)](250930_/README.md)
+  * [기초보고서](250930_/t1.md)
+  * [기술적분석](250930_/t2.md)
+  * [Valuation](250930_/t3.md)
+  * [Deep Dive](250930_/t4.md)
 * [Super Micro Computer, Inc. (SMCI)](SMCI_/README.md)
   * [기초보고서](SMCI_/t1.md)
   * [기술적분석](SMCI_/t2.md)
