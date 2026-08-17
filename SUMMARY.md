@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Beyond Meat, Inc. (BYND)](BYND_/README.md)
+  * [기초보고서](BYND_/t1.md)
+  * [기술적분석](BYND_/t2.md)
+  * [Valuation](BYND_/t3.md)
+  * [Deep Dive](BYND_/t4.md)
 * [아이크래프트 (052460)](052460_/README.md)
   * [기초보고서](052460_/t1.md)
   * [기술적분석](052460_/t2.md)
