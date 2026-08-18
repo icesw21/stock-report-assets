@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [DPC Holdings PLC (DPC)](DPC_/README.md)
+  * [기초보고서](DPC_/t1.md)
+  * [기술적분석](DPC_/t2.md)
+  * [Valuation](DPC_/t3.md)
+  * [Deep Dive](DPC_/t4.md)
 * [Howmet Aerospace Inc. (HWM)](HWM_/README.md)
   * [기초보고서](HWM_/t1.md)
   * [기술적분석](HWM_/t2.md)
