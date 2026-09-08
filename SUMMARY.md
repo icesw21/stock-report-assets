@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Nova Ltd. (NVMI)](NVMI_/README.md)
+  * [기초보고서](NVMI_/t1.md)
+  * [기술적분석](NVMI_/t2.md)
+  * [Valuation](NVMI_/t3.md)
+  * [Deep Dive](NVMI_/t4.md)
 * [넥사다이내믹스 (351320)](351320_/README.md)
   * [기초보고서](351320_/t1.md)
   * [기술적분석](351320_/t2.md)
