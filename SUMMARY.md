@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [SFA반도체 (036540)](036540_/README.md)
+  * [기초보고서](036540_/t1.md)
+  * [기술적분석](036540_/t2.md)
+  * [Valuation](036540_/t3.md)
+  * [Deep Dive](036540_/t4.md)
 * [Nova Ltd. (NVMI)](NVMI_/README.md)
   * [기초보고서](NVMI_/t1.md)
   * [기술적분석](NVMI_/t2.md)
