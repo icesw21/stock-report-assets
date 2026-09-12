@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [WhiteFiber, Inc. (WYFI)](WYFI_/README.md)
+  * [기초보고서](WYFI_/t1.md)
+  * [기술적분석](WYFI_/t2.md)
+  * [Valuation](WYFI_/t3.md)
+  * [Deep Dive](WYFI_/t4.md)
 * [폰드그룹 (472850)](472850_/README.md)
   * [기초보고서](472850_/t1.md)
   * [기술적분석](472850_/t2.md)
