@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Guardant Health, Inc. (GH)](GH_/README.md)
+  * [기초보고서](GH_/t1.md)
+  * [기술적분석](GH_/t2.md)
+  * [Valuation](GH_/t3.md)
+  * [Deep Dive](GH_/t4.md)
 * [Cellebrite DI Ltd. (CLBT)](CLBT_/README.md)
   * [기초보고서](CLBT_/t1.md)
   * [기술적분석](CLBT_/t2.md)
