@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Natera (NTRA)](NTRA_/README.md)
+  * [기초보고서](NTRA_/t1.md)
+  * [기술적분석](NTRA_/t2.md)
+  * [Valuation](NTRA_/t3.md)
+  * [Deep Dive](NTRA_/t4.md)
 * [메가터치 (446540)](446540_/README.md)
   * [기초보고서](446540_/t1.md)
   * [기술적분석](446540_/t2.md)
