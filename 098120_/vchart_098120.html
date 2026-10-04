@@ -1,0 +1,51 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>마이크로컨텍솔 V차트</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>body{margin:0;padding:8px;font:13px -apple-system,sans-serif;color:#333;background:transparent}
+section{margin-bottom:16px}h3{margin:0 0 4px;font-size:13px;font-weight:600}.box{position:relative;height:260px}
+:root{color-scheme:light dark}
+@media (prefers-color-scheme:dark){body{color:#ddd;background:#1e1e1e}}</style></head><body>
+<script>
+const D = {"charts": [{"key": "revenue", "title": "매출액", "rows": [["2018Q2", 282.4, 271.3], ["2018Q3", 271.3, 269.7], ["2018Q4", 269.7, 256.8], ["2019Q1", 256.8, 246.0], ["2019Q2", 246.0, 266.2], ["2019Q3", 266.2, 306.6], ["2019Q4", 306.6, 344.3], ["2020Q1", 344.3, 364.5], ["2020Q2", 364.5, 385.8], ["2020Q3", 385.8, 377.7], ["2020Q4", 377.7, 392.7], ["2021Q1", 392.7, 427.5], ["2021Q2", 427.5, 463.3], ["2021Q3", 463.3, 535.2], ["2021Q4", 535.2, 613.8], ["2022Q1", 613.8, 651.3], ["2022Q2", 651.3, 658.0], ["2022Q3", 658.0, 660.1], ["2022Q4", 660.1, 610.5], ["2023Q1", 610.5, 607.0], ["2023Q2", 607.0, 614.3], ["2023Q3", 614.3, 643.3], ["2023Q4", 643.3, 648.2], ["2024Q1", 648.2, 648.3], ["2024Q2", 648.3, 638.6], ["2024Q3", 638.6, 624.6], ["2024Q4", 624.6, 696.6], ["2025Q1", 696.6, 806.8], ["2025Q2", 806.8, 879.0], ["2025Q3", 879.0, 948.3], ["2025Q4", 948.3, 1003.1], ["2026Q1", 1003.1, 1025.7], ["2026Q2", 1025.7, 1221.0]]}, {"key": "op", "title": "영업이익", "rows": [["2018Q2", -6.1, -25.8], ["2018Q3", -25.8, -25.5], ["2018Q4", -25.5, -35.4], ["2019Q1", -35.4, -46.3], ["2019Q2", -46.3, -36.3], ["2019Q3", -36.3, -18.1], ["2019Q4", -18.1, 6.7], ["2020Q1", 6.7, 8.1], ["2020Q2", 8.1, 18.5], ["2020Q3", 18.5, 19.8], ["2020Q4", 19.8, 16.5], ["2021Q1", 16.5, 37.5], ["2021Q2", 37.5, 40.8], ["2021Q3", 40.8, 65.7], ["2021Q4", 65.7, 79.3], ["2022Q1", 79.3, 84.0], ["2022Q2", 84.0, 82.6], ["2022Q3", 82.6, 78.8], ["2022Q4", 78.8, 78.9], ["2023Q1", 78.9, 81.8], ["2023Q2", 81.8, 81.8], ["2023Q3", 81.8, 102.7], ["2023Q4", 102.7, 74.3], ["2024Q1", 74.3, 73.5], ["2024Q2", 73.5, 75.8], ["2024Q3", 75.8, 48.8], ["2024Q4", 48.8, 102.0], ["2025Q1", 102.0, 131.9], ["2025Q2", 131.9, 153.7], ["2025Q3", 153.7, 166.4], ["2025Q4", 166.4, 177.4], ["2026Q1", 177.4, 181.4], ["2026Q2", 181.4, 283.5]]}, {"key": "ni_parent", "title": "지배주주순이익", "rows": [["2018Q2", -18.5, -27.9], ["2018Q3", -27.9, -27.0], ["2018Q4", -27.0, -44.0], ["2019Q1", -44.0, -55.3], ["2019Q2", -55.3, -45.1], ["2019Q3", -45.1, -30.3], ["2019Q4", -30.3, 8.8], ["2020Q1", 8.8, 10.3], ["2020Q2", 10.3, 17.7], ["2020Q3", 17.7, 18.4], ["2020Q4", 18.4, 11.2], ["2021Q1", 11.2, 34.6], ["2021Q2", 34.6, 31.9], ["2021Q3", 31.9, 60.1], ["2021Q4", 60.1, 75.2], ["2022Q1", 75.2, 74.5], ["2022Q2", 74.5, 81.1], ["2022Q3", 81.1, 73.9], ["2022Q4", 73.9, 70.5], ["2023Q1", 70.5, 72.6], ["2023Q2", 72.6, 71.8], ["2023Q3", 71.8, 86.4], ["2023Q4", 86.4, 74.0], ["2024Q1", 74.0, 76.2], ["2024Q2", 76.2, 78.6], ["2024Q3", 78.6, 53.4], ["2024Q4", 53.4, 106.8], ["2025Q1", 106.8, 129.6], ["2025Q2", 129.6, 137.2], ["2025Q3", 137.2, 157.3], ["2025Q4", 157.3, 168.9], ["2026Q1", 168.9, 178.8], ["2026Q2", 178.8, 271.2]]}], "unit": "억원", "tick": "Q2", "prefix": ""};
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+Chart.defaults.color = dark ? "#bbb" : "#555";
+const grid = dark ? "rgba(255,255,255,.12)" : "rgba(0,0,0,.08)";
+const m = new URLSearchParams(location.search).get("m") || location.hash.slice(1);
+const f1 = x => x.toLocaleString("ko-KR", {minimumFractionDigits: 1, maximumFractionDigits: 1});
+for (const c of D.charts) {
+  if (m && m !== c.key) continue;
+  const s = document.createElement("section");
+  s.id = c.key;
+  s.innerHTML = (m ? "" : `<h3>${c.title} (V차트) · 단위 ${D.unit}</h3>`) + '<div class="box"><canvas></canvas></div>';
+  document.body.append(s);
+  const up = c.rows.map(r => r[2] >= r[1]);
+  new Chart(s.querySelector("canvas"), {
+    data: {labels: c.rows.map(r => D.prefix + r[0].slice(0, 4) + " " + r[0].slice(-1) + r[0][4]), datasets: [
+      {type: "bar", data: c.rows.map(r => r[1] === null ? null : [r[1], r[2]]), backgroundColor: up.map(u => u ? "#e5484d" : "#3e63dd"),
+       barPercentage: 0.7, categoryPercentage: 0.9, minBarLength: 2, order: 2},
+      {type: "line", data: c.rows.map(r => r[2]), borderColor: "rgba(245,197,66,.85)", borderWidth: 2,
+       pointRadius: 0, pointHoverRadius: 0, order: 1}]},
+    options: {maintainAspectRatio: false, animation: false, interaction: {mode: "index", intersect: false},
+      events: ["mousemove", "mouseout", "click", "touchstart", "touchmove"],
+      plugins: {legend: {display: false}, tooltip: {filter: i => i.datasetIndex === 0 && c.rows[i.dataIndex][2] !== null, displayColors: true,
+        callbacks: {
+          label: i => { const [, p, t] = c.rows[i.dataIndex]; return f1(t) + " " + D.unit; },
+          afterLabel: i => { const [, p, t] = c.rows[i.dataIndex], d = t - p;
+            return `변동: ${d >= 0 ? "+" : ""}${f1(d)} ${D.unit} (${d >= 0 ? "+" : ""}${p ? (d / Math.abs(p) * 100).toFixed(1) : "-"}%)`; },
+          labelColor: i => ({borderColor: "transparent", backgroundColor: up[i.dataIndex] ? "#e5484d" : "#3e63dd"})}}},
+      scales: {
+        x: {grid: {display: false}, ticks: {autoSkip: false, maxRotation: 0, font: {size: 10},
+            callback: function (v, i) { const q = c.rows[i][0];  // 좁은 화면 + 막대 16개 이상이면 격년만
+              return q.slice(4) === D.tick && (this.chart.width >= 560 || c.rows.length < 16 || q.slice(0, 4) % 2 === 0)
+                ? D.prefix + q.slice(0, 4) + " " + q.slice(-1) + q[4] : ""; }}},
+        y: {position: "right", beginAtZero: true, grid: {color: grid},  // 0·최솟값 포함, 눈금은 Chart.js가 반올림
+            ticks: {font: {size: 10}, callback: v => v.toLocaleString("ko-KR")}}}}});
+}
+function arcResize() {
+  if (parent === window) return;
+  const h = Math.ceil(document.body.getBoundingClientRect().height);
+  parent.postMessage({action: {action: "@webframe.resize", size: {aspectRatio: innerWidth / h, height: h}}}, "*");
+}
+addEventListener("load", arcResize);
+new ResizeObserver(arcResize).observe(document.body);
+</script></body></html>
