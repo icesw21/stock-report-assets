@@ -1,0 +1,51 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>레이언스 V차트</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>body{margin:0;padding:8px;font:13px -apple-system,sans-serif;color:#333;background:transparent}
+section{margin-bottom:16px}h3{margin:0 0 4px;font-size:13px;font-weight:600}.box{position:relative;height:260px}
+:root{color-scheme:light dark}
+@media (prefers-color-scheme:dark){body{color:#ddd;background:#1e1e1e}}</style></head><body>
+<script>
+const D = {"charts": [{"key": "revenue", "title": "매출액", "rows": [["2018Q2", 1103.9, 1144.9], ["2018Q3", 1144.9, 1148.1], ["2018Q4", 1148.1, 1163.9], ["2019Q1", 1163.9, 1162.2], ["2019Q2", 1162.2, 1181.6], ["2019Q3", 1181.6, 1206.1], ["2019Q4", 1206.1, 1261.7], ["2020Q1", 1261.7, 1251.2], ["2020Q2", 1251.2, 1154.1], ["2020Q3", 1154.1, 1065.1], ["2020Q4", 1065.1, 1015.2], ["2021Q1", 1015.2, 1057.5], ["2021Q2", 1057.5, 1194.2], ["2021Q3", 1194.2, 1292.9], ["2021Q4", 1292.9, 1345.7], ["2022Q1", 1345.7, 1392.1], ["2022Q2", 1392.1, 1401.7], ["2022Q3", 1401.7, 1462.6], ["2022Q4", 1462.6, 1471.6], ["2023Q1", 1471.6, 1486.4], ["2023Q2", 1486.4, 1487.5], ["2023Q3", 1487.5, 1457.4], ["2023Q4", 1457.4, 1429.9], ["2024Q1", 1429.9, 1411.2], ["2024Q2", 1411.2, 1363.2], ["2024Q3", 1363.2, 1312.9], ["2024Q4", 1312.9, 1255.6], ["2025Q1", 1255.6, 1170.9], ["2025Q2", 1170.9, 1131.4], ["2025Q3", 1131.4, 1113.9], ["2025Q4", 1113.9, 1147.2], ["2026Q1", 1147.2, 1242.3], ["2026Q2", 1242.3, 1316.9]]}, {"key": "op", "title": "영업이익", "rows": [["2018Q2", 182.1, 205.6], ["2018Q3", 205.6, 209.4], ["2018Q4", 209.4, 212.2], ["2019Q1", 212.2, 210.2], ["2019Q2", 210.2, 210.0], ["2019Q3", 210.0, 211.7], ["2019Q4", 211.7, 228.4], ["2020Q1", 228.4, 220.3], ["2020Q2", 220.3, 167.4], ["2020Q3", 167.4, 111.9], ["2020Q4", 111.9, 84.4], ["2021Q1", 84.4, 102.8], ["2021Q2", 102.8, 163.0], ["2021Q3", 163.0, 222.5], ["2021Q4", 222.5, 240.7], ["2022Q1", 240.7, 241.7], ["2022Q2", 241.7, 248.7], ["2022Q3", 248.7, 265.5], ["2022Q4", 265.5, 253.6], ["2023Q1", 253.6, 249.2], ["2023Q2", 249.2, 236.9], ["2023Q3", 236.9, 205.1], ["2023Q4", 205.1, 197.0], ["2024Q1", 197.0, 181.1], ["2024Q2", 181.1, 138.1], ["2024Q3", 138.1, 106.7], ["2024Q4", 106.7, 66.3], ["2025Q1", 66.3, 8.0], ["2025Q2", 8.0, -17.6], ["2025Q3", -17.6, -23.4], ["2025Q4", -23.4, -39.5], ["2026Q1", -39.5, 13.6], ["2026Q2", 13.6, 41.9]]}, {"key": "ni_parent", "title": "지배주주순이익", "rows": [["2021Q1", -19.2, -0.2], ["2021Q2", -0.2, 5.5], ["2021Q3", 5.5, 43.3], ["2021Q4", 43.3, 144.6], ["2022Q1", 144.6, 130.9], ["2022Q2", 130.9, 182.4], ["2022Q3", 182.4, 215.7], ["2022Q4", 215.7, 220.5], ["2023Q1", 220.5, 199.3], ["2023Q2", 199.3, 199.8], ["2023Q3", 199.8, 211.2], ["2023Q4", 211.2, 196.0], ["2024Q1", 196.0, 209.6], ["2024Q2", 209.6, 175.6], ["2024Q3", 175.6, 112.1], ["2024Q4", 112.1, 78.3], ["2025Q1", 78.3, 36.9], ["2025Q2", 36.9, -3.7], ["2025Q3", -3.7, 5.0], ["2025Q4", 5.0, -52.8], ["2026Q1", -52.8, 3.9], ["2026Q2", 3.9, 41.9]]}], "unit": "억원", "tick": "Q2", "prefix": ""};
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+Chart.defaults.color = dark ? "#bbb" : "#555";
+const grid = dark ? "rgba(255,255,255,.12)" : "rgba(0,0,0,.08)";
+const m = new URLSearchParams(location.search).get("m") || location.hash.slice(1);
+const f1 = x => x.toLocaleString("ko-KR", {minimumFractionDigits: 1, maximumFractionDigits: 1});
+for (const c of D.charts) {
+  if (m && m !== c.key) continue;
+  const s = document.createElement("section");
+  s.id = c.key;
+  s.innerHTML = (m ? "" : `<h3>${c.title} (V차트) · 단위 ${D.unit}</h3>`) + '<div class="box"><canvas></canvas></div>';
+  document.body.append(s);
+  const up = c.rows.map(r => r[2] >= r[1]);
+  new Chart(s.querySelector("canvas"), {
+    data: {labels: c.rows.map(r => D.prefix + r[0].slice(0, 4) + " " + r[0].slice(-1) + r[0][4]), datasets: [
+      {type: "bar", data: c.rows.map(r => r[1] === null ? null : [r[1], r[2]]), backgroundColor: up.map(u => u ? "#e5484d" : "#3e63dd"),
+       barPercentage: 0.7, categoryPercentage: 0.9, minBarLength: 2, order: 2},
+      {type: "line", data: c.rows.map(r => r[2]), borderColor: "rgba(245,197,66,.85)", borderWidth: 2,
+       pointRadius: 0, pointHoverRadius: 0, order: 1}]},
+    options: {maintainAspectRatio: false, animation: false, interaction: {mode: "index", intersect: false},
+      events: ["mousemove", "mouseout", "click", "touchstart", "touchmove"],
+      plugins: {legend: {display: false}, tooltip: {filter: i => i.datasetIndex === 0 && c.rows[i.dataIndex][2] !== null, displayColors: true,
+        callbacks: {
+          label: i => { const [, p, t] = c.rows[i.dataIndex]; return f1(t) + " " + D.unit; },
+          afterLabel: i => { const [, p, t] = c.rows[i.dataIndex], d = t - p;
+            return `변동: ${d >= 0 ? "+" : ""}${f1(d)} ${D.unit} (${d >= 0 ? "+" : ""}${p ? (d / Math.abs(p) * 100).toFixed(1) : "-"}%)`; },
+          labelColor: i => ({borderColor: "transparent", backgroundColor: up[i.dataIndex] ? "#e5484d" : "#3e63dd"})}}},
+      scales: {
+        x: {grid: {display: false}, ticks: {autoSkip: false, maxRotation: 0, font: {size: 10},
+            callback: function (v, i) { const q = c.rows[i][0];  // 좁은 화면 + 막대 16개 이상이면 격년만
+              return q.slice(4) === D.tick && (this.chart.width >= 560 || c.rows.length < 16 || q.slice(0, 4) % 2 === 0)
+                ? D.prefix + q.slice(0, 4) + " " + q.slice(-1) + q[4] : ""; }}},
+        y: {position: "right", beginAtZero: true, grid: {color: grid},  // 0·최솟값 포함, 눈금은 Chart.js가 반올림
+            ticks: {font: {size: 10}, callback: v => v.toLocaleString("ko-KR")}}}}});
+}
+function arcResize() {
+  if (parent === window) return;
+  const h = Math.ceil(document.body.getBoundingClientRect().height);
+  parent.postMessage({action: {action: "@webframe.resize", size: {aspectRatio: innerWidth / h, height: h}}}, "*");
+}
+addEventListener("load", arcResize);
+new ResizeObserver(arcResize).observe(document.body);
+</script></body></html>
