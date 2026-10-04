@@ -1,0 +1,43 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>유니퀘스트 V차트</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>body{margin:0;padding:8px;font:13px -apple-system,sans-serif;color:#333;background:transparent}
+section{margin-bottom:16px}h3{margin:0 0 4px;font-size:13px;font-weight:600}.box{position:relative;height:260px}
+:root{color-scheme:light dark}
+@media (prefers-color-scheme:dark){body{color:#ddd;background:#1e1e1e}}</style></head><body>
+<script>
+const D = {"charts": [{"key": "revenue", "title": "매출액", "rows": [["2018Q2", 2485.6, 2630.2], ["2018Q3", 2630.2, 2780.7], ["2018Q4", 2780.7, 2703.0], ["2019Q1", 2703.0, 2863.2], ["2019Q2", 2863.2, 3058.5], ["2019Q3", 3058.5, 3204.7], ["2019Q4", 3204.7, 3352.5], ["2020Q1", 3352.5, 3490.0], ["2020Q2", 3490.0, 3443.4], ["2020Q3", 3443.4, 3639.2], ["2020Q4", 3639.2, 4028.1], ["2021Q1", 4028.1, 4485.2], ["2021Q2", 4485.2, 5067.9], ["2021Q3", 5067.9, 5550.4], ["2021Q4", 5550.4, 5909.8], ["2022Q1", 5909.8, 6184.4], ["2022Q2", 6184.4, 6420.7], ["2022Q3", 6420.7, 6644.4], ["2022Q4", 6644.4, 7394.6], ["2023Q1", 7394.6, 7372.8], ["2023Q2", 7372.8, 7265.3], ["2023Q3", 7265.3, 7117.2], ["2023Q4", 7117.2, 6686.9], ["2024Q1", 6686.9, 6765.9], ["2024Q2", 6765.9, 6893.6], ["2024Q3", 6893.6, 6960.7], ["2024Q4", 6960.7, 7104.8], ["2025Q1", 7104.8, 7151.7], ["2025Q2", 7151.7, 7089.8], ["2025Q3", 7089.8, 7158.9], ["2025Q4", 7158.9, 7300.4], ["2026Q1", 7300.4, 7222.3], ["2026Q2", 7222.3, 7736.2]]}, {"key": "op", "title": "영업이익", "rows": [["2018Q2", 90.9, 99.2], ["2018Q3", 99.2, 152.0], ["2018Q4", 152.0, 20.5], ["2019Q1", 20.5, 33.5], ["2019Q2", 33.5, 54.4], ["2019Q3", 54.4, 13.5], ["2019Q4", 13.5, 68.6], ["2020Q1", 68.6, 60.3], ["2020Q2", 60.3, 45.7], ["2020Q3", 45.7, 51.8], ["2020Q4", 51.8, 90.1], ["2021Q1", 90.1, 130.2], ["2021Q2", 130.2, 170.8], ["2021Q3", 170.8, 217.1], ["2021Q4", 217.1, 245.5], ["2022Q1", 245.5, 295.9], ["2022Q2", 295.9, 321.4], ["2022Q3", 321.4, 343.8], ["2022Q4", 343.8, 409.1], ["2023Q1", 409.1, 382.0], ["2023Q2", 382.0, 360.7], ["2023Q3", 360.7, 357.5], ["2023Q4", 357.5, 305.9], ["2024Q1", 305.9, 310.2], ["2024Q2", 310.2, 334.6], ["2024Q3", 334.6, 325.6], ["2024Q4", 325.6, 341.4], ["2025Q1", 341.4, 354.8], ["2025Q2", 354.8, 337.2], ["2025Q3", 337.2, 356.7], ["2025Q4", 356.7, 366.9], ["2026Q1", 366.9, 383.7], ["2026Q2", 383.7, 475.8]]}, {"key": "ni_parent", "title": "지배주주순이익", "rows": [["2018Q2", 78.9, 120.3], ["2018Q3", 120.3, 146.8], ["2018Q4", 146.8, 119.8], ["2019Q1", 119.8, 170.2], ["2019Q2", 170.2, 160.7], ["2019Q3", 160.7, 151.8], ["2019Q4", 151.8, 254.5], ["2020Q1", 254.5, 169.6], ["2020Q2", 169.6, 143.3], ["2020Q3", 143.3, 141.6], ["2020Q4", 141.6, 239.3], ["2021Q1", 239.3, 358.9], ["2021Q2", 358.9, 433.9], ["2021Q3", 433.9, 498.0], ["2021Q4", 498.0, 625.6], ["2022Q1", 625.6, 730.3], ["2022Q2", 730.3, 724.9], ["2022Q3", 724.9, 728.5], ["2022Q4", 728.5, 491.2], ["2023Q1", 491.2, 360.9], ["2023Q2", 360.9, 310.8], ["2023Q3", 310.8, 260.6], ["2023Q4", 260.6, 193.4], ["2024Q1", 193.4, 160.9], ["2024Q2", 160.9, 164.2], ["2024Q3", 164.2, 126.3], ["2024Q4", 126.3, 52.9], ["2025Q1", 52.9, 63.6], ["2025Q2", 63.6, 60.7], ["2025Q3", 60.7, 74.3], ["2025Q4", 74.3, 206.2], ["2026Q1", 206.2, 230.1], ["2026Q2", 230.1, 302.6]]}]};
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+Chart.defaults.color = dark ? "#bbb" : "#555";
+const grid = dark ? "rgba(255,255,255,.12)" : "rgba(0,0,0,.08)";
+const m = new URLSearchParams(location.search).get("m") || location.hash.slice(1);
+const f1 = x => x.toLocaleString("ko-KR", {minimumFractionDigits: 1, maximumFractionDigits: 1});
+for (const c of D.charts) {
+  if (m && m !== c.key) continue;
+  const s = document.createElement("section");
+  s.id = c.key;
+  s.innerHTML = (m ? "" : `<h3>${c.title} (V차트) · 단위 억원</h3>`) + '<div class="box"><canvas></canvas></div>';
+  document.body.append(s);
+  const up = c.rows.map(r => r[2] >= r[1]);
+  new Chart(s.querySelector("canvas"), {
+    data: {labels: c.rows.map(r => r[0].slice(0, 4) + " " + r[0][5] + "Q"), datasets: [
+      {type: "bar", data: c.rows.map(r => [r[1], r[2]]), backgroundColor: up.map(u => u ? "#e5484d" : "#3e63dd"),
+       barPercentage: 0.7, categoryPercentage: 0.9, minBarLength: 2, order: 2},
+      {type: "line", data: c.rows.map(r => r[2]), borderColor: "rgba(245,197,66,.85)", borderWidth: 2,
+       pointRadius: 0, pointHoverRadius: 0, order: 1}]},
+    options: {maintainAspectRatio: false, animation: false, interaction: {mode: "index", intersect: false},
+      events: ["mousemove", "mouseout", "click", "touchstart", "touchmove"],
+      plugins: {legend: {display: false}, tooltip: {filter: i => i.datasetIndex === 0, displayColors: true,
+        callbacks: {
+          label: i => { const [, p, t] = c.rows[i.dataIndex]; return f1(t) + " 억원"; },
+          afterLabel: i => { const [, p, t] = c.rows[i.dataIndex], d = t - p;
+            return `변동: ${d >= 0 ? "+" : ""}${f1(d)} 억원 (${d >= 0 ? "+" : ""}${p ? (d / Math.abs(p) * 100).toFixed(1) : "-"}%)`; },
+          labelColor: i => ({borderColor: "transparent", backgroundColor: up[i.dataIndex] ? "#e5484d" : "#3e63dd"})}}},
+      scales: {
+        x: {grid: {display: false}, ticks: {autoSkip: false, maxRotation: 0, font: {size: 10},
+            callback: function (v, i) { const q = c.rows[i][0];  // 좁은 화면은 격년만
+              return q.endsWith("Q2") && (this.chart.width >= 560 || q.slice(0, 4) % 2 === 0) ? q.slice(0, 4) + " 2Q" : ""; }}},
+        y: {position: "right", min: Math.min(0, ...c.rows.map(r => Math.min(r[1], r[2]))), grid: {color: grid},
+            ticks: {font: {size: 10}, callback: v => v.toLocaleString("ko-KR")}}}}});
+}
+</script></body></html>
