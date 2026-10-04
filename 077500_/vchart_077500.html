@@ -40,4 +40,11 @@ for (const c of D.charts) {
         y: {position: "right", min: Math.min(0, ...c.rows.map(r => Math.min(r[1], r[2]))), grid: {color: grid},
             ticks: {font: {size: 10}, callback: v => v.toLocaleString("ko-KR")}}}}});
 }
+function arcResize() {
+  if (parent === window) return;
+  const h = Math.ceil(document.body.getBoundingClientRect().height);
+  parent.postMessage({action: {action: "@webframe.resize", size: {aspectRatio: innerWidth / h, height: h}}}, "*");
+}
+addEventListener("load", arcResize);
+new ResizeObserver(arcResize).observe(document.body);
 </script></body></html>
