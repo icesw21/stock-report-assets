@@ -1,0 +1,51 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>미래컴퍼니 V차트</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>body{margin:0;padding:8px;font:13px -apple-system,sans-serif;color:#333;background:transparent}
+section{margin-bottom:16px}h3{margin:0 0 4px;font-size:13px;font-weight:600}.box{position:relative;height:260px}
+:root{color-scheme:light dark}
+@media (prefers-color-scheme:dark){body{color:#ddd;background:#1e1e1e}}</style></head><body>
+<script>
+const D = {"charts": [{"key": "revenue", "title": "매출액", "rows": [["2018Q2", 1906.4, 2208.4], ["2018Q3", 2208.4, 2230.6], ["2018Q4", 2230.6, 2134.0], ["2019Q1", 2134.0, 1853.9], ["2019Q2", 1853.9, 1435.0], ["2019Q3", 1435.0, 1136.9], ["2019Q4", 1136.9, 974.3], ["2020Q1", 974.3, 768.2], ["2020Q2", 768.2, 443.3], ["2020Q3", 443.3, 490.1], ["2020Q4", 490.1, 589.4], ["2021Q1", 589.4, 715.2], ["2021Q2", 715.2, 1026.4], ["2021Q3", 1026.4, 1205.9], ["2021Q4", 1205.9, 1163.8], ["2022Q1", 1163.8, 1430.1], ["2022Q2", 1430.1, 1376.4], ["2022Q3", 1376.4, 1358.0], ["2022Q4", 1358.0, 1548.6], ["2023Q1", 1548.6, 1415.9], ["2023Q2", 1415.9, 1228.7], ["2023Q3", 1228.7, 1346.1], ["2023Q4", 1346.1, 1094.7], ["2024Q1", 1094.7, 812.9], ["2024Q2", 812.9, 837.9], ["2024Q3", 837.9, 612.5], ["2024Q4", 612.5, 672.8], ["2025Q1", 672.8, 729.0], ["2025Q2", 729.0, 588.8], ["2025Q3", 588.8, 469.9], ["2025Q4", 469.9, 409.0], ["2026Q1", 409.0, 494.3], ["2026Q2", 494.3, 675.0]]}, {"key": "op", "title": "영업이익", "rows": [["2018Q2", 383.7, 377.4], ["2018Q3", 377.4, 303.5], ["2018Q4", 303.5, 262.7], ["2019Q1", 262.7, 179.1], ["2019Q2", 179.1, 145.1], ["2019Q3", 145.1, 81.9], ["2019Q4", 81.9, 36.6], ["2020Q1", 36.6, -17.9], ["2020Q2", -17.9, -167.9], ["2020Q3", -167.9, -161.6], ["2020Q4", -161.6, -179.7], ["2021Q1", -179.7, -146.0], ["2021Q2", -146.0, -84.8], ["2021Q3", -84.8, 14.2], ["2021Q4", 14.2, 46.0], ["2022Q1", 46.0, 179.4], ["2022Q2", 179.4, 236.3], ["2022Q3", 236.3, 151.5], ["2022Q4", 151.5, 255.2], ["2023Q1", 255.2, 176.7], ["2023Q2", 176.7, 73.7], ["2023Q3", 73.7, 130.1], ["2023Q4", 130.1, -17.5], ["2024Q1", -17.5, -146.8], ["2024Q2", -146.8, -144.2], ["2024Q3", -144.2, -201.0], ["2024Q4", -201.0, -168.1], ["2025Q1", -168.1, -150.0], ["2025Q2", -150.0, -190.2], ["2025Q3", -190.2, -223.5], ["2025Q4", -223.5, -247.0], ["2026Q1", -247.0, -168.2], ["2026Q2", -168.2, -54.2]]}, {"key": "ni_parent", "title": "지배주주순이익", "rows": [["2018Q2", 275.7, 311.0], ["2018Q3", 311.0, 238.4], ["2018Q4", 238.4, 197.5], ["2019Q1", 197.5, 177.3], ["2019Q2", 177.3, 94.1], ["2019Q3", 94.1, 103.2], ["2019Q4", 103.2, 119.6], ["2020Q1", 119.6, 81.2], ["2020Q2", 81.2, -27.1], ["2020Q3", -27.1, -93.7], ["2020Q4", -93.7, -144.8], ["2021Q1", -144.8, -119.0], ["2021Q2", -119.0, -83.1], ["2021Q3", -83.1, 42.6], ["2021Q4", 42.6, 64.3], ["2022Q1", 64.3, 187.1], ["2022Q2", 187.1, 277.1], ["2022Q3", 277.1, 217.2], ["2022Q4", 217.2, 292.9], ["2023Q1", 292.9, 226.2], ["2023Q2", 226.2, 114.9], ["2023Q3", 114.9, 130.9], ["2023Q4", 130.9, 35.4], ["2024Q1", 35.4, -82.6], ["2024Q2", -82.6, -87.6], ["2024Q3", -87.6, -164.1], ["2024Q4", -164.1, -71.4], ["2025Q1", -71.4, -70.2], ["2025Q2", -70.2, -153.4], ["2025Q3", -153.4, -164.4], ["2025Q4", -164.4, -250.0], ["2026Q1", -250.0, -161.5], ["2026Q2", -161.5, -31.8]]}], "unit": "억원", "tick": "Q2", "prefix": ""};
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+Chart.defaults.color = dark ? "#bbb" : "#555";
+const grid = dark ? "rgba(255,255,255,.12)" : "rgba(0,0,0,.08)";
+const m = new URLSearchParams(location.search).get("m") || location.hash.slice(1);
+const f1 = x => x.toLocaleString("ko-KR", {minimumFractionDigits: 1, maximumFractionDigits: 1});
+for (const c of D.charts) {
+  if (m && m !== c.key) continue;
+  const s = document.createElement("section");
+  s.id = c.key;
+  s.innerHTML = (m ? "" : `<h3>${c.title} (V차트) · 단위 ${D.unit}</h3>`) + '<div class="box"><canvas></canvas></div>';
+  document.body.append(s);
+  const up = c.rows.map(r => r[2] >= r[1]);
+  new Chart(s.querySelector("canvas"), {
+    data: {labels: c.rows.map(r => D.prefix + r[0].slice(0, 4) + " " + r[0].slice(-1) + r[0][4]), datasets: [
+      {type: "bar", data: c.rows.map(r => r[1] === null ? null : [r[1], r[2]]), backgroundColor: up.map(u => u ? "#e5484d" : "#3e63dd"),
+       barPercentage: 0.7, categoryPercentage: 0.9, minBarLength: 2, order: 2},
+      {type: "line", data: c.rows.map(r => r[2]), borderColor: "rgba(245,197,66,.85)", borderWidth: 2,
+       pointRadius: 0, pointHoverRadius: 0, order: 1}]},
+    options: {maintainAspectRatio: false, animation: false, interaction: {mode: "index", intersect: false},
+      events: ["mousemove", "mouseout", "click", "touchstart", "touchmove"],
+      plugins: {legend: {display: false}, tooltip: {filter: i => i.datasetIndex === 0 && c.rows[i.dataIndex][2] !== null, displayColors: true,
+        callbacks: {
+          label: i => { const [, p, t] = c.rows[i.dataIndex]; return f1(t) + " " + D.unit; },
+          afterLabel: i => { const [, p, t] = c.rows[i.dataIndex], d = t - p;
+            return `변동: ${d >= 0 ? "+" : ""}${f1(d)} ${D.unit} (${d >= 0 ? "+" : ""}${p ? (d / Math.abs(p) * 100).toFixed(1) : "-"}%)`; },
+          labelColor: i => ({borderColor: "transparent", backgroundColor: up[i.dataIndex] ? "#e5484d" : "#3e63dd"})}}},
+      scales: {
+        x: {grid: {display: false}, ticks: {autoSkip: false, maxRotation: 0, font: {size: 10},
+            callback: function (v, i) { const q = c.rows[i][0];  // 좁은 화면 + 막대 16개 이상이면 격년만
+              return q.slice(4) === D.tick && (this.chart.width >= 560 || c.rows.length < 16 || q.slice(0, 4) % 2 === 0)
+                ? D.prefix + q.slice(0, 4) + " " + q.slice(-1) + q[4] : ""; }}},
+        y: {position: "right", beginAtZero: true, grid: {color: grid},  // 0·최솟값 포함, 눈금은 Chart.js가 반올림
+            ticks: {font: {size: 10}, callback: v => v.toLocaleString("ko-KR")}}}}});
+}
+function arcResize() {
+  if (parent === window) return;
+  const h = Math.ceil(document.body.getBoundingClientRect().height);
+  parent.postMessage({action: {action: "@webframe.resize", size: {aspectRatio: innerWidth / h, height: h}}}, "*");
+}
+addEventListener("load", arcResize);
+new ResizeObserver(arcResize).observe(document.body);
+</script></body></html>
