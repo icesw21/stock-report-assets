@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Twist Bioscience Corporation (TWST)](TWST_/README.md)
+  * [기초보고서](TWST_/t1.md)
+  * [기술적분석](TWST_/t2.md)
+  * [Valuation](TWST_/t3.md)
+  * [Deep Dive](TWST_/t4.md)
 * [미래컴퍼니 (049950)](049950_/README.md)
   * [기초보고서](049950_/t1.md)
   * [기술적분석](049950_/t2.md)
