@@ -1,0 +1,51 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Illumina, Inc. V차트</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>body{margin:0;padding:8px;font:13px -apple-system,sans-serif;color:#333;background:transparent}
+section{margin-bottom:16px}h3{margin:0 0 4px;font-size:13px;font-weight:600}.box{position:relative;height:260px}
+:root{color-scheme:light dark}
+@media (prefers-color-scheme:dark){body{color:#ddd;background:#1e1e1e}}</style></head><body>
+<script>
+const D = {"charts": [{"key": "revenue", "title": "매출액", "rows": [["2018Q2", 2936.0, 3104.0], ["2018Q3", 3104.0, 3243.0], ["2018Q4", 3243.0, 3332.0], ["2019Q1", 3332.0, 3396.0], ["2019Q2", 3396.0, 3404.0], ["2019Q3", 3404.0, 3458.0], ["2019Q4", 3458.0, 3544.0], ["2020Q1", 3544.0, 3557.0], ["2020Q2", 3557.0, 3352.0], ["2020Q3", 3352.0, 3239.0], ["2020Q4", 3239.0, 3239.0], ["2021Q1", 3239.0, 3473.0], ["2021Q2", 3473.0, 3966.0], ["2021Q3", 3966.0, 4280.0], ["2021Q4", 4280.0, 4526.0], ["2022Q1", 4526.0, 4656.0], ["2022Q2", 4656.0, 4692.0], ["2022Q3", 4692.0, 4699.0], ["2022Q4", 4699.0, 4584.0], ["2023Q1", 4584.0, 4448.0], ["2023Q2", 4448.0, 4462.0], ["2023Q3", 4462.0, 4466.0], ["2023Q4", 4466.0, 4504.0], ["2024Q1", 4504.0, 4493.0], ["2024Q2", 4493.0, 4429.0], ["2024Q3", 4429.0, 4390.0], ["2024Q4", 4390.0, 4372.0], ["2025Q1", 4372.0, 4337.0], ["2025Q2", 4337.0, 4284.0], ["2025Q3", 4284.0, 4288.0], ["2025Q4", 4288.0, 4343.0], ["2026Q1", 4343.0, 4393.0], ["2026Q2", 4393.0, 4493.0]]}, {"key": "op", "title": "영업이익", "rows": [["2018Q2", 772.0, 856.0], ["2018Q3", 856.0, 916.0], ["2018Q4", 916.0, 883.0], ["2019Q1", 883.0, 869.0], ["2019Q2", 869.0, 847.0], ["2019Q3", 847.0, 914.0], ["2019Q4", 914.0, 985.0], ["2020Q1", 985.0, 970.0], ["2020Q2", 970.0, 861.0], ["2020Q3", 861.0, 715.0], ["2020Q4", 715.0, 580.0], ["2021Q1", 580.0, 584.0], ["2021Q2", 584.0, 675.0], ["2021Q3", 675.0, -32.0], ["2021Q4", -32.0, -123.0], ["2022Q1", -123.0, -132.0], ["2022Q2", -132.0, -898.0], ["2022Q3", -898.0, -4010.0], ["2022Q4", -4010.0, -4179.0], ["2023Q1", -4179.0, -4427.0], ["2023Q2", -4427.0, -3936.0], ["2023Q3", -3936.0, -1033.0], ["2023Q4", -1033.0, -1069.0], ["2024Q1", -1069.0, -1116.0], ["2024Q2", -1116.0, -2665.0], ["2024Q3", -2665.0, -1170.0], ["2024Q4", -1170.0, -833.0], ["2025Q1", -833.0, -558.0], ["2025Q2", -558.0, 1293.0], ["2025Q3", 1293.0, 779.0], ["2025Q4", 779.0, 807.0], ["2026Q1", 807.0, 852.0], ["2026Q2", 852.0, 883.0]]}, {"key": "ni_parent", "title": "지배주주순이익", "rows": [["2018Q2", 567.0, 648.0], ["2018Q3", 648.0, 684.0], ["2018Q4", 684.0, 826.0], ["2019Q1", 826.0, 851.0], ["2019Q2", 851.0, 938.0], ["2019Q3", 938.0, 973.0], ["2019Q4", 973.0, 1002.0], ["2020Q1", 1002.0, 942.0], ["2020Q2", 942.0, 693.0], ["2020Q3", 693.0, 638.0], ["2020Q4", 638.0, 656.0], ["2021Q1", 656.0, 630.0], ["2021Q2", 630.0, 768.0], ["2021Q3", 768.0, 906.0], ["2021Q4", 906.0, 762.0], ["2022Q1", 762.0, 701.0], ["2022Q2", 701.0, -19.0], ["2022Q3", -19.0, -4152.0], ["2022Q4", -4152.0, -4404.0], ["2023Q1", -4404.0, -4487.0], ["2023Q2", -4487.0, -4186.0], ["2023Q3", -4186.0, -1124.0], ["2023Q4", -1124.0, -1161.0], ["2024Q1", -1161.0, -1290.0], ["2024Q2", -1290.0, -3044.0], ["2024Q3", -3044.0, -1585.0], ["2024Q4", -1585.0, -1223.0], ["2025Q1", -1223.0, -966.0], ["2025Q2", -966.0, 1257.0], ["2025Q3", 1257.0, 702.0], ["2025Q4", 702.0, 850.0], ["2026Q1", 850.0, 853.0], ["2026Q2", 853.0, 825.0]]}], "unit": "$M", "tick": "Q2", "prefix": "FY"};
+const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+Chart.defaults.color = dark ? "#bbb" : "#555";
+const grid = dark ? "rgba(255,255,255,.12)" : "rgba(0,0,0,.08)";
+const m = new URLSearchParams(location.search).get("m") || location.hash.slice(1);
+const f1 = x => x.toLocaleString("ko-KR", {minimumFractionDigits: 1, maximumFractionDigits: 1});
+for (const c of D.charts) {
+  if (m && m !== c.key) continue;
+  const s = document.createElement("section");
+  s.id = c.key;
+  s.innerHTML = (m ? "" : `<h3>${c.title} (V차트) · 단위 ${D.unit}</h3>`) + '<div class="box"><canvas></canvas></div>';
+  document.body.append(s);
+  const up = c.rows.map(r => r[2] >= r[1]);
+  new Chart(s.querySelector("canvas"), {
+    data: {labels: c.rows.map(r => D.prefix + r[0].slice(0, 4) + " " + r[0].slice(-1) + r[0][4]), datasets: [
+      {type: "bar", data: c.rows.map(r => r[1] === null ? null : [r[1], r[2]]), backgroundColor: up.map(u => u ? "#e5484d" : "#3e63dd"),
+       barPercentage: 0.7, categoryPercentage: 0.9, minBarLength: 2, order: 2},
+      {type: "line", data: c.rows.map(r => r[2]), borderColor: "rgba(245,197,66,.85)", borderWidth: 2,
+       pointRadius: 0, pointHoverRadius: 0, order: 1}]},
+    options: {maintainAspectRatio: false, animation: false, interaction: {mode: "index", intersect: false},
+      events: ["mousemove", "mouseout", "click", "touchstart", "touchmove"],
+      plugins: {legend: {display: false}, tooltip: {filter: i => i.datasetIndex === 0 && c.rows[i.dataIndex][2] !== null, displayColors: true,
+        callbacks: {
+          label: i => { const [, p, t] = c.rows[i.dataIndex]; return f1(t) + " " + D.unit; },
+          afterLabel: i => { const [, p, t] = c.rows[i.dataIndex], d = t - p;
+            return `변동: ${d >= 0 ? "+" : ""}${f1(d)} ${D.unit} (${d >= 0 ? "+" : ""}${p ? (d / Math.abs(p) * 100).toFixed(1) : "-"}%)`; },
+          labelColor: i => ({borderColor: "transparent", backgroundColor: up[i.dataIndex] ? "#e5484d" : "#3e63dd"})}}},
+      scales: {
+        x: {grid: {display: false}, ticks: {autoSkip: false, maxRotation: 0, font: {size: 10},
+            callback: function (v, i) { const q = c.rows[i][0];  // 좁은 화면 + 막대 16개 이상이면 격년만
+              return q.slice(4) === D.tick && (this.chart.width >= 560 || c.rows.length < 16 || q.slice(0, 4) % 2 === 0)
+                ? D.prefix + q.slice(0, 4) + " " + q.slice(-1) + q[4] : ""; }}},
+        y: {position: "right", beginAtZero: true, grid: {color: grid},  // 0·최솟값 포함, 눈금은 Chart.js가 반올림
+            ticks: {font: {size: 10}, callback: v => v.toLocaleString("ko-KR")}}}}});
+}
+function arcResize() {
+  if (parent === window) return;
+  const h = Math.ceil(document.body.getBoundingClientRect().height);
+  parent.postMessage({action: {action: "@webframe.resize", size: {aspectRatio: innerWidth / h, height: h}}}, "*");
+}
+addEventListener("load", arcResize);
+new ResizeObserver(arcResize).observe(document.body);
+</script></body></html>
