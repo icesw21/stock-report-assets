@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [케이씨 (029460)](029460_/README.md)
+  * [기초보고서](029460_/t1.md)
+  * [기술적분석](029460_/t2.md)
+  * [Valuation](029460_/t3.md)
+  * [Deep Dive](029460_/t4.md)
 * [Illumina (ILMN)](ILMN_/README.md)
   * [기초보고서](ILMN_/t1.md)
   * [기술적분석](ILMN_/t2.md)
