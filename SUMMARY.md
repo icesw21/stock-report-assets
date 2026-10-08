@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Illumina (ILMN)](ILMN_/README.md)
+  * [기초보고서](ILMN_/t1.md)
+  * [기술적분석](ILMN_/t2.md)
+  * [Valuation](ILMN_/t3.md)
+  * [Deep Dive](ILMN_/t4.md)
 * [넥사다이내믹스 (351320)](351320_/README.md)
   * [기초보고서](351320_/t1.md)
   * [기술적분석](351320_/t2.md)
@@ -35,11 +40,6 @@
   * [기술적분석](029460_/t2.md)
   * [Valuation](029460_/t3.md)
   * [Deep Dive](029460_/t4.md)
-* [Illumina (ILMN)](ILMN_/README.md)
-  * [기초보고서](ILMN_/t1.md)
-  * [기술적분석](ILMN_/t2.md)
-  * [Valuation](ILMN_/t3.md)
-  * [Deep Dive](ILMN_/t4.md)
 * [Twist Bioscience Corporation (TWST)](TWST_/README.md)
   * [기초보고서](TWST_/t1.md)
   * [기술적분석](TWST_/t2.md)
