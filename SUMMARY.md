@@ -1,5 +1,10 @@
 # 종목분석 아카이브
 
+* [Twist Bioscience Corporation (TWST)](TWST_/README.md)
+  * [기초보고서](TWST_/t1.md)
+  * [기술적분석](TWST_/t2.md)
+  * [Valuation](TWST_/t3.md)
+  * [Deep Dive](TWST_/t4.md)
 * [Illumina (ILMN)](ILMN_/README.md)
   * [기초보고서](ILMN_/t1.md)
   * [기술적분석](ILMN_/t2.md)
@@ -40,11 +45,6 @@
   * [기술적분석](029460_/t2.md)
   * [Valuation](029460_/t3.md)
   * [Deep Dive](029460_/t4.md)
-* [Twist Bioscience Corporation (TWST)](TWST_/README.md)
-  * [기초보고서](TWST_/t1.md)
-  * [기술적분석](TWST_/t2.md)
-  * [Valuation](TWST_/t3.md)
-  * [Deep Dive](TWST_/t4.md)
 * [코세스 (089890)](089890_/README.md)
   * [기초보고서](089890_/t1.md)
   * [기술적분석](089890_/t2.md)
